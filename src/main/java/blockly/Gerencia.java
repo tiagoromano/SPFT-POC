@@ -26,7 +26,7 @@ public static Var ObterGerenciasUsuarioLogado(Var Dados) throws Exception {
    private Var consultaDelegacao = Var.VAR_NULL;
 
    public Var call() throws Exception {
-    System.out.println(Var.valueOf("mudanca de novo OK").getObjectAsString());
+    System.out.println(Var.valueOf("ObterGerenciasUsuarioLogado").getObjectAsString());
     Orgaos = cronapi.list.Operations.newList();
     usuarioBIDT = cronapi.database.Operations.query(Var.valueOf("SPFT.entity.ForcaTrabalho"),Var.valueOf("select f from ForcaTrabalho f where f.codigoLogin = :codigoLogin"),Var.valueOf("codigoLogin",cronapi.util.Operations.getCurrentUserName()));
     consultaOrgaos = cronapi.database.Operations.query(Var.valueOf("SPFT.entity.Orgao"),Var.valueOf("select o from Orgao o where o.codigoForcaTrabalho = :codigoForcaTrabalho"),Var.valueOf("codigoForcaTrabalho",cronapi.database.Operations.getField(usuarioBIDT, Var.valueOf("this[0].id"))));

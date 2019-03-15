@@ -173,11 +173,6 @@
         "nullable": true,
         "type": "Integer"
       },
-      "codigo": {
-        "key": true,
-        "nullable": false,
-        "type": "Integer"
-      },
       "areaAtuacao": {
         "key": false,
         "nullable": true,
@@ -220,5 +215,309 @@
     "calcFieldsProperties": {},
     "errorHandles": {},
     "serviceUrl": "api/cronapi/query/query133907/"
+  },
+  "query437535": {
+    "customId": "obterForcaTrabalhoFiltrado",
+    "queryName": "Obter Força de Trabalho por chave matricula e orgao",
+    "sourceType": "blockly",
+    "baseEntity": "SPFT.entity.ForcaTrabalho",
+    "blockly": {
+      "type": "server",
+      "blocklyMethod": "ObterPorChaveOuMatriculaOuOrgao",
+      "blocklyClass": "blockly.ForcaTrabalho",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.ForcaTrabalho",
+        "sourcePath": "src/main/java/blockly/ForcaTrabalho.blockly",
+        "language": "java",
+        "class": "blockly.ForcaTrabalho",
+        "methods": [
+          {
+            "name": "ObterPorChaveOuMatriculaOuOrgao",
+            "hasReturn": "true",
+            "params": [
+              "chaveEmpregado",
+              "matriculaEmpregado",
+              "gerencia"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": "ObterPorChaveOuMatriculaOuOrgao",
+      "blocklyPOSTMethod": "default",
+      "blocklyPUTMethod": "default",
+      "blocklyDELETEMethod": "default",
+      "blocklyFILTERMethod": "default",
+      "blocklyCOUNTMethod": "ObterPorChaveOuMatriculaOuOrgao"
+    },
+    "query": "",
+    "queryParamsValues": [
+      {
+        "fieldName": "chaveEmpregado",
+        "fieldValue": ""
+      },
+      {
+        "fieldName": "matriculaEmpregado",
+        "fieldValue": ""
+      },
+      {
+        "fieldName": "gerencia",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": true,
+      "POST": true,
+      "PUT": true,
+      "DELETE": true,
+      "FILTER": true,
+      "COUNT": true
+    },
+    "events": {},
+    "defaultValues": {},
+    "defaultValuesProperties": {
+      "emailParticular1": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "codigoReligiao": {
+        "key": false,
+        "nullable": true,
+        "type": "Integer"
+      },
+      "emailParticular2": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "motivoReqCed": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "telefone": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "situacao": {
+        "key": false,
+        "nullable": true,
+        "type": "Integer"
+      },
+      "orgao": {
+        "key": false,
+        "nullable": false,
+        "type": "Orgao"
+      },
+      "dataCessao": {
+        "key": false,
+        "nullable": true,
+        "type": "Date"
+      },
+      "codigoGrupoEmpregado": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "reqCed": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "codigoFuncao": {
+        "key": false,
+        "nullable": true,
+        "type": "Integer"
+      },
+      "codigoInativo": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "codigoCidade": {
+        "key": false,
+        "nullable": true,
+        "type": "Integer"
+      },
+      "numeroExterno": {
+        "key": false,
+        "nullable": true,
+        "type": "Long"
+      },
+      "codigoSubgrupoEmpregado": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "dataAdmissao": {
+        "key": false,
+        "nullable": true,
+        "type": "Date"
+      },
+      "cep": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "uf": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "passaporte": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "motivoStatus": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "cpf": {
+        "key": false,
+        "nullable": true,
+        "type": "Long"
+      },
+      "codigoEstadoCivil": {
+        "key": false,
+        "nullable": true,
+        "type": "Integer"
+      },
+      "celular": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "id": {
+        "key": true,
+        "nullable": false,
+        "type": "Integer"
+      },
+      "dataNascimento": {
+        "key": false,
+        "nullable": true,
+        "type": "Date"
+      },
+      "dataCadastro": {
+        "key": false,
+        "nullable": true,
+        "type": "Date"
+      },
+      "codigoLogin": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "email": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "endereco": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "centroCusto": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "nome": {
+        "key": false,
+        "nullable": false,
+        "type": "String"
+      },
+      "codigoCargo": {
+        "key": false,
+        "nullable": false,
+        "type": "Integer"
+      },
+      "codigoAplicacaoCargo": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "codigoPais": {
+        "key": false,
+        "nullable": true,
+        "type": "Integer"
+      },
+      "siglaEmpresaOrigem": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "terraMar": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "matricula": {
+        "key": false,
+        "nullable": true,
+        "type": "Long"
+      },
+      "enderecoComplemento": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "codigoRaca": {
+        "key": false,
+        "nullable": true,
+        "type": "Integer"
+      },
+      "codigoImovel": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "nomeForcaTrabalhoGuerra": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "sexo": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "numeroRamal": {
+        "key": false,
+        "nullable": true,
+        "type": "Long"
+      },
+      "motivoInativo": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "enderecoBairro": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "tipoSanguineo": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "codigoEscolaridade": {
+        "key": false,
+        "nullable": true,
+        "type": "Integer"
+      }
+    },
+    "security": {},
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/query/query437535/"
   }
 }

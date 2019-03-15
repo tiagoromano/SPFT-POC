@@ -1,8 +1,10 @@
 window.dataSourceMap = window.dataSourceMap || [];
 window.dataSourceMap["SPFT.ObterGerenciasUsuarioLogado"] = { customId: "ObterGerenciasUsuarioLogado", serviceUrl: "api/cronapi/query/ObterGerenciasUsuarioLogado/", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/ObterGerenciasUsuarioLogado" };
 window.dataSourceMap["app.User"] = { customId: "app.entity.User", serviceUrl: "api/cronapi/crud/app.entity.User", serviceUrlODATA: "/api/cronapi/odata/v2/app/User" };
+window.dataSourceMap["SPFT.obterForcaTrabalhoFiltrado"] = { customId: "obterForcaTrabalhoFiltrado", serviceUrl: "api/cronapi/query/obterForcaTrabalhoFiltrado/", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/obterForcaTrabalhoFiltrado" };
 window.dataSourceMap["SPFT.PeriodoConcessao"] = { customId: "SPFT.entity.PeriodoConcessao", serviceUrl: "api/cronapi/crud/SPFT.entity.PeriodoConcessao", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/PeriodoConcessao" };
 window.dataSourceMap["SPFT.HistoricoAcaoSolicitacao"] = { customId: "SPFT.entity.HistoricoAcaoSolicitacao", serviceUrl: "api/cronapi/crud/SPFT.entity.HistoricoAcaoSolicitacao", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/HistoricoAcaoSolicitacao" };
+window.dataSourceMap["SPFT.query437535"] = { customId: "obterForcaTrabalhoFiltrado", serviceUrl: "api/cronapi/query/obterForcaTrabalhoFiltrado/", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/obterForcaTrabalhoFiltrado" };
 window.dataSourceMap["app.device"] = { customId: "device", serviceUrl: "api/cronapi/query/1jy88nt41afza/", serviceUrlODATA: "/api/cronapi/odata/v2/app/device" };
 window.dataSourceMap["SPFT.Orgao"] = { customId: "SPFT.entity.Orgao", serviceUrl: "api/cronapi/crud/SPFT.entity.Orgao", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/Orgao" };
 window.dataSourceMap["SPFT.ForcaTrabalho"] = { customId: "SPFT.entity.ForcaTrabalho", serviceUrl: "api/cronapi/crud/SPFT.entity.ForcaTrabalho", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/ForcaTrabalho" };
