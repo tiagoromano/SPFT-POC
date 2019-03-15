@@ -1,0 +1,19 @@
+{
+  "onAuthenticate": {
+    "blocklyClass": "blockly.Autenticacao",
+    "blocklyMethod": "FazerLogin",
+    "blockly": {
+      "namespace": "blockly.Autenticacao",
+      "sourcePath": "src/main/java/blockly/Autenticacao.blockly",
+      "language": "java",
+      "class": "blockly.Autenticacao",
+      "methods": [
+        {
+          "name": "FazerLogin",
+          "hasReturn": "true",
+          "params": []
+        }
+      ]
+    }
+  }
+}
