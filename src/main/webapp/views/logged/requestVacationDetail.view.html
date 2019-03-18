@@ -1,0 +1,175 @@
+<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="[{'key':'login','value':''},{'key':'arquisicaoDataInicial','value':''},{'key':'arquisicaoDataFinal','value':''}]"> 
+  <div class="col-md-12">
+     Preencha os campos abaixo para solicitar suas férias 
+  </div> 
+  <div class="alert alert-warning col-md-12" role="warning">
+     "O empregado que optar por receber o adiantamento do 13º nas férias, não receberá o valor em fevereiro, conforme acordo coletivo, e o pagamento se deve apenas para o 1º período de férias do ano." 
+  </div> 
+  <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-horizontal-container" id="crn-horizontal-container-753052"> 
+    <div class="col-md-3" data-container="true" data-replace="false"> 
+      <div class="component-holder ng-binding ng-scope  col-md-12" data-component="crn-textinput" id="crn-textinput-133488"> 
+        <div class="form-group"> 
+          <label for="input3985" style="font-weight:bold" class="">Dividir férias?</label> 
+          <div class="component-holder col-md-12" ng-model="vars.dividirFerias" data-component="crn-radiogroup" id="crn-radiogroup-209917" ng-click="cronapi.client('js.blockly.TelaRequestVacationDetail.SetarParametrosIniciais').run(vars.dividirFerias, vars.abonoPecuniario, vars.primParcDecimTerc)"> 
+            <div class="k-content" data-component="crn-radioOption"> 
+              <span class="">Não</span> 
+              <input class="k-radio" type="radio" name="optionsRadioDividirFerias" id="optionsRadios1crn-radiogroup-209917"> 
+              <label class="k-radio-label" crn-value="" for="optionsRadios1crn-radiogroup-209917" value="no"></label> 
+            </div> 
+            <div class="k-content" data-component="crn-radioOption"> 
+              <span class="" data-container="true">2 períodos</span> 
+              <input class="k-radio" type="radio" name="optionsRadioDividirFerias" id="optionsRadios2crn-radiogroup-209917"> 
+              <label class="k-radio-label" crn-value="" for="optionsRadios2crn-radiogroup-209917" value="2per"></label> 
+            </div> 
+            <div class="k-content" data-component="crn-radioOption"> 
+              <span class="">3 períodos</span> 
+              <input class="k-radio" type="radio" name="optionsRadioDividirFerias" id="optionsRadios6859"> 
+              <label class="k-radio-label" crn-value="" for="optionsRadios6859" value="3per"></label> 
+            </div> 
+          </div> 
+        </div> 
+      </div> {{vars.dividirFerias}} 
+    </div> 
+    <div class="col-md-3" data-container="true" data-replace="false"> 
+      <div class="component-holder ng-binding ng-scope  col-md-12" data-component="crn-textinput" id="crn-textinput-133488"> 
+        <div class="form-group"> 
+          <label for="input3985" style="font-weight:bold" class="">Abono Pecuniário (Converter 1/3 abono)?</label> 
+          <div class="component-holder col-md-12" ng-model="vars.abonoPecuniario" data-component="crn-radiogroup" id="crn-radiogroup-909580"> 
+            <div class="k-content" data-component="crn-radioOption"> 
+              <span class="">Não</span> 
+              <input class="k-radio" type="radio" name="optionsRadioAbonoPecuniario" id="optionsRadios1crn-radiogroup-909580"> 
+              <label class="k-radio-label" crn-value="" for="optionsRadios1crn-radiogroup-909580" value="no"></label> 
+            </div> 
+            <div class="k-content" data-component="crn-radioOption"> 
+              <span class="" data-container="true">Sim</span> 
+              <input class="k-radio" type="radio" name="optionsRadioAbonoPecuniario" id="optionsRadios2crn-radiogroup-909580"> 
+              <label class="k-radio-label" crn-value="" for="optionsRadios2crn-radiogroup-909580" value="yes"></label> 
+            </div> 
+          </div> 
+        </div> {{vars.abonoPecuniario}} 
+      </div> 
+    </div> 
+    <div class="col-md-6" data-container="true" data-replace="true"> 
+      <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-textinput" id="crn-textinput-133488"> 
+        <div class="form-group"> 
+          <label for="input3985" style="font-weight:bold" class="">Receber 1ª parcela do 13º junto com as férias (para férias entre os dias 01/01 e 15/02)?</label> 
+          <div class="component-holder col-md-12" ng-model="vars.primParcDecimTerc" data-component="crn-radiogroup" id="crn-radiogroup-909580"> 
+            <div class="k-content" data-component="crn-radioOption"> 
+              <span class="">Não</span> 
+              <input class="k-radio" type="radio" name="optionsRadioPrimParcDecimTerc" id="optionsRadios1crn-radiogroup-909180"> 
+              <label class="k-radio-label" crn-value="" for="optionsRadios1crn-radiogroup-909180" value="no"></label> 
+            </div> 
+            <div class="k-content" data-component="crn-radioOption"> 
+              <span class="" data-container="true">Sim</span> 
+              <input class="k-radio" type="radio" name="optionsRadioPrimParcDecimTerc" id="optionsRadios2crn-radiogroup-909280"> 
+              <label class="k-radio-label" crn-value="" for="optionsRadios2crn-radiogroup-909280" value="yes"></label> 
+            </div> 
+          </div> 
+        </div> {{vars.primParcDecimTerc}} 
+      </div> 
+    </div> 
+  </div> 
+  <div class="col-md-12" style="height:20px"> 
+  </div> 
+  <div class="col-md-12"> 
+    <table class="col-md-12" style="background-color: #f0eeee"> 
+      <tbody> 
+        <tr id="trPeriodo1" style="display:none"> 
+          <td> 
+            <div class="component-holder ng-binding ng-scope  col-md-12" data-component="crn-textinput" id="crn-textinput-133488"> 
+              <div class="form-group"> 
+                <label for="input3985" style="font-weight:bold" class="">1º Periodo:</label> 
+                <div style="height:20px"></div>
+              </div> 
+            </div> </td> 
+          <td> 
+            <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-datepicker" id="crn-datepicker-141957"> 
+              <div class="form-group"> 
+                <label for="input6726" style="font-weight:bold">Inicio:</label> 
+                <input type="date" mask="" mask-placeholder="" ng-required="false" ng-model="vars.tr1DataInicio" class="form-control k-textbox" id="input6726" placeholder="Clique para selecionar"> 
+              </div> 
+            </div> </td> 
+          <td> 
+            <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-enterprise-combobox" id="tr1QtdDias"> 
+              <div class="form-group"> 
+                <label for="cron-crn-enterprise-combobox-872569" class="" style="font-weight:bold">Quantidade de dias:</label> 
+                <cron-select options="{&quot;headerTemplate&quot;:&quot;&quot;,&quot;template&quot;:&quot;&quot;,&quot;footerTemplate&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;&quot;,&quot;dataSourceScreen&quot;:{&quot;schema&quot;:[]},&quot;filter&quot;:&quot;contains&quot;,&quot;dynamic&quot;:false,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;2&quot;},{&quot;key&quot;:&quot;3&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;key&quot;:&quot;4&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;key&quot;:&quot;5&quot;,&quot;value&quot;:&quot;5&quot;},{&quot;key&quot;:&quot;6&quot;,&quot;value&quot;:&quot;6&quot;},{&quot;key&quot;:&quot;7&quot;,&quot;value&quot;:&quot;7&quot;},{&quot;key&quot;:&quot;8&quot;,&quot;value&quot;:&quot;8&quot;},{&quot;key&quot;:&quot;9&quot;,&quot;value&quot;:&quot;9&quot;},{&quot;key&quot;:&quot;10&quot;,&quot;value&quot;:&quot;10&quot;},{&quot;key&quot;:&quot;11&quot;,&quot;value&quot;:&quot;11&quot;},{&quot;key&quot;:&quot;12&quot;,&quot;value&quot;:&quot;12&quot;},{&quot;key&quot;:&quot;13&quot;,&quot;value&quot;:&quot;13&quot;},{&quot;key&quot;:&quot;14&quot;,&quot;value&quot;:&quot;14&quot;},{&quot;key&quot;:&quot;15&quot;,&quot;value&quot;:&quot;15&quot;},{&quot;key&quot;:&quot;16&quot;,&quot;value&quot;:&quot;16&quot;},{&quot;key&quot;:&quot;17&quot;,&quot;value&quot;:&quot;17&quot;},{&quot;key&quot;:&quot;18&quot;,&quot;value&quot;:&quot;18&quot;},{&quot;key&quot;:&quot;19&quot;,&quot;value&quot;:&quot;19&quot;},{&quot;key&quot;:&quot;20&quot;,&quot;value&quot;:&quot;20&quot;},{&quot;key&quot;:&quot;21&quot;,&quot;value&quot;:&quot;21&quot;},{&quot;key&quot;:&quot;22&quot;,&quot;value&quot;:&quot;22&quot;},{&quot;key&quot;:&quot;23&quot;,&quot;value&quot;:&quot;23&quot;},{&quot;key&quot;:&quot;24&quot;,&quot;value&quot;:&quot;24&quot;},{&quot;key&quot;:&quot;25&quot;,&quot;value&quot;:&quot;25&quot;},{&quot;key&quot;:&quot;26&quot;,&quot;value&quot;:&quot;26&quot;},{&quot;key&quot;:&quot;27&quot;,&quot;value&quot;:&quot;27&quot;},{&quot;key&quot;:&quot;28&quot;,&quot;value&quot;:&quot;28&quot;},{&quot;key&quot;:&quot;29&quot;,&quot;value&quot;:&quot;29&quot;},{&quot;key&quot;:&quot;30&quot;,&quot;value&quot;:&quot;30&quot;}],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;initValue&quot;:&quot;&quot;,&quot;firstValue&quot;:false,&quot;changeCursor&quot;:true}" ng-required="false" id="cron-crn-enterprise-combobox-872569" ng-model="vars.tr1QtdDias" class="crn-select form-control k-textbox" style=""></cron-select> 
+              </div> 
+            </div> </td> 
+          <td> 
+            <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-datepicker" id="crn-datepicker-141957"> 
+              <div class="form-group"> 
+                <label for="input6726" style="font-weight:bold">Término:</label> 
+                <input type="date" disabled="" mask="" mask-placeholder="" ng-required="false" ng-model="vars.tr1DataFinal" class="form-control k-textbox" id="input6726" placeholder=""> 
+              </div> 
+            </div>
+          
+          </td> 
+        </tr>
+        <tr id="trPeriodo2" style="display:none"> 
+          <td> 
+            <div class="component-holder ng-binding ng-scope  col-md-12" data-component="crn-textinput" id="crn-textinput-133488"> 
+              <div class="form-group"> 
+                <label for="input3985" style="font-weight:bold" class="">2º Periodo:</label> 
+                <div style="height:20px"></div>
+              </div> 
+            </div> </td> 
+          <td> 
+            <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-datepicker" id="crn-datepicker-141957"> 
+              <div class="form-group"> 
+                <label for="input6726" style="font-weight:bold">Inicio:</label> 
+                <input type="date" mask="" mask-placeholder="" ng-required="false" ng-model="vars.tr2DataInicio" class="form-control k-textbox" id="input6726" placeholder="Clique para selecionar"> 
+              </div> 
+            </div> </td> 
+          <td> 
+            <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-enterprise-combobox" id="tr2QtdDias"> 
+              <div class="form-group"> 
+                <label for="cron-crn-enterprise-combobox-872569" class="" style="font-weight:bold">Quantidade de dias:</label> 
+                <cron-select options="{&quot;headerTemplate&quot;:&quot;&quot;,&quot;template&quot;:&quot;&quot;,&quot;footerTemplate&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;&quot;,&quot;dataSourceScreen&quot;:{&quot;schema&quot;:[]},&quot;filter&quot;:&quot;contains&quot;,&quot;dynamic&quot;:false,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;2&quot;},{&quot;key&quot;:&quot;3&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;key&quot;:&quot;4&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;key&quot;:&quot;5&quot;,&quot;value&quot;:&quot;5&quot;},{&quot;key&quot;:&quot;6&quot;,&quot;value&quot;:&quot;6&quot;},{&quot;key&quot;:&quot;7&quot;,&quot;value&quot;:&quot;7&quot;},{&quot;key&quot;:&quot;8&quot;,&quot;value&quot;:&quot;8&quot;},{&quot;key&quot;:&quot;9&quot;,&quot;value&quot;:&quot;9&quot;},{&quot;key&quot;:&quot;10&quot;,&quot;value&quot;:&quot;10&quot;},{&quot;key&quot;:&quot;11&quot;,&quot;value&quot;:&quot;11&quot;},{&quot;key&quot;:&quot;12&quot;,&quot;value&quot;:&quot;12&quot;},{&quot;key&quot;:&quot;13&quot;,&quot;value&quot;:&quot;13&quot;},{&quot;key&quot;:&quot;14&quot;,&quot;value&quot;:&quot;14&quot;},{&quot;key&quot;:&quot;15&quot;,&quot;value&quot;:&quot;15&quot;},{&quot;key&quot;:&quot;16&quot;,&quot;value&quot;:&quot;16&quot;},{&quot;key&quot;:&quot;17&quot;,&quot;value&quot;:&quot;17&quot;},{&quot;key&quot;:&quot;18&quot;,&quot;value&quot;:&quot;18&quot;},{&quot;key&quot;:&quot;19&quot;,&quot;value&quot;:&quot;19&quot;},{&quot;key&quot;:&quot;20&quot;,&quot;value&quot;:&quot;20&quot;},{&quot;key&quot;:&quot;21&quot;,&quot;value&quot;:&quot;21&quot;},{&quot;key&quot;:&quot;22&quot;,&quot;value&quot;:&quot;22&quot;},{&quot;key&quot;:&quot;23&quot;,&quot;value&quot;:&quot;23&quot;},{&quot;key&quot;:&quot;24&quot;,&quot;value&quot;:&quot;24&quot;},{&quot;key&quot;:&quot;25&quot;,&quot;value&quot;:&quot;25&quot;},{&quot;key&quot;:&quot;26&quot;,&quot;value&quot;:&quot;26&quot;},{&quot;key&quot;:&quot;27&quot;,&quot;value&quot;:&quot;27&quot;},{&quot;key&quot;:&quot;28&quot;,&quot;value&quot;:&quot;28&quot;},{&quot;key&quot;:&quot;29&quot;,&quot;value&quot;:&quot;29&quot;},{&quot;key&quot;:&quot;30&quot;,&quot;value&quot;:&quot;30&quot;}],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;initValue&quot;:&quot;&quot;,&quot;firstValue&quot;:false,&quot;changeCursor&quot;:true}" ng-required="false" id="cron-crn-enterprise-combobox-872569" ng-model="vars.tr2QtdDias" class="crn-select form-control k-textbox" style=""></cron-select> 
+              </div> 
+            </div> </td> 
+          <td> 
+            <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-datepicker" id="crn-datepicker-141957"> 
+              <div class="form-group"> 
+                <label for="input6726" style="font-weight:bold">Término:</label> 
+                <input type="date" disabled="" mask="" mask-placeholder="" ng-required="false" ng-model="vars.tr2DataFinal" class="form-control k-textbox" id="input6726" placeholder=""> 
+              </div> 
+            </div>
+           
+           </td> 
+        </tr>
+        <tr id="trPeriodo3" style="display:none"> 
+          <td> 
+            <div class="component-holder ng-binding ng-scope  col-md-12" data-component="crn-textinput" id="crn-textinput-133488"> 
+              <div class="form-group"> 
+                <label for="input3985" style="font-weight:bold" class="">3º Periodo:</label> 
+                <div style="height:20px"></div>
+              </div> 
+            </div> </td> 
+          <td> 
+            <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-datepicker" id="crn-datepicker-141957"> 
+              <div class="form-group"> 
+                <label for="input6726" style="font-weight:bold">Inicio:</label> 
+                <input type="date" mask="" mask-placeholder="" ng-required="false" ng-model="vars.tr3DataInicio" class="form-control k-textbox" id="input6726" placeholder="Clique para selecionar"> 
+              </div> 
+            </div> </td> 
+          <td> 
+            <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-enterprise-combobox" id="tr3QtdDias"> 
+              <div class="form-group"> 
+                <label for="cron-crn-enterprise-combobox-872569" class="" style="font-weight:bold">Quantidade de dias:</label> 
+                <cron-select options="{&quot;headerTemplate&quot;:&quot;&quot;,&quot;template&quot;:&quot;&quot;,&quot;footerTemplate&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;&quot;,&quot;dataSourceScreen&quot;:{&quot;schema&quot;:[]},&quot;filter&quot;:&quot;contains&quot;,&quot;dynamic&quot;:false,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[{&quot;key&quot;:&quot;1&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;key&quot;:&quot;2&quot;,&quot;value&quot;:&quot;2&quot;},{&quot;key&quot;:&quot;3&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;key&quot;:&quot;4&quot;,&quot;value&quot;:&quot;4&quot;},{&quot;key&quot;:&quot;5&quot;,&quot;value&quot;:&quot;5&quot;},{&quot;key&quot;:&quot;6&quot;,&quot;value&quot;:&quot;6&quot;},{&quot;key&quot;:&quot;7&quot;,&quot;value&quot;:&quot;7&quot;},{&quot;key&quot;:&quot;8&quot;,&quot;value&quot;:&quot;8&quot;},{&quot;key&quot;:&quot;9&quot;,&quot;value&quot;:&quot;9&quot;},{&quot;key&quot;:&quot;10&quot;,&quot;value&quot;:&quot;10&quot;},{&quot;key&quot;:&quot;11&quot;,&quot;value&quot;:&quot;11&quot;},{&quot;key&quot;:&quot;12&quot;,&quot;value&quot;:&quot;12&quot;},{&quot;key&quot;:&quot;13&quot;,&quot;value&quot;:&quot;13&quot;},{&quot;key&quot;:&quot;14&quot;,&quot;value&quot;:&quot;14&quot;},{&quot;key&quot;:&quot;15&quot;,&quot;value&quot;:&quot;15&quot;},{&quot;key&quot;:&quot;16&quot;,&quot;value&quot;:&quot;16&quot;},{&quot;key&quot;:&quot;17&quot;,&quot;value&quot;:&quot;17&quot;},{&quot;key&quot;:&quot;18&quot;,&quot;value&quot;:&quot;18&quot;},{&quot;key&quot;:&quot;19&quot;,&quot;value&quot;:&quot;19&quot;},{&quot;key&quot;:&quot;20&quot;,&quot;value&quot;:&quot;20&quot;},{&quot;key&quot;:&quot;21&quot;,&quot;value&quot;:&quot;21&quot;},{&quot;key&quot;:&quot;22&quot;,&quot;value&quot;:&quot;22&quot;},{&quot;key&quot;:&quot;23&quot;,&quot;value&quot;:&quot;23&quot;},{&quot;key&quot;:&quot;24&quot;,&quot;value&quot;:&quot;24&quot;},{&quot;key&quot;:&quot;25&quot;,&quot;value&quot;:&quot;25&quot;},{&quot;key&quot;:&quot;26&quot;,&quot;value&quot;:&quot;26&quot;},{&quot;key&quot;:&quot;27&quot;,&quot;value&quot;:&quot;27&quot;},{&quot;key&quot;:&quot;28&quot;,&quot;value&quot;:&quot;28&quot;},{&quot;key&quot;:&quot;29&quot;,&quot;value&quot;:&quot;29&quot;},{&quot;key&quot;:&quot;30&quot;,&quot;value&quot;:&quot;30&quot;}],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;initValue&quot;:&quot;&quot;,&quot;firstValue&quot;:false,&quot;changeCursor&quot;:true}" ng-required="false" id="cron-crn-enterprise-combobox-872569" ng-model="vars.tr3QtdDias" class="crn-select form-control k-textbox" style=""></cron-select> 
+              </div> 
+            </div> </td> 
+          <td> 
+            <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-datepicker" id="crn-datepicker-141957"> 
+              <div class="form-group"> 
+                <label for="input6726" style="font-weight:bold">Término:</label> 
+                <input type="date" disabled="" mask="" mask-placeholder="" ng-required="false" ng-model="vars.tr3DataFinal" class="form-control k-textbox" id="input6726" placeholder=""> 
+              </div> 
+            </div>
+          </td> 
+        </tr>
+      </tbody> 
+    </table> 
+  </div> 
+</div>
