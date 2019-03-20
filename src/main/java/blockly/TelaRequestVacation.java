@@ -54,8 +54,6 @@ public static Var SelecionarPeriodoConcessivo(Var param_login, Var periodo) thro
    // end
 
    public Var call() throws Exception {
-    System.out.println(login.getObjectAsString());
-    System.out.println(periodo.getObjectAsString());
     if (cronapi.logic.Operations.isNullOrEmpty(login).getObjectAsBoolean()) {
         login = cronapi.util.Operations.getCurrentUserName();
     }

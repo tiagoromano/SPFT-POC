@@ -24,7 +24,7 @@
   "dependencies": {
     "cronapp-framework-js": "2.1.14",
     "cronapp-common-js": "18db2afe2bf7342935847902c531a5f773cdc34c",
-    "cronapi-js": "2.1.12",
+    "cronapi-js": "2.1.14",
     "cronapp-lib-js": "87f4dd1ca877c0fb264410468f0b37f665541c98"
   }
 }
