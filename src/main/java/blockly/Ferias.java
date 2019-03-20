@@ -165,6 +165,8 @@ public static Var SalvarSolicitacaoFerias(Var solicitacaoFerias) throws Exceptio
    private Var _C3_A9AdminOuGerente = Var.VAR_NULL;
    private Var forcaTrabalhoId = Var.VAR_NULL;
    private Var periodoConcessaoCorrente = Var.VAR_NULL;
+   private Var periodoConcessaoIdCorrente = Var.VAR_NULL;
+   private Var solicitacaoFeriasIdCorrente = Var.VAR_NULL;
 
    public Var call() throws Exception {
     item = Var.valueOf("Solicitação armazenada com sucesso!");
@@ -182,11 +184,20 @@ public static Var SalvarSolicitacaoFerias(Var solicitacaoFerias) throws Exceptio
         forcaTrabalhoId = cronapi.database.Operations.getField(forcaTrabalho, Var.valueOf("this[0].id"));
         periodoConcessaoCorrente = cronapi.database.Operations.query(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf("select p.id from PeriodoConcessao p where p.forcaTrabalho.codigoLogin = :forcaTrabalhoCodigoLogin AND p.dataConcessaoInicial = :dataConcessaoInicial AND p.dataConcessaoFinal = :dataConcessaoFinal"),Var.valueOf("forcaTrabalhoCodigoLogin",login),Var.valueOf("dataConcessaoInicial",cronapi.object.Operations.getObjectField(periodoConcessao, Var.valueOf("dataConcessaoInicial"))),Var.valueOf("dataConcessaoFinal",cronapi.object.Operations.getObjectField(periodoConcessao, Var.valueOf("dataConcessaoFinal"))));
         if (cronapi.database.Operations.hasElement(periodoConcessaoCorrente).getObjectAsBoolean()) {
-            cronapi.database.Operations.update(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf(GerarPeriodoConcessao(periodoConcessao, cronapi.database.Operations.getField(periodoConcessaoCorrente, Var.valueOf("this[0]")), forcaTrabalhoId)));
+            periodoConcessaoIdCorrente = cronapi.database.Operations.getField(periodoConcessaoCorrente, Var.valueOf("this[0]"));
+            solicitacaoFeriasIdCorrente = cronapi.database.Operations.getField(cronapi.database.Operations.query(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf("select s.id from SolicitacaoFerias s where s.periodoConcessao.id = :periodoConcessaoId"),Var.valueOf("periodoConcessaoId",periodoConcessaoIdCorrente)), Var.valueOf("this[0]"));
+            cronapi.database.Operations.update(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf(GerarPeriodoConcessao(periodoConcessao, periodoConcessaoIdCorrente, forcaTrabalhoId)));
+            System.out.println(Var.valueOf("periodoConcessao").getObjectAsString());
+            System.out.println(periodoConcessao.getObjectAsString());
+            cronapi.database.Operations.update(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf(GerarSolicitacaoFerias(solicitacaoFerias, solicitacaoFeriasIdCorrente, periodoConcessao, _C3_A9AdminOuGerente)));
+            System.out.println(Var.valueOf("SolicitacaoFerias").getObjectAsString());
+            System.out.println(solicitacaoFerias.getObjectAsString());
+            cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf(GerarHistoricoSolicitacao(solicitacaoFeriasIdCorrente, forcaTrabalhoId, solicitacaoFerias)));
+            System.out.println(Var.valueOf("HistoricoAcaoSolicitacao").getObjectAsString());
         } else {
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf(GerarPeriodoConcessao(periodoConcessao, Var.VAR_NULL, forcaTrabalhoId)));
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf(GerarSolicitacaoFerias(solicitacaoFerias, Var.VAR_NULL, periodoConcessao, _C3_A9AdminOuGerente)));
-            cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf(GerarHistoricoSolicitacao(cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("id")), cronapi.object.Operations.getObjectField(forcaTrabalho, Var.valueOf("id")), solicitacaoFerias)));
+            cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf(GerarHistoricoSolicitacao(cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("id")), forcaTrabalhoId, solicitacaoFerias)));
         }
     }
     return item;
