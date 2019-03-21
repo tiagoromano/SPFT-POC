@@ -99,5 +99,6 @@
   "Home.view.NewPasswordCanNotBeEmpty": "Nova senha não pode estar vazio.",
   "Home.view.ConfirmationPasswordCanNotBeEmpty": "Confirmação não pode estar vazio.",
   "CHAVE": "Chave",
-  "MarcarFeriasEmpregado": "Marcar Férias dos Empregados"
+  "MarcarFeriasEmpregado": "Marcar Férias dos Empregados",
+  "MarcarFerias": "Marcar Férias"
 }

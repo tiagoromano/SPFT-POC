@@ -99,5 +99,6 @@
   "Home.view.NewPasswordCanNotBeEmpty": "New password can not be empty.",
   "Home.view.ConfirmationPasswordCanNotBeEmpty": "Confirmation can not be empty.",
   "CHAVE": "Key",
-  "MarcarFeriasEmpregado": "Mark the Employee's Vacation"
+  "MarcarFeriasEmpregado": "Mark the Employee's Vacation",
+  "MarcarFerias": "Mark Holiday"
 }

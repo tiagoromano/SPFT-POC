@@ -1046,9 +1046,9 @@
       var viewToCheck = view + (view.indexOf("?") > -1 ? "": "?");
 
       if(oldHashToCheck.indexOf(viewToCheck) >= 0){
-          window.location.reload();
+        window.location.reload();
       }
-     
+
     }
     catch (e) {
       alert(e);
@@ -1351,7 +1351,7 @@
    * @multilayer true
    */
   this.cronapi.screen.disableComponent = function(/** @type {ObjectType.OBJECT} @blockType ids_from_screen*/ id) {
-    if(id.indexOf('cron-crn-enterprise-combobox') >= 0){
+    if($('#'+id).data("kendoComboBox")){
       $('#'+id).data("kendoComboBox").enable(false);
     }else{
     $.each( $('#'+id).find('*').addBack(), function(index, value){ $(value).prop('disabled',true); });
