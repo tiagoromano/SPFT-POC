@@ -89,7 +89,11 @@ public static Var GerarHistoricoSolicitacao(Var solicitacaoFeriasId, Var forcaTr
    private Var historicoAcaoSolicitacao = Var.VAR_NULL;
 
    public Var call() throws Exception {
-    historicoAcaoSolicitacao = cronapi.database.Operations.newEntity(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf("id",Var.valueOf(CriarId(cronapi.database.Operations.getField(cronapi.database.Operations.query(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf("select MAX(h.id) from HistoricoAcaoSolicitacao h")), Var.valueOf("this[0]"))))),Var.valueOf("solicitacaoFerias<SPFT.entity.SolicitacaoFerias>",cronapi.database.Operations.newEntity(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf("id",solicitacaoFeriasId))),Var.valueOf("forcaTrabalho",cronapi.database.Operations.newEntity(Var.valueOf("SPFT.entity.ForcaTrabalho"),Var.valueOf("id",forcaTrabalhoId))),Var.valueOf("dataHistorico",cronapi.dateTime.Operations.getNow()),Var.valueOf("justificativa",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("justificativa"))),Var.valueOf("status",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("status"))),Var.valueOf("utilizaAbono",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("utilizaAbono"))),Var.valueOf("adiantaDecimo",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("adiantaDecimo"))),Var.valueOf("dividir",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dividir"))),Var.valueOf("dataPeriodo1Inicio",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dataPeriodo1Inicio"))),Var.valueOf("dataPeriodo1Fim",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dataPeriodo1Fim"))),Var.valueOf("dataPeriodo2Inicio",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dataPeriodo2Inicio"))),Var.valueOf("dataPeriodo2Fim",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dataPeriodo2Fim"))),Var.valueOf("dataPeriodo3Inicio",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dataPeriodo3Inicio"))),Var.valueOf("dataPeriodo3Fim",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dataPeriodo3Fim"))));
+    historicoAcaoSolicitacao = cronapi.database.Operations.newEntity(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf("id",Var.valueOf(CriarId(cronapi.database.Operations.getField(cronapi.database.Operations.query(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf("select MAX(h.id) from HistoricoAcaoSolicitacao h")), Var.valueOf("this[0]"))))),Var.valueOf("solicitacaoFerias",cronapi.database.Operations.newEntity(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf("id",solicitacaoFeriasId))),Var.valueOf("forcaTrabalho",cronapi.database.Operations.newEntity(Var.valueOf("SPFT.entity.ForcaTrabalho"),Var.valueOf("id",forcaTrabalhoId))),Var.valueOf("dataHistorico",cronapi.dateTime.Operations.getNow()),Var.valueOf("justificativa",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("justificativa"))),Var.valueOf("status",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("status"))),Var.valueOf("utilizaAbono",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("utilizaAbono"))),Var.valueOf("adiantaDecimo",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("adiantaDecimo"))),Var.valueOf("dividir",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dividir"))),Var.valueOf("dataPeriodo1Inicio",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dataPeriodo1Inicio"))),Var.valueOf("dataPeriodo1Fim",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dataPeriodo1Fim"))),Var.valueOf("dataPeriodo2Inicio",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dataPeriodo2Inicio"))),Var.valueOf("dataPeriodo2Fim",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dataPeriodo2Fim"))),Var.valueOf("dataPeriodo3Inicio",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dataPeriodo3Inicio"))),Var.valueOf("dataPeriodo3Fim",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("dataPeriodo3Fim"))));
+    System.out.println(Var.valueOf("solicitacaoFeriasId").getObjectAsString());
+    System.out.println(solicitacaoFeriasId.getObjectAsString());
+    System.out.println(Var.valueOf("HistoricoAcaoSolicitacao").getObjectAsString());
+    System.out.println(historicoAcaoSolicitacao.getObjectAsString());
     return historicoAcaoSolicitacao;
    }
  }.call();
@@ -151,13 +155,16 @@ public static Var GerarSolicitacaoFerias(Var solicitacaoFerias, Var param_solici
 
 /**
  *
- * @param solicitacaoFerias
+ * @param param_solicitacaoFerias
  * @return Var
  */
 // Descreva esta função...
-public static Var SalvarSolicitacaoFerias(Var solicitacaoFerias) throws Exception {
+public static Var SalvarSolicitacaoFerias(Var param_solicitacaoFerias) throws Exception {
  return new Callable<Var>() {
 
+   // param
+   private Var solicitacaoFerias = param_solicitacaoFerias;
+   // end
    private Var item = Var.VAR_NULL;
    private Var periodoConcessao = Var.VAR_NULL;
    private Var forcaTrabalho = Var.VAR_NULL;
@@ -187,20 +194,22 @@ public static Var SalvarSolicitacaoFerias(Var solicitacaoFerias) throws Exceptio
             System.out.println(Var.valueOf("atualiza").getObjectAsString());
             periodoConcessaoIdCorrente = cronapi.database.Operations.getField(periodoConcessaoCorrente, Var.valueOf("this[0]"));
             solicitacaoFeriasIdCorrente = cronapi.database.Operations.getField(cronapi.database.Operations.query(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf("select s.id from SolicitacaoFerias s where s.periodoConcessao.id = :periodoConcessaoId"),Var.valueOf("periodoConcessaoId",periodoConcessaoIdCorrente)), Var.valueOf("this[0]"));
-            cronapi.database.Operations.update(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf(GerarPeriodoConcessao(periodoConcessao, periodoConcessaoIdCorrente, forcaTrabalhoId)));
             System.out.println(Var.valueOf("periodoConcessao").getObjectAsString());
             System.out.println(periodoConcessao.getObjectAsString());
-            cronapi.database.Operations.update(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf(GerarSolicitacaoFerias(solicitacaoFerias, solicitacaoFeriasIdCorrente, periodoConcessao, _C3_A9AdminOuGerente)));
+            cronapi.database.Operations.update(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf(GerarPeriodoConcessao(periodoConcessao, periodoConcessaoIdCorrente, forcaTrabalhoId)));
             System.out.println(Var.valueOf("SolicitacaoFerias").getObjectAsString());
             System.out.println(solicitacaoFerias.getObjectAsString());
+            cronapi.database.Operations.update(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf(GerarSolicitacaoFerias(solicitacaoFerias, solicitacaoFeriasIdCorrente, periodoConcessao, _C3_A9AdminOuGerente)));
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf(GerarHistoricoSolicitacao(solicitacaoFeriasIdCorrente, forcaTrabalhoId, solicitacaoFerias)));
-            System.out.println(Var.valueOf("HistoricoAcaoSolicitacao").getObjectAsString());
         } else {
             System.out.println(Var.valueOf("insere").getObjectAsString());
-            cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf(GerarPeriodoConcessao(periodoConcessao, Var.VAR_NULL, forcaTrabalhoId)));
+            System.out.println(Var.valueOf("PeriodoConcessao").getObjectAsString());
             System.out.println(periodoConcessao.getObjectAsString());
-            cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf(GerarSolicitacaoFerias(solicitacaoFerias, Var.VAR_NULL, periodoConcessao, _C3_A9AdminOuGerente)));
+            cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf(GerarPeriodoConcessao(periodoConcessao, Var.VAR_NULL, forcaTrabalhoId)));
+            System.out.println(Var.valueOf("SolicitacaoFerias").getObjectAsString());
             System.out.println(solicitacaoFerias.getObjectAsString());
+            solicitacaoFerias = Var.valueOf(GerarSolicitacaoFerias(solicitacaoFerias, Var.VAR_NULL, periodoConcessao, _C3_A9AdminOuGerente));
+            cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.SolicitacaoFerias"),solicitacaoFerias);
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf(GerarHistoricoSolicitacao(cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("id")), forcaTrabalhoId, solicitacaoFerias)));
         }
     }
