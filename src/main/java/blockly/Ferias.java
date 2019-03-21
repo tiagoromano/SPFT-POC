@@ -155,6 +155,38 @@ public static Var GerarSolicitacaoFerias(Var solicitacaoFerias, Var param_solici
 
 /**
  *
+ * @param param_login
+ * @param dataConcessaoInicial
+ * @param dataConcessaoFinal
+ * @return Var
+ */
+// Descreva esta função...
+public static Var ObterFeriasExistenteDoPeriodoConcessivo(Var param_login, Var dataConcessaoInicial, Var dataConcessaoFinal) throws Exception {
+ return new Callable<Var>() {
+
+   // param
+   private Var login = param_login;
+   // end
+   private Var solicitacaoFerias = Var.VAR_NULL;
+   private Var periodoConcessaoCorrente = Var.VAR_NULL;
+   private Var periodoConcessaoIdCorrente = Var.VAR_NULL;
+
+   public Var call() throws Exception {
+    if (cronapi.logic.Operations.isNullOrEmpty(login).getObjectAsBoolean()) {
+        login = cronapi.util.Operations.getCurrentUserName();
+    }
+    periodoConcessaoCorrente = cronapi.database.Operations.query(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf("select p.id from PeriodoConcessao p where p.forcaTrabalho.codigoLogin = :forcaTrabalhoCodigoLogin AND p.dataConcessaoInicial = :dataConcessaoInicial AND p.dataConcessaoFinal = :dataConcessaoFinal"),Var.valueOf("forcaTrabalhoCodigoLogin",login),Var.valueOf("dataConcessaoInicial",dataConcessaoInicial),Var.valueOf("dataConcessaoFinal",dataConcessaoFinal));
+    if (cronapi.database.Operations.hasElement(periodoConcessaoCorrente).getObjectAsBoolean()) {
+        periodoConcessaoIdCorrente = cronapi.database.Operations.getField(periodoConcessaoCorrente, Var.valueOf("this[0]"));
+        solicitacaoFerias = cronapi.database.Operations.query(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf("select s from SolicitacaoFerias s where s.periodoConcessao.id = :periodoConcessaoId"),Var.valueOf("periodoConcessaoId",periodoConcessaoIdCorrente));
+    }
+    return solicitacaoFerias;
+   }
+ }.call();
+}
+
+/**
+ *
  * @param param_solicitacaoFerias
  * @return Var
  */

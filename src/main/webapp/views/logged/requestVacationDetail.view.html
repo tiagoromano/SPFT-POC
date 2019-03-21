@@ -1,4 +1,4 @@
-<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="[{'key':'login','value':''},{'key':'arquisicaoDataInicial','value':''},{'key':'arquisicaoDataFinal','value':''}]"> 
+<div id="starter" ng-init="cronapi.client('js.blockly.TelaRequestVacationDetail.AoEntrar').run()" ng-destroy="" data-component="crn-start" screen-params="[{'key':'login','value':''},{'key':'arquisicaoDataInicial','value':''},{'key':'arquisicaoDataFinal','value':''}]"> 
   <div class="col-md-12">
      Preencha os campos abaixo para solicitar suas férias 
   </div> 
@@ -171,6 +171,6 @@
         <label for="input172">Justificativa para aprovação do gerente</label>
         <textarea id="textArea172" ng-model="vars.justificativa" maxlength="300" style="resize:none" resize="resize:none;" class="form-control k-textbox" rows="5"></textarea>
       </div>
-    </div><div class="component-holder ng-binding ng-scope  col-md-3" data-component="crn-button" id="crn-button-810704"><button class="btn k-button btn-block btn-success" ng-click="cronapi.client('js.blockly.TelaRequestVacationDetail.CriarSolicitacao').run()" xattr-size="" xattr-fullsize="btn-block" xattr-theme="btn-success" xattr-disabled=""><i class="glyphicon glyphicon-ok-sign"></i> <span>Solicitar</span></button></div> 
+    </div><div class="component-holder ng-binding ng-scope  col-md-3" data-component="crn-button" id="crn-button-810704"><button class="btn k-button btn-block btn-success" ng-click="cronapi.client('js.blockly.TelaRequestVacationDetail.CriarSolicitacao').run()" xattr-size="" xattr-fullsize="btn-block" xattr-theme="btn-success" xattr-disabled=""><i class="glyphicon glyphicon-ok-sign"></i> <span>Solicitar</span></button></div><div class="component-holder ng-binding ng-scope  col-md-3" data-component="crn-button" id="crn-button-114842"><button class="btn k-button btn-block btn-danger" ng-click="cronapi.client('js.blockly.TelaRequestVacationDetail.Cancelar').run()" xattr-size="" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled=""><i class="glyphicon glyphicon-home"></i> <span>Cancelar</span></button></div> 
   </div> 
 </div>
