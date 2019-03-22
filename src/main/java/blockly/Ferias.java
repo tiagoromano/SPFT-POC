@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.*;
 */ 
 
 @RestController
-@RequestMapping(value = "/api/rest/main/Captacao")
+@RequestMapping(value = "/api/rest/main/Ferias")
 @CronapiMetaData(type = "blockly")
-@CronappSecurity
+@CronappSecurity(post = "Public", get = "Public", execute = "Public", delete = "Public", put = "Public")
 public class Ferias {
 
 public static final int TIMEOUT = 300;
@@ -221,10 +221,16 @@ public static Var ObterSolicitacaoFeriasPorOrgaoEStatus(@PathVariable("orgao") V
  return new Callable<Var>() {
 
    private Var item = Var.VAR_NULL;
+   private Var lista = Var.VAR_NULL;
 
    public Var call() throws Exception {
+    lista = cronapi.list.Operations.newList();
     item = cronapi.database.Operations.query(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf("select s.periodoConcessao.forcaTrabalho.nome as nomeFuncionario, s.periodoConcessao.forcaTrabalho.matricula as matriculaFuncionario, s.id as solicitacaoId, s.justificativa as justificativa, \ns.status as status, \nCASE WHEN (s.status = 1) THEN \'Solicitado\' WHEN (s.status = 2) THEN \'Aprovado\' WHEN (s.status = 3) THEN \'Não Aprovado\' ELSE \'Efetivado\' END as statusDescricao,\ns.utilizaAbono as utilizaAbono, \ns.adiantaDecimo as adiantaDecimo, s.dividir as dividir, s.dataPeriodo1Inicio as dataPeriodo1Inicio, \ns.dataPeriodo1Fim as dataPeriodo1Fim, s.dataPeriodo2Inicio as dataPeriodo2Inicio, s.dataPeriodo2Fim as dataPeriodo2Fim, \ns.dataPeriodo3Inicio as dataPeriodo3Inicio, s.dataPeriodo3Fim as dataPeriodo3Fim, \nCONCAT(extract(day from s.dataPeriodo1Inicio),\'/\', extract(month from s.dataPeriodo1Inicio), \'/\', extract(year from s.dataPeriodo1Inicio),\n\' à \', extract(day from s.dataPeriodo1Fim),\'/\', extract(month from s.dataPeriodo1Fim), \'/\', extract(year from s.dataPeriodo1Fim)),\nCONCAT(extract(day from s.dataPeriodo2Inicio),\'/\', extract(month from s.dataPeriodo2Inicio), \'/\', extract(year from s.dataPeriodo2Inicio),\n\' à \', extract(day from s.dataPeriodo2Fim),\'/\', extract(month from s.dataPeriodo2Fim), \'/\', extract(year from s.dataPeriodo2Fim)),\nCONCAT(extract(day from s.dataPeriodo3Inicio),\'/\', extract(month from s.dataPeriodo3Inicio), \'/\', extract(year from s.dataPeriodo3Inicio),\n\' à \', extract(day from s.dataPeriodo3Fim),\'/\', extract(month from s.dataPeriodo3Fim), \'/\', extract(year from s.dataPeriodo3Fim))\nfrom SolicitacaoFerias s, Orgao o  \nwhere o.codigoForcaTrabalho = s.periodoConcessao.forcaTrabalho.id \nAND (:orgaoId IS NULL or o.id = :orgaoId)   \nAND (:statusId IS NULL or s.status = :statusId)"),Var.valueOf("orgaoId",orgao),Var.valueOf("orgaoId",orgao),Var.valueOf("statusId",status),Var.valueOf("statusId",status));
-    return item;
+    while (cronapi.database.Operations.hasElement(item).getObjectAsBoolean()) {
+        System.out.println(cronapi.database.Operations.getActiveData(item).getObjectAsString());
+        cronapi.database.Operations.next(item);
+    } // end while
+    return lista;
    }
  }.call();
 }
