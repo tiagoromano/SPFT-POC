@@ -14,7 +14,6 @@
     <version>1.0-SNAPSHOT</version>
     <url>http://maven.apache.org</url>
     <build>
-    
         <resources>
             <resource>
                 <directory>src/main/java</directory>
@@ -67,6 +66,11 @@
         </repository>
     </repositories>
     <dependencies>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180813</version>
+        </dependency>
         <dependency>
             <groupId>org.eclipse.persistence</groupId>
             <artifactId>org.eclipse.persistence.jpa</artifactId>
@@ -143,7 +147,7 @@
             <groupId>io.cronapp</groupId>
             <artifactId>cronapi-java</artifactId>
             <version>2.1.23</version>
-        </dependency>
+        </dependency>        
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -33,7 +33,7 @@ public static Var ObterGerenciasUsuarioLogado(Var Dados) throws Exception {
         cronapi.list.Operations.addLast(Orgaos,cronapi.database.Operations.getActiveData(consultaOrgaos));
         cronapi.database.Operations.next(consultaOrgaos);
     } // end while
-    consultaDelegacao = cronapi.database.Operations.query(Var.valueOf("SPFT.entity.Delegacao"),Var.valueOf("select d.orgao from Delegacao d where d.forcaTrabalhoDelegado.id = :forcaTrabalhoDelegadoId"),Var.valueOf("forcaTrabalhoDelegadoId",cronapi.database.Operations.getField(usuarioBIDT, Var.valueOf("this[0].id"))));
+    consultaDelegacao = cronapi.database.Operations.query(Var.valueOf("SPFT.entity.Delegacao"),Var.valueOf("select d.orgao from Delegacao d where d.forcaTrabalhoDelegado.id = :forcaTrabalhoDelegadoId AND d.status = 1"),Var.valueOf("forcaTrabalhoDelegadoId",cronapi.database.Operations.getField(usuarioBIDT, Var.valueOf("this[0].id"))));
     while (cronapi.database.Operations.hasElement(consultaDelegacao).getObjectAsBoolean()) {
         cronapi.list.Operations.addLast(Orgaos,cronapi.database.Operations.getActiveData(consultaDelegacao));
         cronapi.database.Operations.next(consultaDelegacao);

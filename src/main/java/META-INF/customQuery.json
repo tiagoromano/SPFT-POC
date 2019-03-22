@@ -653,5 +653,124 @@
     "calcFieldsProperties": {},
     "errorHandles": {},
     "serviceUrl": "api/cronapi/query/query6294/"
+  },
+  "query535810": {
+    "customId": "ObterSolicitacaoFeriasPorOrgaoEStatus",
+    "queryName": "Obter Solicitacao de Ferias por orgao e status",
+    "sourceType": "blockly",
+    "blockly": {
+      "type": "server",
+      "blocklyMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus",
+      "blocklyClass": "blockly.Ferias",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Ferias",
+        "sourcePath": "src/main/java/blockly/Ferias.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "SalvarSolicitacaoFerias",
+            "hasReturn": "true",
+            "params": [
+              "solicitacaoFerias\u0026lt;SPFT.entity.SolicitacaoFerias\u0026gt;"
+            ]
+          },
+          {
+            "name": "ObterPeriodosConcessivos",
+            "hasReturn": "true",
+            "params": [
+              "login"
+            ]
+          },
+          {
+            "name": "GerarPeriodoConcessao",
+            "hasReturn": "true",
+            "params": [
+              "periodoConcessao\u0026lt;SPFT.entity.PeriodoConcessao\u0026gt;",
+              "periodoConcessaoId",
+              "forcaTrabalhoId"
+            ]
+          },
+          {
+            "name": "ObterSolicitacaoFeriasPorOrgaoEStatus",
+            "hasReturn": "true",
+            "params": [
+              "orgao",
+              "status"
+            ]
+          },
+          {
+            "name": "ObterFeriasExistenteDoPeriodoConcessivo",
+            "hasReturn": "true",
+            "params": [
+              "login",
+              "dataConcessaoInicial",
+              "dataConcessaoFinal"
+            ]
+          },
+          {
+            "name": "GerarSolicitacaoFerias",
+            "hasReturn": "true",
+            "params": [
+              "solicitacaoFerias\u0026lt;SPFT.entity.SolicitacaoFerias\u0026gt;",
+              "solicitacaoFeriasId",
+              "periodoConcessao\u0026lt;SPFT.entity.PeriodoConcessao\u0026gt;",
+              "éAdminOuGerente"
+            ]
+          },
+          {
+            "name": "CriarId",
+            "hasReturn": "true",
+            "params": [
+              "Id"
+            ]
+          },
+          {
+            "name": "GerarHistoricoSolicitacao",
+            "hasReturn": "true",
+            "params": [
+              "solicitacaoFeriasId",
+              "forcaTrabalhoId",
+              "solicitacaoFerias\u0026lt;SPFT.entity.SolicitacaoFerias\u0026gt;"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus",
+      "blocklyPOSTMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus",
+      "blocklyPUTMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus",
+      "blocklyDELETEMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus",
+      "blocklyFILTERMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus",
+      "blocklyCOUNTMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus"
+    },
+    "query": "",
+    "queryParamsValues": [
+      {
+        "fieldName": "orgao",
+        "fieldValue": ""
+      },
+      {
+        "fieldName": "status",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": true,
+      "POST": true,
+      "PUT": true,
+      "DELETE": true,
+      "FILTER": true,
+      "COUNT": true
+    },
+    "events": {},
+    "defaultValues": {},
+    "defaultValuesProperties": {},
+    "security": {},
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/query/query535810/"
   }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/webapp/views/logged/requestVacationDetail.view.html" resourceType="JS" ruleDescription="TelaRequestVacationDetail" ruleName="TelaRequestVacationDetail" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
-  <metadata scale="1" scrollx="351.39999999999964" scrolly="-182.2" target="D45ycjR`PI0H(8?D;l*s"/>
+  <metadata scale="1" scrollx="178.39999999999986" scrolly="-2597.0000000000005" target="mQ!^KU+mq$/14TU],Gz}"/>
   <block colour="#fca03b" id="D45ycjR`PI0H(8?D;l*s" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-213" y="55">
     <field name="NAME">AoEntrar</field>
     <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
@@ -4278,7 +4278,7 @@ $('[ng-model="vars.tr3QtdDias"]').data("kendoComboBox").select(idxCurrent)</fiel
       </block>
     </value>
   </block>
-  <block colour="#fca03b" id="mQ!^KU+mq$/14TU],Gz}" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-39" y="2670">
+  <block colour="#fca03b" id="mQ!^KU+mq$/14TU],Gz}" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-52" y="2663">
     <field name="NAME">VerificarPeriodosConflitantes</field>
     <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
     <statement name="STACK">

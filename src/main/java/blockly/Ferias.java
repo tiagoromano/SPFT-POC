@@ -187,6 +187,25 @@ public static Var ObterFeriasExistenteDoPeriodoConcessivo(Var param_login, Var d
 
 /**
  *
+ * @param orgao
+ * @param status
+ * @return Var
+ */
+// Descreva esta função...
+public static Var ObterSolicitacaoFeriasPorOrgaoEStatus(Var orgao, Var status) throws Exception {
+ return new Callable<Var>() {
+
+   private Var item = Var.VAR_NULL;
+
+   public Var call() throws Exception {
+    item = cronapi.database.Operations.query(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf("select s.periodoConcessao.forcaTrabalho.nome as nomeFuncionario, s.periodoConcessao.forcaTrabalho.matricula as matriculaFuncionario, s.id as solicitacaoId, s.justificativa as justificativa, s.status as status, s.utilizaAbono as utilizaAbono, \ns.adiantaDecimo as adiantaDecimo, s.dividir as dividir, s.dataPeriodo1Inicio as dataPeriodo1Inicio, \ns.dataPeriodo1Fim as dataPeriodo1Fim, s.dataPeriodo2Inicio as dataPeriodo2Inicio, s.dataPeriodo2Fim as dataPeriodo2Fim, \ns.dataPeriodo3Inicio as dataPeriodo3Inicio, s.dataPeriodo3Fim as dataPeriodo3Fim, \nCONCAT(extract(day from s.dataPeriodo1Inicio),\'/\', extract(month from s.dataPeriodo1Inicio), \'/\', extract(year from s.dataPeriodo1Inicio),\n\' à \', extract(day from s.dataPeriodo1Fim),\'/\', extract(month from s.dataPeriodo1Fim), \'/\', extract(year from s.dataPeriodo1Fim)),\nCONCAT(extract(day from s.dataPeriodo2Inicio),\'/\', extract(month from s.dataPeriodo2Inicio), \'/\', extract(year from s.dataPeriodo2Inicio),\n\' à \', extract(day from s.dataPeriodo2Fim),\'/\', extract(month from s.dataPeriodo2Fim), \'/\', extract(year from s.dataPeriodo2Fim)),\nCONCAT(extract(day from s.dataPeriodo3Inicio),\'/\', extract(month from s.dataPeriodo3Inicio), \'/\', extract(year from s.dataPeriodo3Inicio),\n\' à \', extract(day from s.dataPeriodo3Fim),\'/\', extract(month from s.dataPeriodo3Fim), \'/\', extract(year from s.dataPeriodo3Fim))\nfrom SolicitacaoFerias s, Orgao o  \nwhere o.codigoForcaTrabalho = s.periodoConcessao.forcaTrabalho.id \nAND (:orgaoId IS NULL or o.id = :orgaoId)   \nAND (:statusId IS NULL or s.status = :statusId)"),Var.valueOf("orgaoId",orgao),Var.valueOf("orgaoId",orgao),Var.valueOf("statusId",status),Var.valueOf("statusId",status));
+    return item;
+   }
+ }.call();
+}
+
+/**
+ *
  * @param param_solicitacaoFerias
  * @return Var
  */
