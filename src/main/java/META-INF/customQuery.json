@@ -668,6 +668,7 @@
         "namespace": "blockly.Ferias",
         "sourcePath": "src/main/java/blockly/Ferias.blockly",
         "language": "java",
+        "class": "blockly.Ferias",
         "methods": [
           {
             "name": "SalvarSolicitacaoFerias",
@@ -765,7 +766,98 @@
     },
     "events": {},
     "defaultValues": {},
-    "defaultValuesProperties": {},
+    "defaultValuesProperties": {
+      "dataPeriodo1Fim": {
+        "key": false,
+        "nullable": true,
+        "type": "DateTime"
+      },
+      "dataPeriodo1Inicio": {
+        "key": false,
+        "nullable": true,
+        "type": "DateTime"
+      },
+      "statusDescricao": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "solicitacaoId": {
+        "key": false,
+        "nullable": true,
+        "type": "Int32"
+      },
+      "utilizaAbono": {
+        "key": false,
+        "nullable": true,
+        "type": "Int16"
+      },
+      "dataPeriodo2Inicio": {
+        "key": false,
+        "nullable": true,
+        "type": "DateTime"
+      },
+      "adiantaDecimo": {
+        "key": false,
+        "nullable": true,
+        "type": "Int16"
+      },
+      "justificativa": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "dataPeriodo3Inicio": {
+        "key": false,
+        "nullable": true,
+        "type": "DateTime"
+      },
+      "periodo3": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "dividir": {
+        "key": false,
+        "nullable": true,
+        "type": "Int16"
+      },
+      "periodo2": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "nomeFuncionario": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "dataPeriodo3Fim": {
+        "key": false,
+        "nullable": true,
+        "type": "DateTime"
+      },
+      "dataPeriodo2Fim": {
+        "key": false,
+        "nullable": true,
+        "type": "DateTime"
+      },
+      "periodo1": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      },
+      "status": {
+        "key": false,
+        "nullable": true,
+        "type": "Int16"
+      },
+      "matriculaFuncionario": {
+        "key": false,
+        "nullable": true,
+        "type": "String"
+      }
+    },
     "security": {},
     "calcFields": {},
     "calcFieldsSecurity": {},

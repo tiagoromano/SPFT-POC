@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="Ferias" ruleName="Ferias" ruleSynchronous="false" ruleTimeout="" ruleType="I">
-  <metadata scale="1" scrollx="1420.4" scrolly="-562" target="1p:@PcWwQI0A._4bupyW"/>
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="Ferias" ruleName="Ferias" ruleSynchronous="false" ruleTimeout="300" ruleType="E">
+  <metadata scale="1" scrollx="1630.4" scrolly="-2818.4999999999986" target="X;B{C1!^!@KQ49;jOPRc"/>
   <block colour="#fca03b" id="B5o.u7fs/9ul7UnqLuP|" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1456" y="-105">
     <mutation>
       <arg name="solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;"/>
@@ -448,26 +448,11 @@
                                                                                     <value name="ARG0">
                                                                                       <block colour="#fca03b" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="cPsMm,!2k}]Yay%`BJLP" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;GerarSolicitacaoFerias&quot; e usa seu retorno." type="procedures_callreturn">
                                                                                         <mutation name="GerarSolicitacaoFerias" return-raw-type="undefined">
-                                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;"/>
-                                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="solicitacaoFeriasId"/>
-                                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="periodoConcessao&lt;SPFT.entity.PeriodoConcessao&gt;"/>
+                                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;"/>
+                                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="soliFerId"/>
+                                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="periodoConcessao&amp;lt;SPFT.entity.PeriodoConcessao&amp;gt;"/>
                                                                                           <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="éAdminOuGerente"/>
                                                                                         </mutation>
-                                                                                        <value name="ARG0">
-                                                                                          <block colour="#0088ee" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="N!%nGW$6lT+oDFIn]M4q" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                                                            <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                        <value name="ARG1">
-                                                                                          <block colour="#0088ee" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="Pjevq/[SN6E!]mt#:Y,A" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                                                            <field name="VAR">solicitacaoFeriasIdCorrente</field>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                        <value name="ARG2">
-                                                                                          <block colour="#0088ee" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="o{.*1KH!F:P#bQdX2L7#" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                                                            <field name="VAR">periodoConcessao&lt;SPFT.entity.PeriodoConcessao&gt;</field>
-                                                                                          </block>
-                                                                                        </value>
                                                                                         <value name="ARG3">
                                                                                           <block colour="#0088ee" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="*G0Q)eFsmGz12gG2wB??" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
                                                                                             <field name="VAR">éAdminOuGerente</field>
@@ -483,7 +468,7 @@
                                                                                         <value name="ARG0">
                                                                                           <block colour="#fca03b" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="]ts|mnPG2cXrV^9Ni(I6" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;GerarHistoricoSolicitacao&quot; e usa seu retorno." type="procedures_callreturn">
                                                                                             <mutation name="GerarHistoricoSolicitacao" return-raw-type="undefined">
-                                                                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="solicitacaoFeriasId"/>
+                                                                                              <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="soliFerId"/>
                                                                                               <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="forcaTrabalhoId"/>
                                                                                               <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;"/>
                                                                                             </mutation>
@@ -595,21 +580,11 @@
                                                                             <value name="VALUE">
                                                                               <block colour="#fca03b" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="Z:$K+6}dX9b2A+Rx)Tp~" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;GerarSolicitacaoFerias&quot; e usa seu retorno." type="procedures_callreturn">
                                                                                 <mutation name="GerarSolicitacaoFerias" return-raw-type="undefined">
-                                                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;"/>
-                                                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="solicitacaoFeriasId"/>
-                                                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="periodoConcessao&lt;SPFT.entity.PeriodoConcessao&gt;"/>
+                                                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;"/>
+                                                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="soliFerId"/>
+                                                                                  <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="periodoConcessao&amp;lt;SPFT.entity.PeriodoConcessao&amp;gt;"/>
                                                                                   <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="éAdminOuGerente"/>
                                                                                 </mutation>
-                                                                                <value name="ARG0">
-                                                                                  <block colour="#0088ee" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="tQoa`(*PoG4y0H3tnO?2" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                                                    <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
-                                                                                  </block>
-                                                                                </value>
-                                                                                <value name="ARG2">
-                                                                                  <block colour="#0088ee" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="_]fq;K@LtlR+*+d!FU8s" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                                                    <field name="VAR">periodoConcessao&lt;SPFT.entity.PeriodoConcessao&gt;</field>
-                                                                                  </block>
-                                                                                </value>
                                                                                 <value name="ARG3">
                                                                                   <block colour="#0088ee" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="J8)%}h749Cfwb.b(PI_." origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
                                                                                     <field name="VAR">éAdminOuGerente</field>
@@ -635,7 +610,7 @@
                                                                                     <value name="ARG0">
                                                                                       <block colour="#fca03b" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="S!1F^V6AK^bz|+9oc{x]" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;GerarHistoricoSolicitacao&quot; e usa seu retorno." type="procedures_callreturn">
                                                                                         <mutation name="GerarHistoricoSolicitacao" return-raw-type="undefined">
-                                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="solicitacaoFeriasId"/>
+                                                                                          <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="soliFerId"/>
                                                                                           <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="forcaTrabalhoId"/>
                                                                                           <arg cronapi-raw-type="undefined" cronapi-type="undefined" name="solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;"/>
                                                                                         </mutation>
@@ -716,7 +691,7 @@
       </block>
     </value>
   </block>
-  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1113" y="321">
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1113" y="343">
     <mutation>
       <arg name="login"/>
     </mutation>
@@ -1267,7 +1242,7 @@
         <field name="VAR">item</field>
         <value name="VALUE">
           <block colour="#aa2f00" dependencyby="1p:@PcWwQI0A._4bupyW" id="3kwY+0S:g%k/K]X=X53F" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
-            <mutation data="%7B%22queryBuilderJson%22:%7B%22isEmpty%22:true,%22isRawSql%22:true,%22sqlContent%22:%22select%20s.periodoConcessao.forcaTrabalho.nome%20as%20nomeFuncionario,%20s.periodoConcessao.forcaTrabalho.matricula%20as%20matriculaFuncionario,%20s.id%20as%20solicitacaoId,%20s.justificativa%20as%20justificativa,%20s.status%20as%20status,%20s.utilizaAbono%20as%20utilizaAbono,%20%5Cns.adiantaDecimo%20as%20adiantaDecimo,%20s.dividir%20as%20dividir,%20s.dataPeriodo1Inicio%20as%20dataPeriodo1Inicio,%20%5Cns.dataPeriodo1Fim%20as%20dataPeriodo1Fim,%20s.dataPeriodo2Inicio%20as%20dataPeriodo2Inicio,%20s.dataPeriodo2Fim%20as%20dataPeriodo2Fim,%20%5Cns.dataPeriodo3Inicio%20as%20dataPeriodo3Inicio,%20s.dataPeriodo3Fim%20as%20dataPeriodo3Fim,%20%5CnCONCAT(extract(day%20from%20s.dataPeriodo1Inicio),'/',%20extract(month%20from%20s.dataPeriodo1Inicio),%20'/',%20extract(year%20from%20s.dataPeriodo1Inicio),%5Cn'%20%C3%A0%20',%20extract(day%20from%20s.dataPeriodo1Fim),'/',%20extract(month%20from%20s.dataPeriodo1Fim),%20'/',%20extract(year%20from%20s.dataPeriodo1Fim)),%5CnCONCAT(extract(day%20from%20s.dataPeriodo2Inicio),'/',%20extract(month%20from%20s.dataPeriodo2Inicio),%20'/',%20extract(year%20from%20s.dataPeriodo2Inicio),%5Cn'%20%C3%A0%20',%20extract(day%20from%20s.dataPeriodo2Fim),'/',%20extract(month%20from%20s.dataPeriodo2Fim),%20'/',%20extract(year%20from%20s.dataPeriodo2Fim)),%5CnCONCAT(extract(day%20from%20s.dataPeriodo3Inicio),'/',%20extract(month%20from%20s.dataPeriodo3Inicio),%20'/',%20extract(year%20from%20s.dataPeriodo3Inicio),%5Cn'%20%C3%A0%20',%20extract(day%20from%20s.dataPeriodo3Fim),'/',%20extract(month%20from%20s.dataPeriodo3Fim),%20'/',%20extract(year%20from%20s.dataPeriodo3Fim))%5Cnfrom%20SolicitacaoFerias%20s,%20Orgao%20o%20%20%5Cnwhere%20o.codigoForcaTrabalho%20=%20s.periodoConcessao.forcaTrabalho.id%20%5CnAND%20(:orgaoId%20IS%20NULL%20or%20o.id%20=%20:orgaoId)%20%20%20%5CnAND%20(:statusId%20IS%20NULL%20or%20s.status%20=%20:statusId)%20%20%20%22,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22SolicitacaoFerias%22,%22entityFullName%22:%22SPFT.entity.SolicitacaoFerias%22,%22filter%22:%22select%20s.periodoConcessao.forcaTrabalho.nome%20as%20nomeFuncionario,%20s.periodoConcessao.forcaTrabalho.matricula%20as%20matriculaFuncionario,%20s.id%20as%20solicitacaoId,%20s.justificativa%20as%20justificativa,%20s.status%20as%20status,%20s.utilizaAbono%20as%20utilizaAbono,%20%5Cns.adiantaDecimo%20as%20adiantaDecimo,%20s.dividir%20as%20dividir,%20s.dataPeriodo1Inicio%20as%20dataPeriodo1Inicio,%20%5Cns.dataPeriodo1Fim%20as%20dataPeriodo1Fim,%20s.dataPeriodo2Inicio%20as%20dataPeriodo2Inicio,%20s.dataPeriodo2Fim%20as%20dataPeriodo2Fim,%20%5Cns.dataPeriodo3Inicio%20as%20dataPeriodo3Inicio,%20s.dataPeriodo3Fim%20as%20dataPeriodo3Fim,%20%5CnCONCAT(extract(day%20from%20s.dataPeriodo1Inicio),'/',%20extract(month%20from%20s.dataPeriodo1Inicio),%20'/',%20extract(year%20from%20s.dataPeriodo1Inicio),%5Cn'%20%C3%A0%20',%20extract(day%20from%20s.dataPeriodo1Fim),'/',%20extract(month%20from%20s.dataPeriodo1Fim),%20'/',%20extract(year%20from%20s.dataPeriodo1Fim)),%5CnCONCAT(extract(day%20from%20s.dataPeriodo2Inicio),'/',%20extract(month%20from%20s.dataPeriodo2Inicio),%20'/',%20extract(year%20from%20s.dataPeriodo2Inicio),%5Cn'%20%C3%A0%20',%20extract(day%20from%20s.dataPeriodo2Fim),'/',%20extract(month%20from%20s.dataPeriodo2Fim),%20'/',%20extract(year%20from%20s.dataPeriodo2Fim)),%5CnCONCAT(extract(day%20from%20s.dataPeriodo3Inicio),'/',%20extract(month%20from%20s.dataPeriodo3Inicio),%20'/',%20extract(year%20from%20s.dataPeriodo3Inicio),%5Cn'%20%C3%A0%20',%20extract(day%20from%20s.dataPeriodo3Fim),'/',%20extract(month%20from%20s.dataPeriodo3Fim),%20'/',%20extract(year%20from%20s.dataPeriodo3Fim))%5Cnfrom%20SolicitacaoFerias%20s,%20Orgao%20o%20%20%5Cnwhere%20o.codigoForcaTrabalho%20=%20s.periodoConcessao.forcaTrabalho.id%20%5CnAND%20(:orgaoId%20IS%20NULL%20or%20o.id%20=%20:orgaoId)%20%20%20%5CnAND%20(:statusId%20IS%20NULL%20or%20s.status%20=%20:statusId)%22,%22params%22:%22%5B%5C%22orgaoId%5C%22,%5C%22orgaoId%5C%22,%5C%22statusId%5C%22,%5C%22statusId%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isEmpty%22:true,%22isRawSql%22:true,%22sqlContent%22:%22select%20s.periodoConcessao.forcaTrabalho.nome%20as%20nomeFuncionario,%20s.periodoConcessao.forcaTrabalho.matricula%20as%20matriculaFuncionario,%20s.id%20as%20solicitacaoId,%20s.justificativa%20as%20justificativa,%20%5Cns.status%20as%20status,%20%5CnCASE%20WHEN%20(s.status%20=%201)%20THEN%20'Solicitado'%20WHEN%20(s.status%20=%202)%20THEN%20'Aprovado'%20WHEN%20(s.status%20=%203)%20THEN%20'N%C3%A3o%20Aprovado'%20ELSE%20'Efetivado'%20END%20as%20statusDescricao,%5Cns.utilizaAbono%20as%20utilizaAbono,%20%5Cns.adiantaDecimo%20as%20adiantaDecimo,%20s.dividir%20as%20dividir,%20s.dataPeriodo1Inicio%20as%20dataPeriodo1Inicio,%20%5Cns.dataPeriodo1Fim%20as%20dataPeriodo1Fim,%20s.dataPeriodo2Inicio%20as%20dataPeriodo2Inicio,%20s.dataPeriodo2Fim%20as%20dataPeriodo2Fim,%20%5Cns.dataPeriodo3Inicio%20as%20dataPeriodo3Inicio,%20s.dataPeriodo3Fim%20as%20dataPeriodo3Fim,%20%5CnCONCAT(extract(day%20from%20s.dataPeriodo1Inicio),'/',%20extract(month%20from%20s.dataPeriodo1Inicio),%20'/',%20extract(year%20from%20s.dataPeriodo1Inicio),%5Cn'%20%C3%A0%20',%20extract(day%20from%20s.dataPeriodo1Fim),'/',%20extract(month%20from%20s.dataPeriodo1Fim),%20'/',%20extract(year%20from%20s.dataPeriodo1Fim)),%5CnCONCAT(extract(day%20from%20s.dataPeriodo2Inicio),'/',%20extract(month%20from%20s.dataPeriodo2Inicio),%20'/',%20extract(year%20from%20s.dataPeriodo2Inicio),%5Cn'%20%C3%A0%20',%20extract(day%20from%20s.dataPeriodo2Fim),'/',%20extract(month%20from%20s.dataPeriodo2Fim),%20'/',%20extract(year%20from%20s.dataPeriodo2Fim)),%5CnCONCAT(extract(day%20from%20s.dataPeriodo3Inicio),'/',%20extract(month%20from%20s.dataPeriodo3Inicio),%20'/',%20extract(year%20from%20s.dataPeriodo3Inicio),%5Cn'%20%C3%A0%20',%20extract(day%20from%20s.dataPeriodo3Fim),'/',%20extract(month%20from%20s.dataPeriodo3Fim),%20'/',%20extract(year%20from%20s.dataPeriodo3Fim))%5Cnfrom%20SolicitacaoFerias%20s,%20Orgao%20o%20%20%5Cnwhere%20o.codigoForcaTrabalho%20=%20s.periodoConcessao.forcaTrabalho.id%20%5CnAND%20(:orgaoId%20IS%20NULL%20or%20o.id%20=%20:orgaoId)%20%20%20%5CnAND%20(:statusId%20IS%20NULL%20or%20s.status%20=%20:statusId)%20%20%20%22,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22SolicitacaoFerias%22,%22entityFullName%22:%22SPFT.entity.SolicitacaoFerias%22,%22filter%22:%22select%20s.periodoConcessao.forcaTrabalho.nome%20as%20nomeFuncionario,%20s.periodoConcessao.forcaTrabalho.matricula%20as%20matriculaFuncionario,%20s.id%20as%20solicitacaoId,%20s.justificativa%20as%20justificativa,%20%5Cns.status%20as%20status,%20%5CnCASE%20WHEN%20(s.status%20=%201)%20THEN%20'Solicitado'%20WHEN%20(s.status%20=%202)%20THEN%20'Aprovado'%20WHEN%20(s.status%20=%203)%20THEN%20'N%C3%A3o%20Aprovado'%20ELSE%20'Efetivado'%20END%20as%20statusDescricao,%5Cns.utilizaAbono%20as%20utilizaAbono,%20%5Cns.adiantaDecimo%20as%20adiantaDecimo,%20s.dividir%20as%20dividir,%20s.dataPeriodo1Inicio%20as%20dataPeriodo1Inicio,%20%5Cns.dataPeriodo1Fim%20as%20dataPeriodo1Fim,%20s.dataPeriodo2Inicio%20as%20dataPeriodo2Inicio,%20s.dataPeriodo2Fim%20as%20dataPeriodo2Fim,%20%5Cns.dataPeriodo3Inicio%20as%20dataPeriodo3Inicio,%20s.dataPeriodo3Fim%20as%20dataPeriodo3Fim,%20%5CnCONCAT(extract(day%20from%20s.dataPeriodo1Inicio),'/',%20extract(month%20from%20s.dataPeriodo1Inicio),%20'/',%20extract(year%20from%20s.dataPeriodo1Inicio),%5Cn'%20%C3%A0%20',%20extract(day%20from%20s.dataPeriodo1Fim),'/',%20extract(month%20from%20s.dataPeriodo1Fim),%20'/',%20extract(year%20from%20s.dataPeriodo1Fim)),%5CnCONCAT(extract(day%20from%20s.dataPeriodo2Inicio),'/',%20extract(month%20from%20s.dataPeriodo2Inicio),%20'/',%20extract(year%20from%20s.dataPeriodo2Inicio),%5Cn'%20%C3%A0%20',%20extract(day%20from%20s.dataPeriodo2Fim),'/',%20extract(month%20from%20s.dataPeriodo2Fim),%20'/',%20extract(year%20from%20s.dataPeriodo2Fim)),%5CnCONCAT(extract(day%20from%20s.dataPeriodo3Inicio),'/',%20extract(month%20from%20s.dataPeriodo3Inicio),%20'/',%20extract(year%20from%20s.dataPeriodo3Inicio),%5Cn'%20%C3%A0%20',%20extract(day%20from%20s.dataPeriodo3Fim),'/',%20extract(month%20from%20s.dataPeriodo3Fim),%20'/',%20extract(year%20from%20s.dataPeriodo3Fim))%5Cnfrom%20SolicitacaoFerias%20s,%20Orgao%20o%20%20%5Cnwhere%20o.codigoForcaTrabalho%20=%20s.periodoConcessao.forcaTrabalho.id%20%5CnAND%20(:orgaoId%20IS%20NULL%20or%20o.id%20=%20:orgaoId)%20%20%20%5CnAND%20(:statusId%20IS%20NULL%20or%20s.status%20=%20:statusId)%22,%22params%22:%22%5B%5C%22orgaoId%5C%22,%5C%22orgaoId%5C%22,%5C%22statusId%5C%22,%5C%22statusId%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
               <arg name="orgaoId"/>
               <arg name="orgaoId"/>
               <arg name="statusId"/>
@@ -1508,7 +1483,7 @@
   <block colour="#fca03b" id="gc#^U{~_h|G!zl([FXuL" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1332" y="897">
     <mutation>
       <arg name="solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;"/>
-      <arg name="solicitacaoFeriasId"/>
+      <arg name="soliFerId"/>
       <arg name="periodoConcessao&amp;lt;SPFT.entity.PeriodoConcessao&amp;gt;"/>
       <arg name="éAdminOuGerente"/>
     </mutation>
@@ -1523,14 +1498,14 @@
             </mutation>
             <value name="ARG0">
               <block colour="#0088ee" dependencyby="gc#^U{~_h|G!zl([FXuL" id="SMAlEF9|=N/$4212?H`%" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                <field name="VAR">solicitacaoFeriasId</field>
+                <field name="VAR">soliFerId</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO0">
           <block colour="#0088ee" dependencyby="gc#^U{~_h|G!zl([FXuL" id="N;g,.Sc4QKh4vH/eaax{" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
-            <field name="VAR">solicitacaoFeriasId</field>
+            <field name="VAR">soliFerId</field>
             <value name="VALUE">
               <block colour="#fca03b" dependencyby="gc#^U{~_h|G!zl([FXuL" id="@(7x;~:2Ka`*q`TgF%UI" origintype="procedures_callreturn" output="true" tooltip="Executa a função definida pelo usuário &quot;CriarId&quot; e usa seu retorno." type="procedures_callreturn">
                 <mutation name="CriarId" return-raw-type="undefined">
@@ -1581,7 +1556,7 @@
             </value>
             <value name="PARAM2">
               <block colour="#0088ee" dependencyby="gc#^U{~_h|G!zl([FXuL" id="[g{1*!tTM|@7@0G5[jno" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                <field name="VAR">solicitacaoFeriasId</field>
+                <field name="VAR">soliFerId</field>
               </block>
             </value>
             <next>
@@ -1712,9 +1687,21 @@
       </block>
     </value>
   </block>
+  <block colour="#0088ee" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="N!%nGW$6lT+oDFIn]M4q" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get" x="-882" y="1291">
+    <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+  </block>
+  <block colour="#0088ee" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="Pjevq/[SN6E!]mt#:Y,A" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get" x="-882" y="1316">
+    <field name="VAR">solicitacaoFeriasIdCorrente</field>
+  </block>
+  <block colour="#0088ee" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="o{.*1KH!F:P#bQdX2L7#" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get" x="-882" y="1341">
+    <field name="VAR">periodoConcessao&lt;SPFT.entity.PeriodoConcessao&gt;</field>
+  </block>
+  <block colour="#0088ee" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="tQoa`(*PoG4y0H3tnO?2" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get" x="-625" y="1826">
+    <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+  </block>
   <block colour="#fca03b" id="X;B{C1!^!@KQ49;jOPRc" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1492" y="1913">
     <mutation>
-      <arg name="solicitacaoFeriasId"/>
+      <arg name="soliFerId"/>
       <arg name="forcaTrabalhoId"/>
       <arg name="solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;"/>
     </mutation>
@@ -1791,7 +1778,7 @@
                 </mutation>
                 <value name="ARG0">
                   <block colour="#0088ee" dependencyby="X;B{C1!^!@KQ49;jOPRc" id="/Lht^ev?dlnOajXh7Xp*" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                    <field name="VAR">solicitacaoFeriasId</field>
+                    <field name="VAR">soliFerId</field>
                   </block>
                 </value>
               </block>
@@ -2084,7 +2071,7 @@
                     <field name="TEXT">HistoricoAcaoSolicitacao</field>
                   </shadow>
                   <block colour="#0088ee" dependencyby="X;B{C1!^!@KQ49;jOPRc" id="!q4FVsn3btgNGE7q68@#" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                    <field name="VAR">solicitacaoFeriasId</field>
+                    <field name="VAR">soliFerId</field>
                   </block>
                 </value>
                 <next>
@@ -2119,5 +2106,8 @@
         <field name="VAR">historicoAcaoSolicitacao&lt;SPFT.entity.HistoricoAcaoSolicitacao&gt;</field>
       </block>
     </value>
+  </block>
+  <block colour="#0088ee" dependencyby="B5o.u7fs/9ul7UnqLuP|" id="_]fq;K@LtlR+*+d!FU8s" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get" x="-625" y="1876">
+    <field name="VAR">periodoConcessao&lt;SPFT.entity.PeriodoConcessao&gt;</field>
   </block>
 </blockly>
