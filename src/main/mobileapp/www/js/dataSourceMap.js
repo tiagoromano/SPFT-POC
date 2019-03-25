@@ -20,4 +20,3 @@ window.dataSourceMap["SPFT.Configuracao"] = { customId: "SPFT.entity.Configuraca
 window.dataSourceMap["app.Role"] = { customId: "app.entity.Role", serviceUrl: "api/cronapi/crud/app.entity.Role", serviceUrlODATA: "/api/cronapi/odata/v2/app/Role" };
 window.dataSourceMap["SPFT.query535810"] = { customId: "ObterSolicitacaoFeriasPorOrgaoEStatus", serviceUrl: "api/cronapi/odata/v2/ObterSolicitacaoFeriasPorOrgaoEStatus/", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/ObterSolicitacaoFeriasPorOrgaoEStatus" };
 window.dataSourceMap["SPFT.query133907"] = { customId: "ObterGerenciasUsuarioLogado", serviceUrl: "api/cronapi/query/ObterGerenciasUsuarioLogado/", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/ObterGerenciasUsuarioLogado" };
-window.dataSourceMap["SPFT.query297610"] = { customId: "query297610", serviceUrl: "api/cronapi/odata/v2/query297610/", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/query297610" };
