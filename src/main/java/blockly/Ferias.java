@@ -283,7 +283,7 @@ public static Var SalvarSolicitacaoFerias(@PathVariable("param_solicitacaoFerias
             cronapi.database.Operations.update(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf(GerarPeriodoConcessao(periodoConcessao, periodoConcessaoIdCorrente, forcaTrabalhoId)));
             System.out.println(Var.valueOf("SolicitacaoFerias").getObjectAsString());
             System.out.println(solicitacaoFerias.getObjectAsString());
-            cronapi.database.Operations.update(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf(GerarSolicitacaoFerias(Var.VAR_NULL, Var.VAR_NULL, Var.VAR_NULL, _C3_A9AdminOuGerente)));
+            cronapi.database.Operations.update(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf(GerarSolicitacaoFerias(solicitacaoFerias, solicitacaoFeriasIdCorrente, periodoConcessao, _C3_A9AdminOuGerente)));
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf(GerarHistoricoSolicitacao(solicitacaoFeriasIdCorrente, forcaTrabalhoId, solicitacaoFerias)));
         } else {
             System.out.println(Var.valueOf("insere").getObjectAsString());
@@ -292,7 +292,7 @@ public static Var SalvarSolicitacaoFerias(@PathVariable("param_solicitacaoFerias
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf(GerarPeriodoConcessao(periodoConcessao, Var.VAR_NULL, forcaTrabalhoId)));
             System.out.println(Var.valueOf("SolicitacaoFerias").getObjectAsString());
             System.out.println(solicitacaoFerias.getObjectAsString());
-            solicitacaoFerias = Var.valueOf(GerarSolicitacaoFerias(Var.VAR_NULL, Var.VAR_NULL, Var.VAR_NULL, _C3_A9AdminOuGerente));
+            solicitacaoFerias = Var.valueOf(GerarSolicitacaoFerias(solicitacaoFerias, Var.VAR_NULL, periodoConcessao, _C3_A9AdminOuGerente));
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.SolicitacaoFerias"),solicitacaoFerias);
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf(GerarHistoricoSolicitacao(cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("id")), forcaTrabalhoId, solicitacaoFerias)));
         }

@@ -657,102 +657,23 @@
   "query535810": {
     "customId": "ObterSolicitacaoFeriasPorOrgaoEStatus",
     "queryName": "Obter Solicitacao de Ferias por orgao e status",
-    "sourceType": "blockly",
-    "blockly": {
-      "type": "server",
-      "blocklyMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus",
-      "blocklyClass": "blockly.Ferias",
-      "blocklyLanguage": "java",
-      "blocklyParams": [],
-      "blocklyJson": {
-        "namespace": "blockly.Ferias",
-        "sourcePath": "src/main/java/blockly/Ferias.blockly",
-        "language": "java",
-        "class": "blockly.Ferias",
-        "methods": [
-          {
-            "name": "SalvarSolicitacaoFerias",
-            "hasReturn": "true",
-            "params": [
-              "solicitacaoFerias\u0026lt;SPFT.entity.SolicitacaoFerias\u0026gt;"
-            ]
-          },
-          {
-            "name": "ObterPeriodosConcessivos",
-            "hasReturn": "true",
-            "params": [
-              "login"
-            ]
-          },
-          {
-            "name": "GerarPeriodoConcessao",
-            "hasReturn": "true",
-            "params": [
-              "periodoConcessao\u0026lt;SPFT.entity.PeriodoConcessao\u0026gt;",
-              "periodoConcessaoId",
-              "forcaTrabalhoId"
-            ]
-          },
-          {
-            "name": "ObterSolicitacaoFeriasPorOrgaoEStatus",
-            "hasReturn": "true",
-            "params": [
-              "orgao",
-              "status"
-            ]
-          },
-          {
-            "name": "ObterFeriasExistenteDoPeriodoConcessivo",
-            "hasReturn": "true",
-            "params": [
-              "login",
-              "dataConcessaoInicial",
-              "dataConcessaoFinal"
-            ]
-          },
-          {
-            "name": "GerarSolicitacaoFerias",
-            "hasReturn": "true",
-            "params": [
-              "solicitacaoFerias\u0026lt;SPFT.entity.SolicitacaoFerias\u0026gt;",
-              "soliFerId",
-              "periodoConcessao\u0026lt;SPFT.entity.PeriodoConcessao\u0026gt;",
-              "éAdminOuGerente"
-            ]
-          },
-          {
-            "name": "CriarId",
-            "hasReturn": "true",
-            "params": [
-              "Id"
-            ]
-          },
-          {
-            "name": "GerarHistoricoSolicitacao",
-            "hasReturn": "true",
-            "params": [
-              "soliFerId",
-              "forcaTrabalhoId",
-              "solicitacaoFerias\u0026lt;SPFT.entity.SolicitacaoFerias\u0026gt;"
-            ]
-          }
-        ]
-      },
-      "blocklyGETMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus",
-      "blocklyPOSTMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus",
-      "blocklyPUTMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus",
-      "blocklyDELETEMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus",
-      "blocklyFILTERMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus",
-      "blocklyCOUNTMethod": "ObterSolicitacaoFeriasPorOrgaoEStatus"
+    "sourceType": "entityFullName",
+    "entitySimpleName": "SolicitacaoFerias",
+    "entityFullName": "SPFT.entity.SolicitacaoFerias",
+    "query": {
+      "isEmpty": true,
+      "isRawSql": true,
+      "sqlContent": "select s.periodoConcessao.forcaTrabalho.nome as nomeFuncionario, s.periodoConcessao.forcaTrabalho.matricula as matriculaFuncionario, s.id as solicitacaoId, s.justificativa as justificativa, \ns.status as status, \nCASE WHEN (s.status \u003d 1) THEN \u0027Solicitado\u0027 WHEN (s.status \u003d 2) THEN \u0027Aprovado\u0027 WHEN (s.status \u003d 3) THEN \u0027Não Aprovado\u0027 ELSE \u0027Efetivado\u0027 END as statusDescricao,\ns.utilizaAbono as utilizaAbono, \ns.adiantaDecimo as adiantaDecimo, s.dividir as dividir, s.dataPeriodo1Inicio as dataPeriodo1Inicio, \ns.dataPeriodo1Fim as dataPeriodo1Fim, s.dataPeriodo2Inicio as dataPeriodo2Inicio, s.dataPeriodo2Fim as dataPeriodo2Fim, \ns.dataPeriodo3Inicio as dataPeriodo3Inicio, s.dataPeriodo3Fim as dataPeriodo3Fim, \nCONCAT(extract(day from s.dataPeriodo1Inicio),\u0027/\u0027, extract(month from s.dataPeriodo1Inicio), \u0027/\u0027, extract(year from s.dataPeriodo1Inicio),\n\u0027 à \u0027, extract(day from s.dataPeriodo1Fim),\u0027/\u0027, extract(month from s.dataPeriodo1Fim), \u0027/\u0027, extract(year from s.dataPeriodo1Fim)),\nCONCAT(extract(day from s.dataPeriodo2Inicio),\u0027/\u0027, extract(month from s.dataPeriodo2Inicio), \u0027/\u0027, extract(year from s.dataPeriodo2Inicio),\n\u0027 à \u0027, extract(day from s.dataPeriodo2Fim),\u0027/\u0027, extract(month from s.dataPeriodo2Fim), \u0027/\u0027, extract(year from s.dataPeriodo2Fim)),\nCONCAT(extract(day from s.dataPeriodo3Inicio),\u0027/\u0027, extract(month from s.dataPeriodo3Inicio), \u0027/\u0027, extract(year from s.dataPeriodo3Inicio),\n\u0027 à \u0027, extract(day from s.dataPeriodo3Fim),\u0027/\u0027, extract(month from s.dataPeriodo3Fim), \u0027/\u0027, extract(year from s.dataPeriodo3Fim))\nfrom SolicitacaoFerias s, Orgao o  \nwhere o.codigoForcaTrabalho \u003d s.periodoConcessao.forcaTrabalho.id \nAND (:orgaoId IS NULL or o.id \u003d :orgaoId)   \nAND (:statusId IS NULL or s.status \u003d :statusId) ",
+      "multiTenant": true,
+      "paginatorAutomatic": false
     },
-    "query": "",
     "queryParamsValues": [
       {
-        "fieldName": "orgao",
+        "fieldName": "orgaoId",
         "fieldValue": ""
       },
       {
-        "fieldName": "status",
+        "fieldName": "statusId",
         "fieldValue": ""
       }
     ],
@@ -766,26 +687,20 @@
     },
     "events": {},
     "defaultValues": {},
-    "defaultValuesProperties": {
-      "nomeFuncionario": {
-        "key": false,
-        "nullable": true,
-        "type": "String"
-      }
-    },
+    "defaultValuesProperties": {},
     "security": {},
     "calcFields": {},
     "calcFieldsSecurity": {},
     "calcFieldsProperties": {},
     "errorHandles": {},
-    "serviceUrl": "api/cronapi/query/query535810/"
+    "serviceUrl": "api/cronapi/odata/v2/query535810/"
   },
-  "query630950": {
-    "customId": "query630950",
+  "query297610": {
+    "customId": "query297610",
     "queryName": "Nova",
     "sourceType": "entityFullName",
-    "entitySimpleName": "Configuracao",
-    "entityFullName": "SPFT.entity.Configuracao",
+    "entitySimpleName": "SolicitacaoFerias",
+    "entityFullName": "SPFT.entity.SolicitacaoFerias",
     "query": {
       "isEmpty": true,
       "isRawSql": true,
@@ -819,6 +734,6 @@
     "calcFieldsSecurity": {},
     "calcFieldsProperties": {},
     "errorHandles": {},
-    "serviceUrl": "api/cronapi/odata/v2/query630950/"
+    "serviceUrl": "api/cronapi/odata/v2/query297610/"
   }
 }

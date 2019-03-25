@@ -25,6 +25,6 @@
     "cronapp-framework-js": "2.1.14",
     "cronapp-common-js": "18db2afe2bf7342935847902c531a5f773cdc34c",
     "cronapi-js": "2.1.16",
-    "cronapp-lib-js": "87f4dd1ca877c0fb264410468f0b37f665541c98"
+    "cronapp-lib-js": "2.1.3"
   }
 }

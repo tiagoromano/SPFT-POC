@@ -6,8 +6,40 @@ window.blockly.js.blockly.TelaRequestVacationDetail = window.blockly.js.blockly.
 /**
  * Descreva esta função...
  */
+window.blockly.js.blockly.TelaRequestVacationDetail.VerificarDataConflitante = function(DataInicial, DataFinal, dataAChecar) {
+ var item, abonoPecuniario, compDataFinal, compDataInicial, compDias, dat1, dat2, dat2difdat1, dataAtualValidar, dividirFerias, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, primeiraParcelaDecimoTerceiro, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
+  if (this.cronapi.logic.isNullOrEmpty(DataInicial) || this.cronapi.logic.isNullOrEmpty(DataFinal) || this.cronapi.logic.isNullOrEmpty(dataAChecar)) {
+    item = false;
+  } else {
+    item = dataAChecar >= DataInicial && dataAChecar <= DataFinal;
+  }
+  return item;
+}
+
+/**
+ * Descreva esta função...
+ */
+window.blockly.js.blockly.TelaRequestVacationDetail.CriarSolicitacao = function() {
+ var item, abonoPecuniario, compDataFinal, compDataInicial, compDias, dat1, dat2, dat2difdat1, dataAChecar, dataAtualValidar, DataFinal, DataInicial, dividirFerias, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, primeiraParcelaDecimoTerceiro, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
+  if (this.blockly.js.blockly.TelaRequestVacationDetail.ValidarSolicitacao()) {
+    SolicitacaoFerias = this.cronapi.object.newObject({name: 'periodoConcessao', value: this.cronapi.object.newObject({name: 'forcaTrabalho', value: this.cronapi.object.newObject({name: 'codigoLogin', value: this.cronapi.screen.getValueOfField("params.login")})}, {name: 'dataConcessaoInicial', value: this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("params.arquisicaoDataInicial"))}, {name: 'dataConcessaoFinal', value: this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("params.arquisicaoDataFinal"))}, {name: 'dataAquisicaoInicial', value: this.cronapi.dateTime.incYear(this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("params.arquisicaoDataInicial")), -1)}, {name: 'dataAquisicaoFinal', value: this.cronapi.dateTime.incYear(this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("params.arquisicaoDataFinal")), -1)}, {name: 'totalDiasContigente', value: this.blockly.js.blockly.TelaRequestVacationDetail.SomarTotalDiasFerias()})}, {name: 'justificativa', value: this.cronapi.screen.getValueOfField("vars.justificativa")}, {name: 'status', value: undefined}, {name: 'utilizaAbono', value: this.cronapi.screen.getValueOfField("vars.abonoPecuniario") == 'yes' ? 1 : 0}, {name: 'adiantaDecimo', value: this.cronapi.screen.getValueOfField("vars.primParcDecimTerc") == 'yes' ? 1 : 0}, {name: 'dividir', value: this.cronapi.screen.getValueOfField("vars.dividirFerias") == 'no' ? 0 : 1}, {name: 'dataPeriodo1Inicio', value: this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("vars.tr1DataInicio"))}, {name: 'dataPeriodo1Fim', value: this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("vars.tr1DataFinal"))}, {name: 'dataPeriodo2Inicio', value: this.cronapi.logic.isNullOrEmpty(this.cronapi.screen.getValueOfField("vars.tr2DataInicio")) ? null : this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("vars.tr2DataInicio"))}, {name: 'dataPeriodo2Fim', value: this.cronapi.logic.isNullOrEmpty(this.cronapi.screen.getValueOfField("vars.tr2DataFinal")) ? null : this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("vars.tr2DataFinal"))}, {name: 'dataAtualizacaoDate', value: this.cronapi.dateTime.getNow()}, {name: 'dataPeriodo3Inicio', value: this.cronapi.logic.isNullOrEmpty(this.cronapi.screen.getValueOfField("vars.tr3DataInicio")) ? null : this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("vars.tr3DataInicio"))}, {name: 'dataPeriodo3Fim', value: this.cronapi.logic.isNullOrEmpty(this.cronapi.screen.getValueOfField("vars.tr3DataFinal")) ? null : this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("vars.tr3DataFinal"))}, {name: 'dataAtualizacao', value: this.cronapi.dateTime.getNow()});
+    this.cronapi.util.callServerBlocklyAsynchronous('blockly.Ferias:SalvarSolicitacaoFerias', function(sender_item) {
+        item = sender_item;
+      if (item.indexOf('sucesso') + 1 > 0) {
+        this.cronapi.screen.notify('success',item);
+        this.cronapi.screen.changeView("#/home/logged/requestVacation",[ { login : this.cronapi.screen.getValueOfField("params.login") } ]);
+      } else {
+        this.cronapi.screen.notify('error',item);
+      }
+    }.bind(this), SolicitacaoFerias);
+  }
+}
+
+/**
+ * Descreva esta função...
+ */
 window.blockly.js.blockly.TelaRequestVacationDetail.AoEntrar = function() {
- var item, SolicitacaoFeriasCorrente, primeiraParcelaDecimoTerceiro, abonoPecuniario, dat2, dat2difdat1, dat1, lista, DataFinal, DataAChecar, DataInicial, SolicitacaoFerias, totalDias, periodo3Ok, periodo2Ok, periodo1Ok, compDias, compDataInicial, compDataFinal, dividirFerias, podeSolicitarAdian13Sal;
+ var item, abonoPecuniario, compDataFinal, compDataInicial, compDias, dat1, dat2, dat2difdat1, dataAChecar, dataAtualValidar, DataFinal, DataInicial, dividirFerias, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, primeiraParcelaDecimoTerceiro, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
   this.cronapi.util.callServerBlocklyAsynchronous('blockly.Ferias:ObterFeriasExistenteDoPeriodoConcessivo', function(sender_lista) {
       lista = sender_lista;
     if (!this.cronapi.logic.isNullOrEmpty(lista)) {
@@ -67,40 +99,8 @@ window.blockly.js.blockly.TelaRequestVacationDetail.AoEntrar = function() {
 /**
  * Descreva esta função...
  */
-window.blockly.js.blockly.TelaRequestVacationDetail.VerificarDataConflitante = function(DataInicial, DataFinal, DataAChecar) {
- var item, SolicitacaoFeriasCorrente, primeiraParcelaDecimoTerceiro, abonoPecuniario, dat2, dat2difdat1, dat1, lista, SolicitacaoFerias, totalDias, periodo3Ok, periodo2Ok, periodo1Ok, compDias, compDataInicial, compDataFinal, dividirFerias, podeSolicitarAdian13Sal;
-  if (this.cronapi.logic.isNullOrEmpty(DataInicial) || this.cronapi.logic.isNullOrEmpty(DataFinal) || this.cronapi.logic.isNullOrEmpty(DataAChecar)) {
-    item = false;
-  } else {
-    item = DataAChecar >= DataInicial && DataAChecar <= DataFinal;
-  }
-  return item;
-}
-
-/**
- * Descreva esta função...
- */
-window.blockly.js.blockly.TelaRequestVacationDetail.CriarSolicitacao = function() {
- var item, SolicitacaoFeriasCorrente, primeiraParcelaDecimoTerceiro, abonoPecuniario, dat2, dat2difdat1, dat1, lista, DataFinal, DataAChecar, DataInicial, SolicitacaoFerias, totalDias, periodo3Ok, periodo2Ok, periodo1Ok, compDias, compDataInicial, compDataFinal, dividirFerias, podeSolicitarAdian13Sal;
-  if (this.blockly.js.blockly.TelaRequestVacationDetail.ValidarSolicitacao()) {
-    SolicitacaoFerias = this.cronapi.object.newObject({name: 'periodoConcessao', value: this.cronapi.object.newObject({name: 'forcaTrabalho', value: this.cronapi.object.newObject({name: 'codigoLogin', value: this.cronapi.screen.getValueOfField("params.login")})}, {name: 'dataConcessaoInicial', value: this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("params.arquisicaoDataInicial"))}, {name: 'dataConcessaoFinal', value: this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("params.arquisicaoDataFinal"))}, {name: 'dataAquisicaoInicial', value: this.cronapi.dateTime.incYear(this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("params.arquisicaoDataInicial")), -1)}, {name: 'dataAquisicaoFinal', value: this.cronapi.dateTime.incYear(this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("params.arquisicaoDataFinal")), -1)}, {name: 'totalDiasContigente', value: this.blockly.js.blockly.TelaRequestVacationDetail.SomarTotalDiasFerias()})}, {name: 'justificativa', value: this.cronapi.screen.getValueOfField("vars.justificativa")}, {name: 'status', value: undefined}, {name: 'utilizaAbono', value: this.cronapi.screen.getValueOfField("vars.abonoPecuniario") == 'yes' ? 1 : 0}, {name: 'adiantaDecimo', value: this.cronapi.screen.getValueOfField("vars.primParcDecimTerc") == 'yes' ? 1 : 0}, {name: 'dividir', value: this.cronapi.screen.getValueOfField("vars.dividirFerias") == 'no' ? 0 : 1}, {name: 'dataPeriodo1Inicio', value: this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("vars.tr1DataInicio"))}, {name: 'dataPeriodo1Fim', value: this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("vars.tr1DataFinal"))}, {name: 'dataPeriodo2Inicio', value: this.cronapi.logic.isNullOrEmpty(this.cronapi.screen.getValueOfField("vars.tr2DataInicio")) ? null : this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("vars.tr2DataInicio"))}, {name: 'dataPeriodo2Fim', value: this.cronapi.logic.isNullOrEmpty(this.cronapi.screen.getValueOfField("vars.tr2DataFinal")) ? null : this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("vars.tr2DataFinal"))}, {name: 'dataAtualizacaoDate', value: this.cronapi.dateTime.getNow()}, {name: 'dataPeriodo3Inicio', value: this.cronapi.logic.isNullOrEmpty(this.cronapi.screen.getValueOfField("vars.tr3DataInicio")) ? null : this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("vars.tr3DataInicio"))}, {name: 'dataPeriodo3Fim', value: this.cronapi.logic.isNullOrEmpty(this.cronapi.screen.getValueOfField("vars.tr3DataFinal")) ? null : this.cronapi.conversion.stringToDate(this.cronapi.screen.getValueOfField("vars.tr3DataFinal"))}, {name: 'dataAtualizacao', value: this.cronapi.dateTime.getNow()});
-    this.cronapi.util.callServerBlocklyAsynchronous('blockly.Ferias:SalvarSolicitacaoFerias', function(sender_item) {
-        item = sender_item;
-      if (item.indexOf('sucesso') + 1 > 0) {
-        this.cronapi.screen.notify('success',item);
-        this.cronapi.screen.changeView("#/home/logged/requestVacation",[ { login : this.cronapi.screen.getValueOfField("params.login") } ]);
-      } else {
-        this.cronapi.screen.notify('error',item);
-      }
-    }.bind(this), SolicitacaoFerias);
-  }
-}
-
-/**
- * Descreva esta função...
- */
 window.blockly.js.blockly.TelaRequestVacationDetail.EstaDentroPeriodoAquisitivo = function(DataInicial, DataFinal) {
- var item, SolicitacaoFeriasCorrente, primeiraParcelaDecimoTerceiro, abonoPecuniario, dat2, dat2difdat1, dat1, lista, DataAChecar, SolicitacaoFerias, totalDias, periodo3Ok, periodo2Ok, periodo1Ok, compDias, compDataInicial, compDataFinal, dividirFerias, podeSolicitarAdian13Sal;
+ var item, abonoPecuniario, compDataFinal, compDataInicial, compDias, dat1, dat2, dat2difdat1, dataAChecar, dataAtualValidar, dividirFerias, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, primeiraParcelaDecimoTerceiro, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
   if (this.cronapi.logic.isNullOrEmpty(DataInicial) || this.cronapi.logic.isNullOrEmpty(DataFinal)) {
     item = false;
   } else {
@@ -113,7 +113,7 @@ window.blockly.js.blockly.TelaRequestVacationDetail.EstaDentroPeriodoAquisitivo 
  * Descreva esta função...
  */
 window.blockly.js.blockly.TelaRequestVacationDetail.ValidarSolicitacao = function() {
- var item, SolicitacaoFeriasCorrente, primeiraParcelaDecimoTerceiro, abonoPecuniario, dat2, dat2difdat1, dat1, lista, DataFinal, DataAChecar, DataInicial, SolicitacaoFerias, totalDias, periodo3Ok, periodo2Ok, periodo1Ok, compDias, compDataInicial, compDataFinal, dividirFerias, podeSolicitarAdian13Sal;
+ var item, abonoPecuniario, compDataFinal, compDataInicial, compDias, dat1, dat2, dat2difdat1, dataAChecar, dataAtualValidar, DataFinal, DataInicial, dividirFerias, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, primeiraParcelaDecimoTerceiro, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
   item = true;
   if (this.cronapi.logic.isNullOrEmpty(this.cronapi.screen.getValueOfField("vars.dividirFerias"))) {
     this.cronapi.screen.notify('error','Informe se deseja dividir as férias');
@@ -194,7 +194,7 @@ window.blockly.js.blockly.TelaRequestVacationDetail.ValidarSolicitacao = functio
  * Descreva esta função...
  */
 window.blockly.js.blockly.TelaRequestVacationDetail.AdicionaDias = function(compDataInicial, compDias, compDataFinal) {
- var item, SolicitacaoFeriasCorrente, primeiraParcelaDecimoTerceiro, abonoPecuniario, dat2, dat2difdat1, dat1, lista, DataFinal, DataAChecar, DataInicial, SolicitacaoFerias, totalDias, periodo3Ok, periodo2Ok, periodo1Ok, dividirFerias, podeSolicitarAdian13Sal;
+ var item, abonoPecuniario, dat1, dat2, dat2difdat1, dataAChecar, dataAtualValidar, DataFinal, DataInicial, dividirFerias, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, primeiraParcelaDecimoTerceiro, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
   if (!this.cronapi.logic.isNullOrEmpty(this.cronapi.screen.getValueOfField(compDataInicial)) && !this.cronapi.logic.isNullOrEmpty(this.cronapi.screen.getValueOfField(compDias))) {
     this.cronapi.screen.changeValueOfField(compDataFinal, this.cronapi.dateTime.incDay(this.cronapi.screen.getValueOfField(compDataInicial), this.cronapi.screen.getValueOfField(compDias)));
   }
@@ -204,7 +204,7 @@ window.blockly.js.blockly.TelaRequestVacationDetail.AdicionaDias = function(comp
  * Descreva esta função...
  */
 window.blockly.js.blockly.TelaRequestVacationDetail.PodeSolicitarAdiantamento13Salario = function(DataInicial, DataFinal) {
- var item, SolicitacaoFeriasCorrente, primeiraParcelaDecimoTerceiro, abonoPecuniario, dat2, dat2difdat1, dat1, lista, DataAChecar, SolicitacaoFerias, totalDias, periodo3Ok, periodo2Ok, periodo1Ok, compDias, compDataInicial, compDataFinal, dividirFerias, podeSolicitarAdian13Sal;
+ var item, abonoPecuniario, compDataFinal, compDataInicial, compDias, dat1, dat2, dat2difdat1, dataAChecar, dataAtualValidar, dividirFerias, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, primeiraParcelaDecimoTerceiro, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
   if (this.cronapi.logic.isNullOrEmpty(DataInicial) || this.cronapi.logic.isNullOrEmpty(DataFinal)) {
     item = true;
   } else {
@@ -217,7 +217,7 @@ window.blockly.js.blockly.TelaRequestVacationDetail.PodeSolicitarAdiantamento13S
  * TelaRequestVacationDetail
  */
 window.blockly.js.blockly.TelaRequestVacationDetail.SetarParametrosIniciais = function(dividirFerias, abonoPecuniario, primeiraParcelaDecimoTerceiro) {
- var item, SolicitacaoFeriasCorrente, dat2, dat2difdat1, dat1, lista, DataFinal, DataAChecar, DataInicial, SolicitacaoFerias, totalDias, periodo3Ok, periodo2Ok, periodo1Ok, compDias, compDataInicial, compDataFinal, podeSolicitarAdian13Sal;
+ var item, compDataFinal, compDataInicial, compDias, dat1, dat2, dat2difdat1, dataAChecar, dataAtualValidar, DataFinal, DataInicial, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
   this.cronapi.screen.changeValueOfField("vars.tr1DataInicio", '');
   this.cronapi.screen.changeValueOfField("vars.tr1QtdDias", '');
   this.cronapi.util.executeJavascriptNoReturn('$(\'[ng-model=\"vars.tr1QtdDias\"]\').data(\"kendoComboBox\").enable(true);');
@@ -251,7 +251,7 @@ window.blockly.js.blockly.TelaRequestVacationDetail.SetarParametrosIniciais = fu
  * Descreva esta função...
  */
 window.blockly.js.blockly.TelaRequestVacationDetail.SomarTotalDiasFerias = function() {
- var item, SolicitacaoFeriasCorrente, primeiraParcelaDecimoTerceiro, abonoPecuniario, dat2, dat2difdat1, dat1, lista, DataFinal, DataAChecar, DataInicial, SolicitacaoFerias, totalDias, periodo3Ok, periodo2Ok, periodo1Ok, compDias, compDataInicial, compDataFinal, dividirFerias, podeSolicitarAdian13Sal;
+ var item, abonoPecuniario, compDataFinal, compDataInicial, compDias, dat1, dat2, dat2difdat1, dataAChecar, dataAtualValidar, DataFinal, DataInicial, dividirFerias, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, primeiraParcelaDecimoTerceiro, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
   totalDias = 0;
   if (this.cronapi.screen.getValueOfField("vars.dividirFerias") == 'no') {
     totalDias = this.cronapi.conversion.toLong(this.cronapi.screen.getValueOfField("vars.tr1QtdDias"));
@@ -267,7 +267,7 @@ window.blockly.js.blockly.TelaRequestVacationDetail.SomarTotalDiasFerias = funct
  * Descreva esta função...
  */
 window.blockly.js.blockly.TelaRequestVacationDetail.Cancelar = function() {
- var item, SolicitacaoFeriasCorrente, primeiraParcelaDecimoTerceiro, abonoPecuniario, dat2, dat2difdat1, dat1, lista, DataFinal, DataAChecar, DataInicial, SolicitacaoFerias, totalDias, periodo3Ok, periodo2Ok, periodo1Ok, compDias, compDataInicial, compDataFinal, dividirFerias, podeSolicitarAdian13Sal;
+ var item, abonoPecuniario, compDataFinal, compDataInicial, compDias, dat1, dat2, dat2difdat1, dataAChecar, dataAtualValidar, DataFinal, DataInicial, dividirFerias, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, primeiraParcelaDecimoTerceiro, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
   this.cronapi.screen.changeView("#/home/logged/requestVacation",[ { login : this.cronapi.screen.getValueOfField("params.login") } ]);
 }
 
@@ -275,7 +275,7 @@ window.blockly.js.blockly.TelaRequestVacationDetail.Cancelar = function() {
  * Descreva esta função...
  */
 window.blockly.js.blockly.TelaRequestVacationDetail.ValidarPeriodosPodeSolicitarAdiantamento13Salario = function() {
- var item, SolicitacaoFeriasCorrente, primeiraParcelaDecimoTerceiro, abonoPecuniario, dat2, dat2difdat1, dat1, lista, DataFinal, DataAChecar, DataInicial, SolicitacaoFerias, totalDias, periodo3Ok, periodo2Ok, periodo1Ok, compDias, compDataInicial, compDataFinal, dividirFerias, podeSolicitarAdian13Sal;
+ var item, abonoPecuniario, compDataFinal, compDataInicial, compDias, dat1, dat2, dat2difdat1, dataAChecar, dataAtualValidar, DataFinal, DataInicial, dividirFerias, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, primeiraParcelaDecimoTerceiro, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
   podeSolicitarAdian13Sal = this.blockly.js.blockly.TelaRequestVacationDetail.PodeSolicitarAdiantamento13Salario(this.cronapi.screen.getValueOfField("vars.tr1DataInicio"), this.cronapi.screen.getValueOfField("vars.tr1DataFinal"));
   if (podeSolicitarAdian13Sal) {
     podeSolicitarAdian13Sal = this.blockly.js.blockly.TelaRequestVacationDetail.PodeSolicitarAdiantamento13Salario(this.cronapi.screen.getValueOfField("vars.tr2DataInicio"), this.cronapi.screen.getValueOfField("vars.tr2DataFinal"));
@@ -290,7 +290,7 @@ window.blockly.js.blockly.TelaRequestVacationDetail.ValidarPeriodosPodeSolicitar
  * Descreva esta função...
  */
 window.blockly.js.blockly.TelaRequestVacationDetail.VerificarPeriodosConflitantes = function() {
- var item, SolicitacaoFeriasCorrente, primeiraParcelaDecimoTerceiro, abonoPecuniario, dat2, dat2difdat1, dat1, lista, DataFinal, DataAChecar, DataInicial, SolicitacaoFerias, totalDias, periodo3Ok, periodo2Ok, periodo1Ok, compDias, compDataInicial, compDataFinal, dividirFerias, podeSolicitarAdian13Sal;
+ var item, abonoPecuniario, compDataFinal, compDataInicial, compDias, dat1, dat2, dat2difdat1, dataAChecar, dataAtualValidar, DataFinal, DataInicial, dividirFerias, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, primeiraParcelaDecimoTerceiro, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
   item = false;
   if (this.blockly.js.blockly.TelaRequestVacationDetail.VerificarDataConflitante(this.cronapi.screen.getValueOfField("vars.tr2DataInicio"), this.cronapi.screen.getValueOfField("vars.tr2DataFinal"), this.cronapi.screen.getValueOfField("vars.tr1DataInicio")) || this.blockly.js.blockly.TelaRequestVacationDetail.VerificarDataConflitante(this.cronapi.screen.getValueOfField("vars.tr2DataInicio"), this.cronapi.screen.getValueOfField("vars.tr2DataFinal"), this.cronapi.screen.getValueOfField("vars.tr1DataFinal"))) {
     this.cronapi.screen.notify('error','O \"1º Período\" está conflitando com \"2º Periodo\"');
@@ -316,6 +316,28 @@ window.blockly.js.blockly.TelaRequestVacationDetail.VerificarPeriodosConflitante
   } else if (this.cronapi.screen.getValueOfField("vars.dividirFerias") == '3per' && this.cronapi.screen.getValueOfField("vars.tr3DataInicio") < this.cronapi.screen.getValueOfField("vars.tr2DataInicio")) {
     this.cronapi.screen.notify('error','O \"3º Período\" não pode ser anterior ao \"2º Periodo\"');
     item = true;
+  } else if (this.blockly.js.blockly.TelaRequestVacationDetail.MenorQueDataCorrente(this.cronapi.screen.getValueOfField("vars.tr1DataInicio"))) {
+    this.cronapi.screen.notify('error','O \"1º Período\" não pode iniciar antes ou no mesmo dia da data atual ');
+    item = true;
+  } else if (this.blockly.js.blockly.TelaRequestVacationDetail.MenorQueDataCorrente(this.cronapi.screen.getValueOfField("vars.tr2DataInicio"))) {
+    this.cronapi.screen.notify('error','O \"2º Período\" não pode iniciar antes ou no mesmo dia da data atual ');
+    item = true;
+  } else if (this.blockly.js.blockly.TelaRequestVacationDetail.MenorQueDataCorrente(this.cronapi.screen.getValueOfField("vars.tr3DataInicio"))) {
+    this.cronapi.screen.notify('error','O \"3º Período\" não pode iniciar antes ou no mesmo dia da data atual ');
+    item = true;
+  }
+  return item;
+}
+
+/**
+ * Descreva esta função...
+ */
+window.blockly.js.blockly.TelaRequestVacationDetail.MenorQueDataCorrente = function(dataAChecar) {
+ var item, abonoPecuniario, compDataFinal, compDataInicial, compDias, dat1, dat2, dat2difdat1, dataAtualValidar, DataFinal, DataInicial, dividirFerias, lista, periodo1Ok, periodo2Ok, periodo3Ok, podeSolicitarAdian13Sal, primeiraParcelaDecimoTerceiro, SolicitacaoFerias, SolicitacaoFeriasCorrente, totalDias, x;
+  item = false;
+  if (!this.cronapi.logic.isNullOrEmpty(dataAChecar)) {
+    dataAtualValidar = this.cronapi.dateTime.getNow();
+    item = dataAChecar < dataAtualValidar;
   }
   return item;
 }
