@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="Ferias" ruleName="Ferias" ruleSecurity="{&quot;post&quot;:&quot;Public&quot;,&quot;get&quot;:&quot;Public&quot;,&quot;execute&quot;:&quot;Public&quot;,&quot;delete&quot;:&quot;Public&quot;,&quot;put&quot;:&quot;Public&quot;}" ruleSynchronous="false" ruleTimeout="300" ruleType="E">
-  <metadata scale="1" scrollx="1344.4" scrolly="-675" target="1p:@PcWwQI0A._4bupyW"/>
+  <metadata scale="1" scrollx="1341.4" scrolly="-669.9999999999999" target="1p:@PcWwQI0A._4bupyW"/>
   <block colour="#fca03b" id="B5o.u7fs/9ul7UnqLuP|" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1247" y="123">
     <mutation>
       <arg name="solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;"/>
@@ -1148,7 +1148,7 @@
       </block>
     </value>
   </block>
-  <block colour="#fca03b" id="1p:@PcWwQI0A._4bupyW" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1207" y="728">
+  <block colour="#fca03b" id="1p:@PcWwQI0A._4bupyW" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1297" y="713">
     <mutation>
       <arg name="orgao"/>
       <arg name="status"/>
@@ -1179,8 +1179,8 @@
                   </block>
                 </value>
                 <value name="ARG1">
-                  <block colour="#0088ee" dependencyby="1p:@PcWwQI0A._4bupyW" id="G~tGv%zFjBx(sZ)+sr*=" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                    <field name="VAR">orgao</field>
+                  <block colour="#0088ee" dependencyby="1p:@PcWwQI0A._4bupyW" id="dqvc7kXm~LGXkSiW[eji" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">status</field>
                   </block>
                 </value>
                 <value name="ARG2">
@@ -1376,10 +1376,7 @@
       </block>
     </value>
   </block>
-  <block colour="#0088ee" dependencyby="1p:@PcWwQI0A._4bupyW" id="dqvc7kXm~LGXkSiW[eji" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get" x="-913" y="906">
-    <field name="VAR">status</field>
-  </block>
-  <block colour="#fca03b" id="gc#^U{~_h|G!zl([FXuL" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1290" y="970">
+  <block colour="#fca03b" id="gc#^U{~_h|G!zl([FXuL" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1277" y="1002">
     <mutation>
       <arg name="solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;"/>
       <arg name="soliFerId"/>
