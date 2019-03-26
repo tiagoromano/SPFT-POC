@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="SAP" ruleName="SAP" ruleSynchronous="false" ruleTimeout="" ruleType="I">
+  <metadata scale="1" scrollx="490.4" scrolly="-123.3" target="]]BSb:/o(z/6[.xdcly;"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
+    <mutation>
+      <arg name="matricula"/>
+    </mutation>
+    <field name="NAME">ObterPeriodosConcessivos</field>
+    <comment h="80" pinned="false" w="160">SAP</comment>
+    <value name="RETURN">
+      <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Y.TVXcC9P*lLxaWfU*+}" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+        <field name="TEXT">&lt;DocumentElement&gt;
+	&lt;Periodos&gt;
+		&lt;Matricula&gt;6188&lt;/Matricula&gt;
+		&lt;PeriodoInicial&gt;01-01-2019&lt;/PeriodoInicial&gt;
+		&lt;PeriodoFinal&gt;30-06-2019&lt;/PeriodoFinal&gt;		
+	&lt;/Periodos&gt;
+	&lt;Periodos&gt;
+		&lt;Matricula&gt;6188&lt;/Matricula&gt;
+		&lt;PeriodoInicial&gt;01-07-2019&lt;/PeriodoInicial&gt;
+		&lt;PeriodoFinal&gt;31-12-2019&lt;/PeriodoFinal&gt;		
+	&lt;/Periodos&gt;
+	
+&lt;/DocumentElement&gt;</field>
+      </block>
+    </value>
+  </block>
+  <block colour="#fca03b" id="]]BSb:/o(z/6[.xdcly;" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-352" y="158">
+    <mutation>
+      <arg name="solicitacaoFerias"/>
+    </mutation>
+    <field name="NAME">ExportarSolicitacao</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+  </block>
+</blockly>
