@@ -67,7 +67,23 @@ public static Var FazerLogin(Var chave, Var senha) throws Exception {
 public static Var FazerLoginOpenIDConnect(Var chave, Var senha) throws Exception {
  return new Callable<Var>() {
 
+   public Var call() throws Exception {
+    return Var.VAR_TRUE;
+   }
+ }.call();
+}
+
+/**
+ *
+ * @return Var
+ */
+// Descreva esta função...
+public static Var ObterUsuarioLogado() throws Exception {
+ return new Callable<Var>() {
+
    private Var existeChaveBIDT = Var.VAR_NULL;
+   private Var chave = Var.VAR_NULL;
+   private Var senha = Var.VAR_NULL;
    private Var autenticadoOpenID = Var.VAR_NULL;
    private Var consultaBIDT = Var.VAR_NULL;
    private Var consultaUsuarioApp = Var.VAR_NULL;
@@ -75,7 +91,7 @@ public static Var FazerLoginOpenIDConnect(Var chave, Var senha) throws Exception
    private Var userId = Var.VAR_NULL;
 
    public Var call() throws Exception {
-    return Var.VAR_TRUE;
+    return cronapi.util.Operations.getCurrentUserName();
    }
  }.call();
 }

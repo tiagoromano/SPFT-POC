@@ -140,6 +140,11 @@
         "class": "blockly.Gerencia",
         "methods": [
           {
+            "name": "ObterGerenciasDelegadasPorUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
             "name": "ObterGerenciasUsuarioLogado",
             "hasReturn": "true",
             "params": [
@@ -694,5 +699,76 @@
     "calcFieldsProperties": {},
     "errorHandles": {},
     "serviceUrl": "api/cronapi/odata/v2/query535810/"
+  },
+  "query630664": {
+    "customId": "query630664",
+    "queryName": "Obter gerencias delegadas pelo usuario logado",
+    "sourceType": "entityFullName",
+    "entitySimpleName": "Delegacao",
+    "entityFullName": "SPFT.entity.Delegacao",
+    "query": {
+      "isEmpty": true,
+      "isRawSql": true,
+      "sqlContent": "select d.forcaTrabalhoDelegado.codigoLogin, d.forcaTrabalhoDelegado.nome, d.orgao.nome, d.dataCriacao \nfrom Delegacao d where d.forcaTrabalhoGerente.codigoLogin \u003d :loginGerente AND d.status \u003d 1",
+      "multiTenant": true,
+      "paginatorAutomatic": false
+    },
+    "queryParamsValues": [
+      {
+        "fieldName": "loginGerente",
+        "fieldValue": {
+          "type": "server",
+          "blocklyMethod": "ObterUsuarioLogado",
+          "blocklyClass": "blockly.Autenticacao",
+          "blocklyLanguage": "java",
+          "blocklyParams": [],
+          "blocklyJson": {
+            "namespace": "blockly.Autenticacao",
+            "sourcePath": "src/main/java/blockly/Autenticacao.blockly",
+            "language": "java",
+            "methods": [
+              {
+                "name": "FazerLoginOpenIDConnect",
+                "hasReturn": "true",
+                "params": [
+                  "chave",
+                  "senha"
+                ]
+              },
+              {
+                "name": "FazerLogin",
+                "hasReturn": "true",
+                "params": [
+                  "chave",
+                  "senha"
+                ]
+              },
+              {
+                "name": "ObterUsuarioLogado",
+                "hasReturn": "true",
+                "params": []
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "verbs": {
+      "GET": true,
+      "POST": true,
+      "PUT": true,
+      "DELETE": true,
+      "FILTER": true,
+      "COUNT": true
+    },
+    "events": {},
+    "defaultValues": {},
+    "defaultValuesProperties": {},
+    "security": {},
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "calcFieldsProperties": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/odata/v2/query630664/"
   }
 }
