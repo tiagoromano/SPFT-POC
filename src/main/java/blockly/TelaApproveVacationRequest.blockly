@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/webapp/views/manager/approveVacationRequest.view.html" resourceType="JAVA" ruleDescription="TelaApproveVacationRequest" ruleName="TelaApproveVacationRequest" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
-  <metadata scale="1" scrollx="560.3999999999999" scrolly="-110.49999999999989" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <metadata scale="1" scrollx="605.4000000000001" scrolly="-66.00000000000006" target="t^`?MJ=KPYM5tF-p;Sk5"/>
   <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
     <mutation>
       <arg name="selectedRow"/>
@@ -95,64 +95,165 @@
       </block>
     </statement>
   </block>
-  <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="=F-k^xrXcc(BW//[8K-l" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print" x="308" y="278">
-    <value name="TEXT">
-      <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="^nE)=-ZwJC(].X+k-g@~" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-        <field name="TEXT">abc</field>
-      </shadow>
-      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=":s7DQHQozFYv:IzKRhU7" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-        <field name="VAR">selectedRow</field>
-      </block>
-    </value>
-  </block>
-  <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="V9vW0^7;}.1Z6Vb0F$R:" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get" x="533" y="323">
-    <field name="VAR">item</field>
-  </block>
-  <block colour="#c88330" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="5@RC=JxH=mpiyF(JqV{^" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field" x="338" y="368">
-    <mutation name="{{cronapi.object.Operations.getObjectField}}">
-      <arg name="Objeto"/>
-      <arg name="Caminho a percorrer"/>
+  <block colour="#fca03b" id="t^`?MJ=KPYM5tF-p;Sk5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-434" y="201">
+    <mutation>
+      <arg name="selectedRows"/>
     </mutation>
-    <value name="PARAM0">
-      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="rSw,qyhtbg0T14Q`HM]p" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-        <field name="VAR">selectedRow</field>
-      </block>
-    </value>
-    <value name="PARAM1">
-      <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="7s=w;0G*[Gk(2aQT@nE@" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-        <field name="TEXT">justificativa</field>
-      </block>
-    </value>
-  </block>
-  <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="q.Uu;4%)BDG,H{(DqaT2" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.changeValueOfField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.changeValueOfField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn" x="233" y="533">
-    <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
-      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
-      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
-    </mutation>
-    <value name="ARG0">
-      <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="42Z=6F/6MH_?6gIsW{IL" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
-        <field name="SELECT">vars.justificativa</field>
-      </block>
-    </value>
-    <value name="ARG1">
-      <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="i;~HkrRKCcEC)RcM@t9[" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-        <field name="TEXT"/>
-      </shadow>
-      <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="?|1xqM!|?b%01WoxJWsf" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-        <field name="TEXT"/>
-      </block>
-    </value>
-    <next>
-      <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="xAi`(N[3;T7y6U#4DU8." multilayer="true" namespace="cronapi.screen.hideModal" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEsconder%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20esconde%20um%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.hideModal%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.hideModal%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
-        <mutation name="{{cronapi.screen.hideModal}}" return-raw-type="undefined">
-          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
-        </mutation>
-        <value name="ARG0">
-          <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="i=INK8;Z=r%er!{_zl#H" origintype="ids_from_screen" output="true" type="ids_from_screen">
-            <field name="SELECT">modalJust</field>
+    <field name="NAME">AprovarSolicitacoes</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="!QcNtE~4$?k9;5x$*P!B" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">totalSolicitacao</field>
+        <value name="VALUE">
+          <block colour="#745ba5" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="JAO4;K[+l,x*2MF*.1B2" origintype="lists_length" output="true" tooltip="Retorna o tamanho de uma lista." type="lists_length">
+            <value name="VALUE">
+              <block colour="#0088ee" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="zBMYNH)dU9l|j^lnZsk3" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">selectedRows</field>
+              </block>
+            </value>
           </block>
         </value>
+        <next>
+          <block colour="#5b80a5" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="G}kZzvBFg$+[lQ_g|Ao?" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+            <mutation else="1"/>
+            <value name="IF0">
+              <block colour="#5b80a5" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="VgJ5.Pbw/2y?`M.[x|l)" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block colour="#0088ee" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="0iLQk/YXRK1g7(sR(bih" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">totalSolicitacao</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block colour="#5b67a5" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="D,5m:BA[A#NCtt6?dEkn" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block colour="#934848" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="1nP1.fVX_GW/Q}P=dkNs" multilayer="true" namespace="cronapi.screen.notify" origintype="notify_type" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tipo%20da%20notifica%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cdiv%3E%20pode%20ser%20success,%20error,%20warning,%20info%20ou%20primary%3C/div%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20ou%20conte%C3%BAdo%20html%20a%20ser%20exibido%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.notify%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.notify%3C/a%3E%3C/div%3E%3C/div%3E" type="notify_type">
+                <mutation name="{{cronapi.screen.notify}}" value="[object Object]"/>
+                <field name="SELECT">error</field>
+                <value name="MESSAGE">
+                  <shadow colour="#5ba593" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="YI?Go/^Im)Vuy+;7q@}i" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">É necessário selecionar alguma solicitação para aprovar</field>
+                  </shadow>
+                </value>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block colour="#0088ee" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="rYo+Pw!|;;eD`GnW~CMd" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">totalAprovadas</field>
+                <value name="VALUE">
+                  <block colour="#487f7f" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="=9MEw}Mh~~K5_@sd!c7}" multilayer="false" namespace="cronapi.util.Operations.callBlockly" origintype="procedures_callblockly_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20chamar%20um%20bloco%20de%20programa%C3%A7ao%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bloco%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Nome%20do%20bloco%3C/div%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.Operations.callBlockly%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.Operations.callBlockly%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callreturn">
+                    <mutation data="%7B%22name%22:%22Ferias%22,%22class%22:%22blockly.Ferias%22,%22function%22:%22AprovarSolicitacaoFerias%22,%22oldName%22:%22AprovarSolicitacaoFerias%22,%22params%22:%22%5B%5C%22selectedRows%5C%22%5D%22,%22type%22:%22java%22,%22namespace%22:%22blockly.Ferias%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22blockly.Ferias%22,%22sourcePath%22:%22src/main/java/blockly/Ferias.blockly%22,%22language%22:%22java%22,%22class%22:%22blockly.Ferias%22,%22methods%22:%5B%7B%22name%22:%22SalvarSolicitacaoFerias%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;%22%5D%7D,%7B%22name%22:%22ObterPeriodosConcessivos%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22login%22%5D%7D,%7B%22name%22:%22GerarPeriodoConcessao%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22periodoConcessao&amp;lt;SPFT.entity.PeriodoConcessao&amp;gt;%22,%22periodoConcessaoId%22,%22forcaTrabalhoId%22%5D%7D,%7B%22name%22:%22ObterSolicitacaoFeriasPorOrgaoEStatus%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22orgao%22,%22status%22%5D%7D,%7B%22name%22:%22ObterFeriasExistenteDoPeriodoConcessivo%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22login%22,%22dataConcessaoInicial%22,%22dataConcessaoFinal%22%5D%7D,%7B%22name%22:%22GerarSolicitacaoFerias%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;%22,%22soliFerId%22,%22periodoConcessao&amp;lt;SPFT.entity.PeriodoConcessao&amp;gt;%22,%22%C3%A9AdminOuGerente%22%5D%7D,%7B%22name%22:%22ReprovarSolicitacaoFerias%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22selectedRows%22%5D%7D,%7B%22name%22:%22AprovarSolicitacaoFerias%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22selectedRows%22%5D%7D,%7B%22name%22:%22CriarId%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22Id%22%5D%7D,%7B%22name%22:%22GerarHistoricoSolicitacao%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22soliFerId%22,%22forcaTrabalhoId%22,%22solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;%22%5D%7D%5D%7D%7D" name="{{cronapi.util.Operations.callBlockly}}">
+                      <arg name="selectedRows"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#0088ee" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="ZqgHl[F5qH{DH,eF8e`;" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">selectedRows</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#5b80a5" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="}D/rNnn`BVE_@ZR@D9{4" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                    <mutation else="1"/>
+                    <value name="IF0">
+                      <block colour="#5b80a5" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="ojFEo,ryySYxqWxkv(lm" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block colour="#0088ee" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="sOR5c3}vL@B4eQ/o?hKJ" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">totalAprovadas</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block colour="#5b67a5" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="L#uZ3#26]D`rhT5+]P`N" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block colour="#934848" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="T!#mStei4tikjd?(70DU" multilayer="true" namespace="cronapi.screen.notify" origintype="notify_type" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tipo%20da%20notifica%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cdiv%3E%20pode%20ser%20success,%20error,%20warning,%20info%20ou%20primary%3C/div%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20ou%20conte%C3%BAdo%20html%20a%20ser%20exibido%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.notify%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.notify%3C/a%3E%3C/div%3E%3C/div%3E" type="notify_type">
+                        <mutation name="{{cronapi.screen.notify}}" value="[object Object]"/>
+                        <field name="SELECT">error</field>
+                        <value name="MESSAGE">
+                          <shadow colour="#5ba593" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="kwgKs$pJxB}Ey`qft@QC" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">Não foi possível aprovar a(s) solicitação(ões) selecionada(s)</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block colour="#934848" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id=".8p(==Yf+$H*)II7Y-gD" multilayer="true" namespace="cronapi.screen.notify" origintype="notify_type" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tipo%20da%20notifica%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cdiv%3E%20pode%20ser%20success,%20error,%20warning,%20info%20ou%20primary%3C/div%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20ou%20conte%C3%BAdo%20html%20a%20ser%20exibido%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.notify%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.notify%3C/a%3E%3C/div%3E%3C/div%3E" type="notify_type">
+                        <mutation name="{{cronapi.screen.notify}}" value="[object Object]"/>
+                        <field name="SELECT">success</field>
+                        <value name="MESSAGE">
+                          <shadow colour="#5ba593" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="Ii=J8#T.8@o0y,{-avqw" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field name="TEXT">Não foi possível aprovar as solicitação(ões) selecionadas</field>
+                          </shadow>
+                          <block colour="#5ba58c" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="!kAsv72:Rj2sacwjZY8S" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                            <mutation items="5"/>
+                            <value name="ADD0">
+                              <block colour="#5ba593" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="f!vtbP4c%~ChQAYQkL3+" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT">Foi(ram) aprovada(s)  </field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block colour="#0088ee" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="fQ3Cek~f5b~s%[bjs)[|" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">totalAprovadas</field>
+                              </block>
+                            </value>
+                            <value name="ADD2">
+                              <block colour="#5ba593" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="I1l#gclS-*afo7Eo0i8_" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT"> de </field>
+                              </block>
+                            </value>
+                            <value name="ADD3">
+                              <block colour="#0088ee" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="-PfOqTUe[O=SL[;+Do|0" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">totalSolicitacao</field>
+                              </block>
+                            </value>
+                            <value name="ADD4">
+                              <block colour="#5ba593" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="Z,([KnJd+u;wQruG)_`*" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT"> solicitação(ções)</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block colour="#934848" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="2.+9W.{5zL.2!ZazD7#2" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                            <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
+                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
+                            </mutation>
+                            <value name="ARG0">
+                              <block colour="#934848" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="JqRW)a8K)iwdA7PNH62s" origintype="datasource_from_screen" output="true" type="datasource_from_screen">
+                                <field name="SELECT">ObterSolicitacaoDeFeriasPorOrgaoEStatus</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <block colour="#934848" dependencyby="t^`?MJ=KPYM5tF-p;Sk5" id="2LSV%qe1D?E#72zdVSS/" origintype="util_dropdown" output="true" type="util_dropdown">
+                                <mutation>
+                                  <arg name="true" value="Verdadeiro"/>
+                                  <arg name="false" value="Falso"/>
+                                </mutation>
+                                <field name="SELECT">true</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
       </block>
-    </next>
+    </statement>
   </block>
 </blockly>

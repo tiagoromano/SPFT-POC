@@ -23,5 +23,6 @@
   },
   "_source": "https://github.com/technecloud/cronapi-js.git",
   "_target": "2.1.19",
-  "_originalSource": "cronapi-js"
+  "_originalSource": "cronapi-js",
+  "_direct": true
 }
