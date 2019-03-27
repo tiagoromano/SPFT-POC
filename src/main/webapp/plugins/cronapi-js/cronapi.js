@@ -1,4 +1,4 @@
-(function() {
+createChart(function() {
   'use strict';
 
   this.$evt = function(str) {
@@ -3809,20 +3809,39 @@
   this.cronapi.social.sociaLogin = function(/** @type {ObjectType.STRING} @description socialNetwork @blockType util_dropdown @keys facebook|github|google|linkedin @values facebook|github|google|linkedin  */ socialNetwork) {
       var that = this;
       var u = window.hostApp+"signin/"+socialNetwork+"/";
-      var cref;
       if(cordova.InAppBrowser){
-        cref = cordova.InAppBrowser.open(u, '_blank', 'location=no');
+          var cref = cordova.InAppBrowser.open(u, '_blank', 'location=no');
+          cref.addEventListener('loadstart', function(event) {
+              if (event.url.indexOf("_ctk") > -1) {
+                  cref.close();
+                  that.cronapi.social.login.bind(that)('#OAUTH#', '#OAUTH#', that.cronapi.social.gup('_ctk',event.url));
+              }
+          });
       }else{
-          var cref = window.open(u, '_blank', 'location=no');
+          //TODO LOGIN ON WEB
       }
-      cref.addEventListener('loadstart', function(event) {
-          if (event.url.indexOf("_ctk") > -1) {
-              cref.close();
-              that.cronapi.social.login.bind(that)('#OAUTH#', '#OAUTH#', that.cronapi.social.gup('_ctk',event.url));
-          }
-      });
-
   }
+
+  /**
+   * @type function
+   * @name {{getSelectedRowsGrid}}
+   * @nameTags getSelectedRowsGrid|Obter linhas selecionadas da grade
+   * @description {{functionToGetSelectedRowsGrid}}
+   * @param {ObjectType.STRING} field {{field}}
+   * @returns {ObjectType.OBJECT}
+   */
+  this.cronapi.screen.getSelectedRowsGrid = function(/** @type {ObjectType.STRING} @blockType field_from_screen*/ field) {
+    var result = [];
+    var grid = $('[ng-model="'+ field  +'"]').children().data('kendoGrid');
+    if (grid) {
+      var selected = grid.select();
+      selected.each(function() {
+        var dataItem = grid.dataItem(this);
+        result.push(dataItem);
+      });
+    }
+    return result;
+  };
 
 
 }).bind(window)();
