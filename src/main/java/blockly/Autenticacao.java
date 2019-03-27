@@ -22,6 +22,7 @@ public static Var FazerLogin(Var chave, Var senha) throws Exception {
  return new Callable<Var>() {
 
    private Var existeChaveBIDT = Var.VAR_NULL;
+   private Var userAdmin = Var.VAR_NULL;
    private Var autenticadoOpenID = Var.VAR_NULL;
    private Var consultaBIDT = Var.VAR_NULL;
    private Var consultaUsuarioApp = Var.VAR_NULL;
@@ -30,8 +31,9 @@ public static Var FazerLogin(Var chave, Var senha) throws Exception {
 
    public Var call() throws Exception {
     existeChaveBIDT = Var.VAR_FALSE;
-    if (Var.valueOf(Var.valueOf(chave.equals(Var.valueOf("admin"))).getObjectAsBoolean() && Var.valueOf(senha.equals(Var.valueOf("admin"))).getObjectAsBoolean()).getObjectAsBoolean()) {
-        existeChaveBIDT = Var.VAR_TRUE;
+    if (Var.valueOf(chave.equals(Var.valueOf("admin"))).getObjectAsBoolean()) {
+        userAdmin = cronapi.database.Operations.query(Var.valueOf("app.entity.User"),Var.valueOf("select u from User u where u.login = :login"),Var.valueOf("login",chave));
+        existeChaveBIDT = cronapi.util.Operations.matchesencryptPassword(senha, cronapi.database.Operations.getField(userAdmin, Var.valueOf("this[0].password")));
     } else {
         autenticadoOpenID = Var.valueOf(FazerLoginOpenIDConnect(chave, senha));
         if (autenticadoOpenID.getObjectAsBoolean()) {
@@ -67,7 +69,24 @@ public static Var FazerLogin(Var chave, Var senha) throws Exception {
 public static Var FazerLoginOpenIDConnect(Var chave, Var senha) throws Exception {
  return new Callable<Var>() {
 
+   public Var call() throws Exception {
+    return Var.VAR_TRUE;
+   }
+ }.call();
+}
+
+/**
+ *
+ * @return Var
+ */
+// Descreva esta função...
+public static Var ObterUsuarioLogado() throws Exception {
+ return new Callable<Var>() {
+
    private Var existeChaveBIDT = Var.VAR_NULL;
+   private Var chave = Var.VAR_NULL;
+   private Var userAdmin = Var.VAR_NULL;
+   private Var senha = Var.VAR_NULL;
    private Var autenticadoOpenID = Var.VAR_NULL;
    private Var consultaBIDT = Var.VAR_NULL;
    private Var consultaUsuarioApp = Var.VAR_NULL;
@@ -75,7 +94,7 @@ public static Var FazerLoginOpenIDConnect(Var chave, Var senha) throws Exception
    private Var userId = Var.VAR_NULL;
 
    public Var call() throws Exception {
-    return Var.VAR_TRUE;
+    return cronapi.util.Operations.getCurrentUserName();
    }
  }.call();
 }

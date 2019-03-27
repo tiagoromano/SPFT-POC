@@ -10,6 +10,7 @@ window.dataSourceMap["SPFT.ForcaTrabalho"] = { customId: "SPFT.entity.ForcaTraba
 window.dataSourceMap["app.auth"] = { customId: "auth", serviceUrl: "api/cronapi/query/auth/", serviceUrlODATA: "/api/cronapi/odata/v2/app/auth" };
 window.dataSourceMap["app.roles"] = { customId: "roles", serviceUrl: "api/cronapi/query/roles/", serviceUrlODATA: "/api/cronapi/odata/v2/app/roles" };
 window.dataSourceMap["app.Device"] = { customId: "app.entity.Device", serviceUrl: "api/cronapi/crud/app.entity.Device", serviceUrlODATA: "/api/cronapi/odata/v2/app/Device" };
+window.dataSourceMap["SPFT.query630664"] = { customId: "query630664", serviceUrl: "api/cronapi/odata/v2/query630664/", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/query630664" };
 window.dataSourceMap["SPFT.Delegacao"] = { customId: "SPFT.entity.Delegacao", serviceUrl: "api/cronapi/crud/SPFT.entity.Delegacao", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/Delegacao" };
 window.dataSourceMap["SPFT.SolicitacaoFerias"] = { customId: "SPFT.entity.SolicitacaoFerias", serviceUrl: "api/cronapi/crud/SPFT.entity.SolicitacaoFerias", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/SolicitacaoFerias" };
 window.dataSourceMap["SPFT.Configuracao"] = { customId: "SPFT.entity.Configuracao", serviceUrl: "api/cronapi/crud/SPFT.entity.Configuracao", serviceUrlODATA: "/api/cronapi/odata/v2/SPFT/Configuracao" };
