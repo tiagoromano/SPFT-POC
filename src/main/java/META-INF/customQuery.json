@@ -709,7 +709,7 @@
     "query": {
       "isEmpty": true,
       "isRawSql": true,
-      "sqlContent": "select d.forcaTrabalhoDelegado.codigoLogin, d.forcaTrabalhoDelegado.nome, d.orgao.nome, d.dataCriacao \nfrom Delegacao d where d.forcaTrabalhoGerente.codigoLogin \u003d :loginGerente AND d.status \u003d 1",
+      "sqlContent": "select d.id, d.forcaTrabalhoDelegado.codigoLogin, d.forcaTrabalhoDelegado.nome, d.orgao.nome, d.dataCriacao \nfrom Delegacao d where d.forcaTrabalhoGerente.codigoLogin \u003d :loginGerente AND d.status \u003d 1",
       "multiTenant": true,
       "paginatorAutomatic": false
     },

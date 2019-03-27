@@ -29,5 +29,25 @@ public static Var EnviarEmail(Var para, Var assunto, Var corpo) throws Exception
  }.call();
 }
 
+/**
+ *
+ * @param param_Id
+ * @return Var
+ */
+// Descreva esta função...
+public static Var CriarId(Var param_Id) throws Exception {
+ return new Callable<Var>() {
+
+   // param
+   private Var Id = param_Id;
+   // end
+
+   public Var call() throws Exception {
+    Id = cronapi.math.Operations.sum(cronapi.logic.Operations.isNullOrEmpty(Id).getObjectAsBoolean() ? Var.valueOf(0) : Id,Var.valueOf(1));
+    return Id;
+   }
+ }.call();
+}
+
 }
 
