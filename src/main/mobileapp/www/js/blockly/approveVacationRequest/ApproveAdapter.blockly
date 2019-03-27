@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JS" ruleDescription="ApproveAdapter" ruleName="ApproveAdapter" ruleSynchronous="false" ruleTimeout="" ruleType="I">
+  <metadata scale="1" scrollx="488.4000000000002" scrolly="-50" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
+    <mutation>
+      <arg name="item"/>
+    </mutation>
+    <field name="NAME">approve</field>
+    <comment h="80" pinned="false" w="160">ApproveAdapter</comment>
+    <statement name="STACK">
+      <block colour="#487f7f" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="^nZahHV4CxTP;0tb!{Lb" multilayer="false" namespace="cronapi.util.callServerBlocklyNoReturn" origintype="procedures_callblockly_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20chamar%20bloco%20de%20programa%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Nome%20do%20Bloco%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.callServerBlocklyNoReturn%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.callServerBlocklyNoReturn%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callnoreturn">
+        <mutation data="%7B%22name%22:%22TelaApproveVacationRequest%22,%22class%22:%22blockly.TelaApproveVacationRequest%22,%22function%22:%22AprovarSolicitacoes%22,%22oldName%22:%22AprovarSolicitacoes%22,%22params%22:%22%5B%5C%22selectedRows%5C%22%5D%22,%22type%22:%22java%22,%22namespace%22:%22blockly.TelaApproveVacationRequest%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22blockly.TelaApproveVacationRequest%22,%22sourcePath%22:%22src/main/java/blockly/TelaApproveVacationRequest.blockly%22,%22language%22:%22java%22,%22class%22:%22blockly.TelaApproveVacationRequest%22,%22methods%22:%5B%7B%22name%22:%22ExibirJustificativa%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22selectedRow%22%5D%7D,%7B%22name%22:%22AprovarSolicitacoes%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22selectedRows%22%5D%7D%5D%7D%7D" name="{{cronapi.util.callServerBlocklyNoReturn}}">
+          <arg name="selectedRows"/>
+        </mutation>
+        <value name="ARG0">
+          <block colour="#745ba5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="X166@XmFRV;8S=!mG|k)" origintype="lists_create_with" output="true" tooltip="Cria uma lista com a quantidade de itens informada." type="lists_create_with">
+            <mutation items="1"/>
+            <value name="ADD0">
+              <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="A7ZR_$=!@M43E9Ddv#x]" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">item</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</blockly>
