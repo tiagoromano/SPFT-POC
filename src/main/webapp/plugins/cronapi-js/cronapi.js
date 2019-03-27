@@ -1,4 +1,4 @@
-createChart(function() {
+(function() {
   'use strict';
 
   this.$evt = function(str) {
