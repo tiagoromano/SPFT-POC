@@ -7,7 +7,7 @@ window.blockly.js.blockly.TelaDelegateResponsibility = window.blockly.js.blockly
  * TelaDelegateResponsibility
  */
 window.blockly.js.blockly.TelaDelegateResponsibility.Incluir = function() {
- var item, orgaoLista;
+ var item, orgaoLista, totalSolicitacao;
   orgaoLista = this.cronapi.screen.getSelectedRowsGrid("vars.gerenciasGrade");
   if (orgaoLista.length == 0) {
     this.cronapi.screen.notify('error','Selecione as gerências que deseja delegar');
@@ -18,6 +18,12 @@ window.blockly.js.blockly.TelaDelegateResponsibility.Incluir = function() {
   } else {
     this.cronapi.util.callServerBlocklyAsynchronous('blockly.TelaDelegateResponsibility:IncluirDelegacao', function(sender_item) {
         item = sender_item;
+      if (this.cronapi.logic.isNullOrEmpty(item) || item == 0) {
+        this.cronapi.screen.notify('error','Não foi possível delegar a(s) gerencia(s) selecionada(s)');
+      } else {
+        this.cronapi.screen.notify('success',['Foi(ram) delegada(s)  ',item,' de ',orgaoLista.length,' gerencia(s)'].join(''));
+        this.cronapi.screen.refreshDatasource("ObterGerenciasDelegadasPeloUsuarioLogado", 'true');
+      }
     }.bind(this), this.cronapi.screen.getValueOfField("vars.chave"), this.cronapi.screen.getValueOfField("vars.tipoDelegacao"), orgaoLista);
   }
 }
