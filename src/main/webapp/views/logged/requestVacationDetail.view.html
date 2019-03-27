@@ -100,7 +100,7 @@
             <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-datepicker" id="crn-datepicker-141957"> 
               <div class="form-group"> 
                 <label for="input6726" style="font-weight:bold">Término:</label> 
-                <input type="date" disabled="" mask="" mask-placeholder="" ng-required="false" ng-model="vars.tr1DataFinal" class="form-control k-textbox" id="input6726" placeholder=""> 
+                <input type="date" disabled mask="" mask-placeholder="" ng-required="false" ng-model="vars.tr1DataFinal" class="form-control k-textbox" id="input6726" placeholder=""> 
               </div> 
             </div> </td> 
         </tr> 
@@ -130,7 +130,7 @@
             <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-datepicker" id="crn-datepicker-141957"> 
               <div class="form-group"> 
                 <label for="input6726" style="font-weight:bold">Término:</label> 
-                <input type="date" disabled="" mask="" mask-placeholder="" ng-required="false" ng-model="vars.tr2DataFinal" class="form-control k-textbox" id="input6726" placeholder=""> 
+                <input type="date" disabled mask="" mask-placeholder="" ng-required="false" ng-model="vars.tr2DataFinal" class="form-control k-textbox" id="input6726" placeholder=""> 
               </div> 
             </div> </td> 
         </tr> 
@@ -160,17 +160,24 @@
             <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-datepicker" id="crn-datepicker-141957"> 
               <div class="form-group"> 
                 <label for="input6726" style="font-weight:bold">Término:</label> 
-                <input type="date" disabled="" mask="" mask-placeholder="" ng-required="false" ng-model="vars.tr3DataFinal" class="form-control k-textbox" id="input6726" placeholder=""> 
+                <input type="date" disabled mask="" mask-placeholder="" ng-required="false" ng-model="vars.tr3DataFinal" class="form-control k-textbox" id="input6726" placeholder=""> 
               </div> 
             </div></td> 
         </tr> 
       </tbody> 
     </table> 
-    <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-textarea" id="crn-textarea-51387">
-      <div class="form-group">
-        <label for="input172">Justificativa para aprovação do gerente</label>
-        <textarea id="textArea172" ng-model="vars.justificativa" maxlength="300" style="resize:none" resize="resize:none;" class="form-control k-textbox" rows="5"></textarea>
-      </div>
-    </div><div class="component-holder ng-binding ng-scope  col-md-3" data-component="crn-button" id="crn-button-810704"><button class="btn k-button btn-block btn-success" ng-click="cronapi.client('js.blockly.TelaRequestVacationDetail.CriarSolicitacao').run()" xattr-size="" xattr-fullsize="btn-block" xattr-theme="btn-success" xattr-disabled=""><i class="glyphicon glyphicon-ok-sign"></i> <span>Solicitar</span></button></div><div class="component-holder ng-binding ng-scope  col-md-3" data-component="crn-button" id="crn-button-114842"><button class="btn k-button btn-block btn-danger" ng-click="cronapi.client('js.blockly.TelaRequestVacationDetail.Cancelar').run()" xattr-size="" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled=""><i class="glyphicon glyphicon-home"></i> <span>Cancelar</span></button></div> 
+    <div class="component-holder ng-binding ng-scope col-md-12" data-component="crn-textarea" id="crn-textarea-51387"> 
+      <div class="form-group"> 
+        <label for="input172">Justificativa para aprovação do gerente</label> 
+        <textarea id="textArea172" ng-model="vars.justificativa" maxlength="300" style="resize:none" resize="resize:none;" class="form-control k-textbox" rows="5"></textarea> 
+      </div> 
+    </div>
+    <div class="component-holder ng-binding ng-scope  col-md-3" data-component="crn-button" ></div>
+    <div class="component-holder ng-binding ng-scope  col-md-3" data-component="crn-button" id="crn-button-810704">
+      <button class="btn k-button btn-block btn-success" ng-click="cronapi.client('js.blockly.TelaRequestVacationDetail.CriarSolicitacao').run()" xattr-size="" xattr-fullsize="btn-block" xattr-theme="btn-success" xattr-disabled=""><i class="glyphicon glyphicon-ok-sign"></i> <span>Solicitar</span></button>
+    </div>
+    <div class="component-holder ng-binding ng-scope  col-md-3" data-component="crn-button" id="crn-button-114842">
+      <button class="btn k-button btn-block btn-danger" ng-click="cronapi.client('js.blockly.TelaRequestVacationDetail.Cancelar').run()" xattr-size="" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled=""><i class="glyphicon glyphicon-home"></i> <span>Cancelar</span></button>
+    </div> 
   </div> 
 </div>

@@ -120,7 +120,7 @@ public static Var IncluirDelegacao(Var chave, Var tipoDelegacao, Var orgaoLista)
     } // end for
     if (Var.valueOf(totalOrgaoDelegado.compareTo(Var.valueOf(0)) > 0).getObjectAsBoolean()) {
         if (Var.valueOf(Var.valueOf(tipoDelegacao.equals(Var.valueOf("total"))).getObjectAsBoolean() && cronapi.database.Operations.hasElement(cronapi.database.Operations.query(Var.valueOf("app.entity.Role"),Var.valueOf("select r from Role r where r.user.id = :userId AND r.id = \'Manager\'"),Var.valueOf("userId",cronapi.database.Operations.getField(usuarioLogado, Var.valueOf("this[0].id"))))).negate().getObjectAsBoolean()).getObjectAsBoolean()) {
-            cronapi.database.Operations.insert(Var.valueOf("app.entity.Role"),cronapi.database.Operations.newEntity(Var.valueOf("app.entity.Role"),Var.valueOf("id",Var.valueOf("Manager")),Var.valueOf("user",cronapi.database.Operations.newEntity(Var.valueOf("app.entity.User"),Var.valueOf("id",cronapi.database.Operations.getField(usuarioLogado, Var.valueOf("this[0].id")))))));
+          {}
         }
     }
     return totalOrgaoDelegado;
