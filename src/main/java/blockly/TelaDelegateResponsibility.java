@@ -69,6 +69,7 @@ public static Var ExcluirDelegacao(Var delegacao) throws Exception {
    public Var call() throws Exception {
     cronapi.database.Operations.execute(Var.valueOf("SPFT.entity.Delegacao"), Var.valueOf("update Delegacao set status = 0 where id = :id"),Var.valueOf("id",cronapi.object.Operations.getObjectField(delegacao, Var.valueOf("id"))));
     cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.refreshDatasource"), Var.valueOf("ObterGerenciasDelegadasPeloUsuarioLogado"), Var.valueOf("true"));
+    cronapi.util.Operations.callClientFunction( Var.valueOf("cronapi.screen.notify"), Var.valueOf("success"), Var.valueOf("Delegação excluida com sucesso!"));
     return Var.VAR_NULL;
    }
  }.call();
@@ -118,7 +119,9 @@ public static Var IncluirDelegacao(Var chave, Var tipoDelegacao, Var orgaoLista)
         }
     } // end for
     if (Var.valueOf(totalOrgaoDelegado.compareTo(Var.valueOf(0)) > 0).getObjectAsBoolean()) {
-        cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.refreshDatasource"), Var.valueOf("ObterGerenciasDelegadasPeloUsuarioLogado"), Var.valueOf("true"));
+        if (Var.valueOf(Var.valueOf(tipoDelegacao.equals(Var.valueOf("total"))).getObjectAsBoolean() && cronapi.database.Operations.hasElement(cronapi.database.Operations.query(Var.valueOf("app.entity.Role"),Var.valueOf("select r from Role r where r.user.id = :userId AND r.id = \'Manager\'"),Var.valueOf("userId",cronapi.database.Operations.getField(usuarioLogado, Var.valueOf("this[0].id"))))).negate().getObjectAsBoolean()).getObjectAsBoolean()) {
+          {}
+        }
     }
     return totalOrgaoDelegado;
    }
