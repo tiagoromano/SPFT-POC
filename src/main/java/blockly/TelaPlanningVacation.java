@@ -45,11 +45,11 @@ public static Var AoEntrar(Var param_login) throws Exception {
 public static void AlterarDataFinal() throws Exception {
   new Callable<Var>() {
 
-   private Var dataInicial = Var.VAR_NULL;
+   private Var rowData = Var.VAR_NULL;
 
    public Var call() throws Exception {
-    dataInicial = cronapi.conversion.Operations.stringToDate(cronapi.screen.Operations.getValueOfField(Var.valueOf("vars.periodoDataInicial")), Var.valueOf("yyy-MM-dd"));
-    cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeValueOfField"), Var.valueOf("vars.periodoDataFinal"), cronapi.dateTime.Operations.incYear(dataInicial, Var.valueOf(1)));
+    rowData = cronapi.conversion.Operations.stringToDate(cronapi.screen.Operations.getValueOfField(Var.valueOf("vars.periodoDataInicial")), Var.valueOf("yyy-MM-dd"));
+    cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeValueOfField"), Var.valueOf("vars.periodoDataFinal"), cronapi.dateTime.Operations.incYear(rowData, Var.valueOf(1)));
    return Var.VAR_NULL;
    }
  }.call();
@@ -77,6 +77,58 @@ public static void ObterDataFinal() throws Exception {
    public Var call() throws Exception {
     cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeValueOfField"), Var.valueOf("vars.periodoDataFinal"), cronapi.dateTime.Operations.incYear(cronapi.dateTime.Operations.getNowNoHour(), Var.valueOf(1)));
    return Var.VAR_NULL;
+   }
+ }.call();
+}
+
+/**
+ *
+ * @param rowData
+ * @return Var
+ */
+// Descreva esta função...
+public static Var getDaysQuantity1(Var rowData) throws Exception {
+ return new Callable<Var>() {
+
+   private Var finalDateField = Var.VAR_NULL;
+   private Var initialDateField = Var.VAR_NULL;
+   private Var totalDays = Var.VAR_NULL;
+
+   public Var call() throws Exception {
+    finalDateField = cronapi.object.Operations.getObjectField(rowData, Var.valueOf("dataPeriodo1Fim"));
+    initialDateField = cronapi.object.Operations.getObjectField(rowData, Var.valueOf("dataPeriodo1Inicio"));
+    if (Var.valueOf(cronapi.logic.Operations.isNull(finalDateField).getObjectAsBoolean() || cronapi.logic.Operations.isNull(initialDateField).getObjectAsBoolean()).getObjectAsBoolean()) {
+        totalDays = Var.valueOf(0);
+    } else {
+        totalDays = cronapi.dateTime.Operations.getDaysBetweenDates(finalDateField, initialDateField);
+    }
+    return totalDays;
+   }
+ }.call();
+}
+
+/**
+ *
+ * @param rowData
+ * @return Var
+ */
+// Descreva esta função...
+public static Var getDaysQuantity2(Var rowData) throws Exception {
+ return new Callable<Var>() {
+
+   private Var finalDateField = Var.VAR_NULL;
+   private Var initialDateField = Var.VAR_NULL;
+   private Var totalDays = Var.VAR_NULL;
+
+   public Var call() throws Exception {
+    initialDateField = cronapi.object.Operations.getObjectField(rowData, Var.valueOf("dataPeriodo2Inicio"));
+    finalDateField = cronapi.object.Operations.getObjectField(rowData, Var.valueOf("dataPeriodo2Fim"));
+    if (Var.valueOf(cronapi.logic.Operations.isNull(finalDateField).getObjectAsBoolean() || cronapi.logic.Operations.isNull(initialDateField).getObjectAsBoolean()).getObjectAsBoolean()) {
+        totalDays = Var.valueOf(0);
+    } else {
+        totalDays = cronapi.dateTime.Operations.getDaysBetweenDates(finalDateField, initialDateField);
+    }
+    return totalDays;
    }
  }.call();
 }
