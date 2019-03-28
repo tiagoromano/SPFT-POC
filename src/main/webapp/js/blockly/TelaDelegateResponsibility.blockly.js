@@ -4,10 +4,19 @@ window.blockly.js.blockly = window.blockly.js.blockly || {};
 window.blockly.js.blockly.TelaDelegateResponsibility = window.blockly.js.blockly.TelaDelegateResponsibility || {};
 
 /**
+ * Descreva esta função...
+ */
+window.blockly.js.blockly.TelaDelegateResponsibility.Exibir_Hist_C3_B3rico = function() {
+ var item, orgaoLista;
+  this.cronapi.screen.refreshDatasource("ObterHistoricoDelegacoes", 'true');
+  this.cronapi.screen.showModal("modalHistorico");
+}
+
+/**
  * TelaDelegateResponsibility
  */
 window.blockly.js.blockly.TelaDelegateResponsibility.Incluir = function() {
- var item, orgaoLista, totalSolicitacao;
+ var item, orgaoLista;
   orgaoLista = this.cronapi.screen.getSelectedRowsGrid("vars.gerenciasGrade");
   if (orgaoLista.length == 0) {
     this.cronapi.screen.notify('error','Selecione as gerências que deseja delegar');

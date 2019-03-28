@@ -81,6 +81,7 @@ public static Var AprovarSolicitacaoFerias(@PathVariable("selectedRows") Var sel
 
    private Var item = Var.VAR_NULL;
    private Var solicitacaoFerias = Var.VAR_NULL;
+   private Var historicoRet = Var.VAR_NULL;
    private Var totalSolicitacao = Var.VAR_NULL;
    private Var i = Var.VAR_NULL;
    private Var historicoAcaoSolicitacao = Var.VAR_NULL;
@@ -109,6 +110,7 @@ public static Var AprovarSolicitacaoFerias(@PathVariable("selectedRows") Var sel
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),historicoAcaoSolicitacao);
             exportado = blockly.SAP.ExportarSolicitacao(solicitacaoFerias);
             totalAprovadas = cronapi.math.Operations.sum(totalAprovadas,Var.valueOf(1));
+            historicoRet = blockly.Util.AdicionarHistoricoSolicitacao(Var.valueOf("aprovou"), solicitacaoFerias);
         }
     } // end for
     return totalAprovadas;
@@ -296,6 +298,7 @@ public static Var ReprovarSolicitacaoFerias(@PathVariable("selectedRows") Var se
 
    private Var item = Var.VAR_NULL;
    private Var solicitacaoFerias = Var.VAR_NULL;
+   private Var historicoRet = Var.VAR_NULL;
    private Var totalSolicitacao = Var.VAR_NULL;
    private Var totalSolicitacaoReprovada = Var.VAR_NULL;
    private Var i = Var.VAR_NULL;
@@ -323,6 +326,7 @@ public static Var ReprovarSolicitacaoFerias(@PathVariable("selectedRows") Var se
             historicoAcaoSolicitacao = Var.valueOf(GerarHistoricoSolicitacao(cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("id")), cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("periodoConcessao.forcaTrabalho.id")), solicitacaoFerias));
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),historicoAcaoSolicitacao);
             totalSolicitacaoReprovada = cronapi.math.Operations.sum(totalSolicitacaoReprovada,Var.valueOf(1));
+            historicoRet = blockly.Util.AdicionarHistoricoSolicitacao(Var.valueOf("reprovou"), solicitacaoFerias);
         }
     } // end for
     return totalSolicitacaoReprovada;
@@ -353,6 +357,7 @@ public static Var SalvarSolicitacaoFerias(@PathVariable("param_solicitacaoFerias
    private Var periodoConcessaoCorrente = Var.VAR_NULL;
    private Var periodoConcessaoIdCorrente = Var.VAR_NULL;
    private Var solicitacaoFeriasIdCorrente = Var.VAR_NULL;
+   private Var historicoRet = Var.VAR_NULL;
 
    public Var call() throws Exception {
     item = Var.valueOf("Solicitação armazenada com sucesso!");
@@ -373,13 +378,16 @@ public static Var SalvarSolicitacaoFerias(@PathVariable("param_solicitacaoFerias
             periodoConcessaoIdCorrente = cronapi.database.Operations.getField(periodoConcessaoCorrente, Var.valueOf("this[0]"));
             solicitacaoFeriasIdCorrente = cronapi.database.Operations.getField(cronapi.database.Operations.query(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf("select s.id from SolicitacaoFerias s where s.periodoConcessao.id = :periodoConcessaoId"),Var.valueOf("periodoConcessaoId",periodoConcessaoIdCorrente)), Var.valueOf("this[0]"));
             cronapi.database.Operations.update(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf(GerarPeriodoConcessao(periodoConcessao, periodoConcessaoIdCorrente, forcaTrabalhoId)));
-            cronapi.database.Operations.update(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf(GerarSolicitacaoFerias(solicitacaoFerias, solicitacaoFeriasIdCorrente, periodoConcessao, _C3_A9AdminOuGerente)));
+            solicitacaoFerias = Var.valueOf(GerarSolicitacaoFerias(solicitacaoFerias, solicitacaoFeriasIdCorrente, periodoConcessao, _C3_A9AdminOuGerente));
+            cronapi.database.Operations.update(Var.valueOf("SPFT.entity.SolicitacaoFerias"),solicitacaoFerias);
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf(GerarHistoricoSolicitacao(solicitacaoFeriasIdCorrente, forcaTrabalhoId, solicitacaoFerias)));
+            historicoRet = blockly.Util.AdicionarHistoricoSolicitacao(Var.valueOf("atualizou"), solicitacaoFerias);
         } else {
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.PeriodoConcessao"),Var.valueOf(GerarPeriodoConcessao(periodoConcessao, Var.VAR_NULL, forcaTrabalhoId)));
             solicitacaoFerias = Var.valueOf(GerarSolicitacaoFerias(solicitacaoFerias, Var.VAR_NULL, periodoConcessao, _C3_A9AdminOuGerente));
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.SolicitacaoFerias"),solicitacaoFerias);
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),Var.valueOf(GerarHistoricoSolicitacao(cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("id")), forcaTrabalhoId, solicitacaoFerias)));
+            historicoRet = blockly.Util.AdicionarHistoricoSolicitacao(Var.valueOf("inseriu"), solicitacaoFerias);
         }
     }
     return item;

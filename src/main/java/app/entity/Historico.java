@@ -55,6 +55,21 @@ public class Historico implements Serializable {
   private java.lang.String descricao;
 
   /**
+  * @generated
+  */
+  @Temporal(TemporalType.TIMESTAMP)
+  @Column(name = "dataIn", nullable = true, unique = false, insertable=true, updatable=true)
+  
+  private java.util.Date dataIn;
+
+  /**
+  * @generated
+  */
+  @Column(name = "forcaTrabalhoChaveAcao", nullable = true, unique = false, insertable=true, updatable=true)
+  
+  private java.lang.String forcaTrabalhoChaveAcao;
+
+  /**
    * Construtor
    * @generated
    */
@@ -139,6 +154,46 @@ public class Historico implements Serializable {
    */
   public Historico setDescricao(java.lang.String descricao){
     this.descricao = descricao;
+    return this;
+  }
+
+  /**
+   * Obtém dataIn
+   * return dataIn
+   * @generated
+   */
+  
+  public java.util.Date getDataIn(){
+    return this.dataIn;
+  }
+
+  /**
+   * Define dataIn
+   * @param dataIn dataIn
+   * @generated
+   */
+  public Historico setDataIn(java.util.Date dataIn){
+    this.dataIn = dataIn;
+    return this;
+  }
+
+  /**
+   * Obtém forcaTrabalhoChaveAcao
+   * return forcaTrabalhoChaveAcao
+   * @generated
+   */
+  
+  public java.lang.String getForcaTrabalhoChaveAcao(){
+    return this.forcaTrabalhoChaveAcao;
+  }
+
+  /**
+   * Define forcaTrabalhoChaveAcao
+   * @param forcaTrabalhoChaveAcao forcaTrabalhoChaveAcao
+   * @generated
+   */
+  public Historico setForcaTrabalhoChaveAcao(java.lang.String forcaTrabalhoChaveAcao){
+    this.forcaTrabalhoChaveAcao = forcaTrabalhoChaveAcao;
     return this;
   }
 
