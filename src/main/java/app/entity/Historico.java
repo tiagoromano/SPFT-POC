@@ -45,7 +45,7 @@ public class Historico implements Serializable {
   */
   @Column(name = "idTabela", nullable = true, unique = false, insertable=true, updatable=true)
   
-  private java.lang.String idTabela;
+  private java.lang.Integer idTabela;
 
   /**
   * @generated
@@ -123,7 +123,7 @@ public class Historico implements Serializable {
    * @generated
    */
   
-  public java.lang.String getIdTabela(){
+  public java.lang.Integer getIdTabela(){
     return this.idTabela;
   }
 
@@ -132,7 +132,7 @@ public class Historico implements Serializable {
    * @param idTabela idTabela
    * @generated
    */
-  public Historico setIdTabela(java.lang.String idTabela){
+  public Historico setIdTabela(java.lang.Integer idTabela){
     this.idTabela = idTabela;
     return this;
   }
