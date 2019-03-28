@@ -22,6 +22,7 @@ public class SecurityPermission implements Permission {
     http.authorizeRequests().antMatchers("/plugins/**").permitAll();
     http.authorizeRequests().antMatchers("/components/**").permitAll();
     http.authorizeRequests().antMatchers("/js/**").permitAll();
+    http.authorizeRequests().antMatchers("/imgs/**").permitAll();
     http.authorizeRequests().antMatchers("/lib/**").permitAll();
     http.authorizeRequests().antMatchers("/css/**").permitAll();
     http.authorizeRequests().antMatchers("/img/**").permitAll();

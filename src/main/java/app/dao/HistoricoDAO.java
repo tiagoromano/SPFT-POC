@@ -17,23 +17,23 @@ import org.springframework.transaction.annotation.*;
  * 
  * @generated
  */
-@Repository("DeviceDAO")
+@Repository("HistoricoDAO")
 @Transactional(transactionManager="app-TransactionManager")
-public interface DeviceDAO extends JpaRepository<Device, java.lang.String> {
+public interface HistoricoDAO extends JpaRepository<Historico, java.lang.String> {
 
   /**
-   * Obtém a instância de Device utilizando os identificadores
+   * Obtém a instância de Historico utilizando os identificadores
    * 
    * @param id
    *          Identificador 
    * @return Instância relacionada com o filtro indicado
    * @generated
    */    
-  @Query("SELECT entity FROM Device entity WHERE entity.id = :id")
-  public Device findOne(@Param(value="id") java.lang.String id);
+  @Query("SELECT entity FROM Historico entity WHERE entity.id = :id")
+  public Historico findOne(@Param(value="id") java.lang.String id);
 
   /**
-   * Remove a instância de Device utilizando os identificadores
+   * Remove a instância de Historico utilizando os identificadores
    * 
    * @param id
    *          Identificador 
@@ -41,17 +41,9 @@ public interface DeviceDAO extends JpaRepository<Device, java.lang.String> {
    * @generated
    */    
   @Modifying
-  @Query("DELETE FROM Device entity WHERE entity.id = :id")
+  @Query("DELETE FROM Historico entity WHERE entity.id = :id")
   public void delete(@Param(value="id") java.lang.String id);
 
-  /**
-   * Lista com paginação de acordo com a NamedQuery
-   * 
-   * @generated
-   */
-  @Query("select c from Device c")
-  public Page<Device> list(Pageable pageable);
-  
 
 
 }
