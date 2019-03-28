@@ -1,15 +1,40 @@
-<ion-view class="pane">
-  <ion-header-bar align-title="center" class="bar bar-positive" xattr-theme="bar-positive" data-component="crn-ion-header-bar">
-    <div class="buttons buttons-left header-item">
-      <button class="button button-clear" menu-toggle="left" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-navicon"></i> </button>
-    </div>
-    <h1 class="title">Marcar férias</h1>
-    <div class="buttons buttons-right header-item">
-      
-    </div>
-  </ion-header-bar>
-  <ion-content data-component="crn-ion-content" class="scroll-content has-header">
-  <datasource name="obterPeriodoConcessivo" entity="SPFT.query6294" keys="" rows-per-page="100" on-before-create="" on-after-create="" on-before-update="" on-after-update="" on-before-delete="" on-after-delete="" on-after-fill="" lazy="false" data-component="crn-datasource" class="component-holder" schema="[]" condition=""></datasource><h2 xattr-position="text-center" class="text-center component-holder col-xs-12" data-component="crn-label" id="crn-label-1024774">Escolha uma data</h2><div class="card component-holder col-xs-12" data-component="crn-card" id="crn-card-633285"><p xattr-position="text-center" class="text-center component-holder  col-xs-6" data-component="crn-paragraph" id="crn-paragraph-493862">Matrícula:</p><p xattr-position="text-center" class="text-center component-holder  col-xs-6" data-component="crn-paragraph" id="crn-paragraph4941">Chave:</p><p xattr-position="text-center" class="text-center component-holder col-xs-12" data-component="crn-paragraph" id="crn-paragraph13391">Empregado:</p><p xattr-position="text-center" class="text-center component-holder col-xs-12" data-component="crn-paragraph" id="crn-paragraph77351">Gerência:</p></div>
+<style title="local">
 
-<div class="item component-holder" crn-datasource="obterPeriodoConcessivo" ng-repeat="rowData in datasource.data" id="crn-list-avatar-162390" data-component="crn-list-avatar"><a class="item item-avatar-left" xattr-position="item-avatar-left" data-component="crn-item-avatar" id="crn-item-avatar3649" href=""><div class="item-content text-left" xattr-text-position="text-left"><h2 class="dark" xattr-theme="dark">{{rowData.dataPeriodo1Inicio| mask: 'date'}} à {{rowData.dataPeriodo1Fim| mask: 'date'}}</h2><h3 class="dark" xattr-theme="dark">{{rowData.status == 1 ? "Disponível para Marcação" : "Aguardando Aprovação" }}</h3></div></a></div></ion-content>
-</ion-view>
+</style> 
+<div id="starter" ng-init="cronapi.server('blockly.TelaRequestVacation.AoEntrar').run(params.login)" ng-destroy="" data-component="crn-start" screen-params=""> 
+  <ion-view class="pane"> 
+    <ion-header-bar align-title="center" class="bar bar-positive" xattr-theme="bar-positive" data-component="crn-ion-header-bar"> 
+      <div class="buttons buttons-left header-item"> 
+        <button class="button button-clear" menu-toggle="left" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-navicon"></i> </button> 
+      </div> 
+      <h1 class="title">Marcar férias</h1> 
+      <div class="buttons buttons-right header-item"> 
+      </div> 
+    </ion-header-bar> 
+    <ion-content data-component="crn-ion-content" class="scroll-content has-header"> 
+      <datasource name="obterPeriodoConcessivo" entity="SPFT.query6294" keys="" rows-per-page="100" on-before-create="" on-after-create="" on-before-update="" on-after-update="" on-before-delete="" on-after-delete="" on-after-fill="" lazy="false" data-component="crn-datasource" class="component-holder" schema="[]" condition=""></datasource> 
+      <h2 xattr-position="text-center" class="text-center component-holder col-xs-12" data-component="crn-label" id="crn-label-1024774">Escolha uma data</h2> 
+      <div class="card component-holder col-xs-12" data-component="crn-card" id="crn-card-633285"> 
+        <p xattr-position="text-left" class="component-holder text-left col-xs-4" data-component="crn-paragraph" id="crn-paragraph-493862">Matrícula:</p> 
+        <p xattr-position="text-left" class="text-left col-xs-8" data-component="crn-paragraph" id="valorMatricula">........</p> 
+        <p xattr-position="text-left" class="component-holder text-left col-xs-4" data-component="crn-paragraph" id="crn-paragraph4941">Chave:</p> 
+        <p xattr-position="text-left" class="component-holder text-left col-xs-8" data-component="crn-paragraph" id="valorChave">........</p> 
+        <p xattr-position="text-left" class="component-holder col-xs-4 text-left" data-component="crn-paragraph" id="crn-paragraph13391">Empregado:</p> 
+        <p xattr-position="text-left" class="component-holder col-xs-8 text-left" data-component="crn-paragraph" id="valorEmpregado">........</p> 
+        <p xattr-position="text-left" class="component-holder col-xs-4 text-left" data-component="crn-paragraph" id="crn-paragraph77351">Gerência:</p> 
+        <p xattr-position="text-left" class="component-holder col-xs-8 text-left" data-component="crn-paragraph" id="valorGerencia">........</p> 
+      </div> 
+      <div class="item component-holder" crn-datasource="obterPeriodoConcessivo" ng-repeat="rowData in datasource.data" id="crn-list-avatar-78503" data-component="crn-list-avatar">
+    <div data-component="crn-list-item-avatar" id="crn-list-item-avatar-6899">
+    <a class="item item-avatar-left" xattr-position="item-avatar-left" ng-click="cronapi.server('blockly.TelaRequestVacation.SelecionarPeriodoConcessivoMobile').run(null, null)">
+        
+        <div class="item-content text-left" xattr-text-position="text-left">
+        <h2 class="dark" xattr-theme="dark">{{rowData.dataPeriodo1Inicio| mask: 'date'}} à {{rowData.dataPeriodo1Fim| mask: 'date'}}</h2>
+        <h3 class="dark" xattr-theme="dark">{{rowData.status == 1 ? "Disponível para Marcação" : "Aguardando Aprovação" }}</h3>
+        </div>
+    </a>
+    </div> 
+</div> 
+    </ion-content> 
+  </ion-view> 
+</div>
