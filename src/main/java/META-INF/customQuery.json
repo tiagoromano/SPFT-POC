@@ -780,7 +780,7 @@
     "query": {
       "isEmpty": true,
       "isRawSql": true,
-      "sqlContent": "select  s.periodoConcessao.forcaTrabalho.nome as nomeFuncionario,\r\n        s.periodoConcessao.forcaTrabalho.matricula as matriculaFuncionario,\r\n        s.periodoConcessao.dataConcessaoInicial as dataConcessaoInicial,\r\n        s.periodoConcessao.dataConcessaoFinal as dataConcessaoFinal,\r\n        s.periodoConcessao.totalDiasContigente as totalDiasContigente,\r\n        CASE WHEN (s.utilizaAbono \u003d 1) THEN \u0027Sim\u0027 WHEN (s.utilizaAbono \u003d 0) THEN \u0027Não\u0027 ELSE \u0027Não\u0027 END as utilizaAbonoDescricao,\r\n        s.utilizaAbono as utilizaAbono, \r\n        CASE WHEN (s.adiantaDecimo \u003d 1) THEN \u0027Sim\u0027 WHEN (s.adiantaDecimo \u003d 0) THEN \u0027Não\u0027 ELSE \u0027Não\u0027 END as adiantaDecimoDescricao,\r\n        s.adiantaDecimo as adiantaDecimo,\r\n        s.id as solicitacaoId,\r\n        s.justificativa as justificativa, \r\n        s.status as status, \r\n        CASE WHEN (s.status \u003d 1) THEN \u0027Solicitado\u0027 WHEN (s.status \u003d 2) THEN \u0027Aprovado\u0027 WHEN (s.status \u003d 3) THEN \u0027Não Aprovado\u0027 ELSE \u0027Efetivado\u0027 END as statusDescricao,\r\n        s.adiantaDecimo as adiantaDecimo, \r\n        s.dividir as dividir, \r\n        s.dataPeriodo1Inicio as dataPeriodo1Inicio, \r\n        s.dataPeriodo1Fim as dataPeriodo1Fim,\r\n        s.dataPeriodo2Inicio as dataPeriodo2Inicio,\r\n        s.dataPeriodo2Fim as dataPeriodo2Fim, \r\n        s.dataPeriodo3Inicio as dataPeriodo3Inicio,\r\n        s.dataPeriodo3Fim as dataPeriodo3Fim, \r\n        CONCAT(extract(day from s.dataPeriodo1Inicio),\u0027/\u0027, extract(month from s.dataPeriodo1Inicio), \u0027/\u0027, extract(year from s.dataPeriodo1Inicio), \u0027 à \u0027, extract(day from s.dataPeriodo1Fim),\u0027/\u0027, extract(month from s.dataPeriodo1Fim), \u0027/\u0027, extract(year from s.dataPeriodo1Fim)) as periodo1,\r\n        CONCAT(extract(day from s.dataPeriodo2Inicio),\u0027/\u0027, extract(month from s.dataPeriodo2Inicio), \u0027/\u0027, extract(year from s.dataPeriodo2Inicio), \u0027 à \u0027, extract(day from s.dataPeriodo2Fim),\u0027/\u0027, extract(month from s.dataPeriodo2Fim), \u0027/\u0027, extract(year from s.dataPeriodo2Fim)) as periodo2,\r\n        CONCAT(extract(day from s.dataPeriodo3Inicio),\u0027/\u0027, extract(month from s.dataPeriodo3Inicio), \u0027/\u0027, extract(year from s.dataPeriodo3Inicio), \u0027 à \u0027, extract(day from s.dataPeriodo3Fim),\u0027/\u0027, extract(month from s.dataPeriodo3Fim), \u0027/\u0027, extract(year from s.dataPeriodo3Fim)) as periodo3\r\n\r\nfrom SolicitacaoFerias s, Orgao o  \r\nwhere o.codigoForcaTrabalho \u003d s.periodoConcessao.forcaTrabalho.id \r\nAND s.status IN(1, 2, 4)",
+      "sqlContent": "select  s.periodoConcessao.forcaTrabalho.nome as nomeFuncionario,\r\n        s.periodoConcessao.forcaTrabalho.matricula as matriculaFuncionario,\r\n        s.periodoConcessao.dataConcessaoInicial as dataConcessaoInicial,\r\n        s.periodoConcessao.dataConcessaoFinal as dataConcessaoFinal,\r\n        s.periodoConcessao.totalDiasContigente as totalDiasContigente,\r\n        CASE WHEN (s.utilizaAbono \u003d 1) THEN \u0027Sim\u0027 WHEN (s.utilizaAbono \u003d 0) THEN \u0027Não\u0027 ELSE \u0027Não\u0027 END as utilizaAbonoDescricao,\r\n        s.utilizaAbono as utilizaAbono, \r\n        CASE WHEN (s.adiantaDecimo \u003d 1) THEN \u0027Sim\u0027 WHEN (s.adiantaDecimo \u003d 0) THEN \u0027Não\u0027 ELSE \u0027Não\u0027 END as adiantaDecimoDescricao,\r\n        s.adiantaDecimo as adiantaDecimo,\r\n        s.id as solicitacaoId,\r\n        s.justificativa as justificativa, \r\n        s.status as status, \r\n        CASE WHEN (s.status \u003d 1) THEN \u0027Solicitado\u0027 WHEN (s.status \u003d 2) THEN \u0027Aprovado\u0027 WHEN (s.status \u003d 3) THEN \u0027Não Aprovado\u0027 ELSE \u0027Efetivado\u0027 END as statusDescricao,\r\n        s.dividir as dividir, \r\n        CASE WHEN (s.dividir \u003d 1) THEN \u0027Sim\u0027 WHEN (s.dividir \u003d 0) THEN \u0027Não\u0027 ELSE \u0027Não\u0027 END as dividirDescricao,\r\n        s.dataPeriodo1Inicio as dataPeriodo1Inicio, \r\n        s.dataPeriodo1Fim as dataPeriodo1Fim,\r\n        s.dataPeriodo2Inicio as dataPeriodo2Inicio,\r\n        s.dataPeriodo2Fim as dataPeriodo2Fim, \r\n        s.dataPeriodo3Inicio as dataPeriodo3Inicio,\r\n        s.dataPeriodo3Fim as dataPeriodo3Fim, \r\n        CONCAT(extract(day from s.dataPeriodo1Inicio),\u0027/\u0027, extract(month from s.dataPeriodo1Inicio), \u0027/\u0027, extract(year from s.dataPeriodo1Inicio), \u0027 à \u0027, extract(day from s.dataPeriodo1Fim),\u0027/\u0027, extract(month from s.dataPeriodo1Fim), \u0027/\u0027, extract(year from s.dataPeriodo1Fim)) as periodo1,\r\n        CONCAT(extract(day from s.dataPeriodo2Inicio),\u0027/\u0027, extract(month from s.dataPeriodo2Inicio), \u0027/\u0027, extract(year from s.dataPeriodo2Inicio), \u0027 à \u0027, extract(day from s.dataPeriodo2Fim),\u0027/\u0027, extract(month from s.dataPeriodo2Fim), \u0027/\u0027, extract(year from s.dataPeriodo2Fim)) as periodo2,\r\n        CONCAT(extract(day from s.dataPeriodo3Inicio),\u0027/\u0027, extract(month from s.dataPeriodo3Inicio), \u0027/\u0027, extract(year from s.dataPeriodo3Inicio), \u0027 à \u0027, extract(day from s.dataPeriodo3Fim),\u0027/\u0027, extract(month from s.dataPeriodo3Fim), \u0027/\u0027, extract(year from s.dataPeriodo3Fim)) as periodo3\r\n\r\nfrom SolicitacaoFerias s, Orgao o  \r\nwhere o.codigoForcaTrabalho \u003d s.periodoConcessao.forcaTrabalho.id \r\nAND s.status IN(1, 2, 4)",
       "multiTenant": true,
       "paginatorAutomatic": false
     },
@@ -797,9 +797,129 @@
     "defaultValues": {},
     "defaultValuesProperties": {},
     "security": {},
-    "calcFields": {},
+    "calcFields": {
+      "diasPrimeiraParcela": {
+        "type": "server",
+        "blocklyMethod": "getDaysQuantity1",
+        "blocklyClass": "blockly.TelaPlanningVacation",
+        "blocklyLanguage": "java",
+        "blocklyParams": [
+          {
+            "name": "rowData",
+            "value": "data",
+            "type": "CUSTOM"
+          }
+        ],
+        "blocklyJson": {
+          "namespace": "blockly.TelaPlanningVacation",
+          "sourcePath": "src/main/java/blockly/TelaPlanningVacation.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "ObterDataAtual",
+              "hasReturn": "false",
+              "params": []
+            },
+            {
+              "name": "AoEntrar",
+              "hasReturn": "true",
+              "params": [
+                "login"
+              ]
+            },
+            {
+              "name": "ObterDataFinal",
+              "hasReturn": "false",
+              "params": []
+            },
+            {
+              "name": "getDaysQuantity1",
+              "hasReturn": "true",
+              "params": [
+                "rowData"
+              ]
+            },
+            {
+              "name": "AlterarDataFinal",
+              "hasReturn": "false",
+              "params": []
+            },
+            {
+              "name": "getDaysQuantity2",
+              "hasReturn": "true",
+              "params": [
+                "rowData"
+              ]
+            }
+          ]
+        }
+      },
+      "diasSegundaParcela": {
+        "type": "server",
+        "blocklyMethod": "getDaysQuantity2",
+        "blocklyClass": "blockly.TelaPlanningVacation",
+        "blocklyLanguage": "java",
+        "blocklyParams": [
+          {
+            "name": "rowData",
+            "value": "data",
+            "type": "CUSTOM"
+          }
+        ],
+        "blocklyJson": {
+          "namespace": "blockly.TelaPlanningVacation",
+          "sourcePath": "src/main/java/blockly/TelaPlanningVacation.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "ObterDataAtual",
+              "hasReturn": "false",
+              "params": []
+            },
+            {
+              "name": "AoEntrar",
+              "hasReturn": "true",
+              "params": [
+                "login"
+              ]
+            },
+            {
+              "name": "ObterDataFinal",
+              "hasReturn": "false",
+              "params": []
+            },
+            {
+              "name": "getDaysQuantity1",
+              "hasReturn": "true",
+              "params": [
+                "rowData"
+              ]
+            },
+            {
+              "name": "AlterarDataFinal",
+              "hasReturn": "false",
+              "params": []
+            },
+            {
+              "name": "getDaysQuantity2",
+              "hasReturn": "true",
+              "params": [
+                "rowData"
+              ]
+            }
+          ]
+        }
+      }
+    },
     "calcFieldsSecurity": {},
-    "calcFieldsProperties": {},
+    "calcFieldsProperties": {
+      "diasPrimeiraParcela": {
+        "type": "String"
+      },
+      "diasSegundaParcela": {
+        "type": "String"
+      }
+    },
     "errorHandles": {},
     "serviceUrl": "api/cronapi/odata/v2/query780539/"
   }
