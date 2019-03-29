@@ -2989,6 +2989,11 @@
           "selector": "input",
           "type": "event"
         },
+                {
+          "name": "ng-change",
+          "selector": "input",
+          "type": "event"
+        },
         {
           "name": "ng-keyup",
           "selector": "input",
