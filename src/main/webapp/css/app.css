@@ -72,3 +72,59 @@ div.k-grid-header, .k-grid-header .k-header{
     color: white !important;
 }
 
+
+.timeline-chart-tooltip {
+  border: 1px solid #E0E0E0;
+  font-family: Arial, Helvetica;
+  padding: 6px 6px 6px 6px; 
+  width: calc(100% + 2px);
+}
+
+.timeline-chart-tooltip span{
+  font-weight: bold;
+}
+
+
+/* PLANNING */
+
+div#valorChave label { 
+  font-weight: bold;
+}
+
+div#valorEmpregado label { 
+  font-weight: bold;
+}
+
+div#valorGerencia label { 
+  font-weight: bold;
+}
+
+div#valorMatricula label { 
+  font-weight: bold;
+}
+
+div.spacer { 
+  height:15px;
+}
+
+div.bold { 
+  font-weight: bold;
+}
+
+div.center { 
+    display: flex;
+    justify-content: center;
+}
+
+a.pointer-cursor:hover {
+    cursor: pointer;
+}
+
+
+.nav-tabs{
+    background: #008542 !important;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #004c26;
+}
