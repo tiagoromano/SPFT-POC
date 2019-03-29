@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="Ferias" ruleName="Ferias" ruleSecurity="{&quot;post&quot;:&quot;Public&quot;,&quot;get&quot;:&quot;Public&quot;,&quot;execute&quot;:&quot;Public&quot;,&quot;delete&quot;:&quot;Public&quot;,&quot;put&quot;:&quot;Public&quot;}" ruleSynchronous="false" ruleTimeout="300" ruleType="E">
-  <metadata scale="1" scrollx="1435.4" scrolly="-639.9999999999999" target="1p:@PcWwQI0A._4bupyW"/>
+  <metadata scale="1" scrollx="1533.4" scrolly="-1475.9999999999995" target="Z_Tl$bU5:Ria[a6Hlg;X"/>
   <block colour="#fca03b" id="B5o.u7fs/9ul7UnqLuP|" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1247" y="123">
     <mutation>
       <arg name="solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;"/>
@@ -2830,41 +2830,6 @@ Justificativa da reprovação:
     <value name="RETURN">
       <block colour="#0088ee" dependencyby="X;B{C1!^!@KQ49;jOPRc" id="s0!zj3T`jgJC}DJ~k:^|" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
         <field name="VAR">historicoAcaoSolicitacao&lt;SPFT.entity.HistoricoAcaoSolicitacao&gt;</field>
-      </block>
-    </value>
-  </block>
-  <block colour="#487f7f" dependencyby="Z_Tl$bU5:Ria[a6Hlg;X" id=";TD[i4HML9ETR`F_M6]j" multilayer="false" namespace="cronapi.util.Operations.callBlocklyNoReturn" origintype="procedures_callblockly_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%20sem%20retorno%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20chama%20um%20bloco%20sem%20retorno%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Nome%20do%20bloco%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.Operations.callBlocklyNoReturn%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.Operations.callBlocklyNoReturn%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callnoreturn" x="-622" y="1913">
-    <mutation data="%7B%22name%22:%22Util%22,%22class%22:%22blockly.Util%22,%22function%22:%22EnviarEmail%22,%22oldName%22:%22EnviarEmail%22,%22params%22:%22%5B%5C%22para%5C%22,%5C%22assunto%5C%22,%5C%22corpo%5C%22%5D%22,%22type%22:%22java%22,%22namespace%22:%22blockly.Util%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22blockly.Util%22,%22sourcePath%22:%22src/main/java/blockly/Util.blockly%22,%22language%22:%22java%22,%22class%22:%22blockly.Util%22,%22methods%22:%5B%7B%22name%22:%22EnviarEmail%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22para%22,%22assunto%22,%22corpo%22%5D%7D%5D%7D%7D" name="{{cronapi.util.Operations.callBlocklyNoReturn}}">
-      <arg name="para"/>
-      <arg name="assunto"/>
-      <arg name="corpo"/>
-    </mutation>
-    <value name="ARG0">
-      <block colour="#c88330" dependencyby="Z_Tl$bU5:Ria[a6Hlg;X" id="[o|i-`$Rc~6;;b25En7," multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
-        <mutation name="{{cronapi.object.Operations.getObjectField}}">
-          <arg name="Objeto"/>
-          <arg name="Caminho a percorrer"/>
-        </mutation>
-        <value name="PARAM0">
-          <block colour="#0088ee" dependencyby="Z_Tl$bU5:Ria[a6Hlg;X" id="-u]~!9dKD/3~9NFb,O,4" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-            <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
-          </block>
-        </value>
-        <value name="PARAM1">
-          <block colour="#5ba593" dependencyby="Z_Tl$bU5:Ria[a6Hlg;X" id="z~7Pq35u2/6~d=%$F_^n" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-            <field name="TEXT">periodoConcessao.forcaTrabalho.email</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <value name="ARG1">
-      <block colour="#5ba593" dependencyby="Z_Tl$bU5:Ria[a6Hlg;X" id="_cH6v!d`9{Gdp{/)93J)" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-        <field name="TEXT">Solicitação de Férias - Aprovada</field>
-      </block>
-    </value>
-    <value name="ARG2">
-      <block colour="#5ba593" dependencyby="Z_Tl$bU5:Ria[a6Hlg;X" id="^N3Cy}LdHLmqk(Gm2OG}" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-        <field name="TEXT">Solicitação de Férias - Aprovada</field>
       </block>
     </value>
   </block>
