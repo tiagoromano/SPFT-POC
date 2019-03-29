@@ -89,7 +89,7 @@ public static Var SelecionarPeriodoConcessivoMobile(Var param_login, Var periodo
         cronapi.util.Operations.callClientFunction( Var.valueOf("cronapi.screen.notify"), Var.valueOf("error"), Var.valueOf("Não é possível selecionar esse período concessivo"));
     } else {
         cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.showIonicModal"), Var.valueOf("starter"));
-        cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeView"), Var.valueOf("#/app/logged/RequestVacationDetail"), cronapi.list.Operations.newList(Var.valueOf("arquiicaoDataInicial",cronapi.object.Operations.getObjectField(periodo, Var.valueOf("dataPeriodo1Fim"))),Var.valueOf("arquisicaoDataFinal",cronapi.object.Operations.getObjectField(periodo, Var.valueOf("dataPeriodo1Inicio"))),Var.valueOf("login",login)));
+        cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeView"), Var.valueOf("#/app/logged/RequestVacationDetail"), cronapi.list.Operations.newList(Var.valueOf("arquisicaoDataFinal",cronapi.object.Operations.getObjectField(periodo, Var.valueOf("dataPeriodo1Fim"))),Var.valueOf("arquisicaoDataInicial",cronapi.object.Operations.getObjectField(periodo, Var.valueOf("dataPeriodo1Inicio"))),Var.valueOf("login",login)));
     }
     return Var.VAR_NULL;
    }
