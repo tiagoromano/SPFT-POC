@@ -115,7 +115,6 @@ public static Var IncluirDelegacao(Var chave, Var tipoDelegacao, Var orgaoLista)
         i_inc.getObjectAsInt() >= 0 ? i.getObjectAsLong() <= totalOrgao.getObjectAsLong() : i.getObjectAsLong()  >= totalOrgao.getObjectAsLong();
     i.inc(i_inc))  {
         orgao = cronapi.list.Operations.get(orgaoLista, i);
-        System.out.println(orgao.getObjectAsString());
         if (cronapi.database.Operations.hasElement(cronapi.database.Operations.query(Var.valueOf("SPFT.entity.Delegacao"),Var.valueOf("select d from Delegacao d where d.forcaTrabalhoDelegado.id = :forcaTrabalhoDelegadoId AND d.orgao.id = :orgaoId AND d.status = 1"),Var.valueOf("forcaTrabalhoDelegadoId",cronapi.database.Operations.getField(funcionario, Var.valueOf("this[0].id"))),Var.valueOf("orgaoId",cronapi.object.Operations.getObjectField(orgao, Var.valueOf("id"))))).negate().getObjectAsBoolean()) {
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.Delegacao"),cronapi.database.Operations.newEntity(Var.valueOf("SPFT.entity.Delegacao"),Var.valueOf("id",delegacaoIdCorrente),Var.valueOf("orgao",orgao),Var.valueOf("status",Var.valueOf(1)),Var.valueOf("dataCriacao",cronapi.dateTime.Operations.getNow()),Var.valueOf("dataInativo",Var.VAR_NULL),Var.valueOf("forcaTrabalhoGerente",cronapi.database.Operations.newEntity(Var.valueOf("SPFT.entity.ForcaTrabalho"),Var.valueOf("id",cronapi.database.Operations.getField(usuarioLogado, Var.valueOf("this[0].id"))))),Var.valueOf("forcaTrabalhoDelegado",cronapi.database.Operations.newEntity(Var.valueOf("SPFT.entity.ForcaTrabalho"),Var.valueOf("id",cronapi.database.Operations.getField(funcionario, Var.valueOf("this[0].id"))))),Var.valueOf("forcaTrabalhoDes",Var.VAR_NULL),Var.valueOf("tipoDelegacao",Var.valueOf(tipoDelegacao.equals(Var.valueOf("total"))).getObjectAsBoolean() ? Var.valueOf(1) : Var.valueOf(0))));
             historicoRes = blockly.Util.AdicionarHistoricoDelegacao(delegacaoIdCorrente, Var.valueOf("inseriu"));
@@ -124,8 +123,8 @@ public static Var IncluirDelegacao(Var chave, Var tipoDelegacao, Var orgaoLista)
         }
     } // end for
     if (Var.valueOf(totalOrgaoDelegado.compareTo(Var.valueOf(0)) > 0).getObjectAsBoolean()) {
-        if (Var.valueOf(Var.valueOf(tipoDelegacao.equals(Var.valueOf("total"))).getObjectAsBoolean() && cronapi.database.Operations.hasElement(cronapi.database.Operations.query(Var.valueOf("app.entity.Role"),Var.valueOf("select r from Role r where r.user.id = :userId AND r.id = \'Manager\'"),Var.valueOf("userId",cronapi.database.Operations.getField(usuarioLogado, Var.valueOf("this[0].id"))))).negate().getObjectAsBoolean()).getObjectAsBoolean()) {
-          {}
+        if (Var.valueOf(Var.valueOf(tipoDelegacao.equals(Var.valueOf("total"))).getObjectAsBoolean() && cronapi.database.Operations.hasElement(cronapi.database.Operations.query(Var.valueOf("app.entity.Role"),Var.valueOf("select r from Role r where r.user.login = :userLogin AND r.id = \'Manager\'"),Var.valueOf("userLogin",chave))).negate().getObjectAsBoolean()).getObjectAsBoolean()) {
+            cronapi.database.Operations.insert(Var.valueOf("app.entity.Role"),cronapi.database.Operations.newEntity(Var.valueOf("app.entity.Role"),Var.valueOf("id",Var.valueOf("Manager")),Var.valueOf("user",cronapi.database.Operations.newEntity(Var.valueOf("app.entity.User"),Var.valueOf("id",cronapi.database.Operations.getField(cronapi.database.Operations.query(Var.valueOf("app.entity.User"),Var.valueOf("select u from User u where u.login = :login"),Var.valueOf("login",chave)), Var.valueOf("this[0].id")))))));
         }
     }
     return totalOrgaoDelegado;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/webapp/views/manager/delegateResponsibility.view.html" resourceType="JAVA" ruleDescription="TelaDelegateResponsibility" ruleName="TelaDelegateResponsibility" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
-  <metadata scale="0.8957951999999999" scrollx="1343.8246965390026" scrolly="-8.17209745670516" target="!7AN?,p`#,=?bsmYf6Td"/>
+  <metadata scale="1" scrollx="1399.4" scrolly="-1536" target="8ds5FE$bR6`],^k%dtoS"/>
   <block colour="#fca03b" id="!7AN?,p`#,=?bsmYf6Td" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1297" y="188">
     <mutation>
       <arg name="delegacao&amp;lt;SPFT.entity.Delegacao&amp;gt;"/>
@@ -546,7 +546,7 @@
                     <field name="VAR">usuarioLogado</field>
                     <value name="VALUE">
                       <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="4Bto18D/UD(78e*ZK(Nn" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
-                        <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22ForcaTrabalho%22,%22namespace%22:%22SPFT.entity.ForcaTrabalho%22,%22alias%22:%22f%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22f%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22f.codigoLogin%22,%22field%22:%22f.codigoLogin%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:codigoLogin%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22ForcaTrabalho%22,%22entityFullName%22:%22SPFT.entity.ForcaTrabalho%22,%22filter%22:%22select%20f%20from%20ForcaTrabalho%20f%20where%20f.codigoLogin%20=%20:codigoLogin%22,%22params%22:%22%5B%5C%22codigoLogin%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+                        <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22ForcaTrabalho%22,%22namespace%22:%22SPFT.entity.ForcaTrabalho%22,%22alias%22:%22f%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22f%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22f.codigoLogin%22,%22field%22:%22f.codigoLogin%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:codigoLogin%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22ForcaTrabalho%22,%22entityFullName%22:%22SPFT.entity.ForcaTrabalho%22,%22filter%22:%22select%20f%20from%20ForcaTrabalho%20f%20where%20f.codigoLogin%20=%20:codigoLogin%22,%22params%22:%22%5B%5C%22codigoLogin%5C%22%5D%22,%22wizardType%22:%22SELECT%22%7D" name="{{cronapi.database.Operations.query}}">
                           <arg name="codigoLogin"/>
                         </mutation>
                         <value name="ARG0">
@@ -629,123 +629,111 @@
                                   </block>
                                 </value>
                                 <next>
-                                  <block colour="#5ba58c" dependencyby="8ds5FE$bR6`],^k%dtoS" id="nF7H|$OBu(]/[3jN+WmZ" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
-                                    <value name="TEXT">
-                                      <shadow colour="#5ba593" dependencyby="8ds5FE$bR6`],^k%dtoS" id="=QOK)xSvNZ5Yu9K|ydRr" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-                                        <field name="TEXT">abc</field>
-                                      </shadow>
-                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="}d$O!qLWrn+!EK1|XcdV" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                        <field name="VAR">orgao&lt;SPFT.entity.Orgao&gt;</field>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block colour="#5b80a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="bHw:!%a0hLjSv@1[]O89" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
-                                        <value name="IF0">
-                                          <block colour="#5b80a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="SM#t?W^fBO5XD7_7z^5G" origintype="logic_negate" output="true" tooltip="Retorna verdadeiro se a entrada for falsa.  Retorna falsa se a entrada for verdadeira." type="logic_negate">
-                                            <value name="BOOL">
-                                              <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="wZkWpPYxtB}2EeXYC(F8" inline="true" multilayer="false" namespace="cronapi.database.Operations.hasElement" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExiste%20registro%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20existe%20registro%20no%20cursor%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
-                                                <mutation name="{{cronapi.database.Operations.hasElement}}" return-raw-type="cronapi.Var">
-                                                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                                  <block colour="#5b80a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="bHw:!%a0hLjSv@1[]O89" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                                    <value name="IF0">
+                                      <block colour="#5b80a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="SM#t?W^fBO5XD7_7z^5G" origintype="logic_negate" output="true" tooltip="Retorna verdadeiro se a entrada for falsa.  Retorna falsa se a entrada for verdadeira." type="logic_negate">
+                                        <value name="BOOL">
+                                          <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="wZkWpPYxtB}2EeXYC(F8" inline="true" multilayer="false" namespace="cronapi.database.Operations.hasElement" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExiste%20registro%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20existe%20registro%20no%20cursor%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                            <mutation name="{{cronapi.database.Operations.hasElement}}" return-raw-type="cronapi.Var">
+                                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id=",)fzI_$DS5_0}$}%.K|N" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+                                                <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22Delegacao%22,%22namespace%22:%22SPFT.entity.Delegacao%22,%22alias%22:%22d%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22d%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22d.forcaTrabalhoDelegado.id%22,%22field%22:%22d.forcaTrabalhoDelegado.id%22,%22type%22:%22integer%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:forcaTrabalhoDelegadoId%22,%22valueIsField%22:false%7D,%7B%22id%22:%22d.orgao.id%22,%22field%22:%22d.orgao.id%22,%22type%22:%22integer%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:orgaoId%22,%22valueIsField%22:false%7D,%7B%22id%22:%22d.status%22,%22field%22:%22d.status%22,%22type%22:%22integer%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%221%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22Delegacao%22,%22entityFullName%22:%22SPFT.entity.Delegacao%22,%22filter%22:%22select%20d%20from%20Delegacao%20d%20where%20d.forcaTrabalhoDelegado.id%20=%20:forcaTrabalhoDelegadoId%20AND%20d.orgao.id%20=%20:orgaoId%20AND%20d.status%20=%201%22,%22params%22:%22%5B%5C%22forcaTrabalhoDelegadoId%5C%22,%5C%22orgaoId%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+                                                  <arg name="forcaTrabalhoDelegadoId"/>
+                                                  <arg name="orgaoId"/>
                                                 </mutation>
                                                 <value name="ARG0">
-                                                  <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id=",)fzI_$DS5_0}$}%.K|N" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
-                                                    <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22Delegacao%22,%22namespace%22:%22SPFT.entity.Delegacao%22,%22alias%22:%22d%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22d%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22d.forcaTrabalhoDelegado.id%22,%22field%22:%22d.forcaTrabalhoDelegado.id%22,%22type%22:%22integer%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:forcaTrabalhoDelegadoId%22,%22valueIsField%22:false%7D,%7B%22id%22:%22d.orgao.id%22,%22field%22:%22d.orgao.id%22,%22type%22:%22integer%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:orgaoId%22,%22valueIsField%22:false%7D,%7B%22id%22:%22d.status%22,%22field%22:%22d.status%22,%22type%22:%22integer%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%221%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22Delegacao%22,%22entityFullName%22:%22SPFT.entity.Delegacao%22,%22filter%22:%22select%20d%20from%20Delegacao%20d%20where%20d.forcaTrabalhoDelegado.id%20=%20:forcaTrabalhoDelegadoId%20AND%20d.orgao.id%20=%20:orgaoId%20AND%20d.status%20=%201%22,%22params%22:%22%5B%5C%22forcaTrabalhoDelegadoId%5C%22,%5C%22orgaoId%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
-                                                      <arg name="forcaTrabalhoDelegadoId"/>
-                                                      <arg name="orgaoId"/>
+                                                  <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="/qQA%=q0,#)QSh1}-[nE" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                                    <mutation name="{{cronapi.database.Operations.getField}}">
+                                                      <arg name="Fonte de dados"/>
+                                                      <arg name="Nome do campo"/>
                                                     </mutation>
-                                                    <value name="ARG0">
-                                                      <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="/qQA%=q0,#)QSh1}-[nE" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
-                                                        <mutation name="{{cronapi.database.Operations.getField}}">
-                                                          <arg name="Fonte de dados"/>
-                                                          <arg name="Nome do campo"/>
-                                                        </mutation>
-                                                        <value name="PARAM0">
-                                                          <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="CH,{,}FFBc}2qu5+c8!0" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                            <field name="VAR">funcionario</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="PARAM1">
-                                                          <block colour="#db802b" dependencyby="8ds5FE$bR6`],^k%dtoS" id="~bFrJLrN2}#rx3p(v(tC" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
-                                                            <mutation name="">
-                                                              <arg label="f.dataAdmissao" value="this[0].dataAdmissao"/>
-                                                              <arg label="f.tipoSanguineo" value="this[0].tipoSanguineo"/>
-                                                              <arg label="f.codigoSubgrupoEmpregado" value="this[0].codigoSubgrupoEmpregado"/>
-                                                              <arg label="f.codigoReligiao" value="this[0].codigoReligiao"/>
-                                                              <arg label="f.motivoStatus" value="this[0].motivoStatus"/>
-                                                              <arg label="f.nome" value="this[0].nome"/>
-                                                              <arg label="f.codigoCargo" value="this[0].codigoCargo"/>
-                                                              <arg label="f.enderecoBairro" value="this[0].enderecoBairro"/>
-                                                              <arg label="f.enderecoComplemento" value="this[0].enderecoComplemento"/>
-                                                              <arg label="f.celular" value="this[0].celular"/>
-                                                              <arg label="f.numeroRamal" value="this[0].numeroRamal"/>
-                                                              <arg label="f.codigoPais" value="this[0].codigoPais"/>
-                                                              <arg label="f.codigoImovel" value="this[0].codigoImovel"/>
-                                                              <arg label="f.endereco" value="this[0].endereco"/>
-                                                              <arg label="f.nomeForcaTrabalhoGuerra" value="this[0].nomeForcaTrabalhoGuerra"/>
-                                                              <arg label="f.codigoEscolaridade" value="this[0].codigoEscolaridade"/>
-                                                              <arg label="f.centroCusto" value="this[0].centroCusto"/>
-                                                              <arg label="f.email" value="this[0].email"/>
-                                                              <arg label="f.cpf" value="this[0].cpf"/>
-                                                              <arg label="f.sexo" value="this[0].sexo"/>
-                                                              <arg label="f.codigoGrupoEmpregado" value="this[0].codigoGrupoEmpregado"/>
-                                                              <arg label="f.emailParticular2" value="this[0].emailParticular2"/>
-                                                              <arg label="f.orgao" value="this[0].orgao"/>
-                                                              <arg label="f.orgao.codigoForcaTrabalho" value="this[0].orgao.codigoForcaTrabalho"/>
-                                                              <arg label="f.motivoReqCed" value="this[0].motivoReqCed"/>
-                                                              <arg label="f.numeroExterno" value="this[0].numeroExterno"/>
-                                                              <arg label="f.codigoEstadoCivil" value="this[0].codigoEstadoCivil"/>
-                                                              <arg label="f.reqCed" value="this[0].reqCed"/>
-                                                              <arg label="f.passaporte" value="this[0].passaporte"/>
-                                                              <arg label="f.siglaEmpresaOrigem" value="this[0].siglaEmpresaOrigem"/>
-                                                              <arg label="f.dataCessao" value="this[0].dataCessao"/>
-                                                              <arg label="f.dataCadastro" value="this[0].dataCadastro"/>
-                                                              <arg label="f.codigoInativo" value="this[0].codigoInativo"/>
-                                                              <arg label="f.emailParticular1" value="this[0].emailParticular1"/>
-                                                              <arg label="f.codigoRaca" value="this[0].codigoRaca"/>
-                                                              <arg label="f.telefone" value="this[0].telefone"/>
-                                                              <arg label="f.codigoCidade" value="this[0].codigoCidade"/>
-                                                              <arg label="f" value="this[0]"/>
-                                                              <arg label="f.orgao.id" value="this[0].orgao.id"/>
-                                                              <arg label="f.dataNascimento" value="this[0].dataNascimento"/>
-                                                              <arg label="f.codigoAplicacaoCargo" value="this[0].codigoAplicacaoCargo"/>
-                                                              <arg label="f.orgao.descricao" value="this[0].orgao.descricao"/>
-                                                              <arg label="f.cep" value="this[0].cep"/>
-                                                              <arg label="f.uf" value="this[0].uf"/>
-                                                              <arg label="f.orgao.nome" value="this[0].orgao.nome"/>
-                                                              <arg label="f.orgao.dataInicioValidade" value="this[0].orgao.dataInicioValidade"/>
-                                                              <arg label="f.matricula" value="this[0].matricula"/>
-                                                              <arg label="f.codigoFuncao" value="this[0].codigoFuncao"/>
-                                                              <arg label="f.orgao.orgaoSuperior" value="this[0].orgao.orgaoSuperior"/>
-                                                              <arg label="f.motivoInativo" value="this[0].motivoInativo"/>
-                                                              <arg label="f.terraMar" value="this[0].terraMar"/>
-                                                              <arg label="f.codigoLogin" value="this[0].codigoLogin"/>
-                                                              <arg label="f.orgao.areaAtuacao" value="this[0].orgao.areaAtuacao"/>
-                                                              <arg label="f.orgao.dataFimValidade" value="this[0].orgao.dataFimValidade"/>
-                                                              <arg label="f.id" value="this[0].id"/>
-                                                              <arg label="f.situacao" value="this[0].situacao"/>
-                                                            </mutation>
-                                                            <field name="SELECT">this[0].id</field>
-                                                          </block>
-                                                        </value>
+                                                    <value name="PARAM0">
+                                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="CH,{,}FFBc}2qu5+c8!0" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">funcionario</field>
                                                       </block>
                                                     </value>
-                                                    <value name="ARG1">
-                                                      <block colour="#c88330" dependencyby="8ds5FE$bR6`],^k%dtoS" id="(5gW]K;=P%+CEQHd!OME" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
-                                                        <mutation name="{{cronapi.object.Operations.getObjectField}}">
-                                                          <arg name="Objeto"/>
-                                                          <arg name="Caminho a percorrer"/>
+                                                    <value name="PARAM1">
+                                                      <block colour="#db802b" dependencyby="8ds5FE$bR6`],^k%dtoS" id="~bFrJLrN2}#rx3p(v(tC" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
+                                                        <mutation name="">
+                                                          <arg label="f.dataAdmissao" value="this[0].dataAdmissao"/>
+                                                          <arg label="f.tipoSanguineo" value="this[0].tipoSanguineo"/>
+                                                          <arg label="f.codigoSubgrupoEmpregado" value="this[0].codigoSubgrupoEmpregado"/>
+                                                          <arg label="f.codigoReligiao" value="this[0].codigoReligiao"/>
+                                                          <arg label="f.motivoStatus" value="this[0].motivoStatus"/>
+                                                          <arg label="f.nome" value="this[0].nome"/>
+                                                          <arg label="f.codigoCargo" value="this[0].codigoCargo"/>
+                                                          <arg label="f.enderecoBairro" value="this[0].enderecoBairro"/>
+                                                          <arg label="f.enderecoComplemento" value="this[0].enderecoComplemento"/>
+                                                          <arg label="f.celular" value="this[0].celular"/>
+                                                          <arg label="f.numeroRamal" value="this[0].numeroRamal"/>
+                                                          <arg label="f.codigoPais" value="this[0].codigoPais"/>
+                                                          <arg label="f.codigoImovel" value="this[0].codigoImovel"/>
+                                                          <arg label="f.endereco" value="this[0].endereco"/>
+                                                          <arg label="f.nomeForcaTrabalhoGuerra" value="this[0].nomeForcaTrabalhoGuerra"/>
+                                                          <arg label="f.codigoEscolaridade" value="this[0].codigoEscolaridade"/>
+                                                          <arg label="f.centroCusto" value="this[0].centroCusto"/>
+                                                          <arg label="f.email" value="this[0].email"/>
+                                                          <arg label="f.cpf" value="this[0].cpf"/>
+                                                          <arg label="f.sexo" value="this[0].sexo"/>
+                                                          <arg label="f.codigoGrupoEmpregado" value="this[0].codigoGrupoEmpregado"/>
+                                                          <arg label="f.emailParticular2" value="this[0].emailParticular2"/>
+                                                          <arg label="f.orgao" value="this[0].orgao"/>
+                                                          <arg label="f.orgao.codigoForcaTrabalho" value="this[0].orgao.codigoForcaTrabalho"/>
+                                                          <arg label="f.motivoReqCed" value="this[0].motivoReqCed"/>
+                                                          <arg label="f.numeroExterno" value="this[0].numeroExterno"/>
+                                                          <arg label="f.codigoEstadoCivil" value="this[0].codigoEstadoCivil"/>
+                                                          <arg label="f.reqCed" value="this[0].reqCed"/>
+                                                          <arg label="f.passaporte" value="this[0].passaporte"/>
+                                                          <arg label="f.siglaEmpresaOrigem" value="this[0].siglaEmpresaOrigem"/>
+                                                          <arg label="f.dataCessao" value="this[0].dataCessao"/>
+                                                          <arg label="f.dataCadastro" value="this[0].dataCadastro"/>
+                                                          <arg label="f.codigoInativo" value="this[0].codigoInativo"/>
+                                                          <arg label="f.emailParticular1" value="this[0].emailParticular1"/>
+                                                          <arg label="f.codigoRaca" value="this[0].codigoRaca"/>
+                                                          <arg label="f.telefone" value="this[0].telefone"/>
+                                                          <arg label="f.codigoCidade" value="this[0].codigoCidade"/>
+                                                          <arg label="f" value="this[0]"/>
+                                                          <arg label="f.orgao.id" value="this[0].orgao.id"/>
+                                                          <arg label="f.dataNascimento" value="this[0].dataNascimento"/>
+                                                          <arg label="f.codigoAplicacaoCargo" value="this[0].codigoAplicacaoCargo"/>
+                                                          <arg label="f.orgao.descricao" value="this[0].orgao.descricao"/>
+                                                          <arg label="f.cep" value="this[0].cep"/>
+                                                          <arg label="f.uf" value="this[0].uf"/>
+                                                          <arg label="f.orgao.nome" value="this[0].orgao.nome"/>
+                                                          <arg label="f.orgao.dataInicioValidade" value="this[0].orgao.dataInicioValidade"/>
+                                                          <arg label="f.matricula" value="this[0].matricula"/>
+                                                          <arg label="f.codigoFuncao" value="this[0].codigoFuncao"/>
+                                                          <arg label="f.orgao.orgaoSuperior" value="this[0].orgao.orgaoSuperior"/>
+                                                          <arg label="f.motivoInativo" value="this[0].motivoInativo"/>
+                                                          <arg label="f.terraMar" value="this[0].terraMar"/>
+                                                          <arg label="f.codigoLogin" value="this[0].codigoLogin"/>
+                                                          <arg label="f.orgao.areaAtuacao" value="this[0].orgao.areaAtuacao"/>
+                                                          <arg label="f.orgao.dataFimValidade" value="this[0].orgao.dataFimValidade"/>
+                                                          <arg label="f.id" value="this[0].id"/>
+                                                          <arg label="f.situacao" value="this[0].situacao"/>
                                                         </mutation>
-                                                        <value name="PARAM0">
-                                                          <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="^OA|2.3UL8hNxc)E^y:Z" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                            <field name="VAR">orgao&lt;SPFT.entity.Orgao&gt;</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="PARAM1">
-                                                          <block colour="#c88330" dependencyby="8ds5FE$bR6`],^k%dtoS" id="6|as+CPML=kaBXy#k_Em" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
-                                                            <mutation name="" return-raw-type="undefined"/>
-                                                            <field name="SELECT">id</field>
-                                                          </block>
-                                                        </value>
+                                                        <field name="SELECT">this[0].id</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG1">
+                                                  <block colour="#c88330" dependencyby="8ds5FE$bR6`],^k%dtoS" id="(5gW]K;=P%+CEQHd!OME" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                                    <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                                                      <arg name="Objeto"/>
+                                                      <arg name="Caminho a percorrer"/>
+                                                    </mutation>
+                                                    <value name="PARAM0">
+                                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="^OA|2.3UL8hNxc)E^y:Z" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">orgao&lt;SPFT.entity.Orgao&gt;</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PARAM1">
+                                                      <block colour="#c88330" dependencyby="8ds5FE$bR6`],^k%dtoS" id="6|as+CPML=kaBXy#k_Em" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                                        <mutation name="" return-raw-type="undefined"/>
+                                                        <field name="SELECT">id</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -754,402 +742,402 @@
                                             </value>
                                           </block>
                                         </value>
-                                        <statement name="DO0">
-                                          <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="6]Xke*1mTC6v5fj)^.a*" multilayer="false" namespace="cronapi.database.Operations.insert" origintype="procedures_sql_insert_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_insert_callnoreturn">
-                                            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22insert%22,%22rulesEntity%22:%5B%7B%22entity%22:%22Delegacao%22,%22namespace%22:%22SPFT.entity.Delegacao%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22Delegacao%22,%22entityFullName%22:%22SPFT.entity.Delegacao%22,%22type%22:%22O%22,%22params%22:%22%5B%20%5C%22Delegacao%5C%22%20%5D%22%7D" name="{{cronapi.database.Operations.insert}}">
-                                              <arg name="delegacao&lt;SPFT.entity.Delegacao&gt;"/>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="6]Xke*1mTC6v5fj)^.a*" multilayer="false" namespace="cronapi.database.Operations.insert" origintype="procedures_sql_insert_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_insert_callnoreturn">
+                                        <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22insert%22,%22rulesEntity%22:%5B%7B%22entity%22:%22Delegacao%22,%22namespace%22:%22SPFT.entity.Delegacao%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22Delegacao%22,%22entityFullName%22:%22SPFT.entity.Delegacao%22,%22type%22:%22O%22,%22params%22:%22%5B%20%5C%22Delegacao%5C%22%20%5D%22%7D" name="{{cronapi.database.Operations.insert}}">
+                                          <arg name="delegacao&lt;SPFT.entity.Delegacao&gt;"/>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="`Y1P5j=KAHl-Fh3.|ioJ" multilayer="false" namespace="cronapi.database.Operations.newEntity" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20nova%20Entidade%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20nova%20Entidade%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
+                                            <mutation data="%7B%22entity%22:%22SPFT.entity.Delegacao%22,%22entityFullName%22:%22SPFT.entity.Delegacao%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22orgao%5C%22,%5C%22status%5C%22,%5C%22dataCriacao%5C%22,%5C%22dataInativo%5C%22,%5C%22forcaTrabalhoGerente%5C%22,%5C%22forcaTrabalhoDelegado%5C%22,%5C%22forcaTrabalhoDes%5C%22,%5C%22tipoDelegacao%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22%5D%22,%22type%22:%22F%22%7D" name="{{cronapi.database.Operations.newEntity}}">
+                                              <arg name="id"/>
+                                              <arg name="orgao"/>
+                                              <arg name="status"/>
+                                              <arg name="dataCriacao"/>
+                                              <arg name="dataInativo"/>
+                                              <arg name="forcaTrabalhoGerente"/>
+                                              <arg name="forcaTrabalhoDelegado"/>
+                                              <arg name="forcaTrabalhoDes"/>
+                                              <arg name="tipoDelegacao"/>
                                             </mutation>
                                             <value name="ARG0">
-                                              <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="`Y1P5j=KAHl-Fh3.|ioJ" multilayer="false" namespace="cronapi.database.Operations.newEntity" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20nova%20Entidade%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20nova%20Entidade%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
-                                                <mutation data="%7B%22entity%22:%22SPFT.entity.Delegacao%22,%22entityFullName%22:%22SPFT.entity.Delegacao%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22orgao%5C%22,%5C%22status%5C%22,%5C%22dataCriacao%5C%22,%5C%22dataInativo%5C%22,%5C%22forcaTrabalhoGerente%5C%22,%5C%22forcaTrabalhoDelegado%5C%22,%5C%22forcaTrabalhoDes%5C%22,%5C%22tipoDelegacao%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22%5D%22,%22type%22:%22F%22%7D" name="{{cronapi.database.Operations.newEntity}}">
+                                              <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="Ny-.j8%G0evf,EmUsquE" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">delegacaoIdCorrente</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG1">
+                                              <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="6i%%L9Q0#AS|xvi,{Adz" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">orgao&lt;SPFT.entity.Orgao&gt;</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG2">
+                                              <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="iAszeMR7TK4AfbU]]{]T" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG3">
+                                              <block colour="#7d9137" dependencyby="8ds5FE$bR6`],^k%dtoS" id="UwPobT.:]iKYeT+gi/T+" multilayer="false" namespace="cronapi.dateTime.Operations.getNow" origintype="procedures_callreturn" output="true" returntype="ObjectType.DATETIME" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                                <mutation name="{{cronapi.dateTime.Operations.getNow}}" return-raw-type="cronapi.Var"/>
+                                              </block>
+                                            </value>
+                                            <value name="ARG5">
+                                              <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="F6K2R-#GU0j_S0E6]);^" multilayer="false" namespace="cronapi.database.Operations.newEntity" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20nova%20Entidade%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20nova%20Entidade%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
+                                                <mutation data="%7B%22entity%22:%22SPFT.entity.ForcaTrabalho%22,%22entityFullName%22:%22SPFT.entity.ForcaTrabalho%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22undefined%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22type%22:%22F%22%7D" name="{{cronapi.database.Operations.newEntity}}">
                                                   <arg name="id"/>
-                                                  <arg name="orgao"/>
-                                                  <arg name="status"/>
-                                                  <arg name="dataCriacao"/>
-                                                  <arg name="dataInativo"/>
-                                                  <arg name="forcaTrabalhoGerente"/>
-                                                  <arg name="forcaTrabalhoDelegado"/>
-                                                  <arg name="forcaTrabalhoDes"/>
-                                                  <arg name="tipoDelegacao"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
                                                 </mutation>
                                                 <value name="ARG0">
-                                                  <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="Ny-.j8%G0evf,EmUsquE" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                    <field name="VAR">delegacaoIdCorrente</field>
-                                                  </block>
-                                                </value>
-                                                <value name="ARG1">
-                                                  <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="6i%%L9Q0#AS|xvi,{Adz" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                    <field name="VAR">orgao&lt;SPFT.entity.Orgao&gt;</field>
-                                                  </block>
-                                                </value>
-                                                <value name="ARG2">
-                                                  <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="iAszeMR7TK4AfbU]]{]T" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                                                    <field name="NUM">1</field>
-                                                  </block>
-                                                </value>
-                                                <value name="ARG3">
-                                                  <block colour="#7d9137" dependencyby="8ds5FE$bR6`],^k%dtoS" id="UwPobT.:]iKYeT+gi/T+" multilayer="false" namespace="cronapi.dateTime.Operations.getNow" origintype="procedures_callreturn" output="true" returntype="ObjectType.DATETIME" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
-                                                    <mutation name="{{cronapi.dateTime.Operations.getNow}}" return-raw-type="cronapi.Var"/>
-                                                  </block>
-                                                </value>
-                                                <value name="ARG5">
-                                                  <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="F6K2R-#GU0j_S0E6]);^" multilayer="false" namespace="cronapi.database.Operations.newEntity" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20nova%20Entidade%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20nova%20Entidade%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
-                                                    <mutation data="%7B%22entity%22:%22SPFT.entity.ForcaTrabalho%22,%22entityFullName%22:%22SPFT.entity.ForcaTrabalho%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22undefined%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22type%22:%22F%22%7D" name="{{cronapi.database.Operations.newEntity}}">
-                                                      <arg name="id"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
+                                                  <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="==6[n1@He[O1FrV^Qv@;" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                                    <mutation name="{{cronapi.database.Operations.getField}}">
+                                                      <arg name="Fonte de dados"/>
+                                                      <arg name="Nome do campo"/>
                                                     </mutation>
-                                                    <value name="ARG0">
-                                                      <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="==6[n1@He[O1FrV^Qv@;" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
-                                                        <mutation name="{{cronapi.database.Operations.getField}}">
-                                                          <arg name="Fonte de dados"/>
-                                                          <arg name="Nome do campo"/>
+                                                    <value name="PARAM0">
+                                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="r/5Z5lCk{~XolV:b=7+0" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">usuarioLogado</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PARAM1">
+                                                      <block colour="#db802b" dependencyby="8ds5FE$bR6`],^k%dtoS" id="aEFIeJ?S-,P$/(6tCRC@" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
+                                                        <mutation name="">
+                                                          <arg label="f.dataAdmissao" value="this[0].dataAdmissao"/>
+                                                          <arg label="f.tipoSanguineo" value="this[0].tipoSanguineo"/>
+                                                          <arg label="f.codigoSubgrupoEmpregado" value="this[0].codigoSubgrupoEmpregado"/>
+                                                          <arg label="f.codigoReligiao" value="this[0].codigoReligiao"/>
+                                                          <arg label="f.motivoStatus" value="this[0].motivoStatus"/>
+                                                          <arg label="f.nome" value="this[0].nome"/>
+                                                          <arg label="f.codigoCargo" value="this[0].codigoCargo"/>
+                                                          <arg label="f.enderecoBairro" value="this[0].enderecoBairro"/>
+                                                          <arg label="f.enderecoComplemento" value="this[0].enderecoComplemento"/>
+                                                          <arg label="f.celular" value="this[0].celular"/>
+                                                          <arg label="f.numeroRamal" value="this[0].numeroRamal"/>
+                                                          <arg label="f.codigoPais" value="this[0].codigoPais"/>
+                                                          <arg label="f.codigoImovel" value="this[0].codigoImovel"/>
+                                                          <arg label="f.endereco" value="this[0].endereco"/>
+                                                          <arg label="f.nomeForcaTrabalhoGuerra" value="this[0].nomeForcaTrabalhoGuerra"/>
+                                                          <arg label="f.codigoEscolaridade" value="this[0].codigoEscolaridade"/>
+                                                          <arg label="f.centroCusto" value="this[0].centroCusto"/>
+                                                          <arg label="f.email" value="this[0].email"/>
+                                                          <arg label="f.cpf" value="this[0].cpf"/>
+                                                          <arg label="f.sexo" value="this[0].sexo"/>
+                                                          <arg label="f.codigoGrupoEmpregado" value="this[0].codigoGrupoEmpregado"/>
+                                                          <arg label="f.emailParticular2" value="this[0].emailParticular2"/>
+                                                          <arg label="f.orgao" value="this[0].orgao"/>
+                                                          <arg label="f.orgao.codigoForcaTrabalho" value="this[0].orgao.codigoForcaTrabalho"/>
+                                                          <arg label="f.motivoReqCed" value="this[0].motivoReqCed"/>
+                                                          <arg label="f.numeroExterno" value="this[0].numeroExterno"/>
+                                                          <arg label="f.codigoEstadoCivil" value="this[0].codigoEstadoCivil"/>
+                                                          <arg label="f.reqCed" value="this[0].reqCed"/>
+                                                          <arg label="f.passaporte" value="this[0].passaporte"/>
+                                                          <arg label="f.siglaEmpresaOrigem" value="this[0].siglaEmpresaOrigem"/>
+                                                          <arg label="f.dataCessao" value="this[0].dataCessao"/>
+                                                          <arg label="f.dataCadastro" value="this[0].dataCadastro"/>
+                                                          <arg label="f.codigoInativo" value="this[0].codigoInativo"/>
+                                                          <arg label="f.emailParticular1" value="this[0].emailParticular1"/>
+                                                          <arg label="f.codigoRaca" value="this[0].codigoRaca"/>
+                                                          <arg label="f.telefone" value="this[0].telefone"/>
+                                                          <arg label="f.codigoCidade" value="this[0].codigoCidade"/>
+                                                          <arg label="f" value="this[0]"/>
+                                                          <arg label="f.orgao.id" value="this[0].orgao.id"/>
+                                                          <arg label="f.dataNascimento" value="this[0].dataNascimento"/>
+                                                          <arg label="f.codigoAplicacaoCargo" value="this[0].codigoAplicacaoCargo"/>
+                                                          <arg label="f.orgao.descricao" value="this[0].orgao.descricao"/>
+                                                          <arg label="f.cep" value="this[0].cep"/>
+                                                          <arg label="f.uf" value="this[0].uf"/>
+                                                          <arg label="f.orgao.nome" value="this[0].orgao.nome"/>
+                                                          <arg label="f.orgao.dataInicioValidade" value="this[0].orgao.dataInicioValidade"/>
+                                                          <arg label="f.matricula" value="this[0].matricula"/>
+                                                          <arg label="f.codigoFuncao" value="this[0].codigoFuncao"/>
+                                                          <arg label="f.orgao.orgaoSuperior" value="this[0].orgao.orgaoSuperior"/>
+                                                          <arg label="f.motivoInativo" value="this[0].motivoInativo"/>
+                                                          <arg label="f.terraMar" value="this[0].terraMar"/>
+                                                          <arg label="f.codigoLogin" value="this[0].codigoLogin"/>
+                                                          <arg label="f.orgao.areaAtuacao" value="this[0].orgao.areaAtuacao"/>
+                                                          <arg label="f.orgao.dataFimValidade" value="this[0].orgao.dataFimValidade"/>
+                                                          <arg label="f.id" value="this[0].id"/>
+                                                          <arg label="f.situacao" value="this[0].situacao"/>
                                                         </mutation>
-                                                        <value name="PARAM0">
-                                                          <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="r/5Z5lCk{~XolV:b=7+0" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                            <field name="VAR">usuarioLogado</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="PARAM1">
-                                                          <block colour="#db802b" dependencyby="8ds5FE$bR6`],^k%dtoS" id="aEFIeJ?S-,P$/(6tCRC@" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
-                                                            <mutation name="">
-                                                              <arg label="f.dataAdmissao" value="this[0].dataAdmissao"/>
-                                                              <arg label="f.tipoSanguineo" value="this[0].tipoSanguineo"/>
-                                                              <arg label="f.codigoSubgrupoEmpregado" value="this[0].codigoSubgrupoEmpregado"/>
-                                                              <arg label="f.codigoReligiao" value="this[0].codigoReligiao"/>
-                                                              <arg label="f.motivoStatus" value="this[0].motivoStatus"/>
-                                                              <arg label="f.nome" value="this[0].nome"/>
-                                                              <arg label="f.codigoCargo" value="this[0].codigoCargo"/>
-                                                              <arg label="f.enderecoBairro" value="this[0].enderecoBairro"/>
-                                                              <arg label="f.enderecoComplemento" value="this[0].enderecoComplemento"/>
-                                                              <arg label="f.celular" value="this[0].celular"/>
-                                                              <arg label="f.numeroRamal" value="this[0].numeroRamal"/>
-                                                              <arg label="f.codigoPais" value="this[0].codigoPais"/>
-                                                              <arg label="f.codigoImovel" value="this[0].codigoImovel"/>
-                                                              <arg label="f.endereco" value="this[0].endereco"/>
-                                                              <arg label="f.nomeForcaTrabalhoGuerra" value="this[0].nomeForcaTrabalhoGuerra"/>
-                                                              <arg label="f.codigoEscolaridade" value="this[0].codigoEscolaridade"/>
-                                                              <arg label="f.centroCusto" value="this[0].centroCusto"/>
-                                                              <arg label="f.email" value="this[0].email"/>
-                                                              <arg label="f.cpf" value="this[0].cpf"/>
-                                                              <arg label="f.sexo" value="this[0].sexo"/>
-                                                              <arg label="f.codigoGrupoEmpregado" value="this[0].codigoGrupoEmpregado"/>
-                                                              <arg label="f.emailParticular2" value="this[0].emailParticular2"/>
-                                                              <arg label="f.orgao" value="this[0].orgao"/>
-                                                              <arg label="f.orgao.codigoForcaTrabalho" value="this[0].orgao.codigoForcaTrabalho"/>
-                                                              <arg label="f.motivoReqCed" value="this[0].motivoReqCed"/>
-                                                              <arg label="f.numeroExterno" value="this[0].numeroExterno"/>
-                                                              <arg label="f.codigoEstadoCivil" value="this[0].codigoEstadoCivil"/>
-                                                              <arg label="f.reqCed" value="this[0].reqCed"/>
-                                                              <arg label="f.passaporte" value="this[0].passaporte"/>
-                                                              <arg label="f.siglaEmpresaOrigem" value="this[0].siglaEmpresaOrigem"/>
-                                                              <arg label="f.dataCessao" value="this[0].dataCessao"/>
-                                                              <arg label="f.dataCadastro" value="this[0].dataCadastro"/>
-                                                              <arg label="f.codigoInativo" value="this[0].codigoInativo"/>
-                                                              <arg label="f.emailParticular1" value="this[0].emailParticular1"/>
-                                                              <arg label="f.codigoRaca" value="this[0].codigoRaca"/>
-                                                              <arg label="f.telefone" value="this[0].telefone"/>
-                                                              <arg label="f.codigoCidade" value="this[0].codigoCidade"/>
-                                                              <arg label="f" value="this[0]"/>
-                                                              <arg label="f.orgao.id" value="this[0].orgao.id"/>
-                                                              <arg label="f.dataNascimento" value="this[0].dataNascimento"/>
-                                                              <arg label="f.codigoAplicacaoCargo" value="this[0].codigoAplicacaoCargo"/>
-                                                              <arg label="f.orgao.descricao" value="this[0].orgao.descricao"/>
-                                                              <arg label="f.cep" value="this[0].cep"/>
-                                                              <arg label="f.uf" value="this[0].uf"/>
-                                                              <arg label="f.orgao.nome" value="this[0].orgao.nome"/>
-                                                              <arg label="f.orgao.dataInicioValidade" value="this[0].orgao.dataInicioValidade"/>
-                                                              <arg label="f.matricula" value="this[0].matricula"/>
-                                                              <arg label="f.codigoFuncao" value="this[0].codigoFuncao"/>
-                                                              <arg label="f.orgao.orgaoSuperior" value="this[0].orgao.orgaoSuperior"/>
-                                                              <arg label="f.motivoInativo" value="this[0].motivoInativo"/>
-                                                              <arg label="f.terraMar" value="this[0].terraMar"/>
-                                                              <arg label="f.codigoLogin" value="this[0].codigoLogin"/>
-                                                              <arg label="f.orgao.areaAtuacao" value="this[0].orgao.areaAtuacao"/>
-                                                              <arg label="f.orgao.dataFimValidade" value="this[0].orgao.dataFimValidade"/>
-                                                              <arg label="f.id" value="this[0].id"/>
-                                                              <arg label="f.situacao" value="this[0].situacao"/>
-                                                            </mutation>
-                                                            <field name="SELECT">this[0].id</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="ARG6">
-                                                  <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="Kj~AB3J,x%lTeQCE}m[E" multilayer="false" namespace="cronapi.database.Operations.newEntity" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20nova%20Entidade%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20nova%20Entidade%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
-                                                    <mutation data="%7B%22entity%22:%22SPFT.entity.ForcaTrabalho%22,%22entityFullName%22:%22SPFT.entity.ForcaTrabalho%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22undefined%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22type%22:%22F%22%7D" name="{{cronapi.database.Operations.newEntity}}">
-                                                      <arg name="id"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                      <arg name="NOTSELECTED"/>
-                                                    </mutation>
-                                                    <value name="ARG0">
-                                                      <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="7w,Bo;xAOS:=xWnaAM#y" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
-                                                        <mutation name="{{cronapi.database.Operations.getField}}">
-                                                          <arg name="Fonte de dados"/>
-                                                          <arg name="Nome do campo"/>
-                                                        </mutation>
-                                                        <value name="PARAM0">
-                                                          <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="et2gS@FuR/|*YavyUz[K" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                            <field name="VAR">funcionario</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="PARAM1">
-                                                          <block colour="#db802b" dependencyby="8ds5FE$bR6`],^k%dtoS" id="e@!,cHEeSR;/TtiTv-8+" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
-                                                            <mutation name="">
-                                                              <arg label="f.dataAdmissao" value="this[0].dataAdmissao"/>
-                                                              <arg label="f.tipoSanguineo" value="this[0].tipoSanguineo"/>
-                                                              <arg label="f.codigoSubgrupoEmpregado" value="this[0].codigoSubgrupoEmpregado"/>
-                                                              <arg label="f.codigoReligiao" value="this[0].codigoReligiao"/>
-                                                              <arg label="f.motivoStatus" value="this[0].motivoStatus"/>
-                                                              <arg label="f.nome" value="this[0].nome"/>
-                                                              <arg label="f.codigoCargo" value="this[0].codigoCargo"/>
-                                                              <arg label="f.enderecoBairro" value="this[0].enderecoBairro"/>
-                                                              <arg label="f.enderecoComplemento" value="this[0].enderecoComplemento"/>
-                                                              <arg label="f.celular" value="this[0].celular"/>
-                                                              <arg label="f.numeroRamal" value="this[0].numeroRamal"/>
-                                                              <arg label="f.codigoPais" value="this[0].codigoPais"/>
-                                                              <arg label="f.codigoImovel" value="this[0].codigoImovel"/>
-                                                              <arg label="f.endereco" value="this[0].endereco"/>
-                                                              <arg label="f.nomeForcaTrabalhoGuerra" value="this[0].nomeForcaTrabalhoGuerra"/>
-                                                              <arg label="f.codigoEscolaridade" value="this[0].codigoEscolaridade"/>
-                                                              <arg label="f.centroCusto" value="this[0].centroCusto"/>
-                                                              <arg label="f.email" value="this[0].email"/>
-                                                              <arg label="f.cpf" value="this[0].cpf"/>
-                                                              <arg label="f.sexo" value="this[0].sexo"/>
-                                                              <arg label="f.codigoGrupoEmpregado" value="this[0].codigoGrupoEmpregado"/>
-                                                              <arg label="f.emailParticular2" value="this[0].emailParticular2"/>
-                                                              <arg label="f.orgao" value="this[0].orgao"/>
-                                                              <arg label="f.orgao.codigoForcaTrabalho" value="this[0].orgao.codigoForcaTrabalho"/>
-                                                              <arg label="f.motivoReqCed" value="this[0].motivoReqCed"/>
-                                                              <arg label="f.numeroExterno" value="this[0].numeroExterno"/>
-                                                              <arg label="f.codigoEstadoCivil" value="this[0].codigoEstadoCivil"/>
-                                                              <arg label="f.reqCed" value="this[0].reqCed"/>
-                                                              <arg label="f.passaporte" value="this[0].passaporte"/>
-                                                              <arg label="f.siglaEmpresaOrigem" value="this[0].siglaEmpresaOrigem"/>
-                                                              <arg label="f.dataCessao" value="this[0].dataCessao"/>
-                                                              <arg label="f.dataCadastro" value="this[0].dataCadastro"/>
-                                                              <arg label="f.codigoInativo" value="this[0].codigoInativo"/>
-                                                              <arg label="f.emailParticular1" value="this[0].emailParticular1"/>
-                                                              <arg label="f.codigoRaca" value="this[0].codigoRaca"/>
-                                                              <arg label="f.telefone" value="this[0].telefone"/>
-                                                              <arg label="f.codigoCidade" value="this[0].codigoCidade"/>
-                                                              <arg label="f" value="this[0]"/>
-                                                              <arg label="f.orgao.id" value="this[0].orgao.id"/>
-                                                              <arg label="f.dataNascimento" value="this[0].dataNascimento"/>
-                                                              <arg label="f.codigoAplicacaoCargo" value="this[0].codigoAplicacaoCargo"/>
-                                                              <arg label="f.orgao.descricao" value="this[0].orgao.descricao"/>
-                                                              <arg label="f.cep" value="this[0].cep"/>
-                                                              <arg label="f.uf" value="this[0].uf"/>
-                                                              <arg label="f.orgao.nome" value="this[0].orgao.nome"/>
-                                                              <arg label="f.orgao.dataInicioValidade" value="this[0].orgao.dataInicioValidade"/>
-                                                              <arg label="f.matricula" value="this[0].matricula"/>
-                                                              <arg label="f.codigoFuncao" value="this[0].codigoFuncao"/>
-                                                              <arg label="f.orgao.orgaoSuperior" value="this[0].orgao.orgaoSuperior"/>
-                                                              <arg label="f.motivoInativo" value="this[0].motivoInativo"/>
-                                                              <arg label="f.terraMar" value="this[0].terraMar"/>
-                                                              <arg label="f.codigoLogin" value="this[0].codigoLogin"/>
-                                                              <arg label="f.orgao.areaAtuacao" value="this[0].orgao.areaAtuacao"/>
-                                                              <arg label="f.orgao.dataFimValidade" value="this[0].orgao.dataFimValidade"/>
-                                                              <arg label="f.id" value="this[0].id"/>
-                                                              <arg label="f.situacao" value="this[0].situacao"/>
-                                                            </mutation>
-                                                            <field name="SELECT">this[0].id</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </value>
-                                                <value name="ARG8">
-                                                  <block colour="#5b80a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="o[S[^{w*^Be4duUP.Z+9" origintype="logic_ternary" output="true" tooltip="Avalia a condição em &quot;teste&quot;. Se a condição for verdadeira retorna o valor &quot;se verdadeiro&quot;, senão retorna o valor &quot;se falso&quot;." type="logic_ternary">
-                                                    <value name="IF">
-                                                      <block colour="#5b80a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="^V)Mpb-adR:E{gDQ6$$I" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
-                                                        <field name="OP">EQ</field>
-                                                        <value name="A">
-                                                          <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="D#ci@,R|u,duA`!;Dx-T" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                            <field name="VAR">tipoDelegacao</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="B">
-                                                          <block colour="#5ba593" dependencyby="8ds5FE$bR6`],^k%dtoS" id="/8v7%+a:iI#|X*ewu~hw" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-                                                            <field name="TEXT">total</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="THEN">
-                                                      <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="n|-*|FWyKr?-d;216==r" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                                                        <field name="NUM">1</field>
-                                                      </block>
-                                                    </value>
-                                                    <value name="ELSE">
-                                                      <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="!6(P@N|]=E]gIGQ3c(m`" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                                                        <field name="NUM">0</field>
+                                                        <field name="SELECT">this[0].id</field>
                                                       </block>
                                                     </value>
                                                   </block>
                                                 </value>
                                               </block>
                                             </value>
-                                            <next>
-                                              <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="HPJu)!FHs,sYuB?ZucI#" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
-                                                <field name="VAR">historicoRes</field>
-                                                <value name="VALUE">
-                                                  <block colour="#487f7f" dependencyby="8ds5FE$bR6`],^k%dtoS" id="]26]Ze:9BmGj{W?}YMNu" multilayer="false" namespace="cronapi.util.Operations.callBlockly" origintype="procedures_callblockly_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20chamar%20um%20bloco%20de%20programa%C3%A7ao%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bloco%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Nome%20do%20bloco%3C/div%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.Operations.callBlockly%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.Operations.callBlockly%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callreturn">
-                                                    <mutation data="%7B%22name%22:%22Util%22,%22class%22:%22blockly.Util%22,%22function%22:%22AdicionarHistoricoDelegacao%22,%22oldName%22:%22AdicionarHistoricoDelegacao%22,%22params%22:%22%5B%5C%22delegacaoId%5C%22,%5C%22acao%5C%22%5D%22,%22type%22:%22java%22,%22namespace%22:%22blockly.Util%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22blockly.Util%22,%22sourcePath%22:%22src/main/java/blockly/Util.blockly%22,%22language%22:%22java%22,%22class%22:%22blockly.Util%22,%22methods%22:%5B%7B%22name%22:%22EnviarEmail%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22para%22,%22assunto%22,%22corpo%22%5D%7D,%7B%22name%22:%22AdicionarHistoricoDelegacao%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22delegacaoId%22,%22acao%22%5D%7D,%7B%22name%22:%22AdicionarHistoricoSolicitacao%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22descricao%22,%22solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;%22%5D%7D,%7B%22name%22:%22CriarId%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22id%22%5D%7D%5D%7D%7D" name="{{cronapi.util.Operations.callBlockly}}">
-                                                      <arg name="delegacaoId"/>
-                                                      <arg name="acao"/>
+                                            <value name="ARG6">
+                                              <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="Kj~AB3J,x%lTeQCE}m[E" multilayer="false" namespace="cronapi.database.Operations.newEntity" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20nova%20Entidade%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20nova%20Entidade%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
+                                                <mutation data="%7B%22entity%22:%22SPFT.entity.ForcaTrabalho%22,%22entityFullName%22:%22SPFT.entity.ForcaTrabalho%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22undefined%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22type%22:%22F%22%7D" name="{{cronapi.database.Operations.newEntity}}">
+                                                  <arg name="id"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="7w,Bo;xAOS:=xWnaAM#y" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                                    <mutation name="{{cronapi.database.Operations.getField}}">
+                                                      <arg name="Fonte de dados"/>
+                                                      <arg name="Nome do campo"/>
                                                     </mutation>
+                                                    <value name="PARAM0">
+                                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="et2gS@FuR/|*YavyUz[K" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">funcionario</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PARAM1">
+                                                      <block colour="#db802b" dependencyby="8ds5FE$bR6`],^k%dtoS" id="e@!,cHEeSR;/TtiTv-8+" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
+                                                        <mutation name="">
+                                                          <arg label="f.dataAdmissao" value="this[0].dataAdmissao"/>
+                                                          <arg label="f.tipoSanguineo" value="this[0].tipoSanguineo"/>
+                                                          <arg label="f.codigoSubgrupoEmpregado" value="this[0].codigoSubgrupoEmpregado"/>
+                                                          <arg label="f.codigoReligiao" value="this[0].codigoReligiao"/>
+                                                          <arg label="f.motivoStatus" value="this[0].motivoStatus"/>
+                                                          <arg label="f.nome" value="this[0].nome"/>
+                                                          <arg label="f.codigoCargo" value="this[0].codigoCargo"/>
+                                                          <arg label="f.enderecoBairro" value="this[0].enderecoBairro"/>
+                                                          <arg label="f.enderecoComplemento" value="this[0].enderecoComplemento"/>
+                                                          <arg label="f.celular" value="this[0].celular"/>
+                                                          <arg label="f.numeroRamal" value="this[0].numeroRamal"/>
+                                                          <arg label="f.codigoPais" value="this[0].codigoPais"/>
+                                                          <arg label="f.codigoImovel" value="this[0].codigoImovel"/>
+                                                          <arg label="f.endereco" value="this[0].endereco"/>
+                                                          <arg label="f.nomeForcaTrabalhoGuerra" value="this[0].nomeForcaTrabalhoGuerra"/>
+                                                          <arg label="f.codigoEscolaridade" value="this[0].codigoEscolaridade"/>
+                                                          <arg label="f.centroCusto" value="this[0].centroCusto"/>
+                                                          <arg label="f.email" value="this[0].email"/>
+                                                          <arg label="f.cpf" value="this[0].cpf"/>
+                                                          <arg label="f.sexo" value="this[0].sexo"/>
+                                                          <arg label="f.codigoGrupoEmpregado" value="this[0].codigoGrupoEmpregado"/>
+                                                          <arg label="f.emailParticular2" value="this[0].emailParticular2"/>
+                                                          <arg label="f.orgao" value="this[0].orgao"/>
+                                                          <arg label="f.orgao.codigoForcaTrabalho" value="this[0].orgao.codigoForcaTrabalho"/>
+                                                          <arg label="f.motivoReqCed" value="this[0].motivoReqCed"/>
+                                                          <arg label="f.numeroExterno" value="this[0].numeroExterno"/>
+                                                          <arg label="f.codigoEstadoCivil" value="this[0].codigoEstadoCivil"/>
+                                                          <arg label="f.reqCed" value="this[0].reqCed"/>
+                                                          <arg label="f.passaporte" value="this[0].passaporte"/>
+                                                          <arg label="f.siglaEmpresaOrigem" value="this[0].siglaEmpresaOrigem"/>
+                                                          <arg label="f.dataCessao" value="this[0].dataCessao"/>
+                                                          <arg label="f.dataCadastro" value="this[0].dataCadastro"/>
+                                                          <arg label="f.codigoInativo" value="this[0].codigoInativo"/>
+                                                          <arg label="f.emailParticular1" value="this[0].emailParticular1"/>
+                                                          <arg label="f.codigoRaca" value="this[0].codigoRaca"/>
+                                                          <arg label="f.telefone" value="this[0].telefone"/>
+                                                          <arg label="f.codigoCidade" value="this[0].codigoCidade"/>
+                                                          <arg label="f" value="this[0]"/>
+                                                          <arg label="f.orgao.id" value="this[0].orgao.id"/>
+                                                          <arg label="f.dataNascimento" value="this[0].dataNascimento"/>
+                                                          <arg label="f.codigoAplicacaoCargo" value="this[0].codigoAplicacaoCargo"/>
+                                                          <arg label="f.orgao.descricao" value="this[0].orgao.descricao"/>
+                                                          <arg label="f.cep" value="this[0].cep"/>
+                                                          <arg label="f.uf" value="this[0].uf"/>
+                                                          <arg label="f.orgao.nome" value="this[0].orgao.nome"/>
+                                                          <arg label="f.orgao.dataInicioValidade" value="this[0].orgao.dataInicioValidade"/>
+                                                          <arg label="f.matricula" value="this[0].matricula"/>
+                                                          <arg label="f.codigoFuncao" value="this[0].codigoFuncao"/>
+                                                          <arg label="f.orgao.orgaoSuperior" value="this[0].orgao.orgaoSuperior"/>
+                                                          <arg label="f.motivoInativo" value="this[0].motivoInativo"/>
+                                                          <arg label="f.terraMar" value="this[0].terraMar"/>
+                                                          <arg label="f.codigoLogin" value="this[0].codigoLogin"/>
+                                                          <arg label="f.orgao.areaAtuacao" value="this[0].orgao.areaAtuacao"/>
+                                                          <arg label="f.orgao.dataFimValidade" value="this[0].orgao.dataFimValidade"/>
+                                                          <arg label="f.id" value="this[0].id"/>
+                                                          <arg label="f.situacao" value="this[0].situacao"/>
+                                                        </mutation>
+                                                        <field name="SELECT">this[0].id</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="ARG8">
+                                              <block colour="#5b80a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="o[S[^{w*^Be4duUP.Z+9" origintype="logic_ternary" output="true" tooltip="Avalia a condição em &quot;teste&quot;. Se a condição for verdadeira retorna o valor &quot;se verdadeiro&quot;, senão retorna o valor &quot;se falso&quot;." type="logic_ternary">
+                                                <value name="IF">
+                                                  <block colour="#5b80a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="^V)Mpb-adR:E{gDQ6$$I" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                                                    <field name="OP">EQ</field>
+                                                    <value name="A">
+                                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="D#ci@,R|u,duA`!;Dx-T" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">tipoDelegacao</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block colour="#5ba593" dependencyby="8ds5FE$bR6`],^k%dtoS" id="/8v7%+a:iI#|X*ewu~hw" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                        <field name="TEXT">total</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="THEN">
+                                                  <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="n|-*|FWyKr?-d;216==r" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                                    <field name="NUM">1</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ELSE">
+                                                  <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="!6(P@N|]=E]gIGQ3c(m`" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                                    <field name="NUM">0</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="HPJu)!FHs,sYuB?ZucI#" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                            <field name="VAR">historicoRes</field>
+                                            <value name="VALUE">
+                                              <block colour="#487f7f" dependencyby="8ds5FE$bR6`],^k%dtoS" id="]26]Ze:9BmGj{W?}YMNu" multilayer="false" namespace="cronapi.util.Operations.callBlockly" origintype="procedures_callblockly_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20chamar%20um%20bloco%20de%20programa%C3%A7ao%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bloco%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Nome%20do%20bloco%3C/div%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.Operations.callBlockly%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.Operations.callBlockly%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callreturn">
+                                                <mutation data="%7B%22name%22:%22Util%22,%22class%22:%22blockly.Util%22,%22function%22:%22AdicionarHistoricoDelegacao%22,%22oldName%22:%22AdicionarHistoricoDelegacao%22,%22params%22:%22%5B%5C%22delegacaoId%5C%22,%5C%22acao%5C%22%5D%22,%22type%22:%22java%22,%22namespace%22:%22blockly.Util%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22blockly.Util%22,%22sourcePath%22:%22src/main/java/blockly/Util.blockly%22,%22language%22:%22java%22,%22class%22:%22blockly.Util%22,%22methods%22:%5B%7B%22name%22:%22EnviarEmail%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22para%22,%22assunto%22,%22corpo%22%5D%7D,%7B%22name%22:%22AdicionarHistoricoDelegacao%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22delegacaoId%22,%22acao%22%5D%7D,%7B%22name%22:%22AdicionarHistoricoSolicitacao%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22descricao%22,%22solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;%22%5D%7D,%7B%22name%22:%22CriarId%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22id%22%5D%7D%5D%7D%7D" name="{{cronapi.util.Operations.callBlockly}}">
+                                                  <arg name="delegacaoId"/>
+                                                  <arg name="acao"/>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="CS5Dv{)#1~~*0$*$a%qi" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">delegacaoIdCorrente</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG1">
+                                                  <block colour="#5ba593" dependencyby="8ds5FE$bR6`],^k%dtoS" id="l0ohso6=Ubt,A/T0G(qW" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                    <field name="TEXT">inseriu</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="9%Wm?CKiHPZr#(Y+!WGq" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                <field name="VAR">delegacaoIdCorrente</field>
+                                                <value name="VALUE">
+                                                  <block colour="#5b6da5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="kt]m=Gj+^tlH-A~MowkE" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+                                                    <mutation items="2"/>
+                                                    <field name="OP1">ADD</field>
                                                     <value name="ARG0">
-                                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="CS5Dv{)#1~~*0$*$a%qi" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="T(a8?0m|uvu%b8KxFvtr" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
                                                         <field name="VAR">delegacaoIdCorrente</field>
                                                       </block>
                                                     </value>
                                                     <value name="ARG1">
-                                                      <block colour="#5ba593" dependencyby="8ds5FE$bR6`],^k%dtoS" id="l0ohso6=Ubt,A/T0G(qW" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-                                                        <field name="TEXT">inseriu</field>
+                                                      <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="9;Cu{6vc^dHy%t%t{8{}" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                                        <field name="NUM">1</field>
                                                       </block>
                                                     </value>
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="9%Wm?CKiHPZr#(Y+!WGq" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
-                                                    <field name="VAR">delegacaoIdCorrente</field>
+                                                  <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id=")@9$=y[Jc[AKVw}`_4hj" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                    <field name="VAR">totalOrgaoDelegado</field>
                                                     <value name="VALUE">
-                                                      <block colour="#5b6da5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="kt]m=Gj+^tlH-A~MowkE" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+                                                      <block colour="#5b6da5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="@`q!d@@A!2X~#]$^!p3u" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
                                                         <mutation items="2"/>
                                                         <field name="OP1">ADD</field>
                                                         <value name="ARG0">
-                                                          <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="T(a8?0m|uvu%b8KxFvtr" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                            <field name="VAR">delegacaoIdCorrente</field>
+                                                          <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id=":Q080#9-1$,.C{Pdt~Qd" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                            <field name="VAR">totalOrgaoDelegado</field>
                                                           </block>
                                                         </value>
                                                         <value name="ARG1">
-                                                          <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="9;Cu{6vc^dHy%t%t{8{}" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                                          <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="HU-t(#e:n#R,TOxMcgBo" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
                                                             <field name="NUM">1</field>
                                                           </block>
                                                         </value>
                                                       </block>
                                                     </value>
-                                                    <next>
-                                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id=")@9$=y[Jc[AKVw}`_4hj" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
-                                                        <field name="VAR">totalOrgaoDelegado</field>
-                                                        <value name="VALUE">
-                                                          <block colour="#5b6da5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="@`q!d@@A!2X~#]$^!p3u" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
-                                                            <mutation items="2"/>
-                                                            <field name="OP1">ADD</field>
-                                                            <value name="ARG0">
-                                                              <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id=":Q080#9-1$,.C{Pdt~Qd" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                                <field name="VAR">totalOrgaoDelegado</field>
-                                                              </block>
-                                                            </value>
-                                                            <value name="ARG1">
-                                                              <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="HU-t(#e:n#R,TOxMcgBo" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                                                                <field name="NUM">1</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </next>
                                                   </block>
                                                 </next>
                                               </block>
                                             </next>
                                           </block>
-                                        </statement>
+                                        </next>
                                       </block>
-                                    </next>
+                                    </statement>
                                   </block>
                                 </next>
                               </block>
@@ -1201,83 +1189,12 @@
                                                 </mutation>
                                                 <value name="ARG0">
                                                   <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="PLHLdY+NYf73hORn70qc" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
-                                                    <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22Role%22,%22namespace%22:%22app.entity.Role%22,%22alias%22:%22r%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22r%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22r.user.id%22,%22field%22:%22r.user.id%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:userId%22,%22valueIsField%22:false%7D,%7B%22id%22:%22r.id%22,%22field%22:%22r.id%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22Manager%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22Role%22,%22entityFullName%22:%22app.entity.Role%22,%22filter%22:%22select%20r%20from%20Role%20r%20where%20r.user.id%20=%20:userId%20AND%20r.id%20=%20'Manager'%22,%22params%22:%22%5B%5C%22userId%5C%22%5D%22,%22wizardType%22:%22SELECT%22%7D" name="{{cronapi.database.Operations.query}}">
-                                                      <arg name="userId"/>
+                                                    <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22Role%22,%22namespace%22:%22app.entity.Role%22,%22alias%22:%22r%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22r%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22r.user.login%22,%22field%22:%22r.user.login%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:userLogin%22,%22valueIsField%22:false%7D,%7B%22id%22:%22r.id%22,%22field%22:%22r.id%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22Manager%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22Role%22,%22entityFullName%22:%22app.entity.Role%22,%22filter%22:%22select%20r%20from%20Role%20r%20where%20r.user.login%20=%20:userLogin%20AND%20r.id%20=%20'Manager'%22,%22params%22:%22%5B%5C%22userLogin%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+                                                      <arg name="userLogin"/>
                                                     </mutation>
                                                     <value name="ARG0">
-                                                      <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="g:*I[UQPQ!KLmhhBE#Qk" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
-                                                        <mutation name="{{cronapi.database.Operations.getField}}">
-                                                          <arg name="Fonte de dados"/>
-                                                          <arg name="Nome do campo"/>
-                                                        </mutation>
-                                                        <value name="PARAM0">
-                                                          <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="Ays~)wB`8L,Fz_)y8pt_" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                            <field name="VAR">usuarioLogado</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="PARAM1">
-                                                          <block colour="#db802b" dependencyby="8ds5FE$bR6`],^k%dtoS" id="TCYymh+|.EEei0WP`]0N" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
-                                                            <mutation name="">
-                                                              <arg label="f.dataAdmissao" value="this[0].dataAdmissao"/>
-                                                              <arg label="f.tipoSanguineo" value="this[0].tipoSanguineo"/>
-                                                              <arg label="f.codigoSubgrupoEmpregado" value="this[0].codigoSubgrupoEmpregado"/>
-                                                              <arg label="f.codigoReligiao" value="this[0].codigoReligiao"/>
-                                                              <arg label="f.motivoStatus" value="this[0].motivoStatus"/>
-                                                              <arg label="f.nome" value="this[0].nome"/>
-                                                              <arg label="f.codigoCargo" value="this[0].codigoCargo"/>
-                                                              <arg label="f.enderecoBairro" value="this[0].enderecoBairro"/>
-                                                              <arg label="f.enderecoComplemento" value="this[0].enderecoComplemento"/>
-                                                              <arg label="f.celular" value="this[0].celular"/>
-                                                              <arg label="f.numeroRamal" value="this[0].numeroRamal"/>
-                                                              <arg label="f.codigoPais" value="this[0].codigoPais"/>
-                                                              <arg label="f.codigoImovel" value="this[0].codigoImovel"/>
-                                                              <arg label="f.endereco" value="this[0].endereco"/>
-                                                              <arg label="f.nomeForcaTrabalhoGuerra" value="this[0].nomeForcaTrabalhoGuerra"/>
-                                                              <arg label="f.codigoEscolaridade" value="this[0].codigoEscolaridade"/>
-                                                              <arg label="f.centroCusto" value="this[0].centroCusto"/>
-                                                              <arg label="f.email" value="this[0].email"/>
-                                                              <arg label="f.cpf" value="this[0].cpf"/>
-                                                              <arg label="f.sexo" value="this[0].sexo"/>
-                                                              <arg label="f.codigoGrupoEmpregado" value="this[0].codigoGrupoEmpregado"/>
-                                                              <arg label="f.emailParticular2" value="this[0].emailParticular2"/>
-                                                              <arg label="f.orgao" value="this[0].orgao"/>
-                                                              <arg label="f.orgao.codigoForcaTrabalho" value="this[0].orgao.codigoForcaTrabalho"/>
-                                                              <arg label="f.motivoReqCed" value="this[0].motivoReqCed"/>
-                                                              <arg label="f.numeroExterno" value="this[0].numeroExterno"/>
-                                                              <arg label="f.codigoEstadoCivil" value="this[0].codigoEstadoCivil"/>
-                                                              <arg label="f.reqCed" value="this[0].reqCed"/>
-                                                              <arg label="f.passaporte" value="this[0].passaporte"/>
-                                                              <arg label="f.siglaEmpresaOrigem" value="this[0].siglaEmpresaOrigem"/>
-                                                              <arg label="f.dataCessao" value="this[0].dataCessao"/>
-                                                              <arg label="f.dataCadastro" value="this[0].dataCadastro"/>
-                                                              <arg label="f.codigoInativo" value="this[0].codigoInativo"/>
-                                                              <arg label="f.emailParticular1" value="this[0].emailParticular1"/>
-                                                              <arg label="f.codigoRaca" value="this[0].codigoRaca"/>
-                                                              <arg label="f.telefone" value="this[0].telefone"/>
-                                                              <arg label="f.codigoCidade" value="this[0].codigoCidade"/>
-                                                              <arg label="f" value="this[0]"/>
-                                                              <arg label="f.orgao.id" value="this[0].orgao.id"/>
-                                                              <arg label="f.dataNascimento" value="this[0].dataNascimento"/>
-                                                              <arg label="f.codigoAplicacaoCargo" value="this[0].codigoAplicacaoCargo"/>
-                                                              <arg label="f.orgao.descricao" value="this[0].orgao.descricao"/>
-                                                              <arg label="f.cep" value="this[0].cep"/>
-                                                              <arg label="f.uf" value="this[0].uf"/>
-                                                              <arg label="f.orgao.nome" value="this[0].orgao.nome"/>
-                                                              <arg label="f.orgao.dataInicioValidade" value="this[0].orgao.dataInicioValidade"/>
-                                                              <arg label="f.matricula" value="this[0].matricula"/>
-                                                              <arg label="f.codigoFuncao" value="this[0].codigoFuncao"/>
-                                                              <arg label="f.orgao.orgaoSuperior" value="this[0].orgao.orgaoSuperior"/>
-                                                              <arg label="f.motivoInativo" value="this[0].motivoInativo"/>
-                                                              <arg label="f.terraMar" value="this[0].terraMar"/>
-                                                              <arg label="f.codigoLogin" value="this[0].codigoLogin"/>
-                                                              <arg label="f.orgao.areaAtuacao" value="this[0].orgao.areaAtuacao"/>
-                                                              <arg label="f.orgao.dataFimValidade" value="this[0].orgao.dataFimValidade"/>
-                                                              <arg label="f.id" value="this[0].id"/>
-                                                              <arg label="f.situacao" value="this[0].situacao"/>
-                                                            </mutation>
-                                                            <field name="SELECT">this[0].id</field>
-                                                          </block>
-                                                        </value>
+                                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="F}L7x5G_9G--oIEWOdb." origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">chave</field>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -1288,6 +1205,74 @@
                                         </value>
                                       </block>
                                     </value>
+                                    <statement name="DO0">
+                                      <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="-$B%y1cw2-S8$K]rAm7-" multilayer="false" namespace="cronapi.database.Operations.insert" origintype="procedures_sql_insert_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_insert_callnoreturn">
+                                        <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22insert%22,%22rulesEntity%22:%5B%7B%22entity%22:%22Role%22,%22namespace%22:%22app.entity.Role%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22Role%22,%22entityFullName%22:%22app.entity.Role%22,%22type%22:%22O%22,%22params%22:%22%5B%20%5C%22Role%5C%22%20%5D%22%7D" name="{{cronapi.database.Operations.insert}}">
+                                          <arg name="Role"/>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="=Z^sIsG)o@@QF53Vj@uf" multilayer="false" namespace="cronapi.database.Operations.newEntity" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20nova%20Entidade%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20nova%20Entidade%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
+                                            <mutation data="%7B%22entity%22:%22app.entity.Role%22,%22entityFullName%22:%22app.entity.Role%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22user%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22undefined%5C%22,%5C%22undefined%5C%22%5D%22,%22type%22:%22F%22,%22fixedEntity%22:false%7D" name="{{cronapi.database.Operations.newEntity}}">
+                                              <arg name="id"/>
+                                              <arg name="user"/>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block colour="#5ba593" dependencyby="8ds5FE$bR6`],^k%dtoS" id="HLf/yALRF3({$wOg;a=l" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                <field name="TEXT">Manager</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG1">
+                                              <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="+S$CW4j|gs7im93,Y.f|" multilayer="false" namespace="cronapi.database.Operations.newEntity" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20nova%20Entidade%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20nova%20Entidade%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
+                                                <mutation data="%7B%22entity%22:%22app.entity.User%22,%22entityFullName%22:%22app.entity.User%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22undefined%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22type%22:%22F%22,%22fixedEntity%22:false%7D" name="{{cronapi.database.Operations.newEntity}}">
+                                                  <arg name="id"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="NOTSELECTED"/>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="8:o0u}BX,{E{K3qoQWCc" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                                    <mutation name="{{cronapi.database.Operations.getField}}">
+                                                      <arg name="Fonte de dados"/>
+                                                      <arg name="Nome do campo"/>
+                                                    </mutation>
+                                                    <value name="PARAM0">
+                                                      <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id=";g~SdneGNz?V_)_,R8th" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+                                                        <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22User%22,%22namespace%22:%22app.entity.User%22,%22alias%22:%22u%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22u%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22u.login%22,%22field%22:%22u.login%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:login%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22User%22,%22entityFullName%22:%22app.entity.User%22,%22filter%22:%22select%20u%20from%20User%20u%20where%20u.login%20=%20:login%22,%22params%22:%22%5B%5C%22login%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+                                                          <arg name="login"/>
+                                                        </mutation>
+                                                        <value name="ARG0">
+                                                          <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="%GS~*b{I}1a?%rmX}t)y" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                            <field name="VAR">chave</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PARAM1">
+                                                      <block colour="#db802b" dependencyby="8ds5FE$bR6`],^k%dtoS" id="~cZceYn=mw|37,QXU{c," origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
+                                                        <mutation name="">
+                                                          <arg label="u.theme" value="this[0].theme"/>
+                                                          <arg label="u.picture" value="this[0].picture"/>
+                                                          <arg label="u.id" value="this[0].id"/>
+                                                          <arg label="u.login" value="this[0].login"/>
+                                                          <arg label="u.name" value="this[0].name"/>
+                                                          <arg label="u.email" value="this[0].email"/>
+                                                          <arg label="u" value="this[0]"/>
+                                                          <arg label="u.password" value="this[0].password"/>
+                                                        </mutation>
+                                                        <field name="SELECT">this[0].id</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
                                   </block>
                                 </statement>
                               </block>
@@ -1460,112 +1445,5 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="-$B%y1cw2-S8$K]rAm7-" multilayer="false" namespace="cronapi.database.Operations.insert" origintype="procedures_sql_insert_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_insert_callnoreturn" x="-1102" y="1598">
-    <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22insert%22,%22rulesEntity%22:%5B%7B%22entity%22:%22Role%22,%22namespace%22:%22app.entity.Role%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22Role%22,%22entityFullName%22:%22app.entity.Role%22,%22type%22:%22O%22,%22params%22:%22%5B%20%5C%22Role%5C%22%20%5D%22%7D" name="{{cronapi.database.Operations.insert}}">
-      <arg name="Role"/>
-    </mutation>
-    <value name="ARG0">
-      <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="=Z^sIsG)o@@QF53Vj@uf" multilayer="false" namespace="cronapi.database.Operations.newEntity" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20nova%20Entidade%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20nova%20Entidade%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
-        <mutation data="%7B%22entity%22:%22app.entity.Role%22,%22entityFullName%22:%22app.entity.Role%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22user%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22undefined%5C%22,%5C%22undefined%5C%22%5D%22,%22type%22:%22F%22,%22fixedEntity%22:false%7D" name="{{cronapi.database.Operations.newEntity}}">
-          <arg name="id"/>
-          <arg name="user"/>
-        </mutation>
-        <value name="ARG0">
-          <block colour="#5ba593" dependencyby="8ds5FE$bR6`],^k%dtoS" id="HLf/yALRF3({$wOg;a=l" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-            <field name="TEXT">Manager</field>
-          </block>
-        </value>
-        <value name="ARG1">
-          <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="+S$CW4j|gs7im93,Y.f|" multilayer="false" namespace="cronapi.database.Operations.newEntity" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20nova%20Entidade%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20nova%20Entidade%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
-            <mutation data="%7B%22entity%22:%22app.entity.User%22,%22entityFullName%22:%22app.entity.User%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22undefined%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22,%5C%22NOTSELECTED%5C%22%5D%22,%22type%22:%22F%22,%22fixedEntity%22:false%7D" name="{{cronapi.database.Operations.newEntity}}">
-              <arg name="id"/>
-              <arg name="NOTSELECTED"/>
-              <arg name="NOTSELECTED"/>
-              <arg name="NOTSELECTED"/>
-              <arg name="NOTSELECTED"/>
-              <arg name="NOTSELECTED"/>
-              <arg name="NOTSELECTED"/>
-            </mutation>
-            <value name="ARG0">
-              <block colour="#aa2f00" dependencyby="8ds5FE$bR6`],^k%dtoS" id="8:o0u}BX,{E{K3qoQWCc" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
-                <mutation name="{{cronapi.database.Operations.getField}}">
-                  <arg name="Fonte de dados"/>
-                  <arg name="Nome do campo"/>
-                </mutation>
-                <value name="PARAM0">
-                  <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="OA{?]`,ny.l)9Xgvlre!" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                    <field name="VAR">usuarioLogado</field>
-                  </block>
-                </value>
-                <value name="PARAM1">
-                  <block colour="#db802b" dependencyby="8ds5FE$bR6`],^k%dtoS" id="~cZceYn=mw|37,QXU{c," origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
-                    <mutation name="">
-                      <arg label="f.dataAdmissao" value="this[0].dataAdmissao"/>
-                      <arg label="f.tipoSanguineo" value="this[0].tipoSanguineo"/>
-                      <arg label="f.codigoSubgrupoEmpregado" value="this[0].codigoSubgrupoEmpregado"/>
-                      <arg label="f.codigoReligiao" value="this[0].codigoReligiao"/>
-                      <arg label="f.motivoStatus" value="this[0].motivoStatus"/>
-                      <arg label="f.nome" value="this[0].nome"/>
-                      <arg label="f.codigoCargo" value="this[0].codigoCargo"/>
-                      <arg label="f.enderecoBairro" value="this[0].enderecoBairro"/>
-                      <arg label="f.enderecoComplemento" value="this[0].enderecoComplemento"/>
-                      <arg label="f.celular" value="this[0].celular"/>
-                      <arg label="f.numeroRamal" value="this[0].numeroRamal"/>
-                      <arg label="f.codigoPais" value="this[0].codigoPais"/>
-                      <arg label="f.codigoImovel" value="this[0].codigoImovel"/>
-                      <arg label="f.endereco" value="this[0].endereco"/>
-                      <arg label="f.nomeForcaTrabalhoGuerra" value="this[0].nomeForcaTrabalhoGuerra"/>
-                      <arg label="f.codigoEscolaridade" value="this[0].codigoEscolaridade"/>
-                      <arg label="f.centroCusto" value="this[0].centroCusto"/>
-                      <arg label="f.email" value="this[0].email"/>
-                      <arg label="f.cpf" value="this[0].cpf"/>
-                      <arg label="f.sexo" value="this[0].sexo"/>
-                      <arg label="f.codigoGrupoEmpregado" value="this[0].codigoGrupoEmpregado"/>
-                      <arg label="f.emailParticular2" value="this[0].emailParticular2"/>
-                      <arg label="f.orgao" value="this[0].orgao"/>
-                      <arg label="f.orgao.codigoForcaTrabalho" value="this[0].orgao.codigoForcaTrabalho"/>
-                      <arg label="f.motivoReqCed" value="this[0].motivoReqCed"/>
-                      <arg label="f.numeroExterno" value="this[0].numeroExterno"/>
-                      <arg label="f.codigoEstadoCivil" value="this[0].codigoEstadoCivil"/>
-                      <arg label="f.reqCed" value="this[0].reqCed"/>
-                      <arg label="f.passaporte" value="this[0].passaporte"/>
-                      <arg label="f.siglaEmpresaOrigem" value="this[0].siglaEmpresaOrigem"/>
-                      <arg label="f.dataCessao" value="this[0].dataCessao"/>
-                      <arg label="f.dataCadastro" value="this[0].dataCadastro"/>
-                      <arg label="f.codigoInativo" value="this[0].codigoInativo"/>
-                      <arg label="f.emailParticular1" value="this[0].emailParticular1"/>
-                      <arg label="f.codigoRaca" value="this[0].codigoRaca"/>
-                      <arg label="f.telefone" value="this[0].telefone"/>
-                      <arg label="f.codigoCidade" value="this[0].codigoCidade"/>
-                      <arg label="f" value="this[0]"/>
-                      <arg label="f.orgao.id" value="this[0].orgao.id"/>
-                      <arg label="f.dataNascimento" value="this[0].dataNascimento"/>
-                      <arg label="f.codigoAplicacaoCargo" value="this[0].codigoAplicacaoCargo"/>
-                      <arg label="f.orgao.descricao" value="this[0].orgao.descricao"/>
-                      <arg label="f.cep" value="this[0].cep"/>
-                      <arg label="f.uf" value="this[0].uf"/>
-                      <arg label="f.orgao.nome" value="this[0].orgao.nome"/>
-                      <arg label="f.orgao.dataInicioValidade" value="this[0].orgao.dataInicioValidade"/>
-                      <arg label="f.matricula" value="this[0].matricula"/>
-                      <arg label="f.codigoFuncao" value="this[0].codigoFuncao"/>
-                      <arg label="f.orgao.orgaoSuperior" value="this[0].orgao.orgaoSuperior"/>
-                      <arg label="f.motivoInativo" value="this[0].motivoInativo"/>
-                      <arg label="f.terraMar" value="this[0].terraMar"/>
-                      <arg label="f.codigoLogin" value="this[0].codigoLogin"/>
-                      <arg label="f.orgao.areaAtuacao" value="this[0].orgao.areaAtuacao"/>
-                      <arg label="f.orgao.dataFimValidade" value="this[0].orgao.dataFimValidade"/>
-                      <arg label="f.id" value="this[0].id"/>
-                      <arg label="f.situacao" value="this[0].situacao"/>
-                    </mutation>
-                    <field name="SELECT">this[0].id</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-          </block>
-        </value>
-      </block>
-    </value>
   </block>
 </blockly>
