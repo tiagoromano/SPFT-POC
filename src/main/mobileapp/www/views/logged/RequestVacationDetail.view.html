@@ -1,4 +1,4 @@
-<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="[{'key':'login','value':''},{'key':'arquiicaoDataInicial','value':''},{'key':'arquisicaoDataFinal','value':''}]"> 
+<div id="starter" ng-init="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.AoEntrar').run()" ng-destroy="" data-component="crn-start" screen-params="[{'key':'login','value':''},{'key':'arquisicaoDataInicial','value':''},{'key':'arquisicaoDataFinal','value':''}]"> 
   <ion-view class="pane"> 
     <ion-header-bar align-title="center" class="bar bar-positive" xattr-theme="bar-positive" data-component="crn-ion-header-bar"> 
       <div class="buttons buttons-left header-item"> 
@@ -49,21 +49,21 @@
       </div>
       <div class="card component-holder col-xs-12" data-component="crn-card" id="trPeriodo1" cronapp-security="visible : None">
         <p xattr-position="text-center" class="text-center component-holder col-xs-12" data-component="crn-paragraph" id="crn-paragraph-839498">1º Período</p>
-        <label class="item item-input component-holder col-xs-12" data-component="crn-input-inline" id="crn-input-inline-314059"><span class="input-label">Inicio</span> <input type="date" ng-model="vars.tr1DataInicio" placeholder="Inicio"></label><div class="list component-holder  col-xs-12" data-component="crn-range" id="crn-range26561"><div class="item range range-positive"><span>Qnt. de dias</span> <input type="range" name="volume" min="1" max="30" value="33" ng-model="vars.tr1QtdDias" ng-change="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.AdicionaDias').run('vars.tr1DataInicio', 'vars.tr1QtdDias', 'vars.tr1DataFinal')"> {{vars.tr1QtdDias}} </div> </div>
+        <label class="item item-input component-holder col-xs-12" data-component="crn-input-inline" id="crn-input-inline-314059"><span class="input-label">Inicio</span> <input type="date" ng-model="vars.tr1DataInicio" placeholder="Inicio" ng-change="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.AdicionaDias').run('vars.tr1DataInicio', 'vars.tr1QtdDias', 'vars.tr1DataFinal')"></label><div class="list component-holder  col-xs-12" data-component="crn-range" id="crn-range26561"><div class="item range range-positive"><span>Qnt. de dias</span> <input type="range" name="volume" min="1" max="30" value="33" ng-model="vars.tr1QtdDias" ng-change="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.AdicionaDias').run('vars.tr1DataInicio', 'vars.tr1QtdDias', 'vars.tr1DataFinal')"> {{vars.tr1QtdDias}} </div> </div>
         
-        <p xattr-position="text-left" class="component-holder col-xs-12 text-left" data-component="crn-paragraph" id="crn-paragraph-159620" ng-model="vars.tr1DataFinal">Término: {{ vars.tr1DataFinal}}</p>
+        <p xattr-position="text-left" class="component-holder col-xs-12 text-left" data-component="crn-paragraph" id="crn-paragraph-159620" ng-model="vars.tr1DataFinal">Término: {{vars.tr1DataFinalView}}</p>
       </div>
       <div class="card component-holder col-xs-12" data-component="crn-card" id="trPeriodo2" cronapp-security="visible : None">
         <p xattr-position="text-center" class="text-center component-holder col-xs-12" data-component="crn-paragraph" id="crn-paragraph-839498">2º Período</p>
-        <label class="item item-input component-holder col-xs-12" data-component="crn-input-inline" id="crn-input-inline-314059"><span class="input-label">Inicio</span> <input type="date" ng-model="vars.tr2DataInicio" placeholder="Inicio"></label><div class="list component-holder  col-xs-12" data-component="crn-range" id="crn-range26561"><div class="item range range-positive"><span>Qnt. de dias</span> <input type="range" name="volume" min="1" max="30" value="33" ng-model="vars.tr2QtdDias" ng-change="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.AdicionaDias').run('vars.tr2DataInicio', 'vars.tr2QtdDias', 'vars.tr2DataFinal')"> {{vars.tr2QtdDias}} </div></div>
+        <label class="item item-input component-holder col-xs-12" data-component="crn-input-inline" id="crn-input-inline-314059"><span class="input-label">Inicio</span> <input type="date" ng-model="vars.tr2DataInicio" placeholder="Inicio" ng-change="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.AdicionaDias').run('vars.tr2DataInicio', 'vars.tr2QtdDias', 'vars.tr2DataFinal')"></label><div class="list component-holder  col-xs-12" data-component="crn-range" id="crn-range26561"><div class="item range range-positive"><span>Qnt. de dias</span> <input type="range" name="volume" min="1" max="30" value="33" ng-model="vars.tr2QtdDias" ng-change="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.AdicionaDias').run('vars.tr2DataInicio', 'vars.tr2QtdDias', 'vars.tr2DataFinal')"> {{vars.tr2QtdDias}} </div></div>
         
-        <p xattr-position="text-left" class="component-holder col-xs-12 text-left" data-component="crn-paragraph" id="crn-paragraph-159620" ng-model="vars.tr2DataFinal">Término: {{ vars.tr2DataFinal }}</p>
+        <p xattr-position="text-left" class="component-holder col-xs-12 text-left" data-component="crn-paragraph" id="crn-paragraph-159620" ng-model="vars.tr2DataFinal">Término: {{ vars.tr2DataFinalView }}</p>
       </div>
       <div class="card component-holder col-xs-12" data-component="crn-card" id="trPeriodo3" cronapp-security="visible : None">
         <p xattr-position="text-center" class="text-center component-holder col-xs-12" data-component="crn-paragraph" id="crn-paragraph-839498">3º Período</p>
-        <label class="item item-input component-holder col-xs-12" data-component="crn-input-inline" id="crn-input-inline-314059"><span class="input-label">Inicio</span> <input type="date" ng-model="vars.tr3DataInicio" placeholder="Inicio"></label>
+        <label class="item item-input component-holder col-xs-12" data-component="crn-input-inline" id="crn-input-inline-314059"><span class="input-label">Inicio</span> <input type="date" ng-model="vars.tr3DataInicio" placeholder="Inicio" ng-change="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.AdicionaDias').run('vars.tr3DataInicio', 'vars.tr3QtdDias', 'vars.tr3DataFinal')"></label>
         <div class="list component-holder  col-xs-12" data-component="crn-range" id="crn-range-311554"><div class="item range range-positive"><span>Qnt. de dias</span> <input type="range" name="volume" min="1" max="30" value="33" ng-model="vars.tr3QtdDias" ng-change="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.AdicionaDias').run('vars.tr3DataInicio', 'vars.tr3QtdDias', 'vars.tr3DataFinal')"> {{vars.tr3QtdDias}} </div></div>
-        <p xattr-position="text-left" class="component-holder col-xs-12 text-left" data-component="crn-paragraph" id="crn-paragraph-159620" ng-model="vars.tr3DataFinal">Término: {{ vars.tr3DataFinal}}</p>
+        <p xattr-position="text-left" class="component-holder col-xs-12 text-left" data-component="crn-paragraph" id="crn-paragraph-159620" ng-model="vars.tr3DataFinal">Término: {{ vars.tr3DataFinalView}}</p>
       </div>
       <div style="height: 30px;" data-component="crn-spacer" class="component-holder col-xs-12" id="crn-spacer-376157">
         &nbsp;
@@ -93,7 +93,7 @@
       <div style="height: 20px;" data-component="crn-spacer" class="component-holder col-xs-12" id="crn-spacer-1022764">
         &nbsp;
       </div>
-      <textarea id="crn-textarea-269391" ng-model="vars.textarea5384" maxlength="300" style="resize:none;" resize="none" class="col item item-input component-holder col-xs-12" rows="5" placeholder="Justificativa para aprovação do gerente" data-component="crn-textarea"></textarea>
+      <textarea id="crn-textarea-269391" ng-model="vars.justificativa" maxlength="300" style="resize:none;" resize="none" class="col item item-input component-holder col-xs-12" rows="5" placeholder="Justificativa para aprovação do gerente" data-component="crn-textarea"></textarea>
       <div style="height: 20px;" data-component="crn-spacer" class="component-holder col-xs-12" id="crn-spacer-614532">
         &nbsp;
       </div>

@@ -746,6 +746,7 @@
     return field;
   };
 
+
   /**
    * @type function
    * @name {{changeValueOfField}}
@@ -764,6 +765,25 @@
     catch (e) {
       // NO COMMAND
     }
+  };
+
+
+
+  /**
+   * @type function
+   * @name changeViewValue
+   * @nameTags changeViewValue|changeViewValue
+   * @description changeViewValueDescription
+   * @param {ObjectType.STRING} field {{field}}
+   * @param {ObjectType.STRING} value {{value}}
+   * @multilayer true
+   */
+  this.cronapi.screen.changeViewValue = function(/** @type {ObjectType.STRING} @blockType field_from_screen*/ field, /** @type {ObjectType.STRING} */value) {
+      var func = new Function(`this.${field}.$filff = function(val){ return '${value}'}`);
+      this.safeApply(func.bind(this));
+
+
+
   };
 
   /**
