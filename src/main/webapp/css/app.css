@@ -1,0 +1,10 @@
+.timeline-chart-tooltip {
+  border: 1px solid #E0E0E0;
+  font-family: Arial, Helvetica;
+  padding: 6px 6px 6px 6px; 
+  width: calc(100% + 2px);
+}
+
+.timeline-chart-tooltip span{
+  font-weight: bold;
+}
