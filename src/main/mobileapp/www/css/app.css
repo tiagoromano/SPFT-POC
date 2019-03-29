@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-bg, .menu-view, .bar.bar-positive{
+    background:#008542;
+}
+
+.card.component-holder.col-xs-12{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 95%;
+}
+
+.menu-view .button.button-positive, .login-bg .button.button-positive, button button-block button-positive{
+   background: #004c26 !important;
+}
+
+.button.button-positive{
+   background: #004c26 !important;
+}

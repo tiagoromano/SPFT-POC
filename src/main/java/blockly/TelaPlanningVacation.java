@@ -133,5 +133,24 @@ public static Var getDaysQuantity2(Var rowData) throws Exception {
  }.call();
 }
 
+/**
+ *
+ * @return Var
+ */
+// Descreva esta função...
+public static Var obterEmpreadosSelecionados() throws Exception {
+ return new Callable<Var>() {
+
+   private Var selectedUsers = Var.VAR_NULL;
+
+   public Var call() throws Exception {
+    System.out.println(Var.valueOf("tabatenu").getObjectAsString());
+    selectedUsers = cronapi.screen.Operations.getParam(Var.valueOf("users"));
+    System.out.println(selectedUsers.getObjectAsString());
+    return Var.VAR_NULL;
+   }
+ }.call();
+}
+
 }
 

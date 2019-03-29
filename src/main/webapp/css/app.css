@@ -1,0 +1,130 @@
+.bg-petros{
+    background-image: transparent;
+    background: #008542;
+}
+
+.btn-petros{
+    background: #008542 !important;
+}
+
+.main-title{
+    background-color: #008542;
+}
+
+.navbar-default{
+    background-color: #004c26;
+    border-color: #004c26;
+}
+
+button.btn-default{
+    background: #004c26 !important;
+}
+
+div.k-grid-header, .k-grid-header .k-header{
+    background-color: #004c26 !important;
+}
+
+.k-grid-header .k-grid-filter, .dropdown-menu>li>a{
+    color: #008542;
+    margin-right: 5px;
+}
+
+.dropdown-menu>li>a:hover{
+    color: #008542 !important;
+}
+
+.dropdown-menu>li>a i{
+    margin-right: 4px;
+}
+
+.k-pager-wrap a.k-pager-refresh{color:#008542; }
+.k-state-selected,.k-pager-wrap a.k-pager-refresh:hover{
+    background-color: #008542 !important; 
+    color: white !important;
+}
+
+.k-pager-wrap .k-state-selected:hover{
+     background-color: #004c26 !important;
+}
+
+.k-button.k-primary, .k-slider .k-draghandle, .k-switch-on .k-switch-handle{
+    background-color: #008542 !important; 
+}
+
+.k-button:hover{
+    background: #f3f3f3;
+}
+
+.k-button[type="reset"]{
+    color: #333;
+}
+
+.k-command-cell a.k-button:hover, .k-grid tbody .k-button:hover{
+    background: #004c26 !important;
+}
+
+.k-grid-tool .k-button{
+    color: #008542;
+}
+
+.k-grid-toolbar .k-button, .k-grid-tool .k-button:hover{
+    background: #004c26 !important;
+    color: white !important;
+}
+
+
+.timeline-chart-tooltip {
+  border: 1px solid #E0E0E0;
+  font-family: Arial, Helvetica;
+  padding: 6px 6px 6px 6px; 
+  width: calc(100% + 2px);
+}
+
+.timeline-chart-tooltip span{
+  font-weight: bold;
+}
+
+
+/* PLANNING */
+
+div#valorChave label { 
+  font-weight: bold;
+}
+
+div#valorEmpregado label { 
+  font-weight: bold;
+}
+
+div#valorGerencia label { 
+  font-weight: bold;
+}
+
+div#valorMatricula label { 
+  font-weight: bold;
+}
+
+div.spacer { 
+  height:15px;
+}
+
+div.bold { 
+  font-weight: bold;
+}
+
+div.center { 
+    display: flex;
+    justify-content: center;
+}
+
+a.pointer-cursor:hover {
+    cursor: pointer;
+}
+
+
+.nav-tabs{
+    background: #008542 !important;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #004c26;
+}

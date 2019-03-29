@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/webapp/views/logged/planningVacation.view.html" resourceType="JS" ruleDescription="TelaPlanningVacation" ruleName="TelaPlanningVacation" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
+  <metadata scale="1" scrollx="416" scrolly="-402.99999999999994" target="nC?ZWpiJz3lh3:BBrC`T"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-322" y="278">
+    <field name="NAME">obterUsuariosSelecionados</field>
+    <comment h="80" pinned="false" w="160">TelaPlanningVacation</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="u)ymtEEZU2;:@S{9o]_|" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">item</field>
+        <value name="VALUE">
+          <block colour="#487f7f" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="GI`/DaAOQh?7CkOrtEN." multilayer="false" namespace="cronapi.util.executeJavascriptReturn" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExecuta%20javascript%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20executa%20o%20javascript%20e%20retorna%20o%20seu%20valor%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Comando%20:%20Texto%3C/span%3E%3Cdiv%3EComando%20a%20ser%20executado%20(exemplo:%20alert('teste');).%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.executeJavascriptReturn%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.executeJavascriptReturn%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+            <mutation name="{{cronapi.util.executeJavascriptReturn}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Comando"/>
+            </mutation>
+            <value name="ARG0">
+              <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="As9i0Lk44E+zf/./7%Xe" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">$('#cron-crn-enterprise-combobox-multiple-675758').data('kendoMultiSelect').value()</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="jJ-C?~#*Ojp%q(=hC6Io" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+        <field name="VAR">item</field>
+      </block>
+    </value>
+  </block>
+  <block colour="#fca03b" id="**Nb9X*QVSGN/.ll`Ooc" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-302" y="351">
+    <field name="NAME">changeUserSelectionHandler</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+  </block>
+  <block colour="#fca03b" id="nC?ZWpiJz3lh3:BBrC`T" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-322" y="443">
+    <field name="NAME">recarregarGrafico</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block colour="#487f7f" dependencyby="nC?ZWpiJz3lh3:BBrC`T" id="$hpEH-vF8Z*.4p=?MGMa" multilayer="true" namespace="cronapi.util.executeJavascriptNoReturn" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExecuta%20javascript%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20executa%20javascript%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Comando%20:%20Texto%3C/span%3E%3Cdiv%3EComando%20a%20ser%20executado%20(exemplo:%20alert('teste');).%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.executeJavascriptNoReturn%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.executeJavascriptNoReturn%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.util.executeJavascriptNoReturn}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Comando"/>
+        </mutation>
+        <value name="ARG0">
+          <shadow colour="#5ba593" dependencyby="nC?ZWpiJz3lh3:BBrC`T" id="LA9%-vFe?.aI#*%}Xr4T" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">renderChart()</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block colour="#fca03b" id="Gy^z]gNs5(VZMb!gz~PQ" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-262" y="443">
+    <field name="NAME">initCombo</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+  </block>
+  <block colour="#934848" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="MTdvkYjA4:Am~+|6Mkt3" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn" x="-262" y="443">
+    <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
+      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
+    </mutation>
+    <value name="ARG0">
+      <block colour="#934848" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="02i8-2EhH?J1XSJahjO[" origintype="datasource_from_screen" output="true" type="datasource_from_screen">
+        <field name="SELECT">ObterFeriasAprovadas</field>
+      </block>
+    </value>
+    <value name="ARG1">
+      <block colour="#934848" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="O2v%KBS!9*dEwRnaiRC_" origintype="util_dropdown" output="true" type="util_dropdown">
+        <mutation>
+          <arg name="true" value="Verdadeiro"/>
+          <arg name="false" value="Falso"/>
+        </mutation>
+        <field name="SELECT">true</field>
+      </block>
+    </value>
+  </block>
+  <block colour="#487f7f" dependencyby="Gy^z]gNs5(VZMb!gz~PQ" id="JHVVX+=Po;sd;DydN(fq" multilayer="true" namespace="cronapi.util.executeJavascriptNoReturn" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExecuta%20javascript%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20executa%20javascript%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Comando%20:%20Texto%3C/span%3E%3Cdiv%3EComando%20a%20ser%20executado%20(exemplo:%20alert('teste');).%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.executeJavascriptNoReturn%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.executeJavascriptNoReturn%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn" x="-232" y="593">
+    <mutation name="{{cronapi.util.executeJavascriptNoReturn}}" return-raw-type="undefined">
+      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Comando"/>
+    </mutation>
+    <value name="ARG0">
+      <shadow colour="#5ba593" dependencyby="Gy^z]gNs5(VZMb!gz~PQ" id=".2NK`%FPG/O`MP@.$R@J" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+        <field name="TEXT">//Add listener to multiselectCombo
+
+var intervalID = setInterval(function(){
+    var multiselect = $('#cron-crn-enterprise-combobox-multiple-675758').data('kendoMultiSelect');
+    if(multiselect){
+        multiselect.bind("change", cronapi.client('js.blockly.TelaPlanningVacation.changeUserSelectionHandler').attr().run());
+        
+        clearInterval(refreshIntervalId);
+    }
+    
+});
+</field>
+      </shadow>
+    </value>
+  </block>
+</blockly>
