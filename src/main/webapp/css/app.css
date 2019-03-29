@@ -1,0 +1,48 @@
+.bg-petros{
+    background-image: transparent;
+    background: #008542;
+}
+
+.btn-petros{
+    background: #008542 !important;
+}
+
+.main-title{
+    background-color: #008542;
+}
+
+.navbar-default{
+    background-color: #004c26;
+    border-color: #004c26;
+}
+
+button.btn-default{
+    background: #004c26 !important;
+}
+
+div.k-grid-header, .k-grid-header .k-header{
+    background-color: #004c26 !important;
+}
+
+.k-grid-header .k-grid-filter, .dropdown-menu>li>a{
+    color: #008542;
+    margin-right: 5px;
+}
+
+.dropdown-menu>li>a:hover{
+    color: #008542 !important;
+}
+
+.dropdown-menu>li>a i{
+    margin-right: 4px;
+}
+
+.k-pager-wrap a.k-pager-refresh{color:#008542; }
+.k-state-selected,.k-pager-wrap a.k-pager-refresh:hover{
+    background-color: #008542 !important; 
+    color: white !important;
+}
+
+.k-pager-wrap .k-state-selected:hover{
+     background-color: #004c26 !important;
+}
