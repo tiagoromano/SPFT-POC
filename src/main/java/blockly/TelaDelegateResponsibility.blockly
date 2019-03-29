@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/webapp/views/manager/delegateResponsibility.view.html" resourceType="JAVA" ruleDescription="TelaDelegateResponsibility" ruleName="TelaDelegateResponsibility" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
-  <metadata scale="1" scrollx="1438.4" scrolly="-1527.5000000000011" target="8ds5FE$bR6`],^k%dtoS"/>
+  <metadata scale="0.8957951999999999" scrollx="1343.8246965390026" scrolly="-8.17209745670516" target="!7AN?,p`#,=?bsmYf6Td"/>
   <block colour="#fca03b" id="!7AN?,p`#,=?bsmYf6Td" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1297" y="188">
     <mutation>
       <arg name="delegacao&amp;lt;SPFT.entity.Delegacao&amp;gt;"/>
@@ -31,23 +31,38 @@
           </block>
         </value>
         <next>
-          <block colour="#934848" dependencyby="!7AN?,p`#,=?bsmYf6Td" id="I*EsIPdN|iR)a686GQ?2" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
-            <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
-              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
-              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
-            </mutation>
-            <value name="ARG0">
-              <block colour="#934848" dependencyby="!7AN?,p`#,=?bsmYf6Td" id="{R/0?~l_u2)tqkfuAF{!" origintype="datasource_from_screen" output="true" type="datasource_from_screen">
-                <field name="SELECT">ObterGerenciasDelegadasPeloUsuarioLogado</field>
-              </block>
-            </value>
-            <value name="ARG1">
-              <block colour="#934848" dependencyby="!7AN?,p`#,=?bsmYf6Td" id="`/P9M8qpN,@CozN|ATg4" origintype="util_dropdown" output="true" type="util_dropdown">
-                <mutation>
-                  <arg name="true" value="Verdadeiro"/>
-                  <arg name="false" value="Falso"/>
+          <block colour="#0088ee" dependencyby="!7AN?,p`#,=?bsmYf6Td" id="7)DT?==xw3eX5H[OG_$E" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+            <field name="VAR">historicoRes</field>
+            <value name="VALUE">
+              <block colour="#487f7f" dependencyby="!7AN?,p`#,=?bsmYf6Td" id="0*-$[%M]cXxRr^9WH3qS" multilayer="false" namespace="cronapi.util.Operations.callBlockly" origintype="procedures_callblockly_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20chamar%20um%20bloco%20de%20programa%C3%A7ao%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bloco%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Nome%20do%20bloco%3C/div%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.Operations.callBlockly%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.Operations.callBlockly%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callreturn">
+                <mutation data="%7B%22name%22:%22Util%22,%22class%22:%22blockly.Util%22,%22function%22:%22AdicionarHistoricoDelegacao%22,%22oldName%22:%22AdicionarHistoricoDelegacao%22,%22params%22:%22%5B%5C%22delegacaoId%5C%22,%5C%22acao%5C%22%5D%22,%22type%22:%22java%22,%22namespace%22:%22blockly.Util%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22blockly.Util%22,%22sourcePath%22:%22src/main/java/blockly/Util.blockly%22,%22language%22:%22java%22,%22class%22:%22blockly.Util%22,%22methods%22:%5B%7B%22name%22:%22EnviarEmail%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22para%22,%22assunto%22,%22corpo%22%5D%7D,%7B%22name%22:%22AdicionarHistoricoDelegacao%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22delegacaoId%22,%22acao%22%5D%7D,%7B%22name%22:%22AdicionarHistoricoSolicitacao%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22descricao%22,%22solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;%22%5D%7D,%7B%22name%22:%22CriarId%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22id%22%5D%7D%5D%7D%7D" name="{{cronapi.util.Operations.callBlockly}}">
+                  <arg name="delegacaoId"/>
+                  <arg name="acao"/>
                 </mutation>
-                <field name="SELECT">true</field>
+                <value name="ARG0">
+                  <block colour="#c88330" dependencyby="!7AN?,p`#,=?bsmYf6Td" id="|gkuSwh;R,{--u_q*IHm" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                    <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                      <arg name="Objeto"/>
+                      <arg name="Caminho a percorrer"/>
+                    </mutation>
+                    <value name="PARAM0">
+                      <block colour="#0088ee" dependencyby="!7AN?,p`#,=?bsmYf6Td" id="gpj8g/(_iP0;[vcOjV{M" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">delegacao&lt;SPFT.entity.Delegacao&gt;</field>
+                      </block>
+                    </value>
+                    <value name="PARAM1">
+                      <block colour="#c88330" dependencyby="!7AN?,p`#,=?bsmYf6Td" id="H^-1/$:24ytDTrVM2A)|" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                        <mutation name="" return-raw-type="undefined"/>
+                        <field name="SELECT">id</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block colour="#5ba593" dependencyby="!7AN?,p`#,=?bsmYf6Td" id="5qHcPy/~*zg-#t{@8;B." origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">removeu</field>
+                  </block>
+                </value>
               </block>
             </value>
             <next>
@@ -59,6 +74,28 @@
                     <field name="TEXT">Delegação excluida com sucesso!</field>
                   </shadow>
                 </value>
+                <next>
+                  <block colour="#934848" dependencyby="!7AN?,p`#,=?bsmYf6Td" id="I*EsIPdN|iR)a686GQ?2" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                    <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#934848" dependencyby="!7AN?,p`#,=?bsmYf6Td" id="{R/0?~l_u2)tqkfuAF{!" origintype="datasource_from_screen" output="true" type="datasource_from_screen">
+                        <field name="SELECT">ObterGerenciasDelegadasPeloUsuarioLogado</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block colour="#934848" dependencyby="!7AN?,p`#,=?bsmYf6Td" id="`/P9M8qpN,@CozN|ATg4" origintype="util_dropdown" output="true" type="util_dropdown">
+                        <mutation>
+                          <arg name="true" value="Verdadeiro"/>
+                          <arg name="false" value="Falso"/>
+                        </mutation>
+                        <field name="SELECT">true</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
@@ -1045,43 +1082,66 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="9%Wm?CKiHPZr#(Y+!WGq" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
-                                                <field name="VAR">delegacaoIdCorrente</field>
+                                              <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="HPJu)!FHs,sYuB?ZucI#" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                <field name="VAR">historicoRes</field>
                                                 <value name="VALUE">
-                                                  <block colour="#5b6da5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="kt]m=Gj+^tlH-A~MowkE" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
-                                                    <mutation items="2"/>
-                                                    <field name="OP1">ADD</field>
+                                                  <block colour="#487f7f" dependencyby="8ds5FE$bR6`],^k%dtoS" id="]26]Ze:9BmGj{W?}YMNu" multilayer="false" namespace="cronapi.util.Operations.callBlockly" origintype="procedures_callblockly_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20chamar%20um%20bloco%20de%20programa%C3%A7ao%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Bloco%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Nome%20do%20bloco%3C/div%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.Operations.callBlockly%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.Operations.callBlockly%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callreturn">
+                                                    <mutation data="%7B%22name%22:%22Util%22,%22class%22:%22blockly.Util%22,%22function%22:%22AdicionarHistoricoDelegacao%22,%22oldName%22:%22AdicionarHistoricoDelegacao%22,%22params%22:%22%5B%5C%22delegacaoId%5C%22,%5C%22acao%5C%22%5D%22,%22type%22:%22java%22,%22namespace%22:%22blockly.Util%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22blockly.Util%22,%22sourcePath%22:%22src/main/java/blockly/Util.blockly%22,%22language%22:%22java%22,%22class%22:%22blockly.Util%22,%22methods%22:%5B%7B%22name%22:%22EnviarEmail%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22para%22,%22assunto%22,%22corpo%22%5D%7D,%7B%22name%22:%22AdicionarHistoricoDelegacao%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22delegacaoId%22,%22acao%22%5D%7D,%7B%22name%22:%22AdicionarHistoricoSolicitacao%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22descricao%22,%22solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;%22%5D%7D,%7B%22name%22:%22CriarId%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22id%22%5D%7D%5D%7D%7D" name="{{cronapi.util.Operations.callBlockly}}">
+                                                      <arg name="delegacaoId"/>
+                                                      <arg name="acao"/>
+                                                    </mutation>
                                                     <value name="ARG0">
-                                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="T(a8?0m|uvu%b8KxFvtr" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="CS5Dv{)#1~~*0$*$a%qi" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
                                                         <field name="VAR">delegacaoIdCorrente</field>
                                                       </block>
                                                     </value>
                                                     <value name="ARG1">
-                                                      <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="9;Cu{6vc^dHy%t%t{8{}" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
-                                                        <field name="NUM">1</field>
+                                                      <block colour="#5ba593" dependencyby="8ds5FE$bR6`],^k%dtoS" id="l0ohso6=Ubt,A/T0G(qW" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                        <field name="TEXT">inseriu</field>
                                                       </block>
                                                     </value>
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id=")@9$=y[Jc[AKVw}`_4hj" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
-                                                    <field name="VAR">totalOrgaoDelegado</field>
+                                                  <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="9%Wm?CKiHPZr#(Y+!WGq" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                    <field name="VAR">delegacaoIdCorrente</field>
                                                     <value name="VALUE">
-                                                      <block colour="#5b6da5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="@`q!d@@A!2X~#]$^!p3u" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+                                                      <block colour="#5b6da5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="kt]m=Gj+^tlH-A~MowkE" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
                                                         <mutation items="2"/>
                                                         <field name="OP1">ADD</field>
                                                         <value name="ARG0">
-                                                          <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id=":Q080#9-1$,.C{Pdt~Qd" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                                                            <field name="VAR">totalOrgaoDelegado</field>
+                                                          <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id="T(a8?0m|uvu%b8KxFvtr" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                            <field name="VAR">delegacaoIdCorrente</field>
                                                           </block>
                                                         </value>
                                                         <value name="ARG1">
-                                                          <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="HU-t(#e:n#R,TOxMcgBo" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                                          <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="9;Cu{6vc^dHy%t%t{8{}" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
                                                             <field name="NUM">1</field>
                                                           </block>
                                                         </value>
                                                       </block>
                                                     </value>
+                                                    <next>
+                                                      <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id=")@9$=y[Jc[AKVw}`_4hj" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                                        <field name="VAR">totalOrgaoDelegado</field>
+                                                        <value name="VALUE">
+                                                          <block colour="#5b6da5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="@`q!d@@A!2X~#]$^!p3u" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
+                                                            <mutation items="2"/>
+                                                            <field name="OP1">ADD</field>
+                                                            <value name="ARG0">
+                                                              <block colour="#0088ee" dependencyby="8ds5FE$bR6`],^k%dtoS" id=":Q080#9-1$,.C{Pdt~Qd" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                <field name="VAR">totalOrgaoDelegado</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="ARG1">
+                                                              <block colour="#5b67a5" dependencyby="8ds5FE$bR6`],^k%dtoS" id="HU-t(#e:n#R,TOxMcgBo" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                                                <field name="NUM">1</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
                                                   </block>
                                                 </next>
                                               </block>

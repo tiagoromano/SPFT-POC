@@ -7,7 +7,7 @@ window.blockly.js.blockly.TelaApproveVacationRequest = window.blockly.js.blockly
  * Descreva esta função...
  */
 window.blockly.js.blockly.TelaApproveVacationRequest.ReprovarSolicitacoesComJustificativa = function() {
- var item, totalSolicitacao, justificativa, selectedRows;
+ var item, totalSolicitacao, justificativa, selectedRows, selectedRow;
   selectedRows = this.cronapi.screen.getSelectedRowsGrid("vars.gradeAprovarMarcacaoFerias");
   totalSolicitacao = selectedRows.length;
   justificativa = this.cronapi.screen.getValueOfField("vars.justificativaReprovacao");
@@ -24,10 +24,19 @@ window.blockly.js.blockly.TelaApproveVacationRequest.ReprovarSolicitacoesComJust
 }
 
 /**
+ * Descreva esta função...
+ */
+window.blockly.js.blockly.TelaApproveVacationRequest.ExibirModalHistorico = function(selectedRow) {
+ var item, totalSolicitacao, justificativa, selectedRows;
+  this.cronapi.screen.refreshDatasource("Historico", 'true');
+  this.cronapi.screen.showModal("modalHistorico");
+}
+
+/**
  * TelaApproveVacationRequest
  */
 window.blockly.js.blockly.TelaApproveVacationRequest.ReprovarSolicitacoes = function(selectedRows) {
- var item, totalSolicitacao, justificativa;
+ var item, totalSolicitacao, justificativa, selectedRow;
   item = selectedRows.length;
   if (item == 0) {
     this.cronapi.screen.notify('error','Selecione alguma solicitação para aprovar');

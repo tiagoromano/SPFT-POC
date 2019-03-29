@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="Util" ruleName="Util" ruleSynchronous="false" ruleTimeout="" ruleType="I">
-  <metadata scale="1" scrollx="1563.4" scrolly="-877.5" target="tdo6l:S]I4R6j^U!C#l{"/>
+  <metadata scale="1" scrollx="1517.4" scrolly="-1119.2000000000041" target="Hp:O5UbtX;!u08sSXQ/p"/>
   <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-367" y="158">
     <mutation>
       <arg name="para"/>
@@ -107,15 +107,1475 @@
       </block>
     </statement>
   </block>
-  <block colour="#fca03b" id="tdo6l:S]I4R6j^U!C#l{" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1417" y="1088">
+  <block colour="#fca03b" id="Hp:O5UbtX;!u08sSXQ/p" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1492" y="923">
     <mutation>
-      <arg name="Id"/>
+      <arg name="delegacaoId"/>
+      <arg name="acao"/>
+    </mutation>
+    <field name="NAME">AdicionarHistoricoDelegacao</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="r-`HpInZadK9)Nk%N8i~" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">delegacao&lt;SPFT.entity.Delegacao&gt;</field>
+        <value name="VALUE">
+          <block colour="#aa2f00" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="w9,xowXn12T.5m=u$bG;" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22Delegacao%22,%22namespace%22:%22SPFT.entity.Delegacao%22,%22alias%22:%22d%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22d%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22d.id%22,%22field%22:%22d.id%22,%22type%22:%22integer%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:id%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22Delegacao%22,%22entityFullName%22:%22SPFT.entity.Delegacao%22,%22filter%22:%22select%20d%20from%20Delegacao%20d%20where%20d.id%20=%20:id%22,%22params%22:%22%5B%5C%22id%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+              <arg name="id"/>
+            </mutation>
+            <value name="ARG0">
+              <block colour="#0088ee" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="*KFb?OQT4yeoN!H4Jk_1" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">delegacaoId</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block colour="#0088ee" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="?ZsG_|#Wx8sVS{I6yi7M" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+            <field name="VAR">conteudo</field>
+            <value name="VALUE">
+              <block colour="#5ba58c" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="4uc{j}J(#NQnW9-.Ri^." origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                <mutation items="11"/>
+                <value name="ADD0">
+                  <block colour="#487f7f" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="!@;4~Pcz2r]BfYe.2$U." multilayer="false" namespace="cronapi.util.Operations.getCurrentUserName" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20login%20do%20usu%C3%A1rio%20logado%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20o%20login%20do%20usu%C3%A1rio%20logado.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.Operations.getCurrentUserName%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.Operations.getCurrentUserName%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                    <mutation name="{{cronapi.util.Operations.getCurrentUserName}}" return-raw-type="cronapi.Var"/>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block colour="#5ba593" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="TXzIMAYRsf$Q0(1]xsm-" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT"> </field>
+                  </block>
+                </value>
+                <value name="ADD2">
+                  <block colour="#aa2f00" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="Q%6^EL~KFPJ/l^?3a5WI" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                    <mutation name="{{cronapi.database.Operations.getField}}">
+                      <arg name="Fonte de dados"/>
+                      <arg name="Nome do campo"/>
+                    </mutation>
+                    <value name="PARAM0">
+                      <block colour="#0088ee" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="cT^{OKJhOwyCzI}WGbzM" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">delegacao&lt;SPFT.entity.Delegacao&gt;</field>
+                      </block>
+                    </value>
+                    <value name="PARAM1">
+                      <block colour="#db802b" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="Fr.@I.(*.-Rm;)O.b3|," origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
+                        <mutation name="">
+                          <arg label="d.forcaTrabalhoDelegado.centroCusto" value="this[0].forcaTrabalhoDelegado.centroCusto"/>
+                          <arg label="d.forcaTrabalhoDes.enderecoComplemento" value="this[0].forcaTrabalhoDes.enderecoComplemento"/>
+                          <arg label="d.forcaTrabalhoDelegado.numeroExterno" value="this[0].forcaTrabalhoDelegado.numeroExterno"/>
+                          <arg label="d.forcaTrabalhoDes.enderecoBairro" value="this[0].forcaTrabalhoDes.enderecoBairro"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.nome" value="this[0].forcaTrabalhoGerente.orgao.nome"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoLogin" value="this[0].forcaTrabalhoDelegado.codigoLogin"/>
+                          <arg label="d.forcaTrabalhoDelegado.sexo" value="this[0].forcaTrabalhoDelegado.sexo"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.codigoForcaTrabalho" value="this[0].forcaTrabalhoDes.orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoDelegado.matricula" value="this[0].forcaTrabalhoDelegado.matricula"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.nome" value="this[0].forcaTrabalhoDes.orgao.nome"/>
+                          <arg label="d.orgao.dataInicioValidade" value="this[0].orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoGrupoEmpregado" value="this[0].forcaTrabalhoGerente.codigoGrupoEmpregado"/>
+                          <arg label="d.orgao.codigoForcaTrabalho" value="this[0].orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoImovel" value="this[0].forcaTrabalhoGerente.codigoImovel"/>
+                          <arg label="d.forcaTrabalhoDelegado.tipoSanguineo" value="this[0].forcaTrabalhoDelegado.tipoSanguineo"/>
+                          <arg label="d.forcaTrabalhoDelegado" value="this[0].forcaTrabalhoDelegado"/>
+                          <arg label="d.forcaTrabalhoDes.cep" value="this[0].forcaTrabalhoDes.cep"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoEstadoCivil" value="this[0].forcaTrabalhoDelegado.codigoEstadoCivil"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoFuncao" value="this[0].forcaTrabalhoGerente.codigoFuncao"/>
+                          <arg label="d.forcaTrabalhoDes.codigoAplicacaoCargo" value="this[0].forcaTrabalhoDes.codigoAplicacaoCargo"/>
+                          <arg label="d.forcaTrabalhoDes.codigoInativo" value="this[0].forcaTrabalhoDes.codigoInativo"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.areaAtuacao" value="this[0].forcaTrabalhoDelegado.orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoGerente.endereco" value="this[0].forcaTrabalhoGerente.endereco"/>
+                          <arg label="d.forcaTrabalhoGerente.celular" value="this[0].forcaTrabalhoGerente.celular"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoCidade" value="this[0].forcaTrabalhoDelegado.codigoCidade"/>
+                          <arg label="d.forcaTrabalhoDes.passaporte" value="this[0].forcaTrabalhoDes.passaporte"/>
+                          <arg label="d.forcaTrabalhoGerente.motivoStatus" value="this[0].forcaTrabalhoGerente.motivoStatus"/>
+                          <arg label="d.forcaTrabalhoDes.sexo" value="this[0].forcaTrabalhoDes.sexo"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.id" value="this[0].forcaTrabalhoGerente.orgao.id"/>
+                          <arg label="d.forcaTrabalhoDes.dataCessao" value="this[0].forcaTrabalhoDes.dataCessao"/>
+                          <arg label="d.forcaTrabalhoDes.dataCadastro" value="this[0].forcaTrabalhoDes.dataCadastro"/>
+                          <arg label="d.forcaTrabalhoGerente.id" value="this[0].forcaTrabalhoGerente.id"/>
+                          <arg label="d.forcaTrabalhoDelegado.endereco" value="this[0].forcaTrabalhoDelegado.endereco"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.dataInicioValidade" value="this[0].forcaTrabalhoDelegado.orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoDes.motivoStatus" value="this[0].forcaTrabalhoDes.motivoStatus"/>
+                          <arg label="d.forcaTrabalhoDes.uf" value="this[0].forcaTrabalhoDes.uf"/>
+                          <arg label="d.forcaTrabalhoDes.celular" value="this[0].forcaTrabalhoDes.celular"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoReligiao" value="this[0].forcaTrabalhoGerente.codigoReligiao"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoEstadoCivil" value="this[0].forcaTrabalhoGerente.codigoEstadoCivil"/>
+                          <arg label="d.orgao.orgaoSuperior" value="this[0].orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoGerente.emailParticular1" value="this[0].forcaTrabalhoGerente.emailParticular1"/>
+                          <arg label="d.forcaTrabalhoDes.centroCusto" value="this[0].forcaTrabalhoDes.centroCusto"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoRaca" value="this[0].forcaTrabalhoDelegado.codigoRaca"/>
+                          <arg label="d.orgao.nome" value="this[0].orgao.nome"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoSubgrupoEmpregado" value="this[0].forcaTrabalhoGerente.codigoSubgrupoEmpregado"/>
+                          <arg label="d.forcaTrabalhoDelegado.enderecoBairro" value="this[0].forcaTrabalhoDelegado.enderecoBairro"/>
+                          <arg label="d.forcaTrabalhoDes.reqCed" value="this[0].forcaTrabalhoDes.reqCed"/>
+                          <arg label="d.forcaTrabalhoGerente.uf" value="this[0].forcaTrabalhoGerente.uf"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.descricao" value="this[0].forcaTrabalhoGerente.orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoDes.codigoFuncao" value="this[0].forcaTrabalhoDes.codigoFuncao"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.orgaoSuperior" value="this[0].forcaTrabalhoDelegado.orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoGerente.terraMar" value="this[0].forcaTrabalhoGerente.terraMar"/>
+                          <arg label="d.forcaTrabalhoGerente.dataNascimento" value="this[0].forcaTrabalhoGerente.dataNascimento"/>
+                          <arg label="d.tipoDelegacao" value="this[0].tipoDelegacao"/>
+                          <arg label="d.forcaTrabalhoDes.siglaEmpresaOrigem" value="this[0].forcaTrabalhoDes.siglaEmpresaOrigem"/>
+                          <arg label="d.forcaTrabalhoGerente.enderecoBairro" value="this[0].forcaTrabalhoGerente.enderecoBairro"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoFuncao" value="this[0].forcaTrabalhoDelegado.codigoFuncao"/>
+                          <arg label="d.forcaTrabalhoDelegado.numeroRamal" value="this[0].forcaTrabalhoDelegado.numeroRamal"/>
+                          <arg label="d.forcaTrabalhoDelegado.cep" value="this[0].forcaTrabalhoDelegado.cep"/>
+                          <arg label="d.forcaTrabalhoDes.tipoSanguineo" value="this[0].forcaTrabalhoDes.tipoSanguineo"/>
+                          <arg label="d" value="this[0]"/>
+                          <arg label="d.forcaTrabalhoDes.codigoEstadoCivil" value="this[0].forcaTrabalhoDes.codigoEstadoCivil"/>
+                          <arg label="d.forcaTrabalhoDelegado.reqCed" value="this[0].forcaTrabalhoDelegado.reqCed"/>
+                          <arg label="d.forcaTrabalhoGerente.dataCadastro" value="this[0].forcaTrabalhoGerente.dataCadastro"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataAdmissao" value="this[0].forcaTrabalhoDelegado.dataAdmissao"/>
+                          <arg label="d.forcaTrabalhoGerente.nome" value="this[0].forcaTrabalhoGerente.nome"/>
+                          <arg label="d.forcaTrabalhoGerente.enderecoComplemento" value="this[0].forcaTrabalhoGerente.enderecoComplemento"/>
+                          <arg label="d.forcaTrabalhoDelegado.nome" value="this[0].forcaTrabalhoDelegado.nome"/>
+                          <arg label="d.forcaTrabalhoDelegado.situacao" value="this[0].forcaTrabalhoDelegado.situacao"/>
+                          <arg label="d.forcaTrabalhoDes.codigoGrupoEmpregado" value="this[0].forcaTrabalhoDes.codigoGrupoEmpregado"/>
+                          <arg label="d.forcaTrabalhoGerente.numeroRamal" value="this[0].forcaTrabalhoGerente.numeroRamal"/>
+                          <arg label="d.forcaTrabalhoDes.emailParticular1" value="this[0].forcaTrabalhoDes.emailParticular1"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.dataFimValidade" value="this[0].forcaTrabalhoGerente.orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoDelegado.emailParticular2" value="this[0].forcaTrabalhoDelegado.emailParticular2"/>
+                          <arg label="d.forcaTrabalhoGerente" value="this[0].forcaTrabalhoGerente"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoGrupoEmpregado" value="this[0].forcaTrabalhoDelegado.codigoGrupoEmpregado"/>
+                          <arg label="d.orgao.id" value="this[0].orgao.id"/>
+                          <arg label="d.forcaTrabalhoDes.codigoImovel" value="this[0].forcaTrabalhoDes.codigoImovel"/>
+                          <arg label="d.forcaTrabalhoDes.motivoReqCed" value="this[0].forcaTrabalhoDes.motivoReqCed"/>
+                          <arg label="d.orgao.dataFimValidade" value="this[0].orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoDelegado.motivoInativo" value="this[0].forcaTrabalhoDelegado.motivoInativo"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.orgaoSuperior" value="this[0].forcaTrabalhoDes.orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoDes.situacao" value="this[0].forcaTrabalhoDes.situacao"/>
+                          <arg label="d.forcaTrabalhoDes.dataNascimento" value="this[0].forcaTrabalhoDes.dataNascimento"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoLogin" value="this[0].forcaTrabalhoGerente.codigoLogin"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoPais" value="this[0].forcaTrabalhoDelegado.codigoPais"/>
+                          <arg label="d.forcaTrabalhoDes.numeroExterno" value="this[0].forcaTrabalhoDes.numeroExterno"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.nome" value="this[0].forcaTrabalhoDelegado.orgao.nome"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.areaAtuacao" value="this[0].forcaTrabalhoDes.orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoRaca" value="this[0].forcaTrabalhoGerente.codigoRaca"/>
+                          <arg label="d.forcaTrabalhoGerente.dataAdmissao" value="this[0].forcaTrabalhoGerente.dataAdmissao"/>
+                          <arg label="d.forcaTrabalhoDelegado.passaporte" value="this[0].forcaTrabalhoDelegado.passaporte"/>
+                          <arg label="d.forcaTrabalhoGerente.matricula" value="this[0].forcaTrabalhoGerente.matricula"/>
+                          <arg label="d.forcaTrabalhoDes.codigoCargo" value="this[0].forcaTrabalhoDes.codigoCargo"/>
+                          <arg label="d.forcaTrabalhoGerente.motivoReqCed" value="this[0].forcaTrabalhoGerente.motivoReqCed"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.codigoForcaTrabalho" value="this[0].forcaTrabalhoDelegado.orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoDes.codigoReligiao" value="this[0].forcaTrabalhoDes.codigoReligiao"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao" value="this[0].forcaTrabalhoGerente.orgao"/>
+                          <arg label="d.forcaTrabalhoDes.orgao" value="this[0].forcaTrabalhoDes.orgao"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoCargo" value="this[0].forcaTrabalhoDelegado.codigoCargo"/>
+                          <arg label="d.forcaTrabalhoDelegado.email" value="this[0].forcaTrabalhoDelegado.email"/>
+                          <arg label="d.forcaTrabalhoDelegado.cpf" value="this[0].forcaTrabalhoDelegado.cpf"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.descricao" value="this[0].forcaTrabalhoDelegado.orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoAplicacaoCargo" value="this[0].forcaTrabalhoDelegado.codigoAplicacaoCargo"/>
+                          <arg label="d.forcaTrabalhoGerente.siglaEmpresaOrigem" value="this[0].forcaTrabalhoGerente.siglaEmpresaOrigem"/>
+                          <arg label="d.forcaTrabalhoDes.id" value="this[0].forcaTrabalhoDes.id"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataCessao" value="this[0].forcaTrabalhoDelegado.dataCessao"/>
+                          <arg label="d.forcaTrabalhoGerente.emailParticular2" value="this[0].forcaTrabalhoGerente.emailParticular2"/>
+                          <arg label="d.orgao" value="this[0].orgao"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataCadastro" value="this[0].forcaTrabalhoDelegado.dataCadastro"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.dataFimValidade" value="this[0].forcaTrabalhoDelegado.orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.id" value="this[0].forcaTrabalhoDes.orgao.id"/>
+                          <arg label="d.forcaTrabalhoDes.emailParticular2" value="this[0].forcaTrabalhoDes.emailParticular2"/>
+                          <arg label="d.forcaTrabalhoDes.codigoRaca" value="this[0].forcaTrabalhoDes.codigoRaca"/>
+                          <arg label="d.dataCriacao" value="this[0].dataCriacao"/>
+                          <arg label="d.forcaTrabalhoDelegado.celular" value="this[0].forcaTrabalhoDelegado.celular"/>
+                          <arg label="d.forcaTrabalhoDelegado.siglaEmpresaOrigem" value="this[0].forcaTrabalhoDelegado.siglaEmpresaOrigem"/>
+                          <arg label="d.dataInativo" value="this[0].dataInativo"/>
+                          <arg label="d.forcaTrabalhoGerente.nomeForcaTrabalhoGuerra" value="this[0].forcaTrabalhoGerente.nomeForcaTrabalhoGuerra"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.dataInicioValidade" value="this[0].forcaTrabalhoGerente.orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoGerente.telefone" value="this[0].forcaTrabalhoGerente.telefone"/>
+                          <arg label="d.forcaTrabalhoDes" value="this[0].forcaTrabalhoDes"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.dataInicioValidade" value="this[0].forcaTrabalhoDes.orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoDelegado.nomeForcaTrabalhoGuerra" value="this[0].forcaTrabalhoDelegado.nomeForcaTrabalhoGuerra"/>
+                          <arg label="d.forcaTrabalhoGerente.motivoInativo" value="this[0].forcaTrabalhoGerente.motivoInativo"/>
+                          <arg label="d.forcaTrabalhoDes.codigoCidade" value="this[0].forcaTrabalhoDes.codigoCidade"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.dataFimValidade" value="this[0].forcaTrabalhoDes.orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoGerente.cep" value="this[0].forcaTrabalhoGerente.cep"/>
+                          <arg label="d.forcaTrabalhoDelegado.motivoReqCed" value="this[0].forcaTrabalhoDelegado.motivoReqCed"/>
+                          <arg label="d.forcaTrabalhoGerente.situacao" value="this[0].forcaTrabalhoGerente.situacao"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataNascimento" value="this[0].forcaTrabalhoDelegado.dataNascimento"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoSubgrupoEmpregado" value="this[0].forcaTrabalhoDelegado.codigoSubgrupoEmpregado"/>
+                          <arg label="d.orgao.areaAtuacao" value="this[0].orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoGerente.centroCusto" value="this[0].forcaTrabalhoGerente.centroCusto"/>
+                          <arg label="d.forcaTrabalhoDes.email" value="this[0].forcaTrabalhoDes.email"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoPais" value="this[0].forcaTrabalhoGerente.codigoPais"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoInativo" value="this[0].forcaTrabalhoDelegado.codigoInativo"/>
+                          <arg label="d.forcaTrabalhoDes.dataAdmissao" value="this[0].forcaTrabalhoDes.dataAdmissao"/>
+                          <arg label="d.id" value="this[0].id"/>
+                          <arg label="d.forcaTrabalhoDes.codigoPais" value="this[0].forcaTrabalhoDes.codigoPais"/>
+                          <arg label="d.forcaTrabalhoDelegado.emailParticular1" value="this[0].forcaTrabalhoDelegado.emailParticular1"/>
+                          <arg label="d.status" value="this[0].status"/>
+                          <arg label="d.forcaTrabalhoGerente.reqCed" value="this[0].forcaTrabalhoGerente.reqCed"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoImovel" value="this[0].forcaTrabalhoDelegado.codigoImovel"/>
+                          <arg label="d.forcaTrabalhoDelegado.id" value="this[0].forcaTrabalhoDelegado.id"/>
+                          <arg label="d.forcaTrabalhoDes.motivoInativo" value="this[0].forcaTrabalhoDes.motivoInativo"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoEscolaridade" value="this[0].forcaTrabalhoDelegado.codigoEscolaridade"/>
+                          <arg label="d.forcaTrabalhoDelegado.telefone" value="this[0].forcaTrabalhoDelegado.telefone"/>
+                          <arg label="d.forcaTrabalhoDes.nome" value="this[0].forcaTrabalhoDes.nome"/>
+                          <arg label="d.forcaTrabalhoDes.terraMar" value="this[0].forcaTrabalhoDes.terraMar"/>
+                          <arg label="d.forcaTrabalhoDes.matricula" value="this[0].forcaTrabalhoDes.matricula"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoEscolaridade" value="this[0].forcaTrabalhoGerente.codigoEscolaridade"/>
+                          <arg label="d.forcaTrabalhoDelegado.terraMar" value="this[0].forcaTrabalhoDelegado.terraMar"/>
+                          <arg label="d.forcaTrabalhoDes.cpf" value="this[0].forcaTrabalhoDes.cpf"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoAplicacaoCargo" value="this[0].forcaTrabalhoGerente.codigoAplicacaoCargo"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoCargo" value="this[0].forcaTrabalhoGerente.codigoCargo"/>
+                          <arg label="d.forcaTrabalhoDelegado.motivoStatus" value="this[0].forcaTrabalhoDelegado.motivoStatus"/>
+                          <arg label="d.forcaTrabalhoDes.codigoEscolaridade" value="this[0].forcaTrabalhoDes.codigoEscolaridade"/>
+                          <arg label="d.forcaTrabalhoGerente.passaporte" value="this[0].forcaTrabalhoGerente.passaporte"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoCidade" value="this[0].forcaTrabalhoGerente.codigoCidade"/>
+                          <arg label="d.forcaTrabalhoDes.codigoSubgrupoEmpregado" value="this[0].forcaTrabalhoDes.codigoSubgrupoEmpregado"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.codigoForcaTrabalho" value="this[0].forcaTrabalhoGerente.orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoGerente.numeroExterno" value="this[0].forcaTrabalhoGerente.numeroExterno"/>
+                          <arg label="d.forcaTrabalhoDelegado.enderecoComplemento" value="this[0].forcaTrabalhoDelegado.enderecoComplemento"/>
+                          <arg label="d.forcaTrabalhoDes.codigoLogin" value="this[0].forcaTrabalhoDes.codigoLogin"/>
+                          <arg label="d.orgao.descricao" value="this[0].orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoGerente.tipoSanguineo" value="this[0].forcaTrabalhoGerente.tipoSanguineo"/>
+                          <arg label="d.forcaTrabalhoGerente.dataCessao" value="this[0].forcaTrabalhoGerente.dataCessao"/>
+                          <arg label="d.forcaTrabalhoDes.endereco" value="this[0].forcaTrabalhoDes.endereco"/>
+                          <arg label="d.forcaTrabalhoGerente.cpf" value="this[0].forcaTrabalhoGerente.cpf"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.descricao" value="this[0].forcaTrabalhoDes.orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoDes.numeroRamal" value="this[0].forcaTrabalhoDes.numeroRamal"/>
+                          <arg label="d.forcaTrabalhoGerente.sexo" value="this[0].forcaTrabalhoGerente.sexo"/>
+                          <arg label="d.forcaTrabalhoGerente.email" value="this[0].forcaTrabalhoGerente.email"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.id" value="this[0].forcaTrabalhoDelegado.orgao.id"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.orgaoSuperior" value="this[0].forcaTrabalhoGerente.orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoDelegado.uf" value="this[0].forcaTrabalhoDelegado.uf"/>
+                          <arg label="d.forcaTrabalhoDes.nomeForcaTrabalhoGuerra" value="this[0].forcaTrabalhoDes.nomeForcaTrabalhoGuerra"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao" value="this[0].forcaTrabalhoDelegado.orgao"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoInativo" value="this[0].forcaTrabalhoGerente.codigoInativo"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.areaAtuacao" value="this[0].forcaTrabalhoGerente.orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoReligiao" value="this[0].forcaTrabalhoDelegado.codigoReligiao"/>
+                          <arg label="d.forcaTrabalhoDes.telefone" value="this[0].forcaTrabalhoDes.telefone"/>
+                        </mutation>
+                        <field name="SELECT">this[0].forcaTrabalhoGerente.nome</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD3">
+                  <block colour="#5ba593" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="8(fMMbK}2!(Y(7lCB}Ba" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT"> </field>
+                  </block>
+                </value>
+                <value name="ADD4">
+                  <block colour="#0088ee" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="|JyvN5u(dBP(yo9@IJAd" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">acao</field>
+                  </block>
+                </value>
+                <value name="ADD5">
+                  <block colour="#5ba593" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="Tt?e%!U%7oZph#3[1mZ%" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT"> </field>
+                  </block>
+                </value>
+                <value name="ADD6">
+                  <block colour="#aa2f00" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="|-nW*~Yv70bX?Am,^R^i" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                    <mutation name="{{cronapi.database.Operations.getField}}">
+                      <arg name="Fonte de dados"/>
+                      <arg name="Nome do campo"/>
+                    </mutation>
+                    <value name="PARAM0">
+                      <block colour="#0088ee" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="7i*}$=N1)ZcNE(Mr7Ys/" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">delegacao&lt;SPFT.entity.Delegacao&gt;</field>
+                      </block>
+                    </value>
+                    <value name="PARAM1">
+                      <block colour="#db802b" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="QS31LPWu:./)+GND6jM[" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
+                        <mutation name="">
+                          <arg label="d.forcaTrabalhoDelegado.centroCusto" value="this[0].forcaTrabalhoDelegado.centroCusto"/>
+                          <arg label="d.forcaTrabalhoDes.enderecoComplemento" value="this[0].forcaTrabalhoDes.enderecoComplemento"/>
+                          <arg label="d.forcaTrabalhoDelegado.numeroExterno" value="this[0].forcaTrabalhoDelegado.numeroExterno"/>
+                          <arg label="d.forcaTrabalhoDes.enderecoBairro" value="this[0].forcaTrabalhoDes.enderecoBairro"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.nome" value="this[0].forcaTrabalhoGerente.orgao.nome"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoLogin" value="this[0].forcaTrabalhoDelegado.codigoLogin"/>
+                          <arg label="d.forcaTrabalhoDelegado.sexo" value="this[0].forcaTrabalhoDelegado.sexo"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.codigoForcaTrabalho" value="this[0].forcaTrabalhoDes.orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoDelegado.matricula" value="this[0].forcaTrabalhoDelegado.matricula"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.nome" value="this[0].forcaTrabalhoDes.orgao.nome"/>
+                          <arg label="d.orgao.dataInicioValidade" value="this[0].orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoGrupoEmpregado" value="this[0].forcaTrabalhoGerente.codigoGrupoEmpregado"/>
+                          <arg label="d.orgao.codigoForcaTrabalho" value="this[0].orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoImovel" value="this[0].forcaTrabalhoGerente.codigoImovel"/>
+                          <arg label="d.forcaTrabalhoDelegado.tipoSanguineo" value="this[0].forcaTrabalhoDelegado.tipoSanguineo"/>
+                          <arg label="d.forcaTrabalhoDelegado" value="this[0].forcaTrabalhoDelegado"/>
+                          <arg label="d.forcaTrabalhoDes.cep" value="this[0].forcaTrabalhoDes.cep"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoEstadoCivil" value="this[0].forcaTrabalhoDelegado.codigoEstadoCivil"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoFuncao" value="this[0].forcaTrabalhoGerente.codigoFuncao"/>
+                          <arg label="d.forcaTrabalhoDes.codigoAplicacaoCargo" value="this[0].forcaTrabalhoDes.codigoAplicacaoCargo"/>
+                          <arg label="d.forcaTrabalhoDes.codigoInativo" value="this[0].forcaTrabalhoDes.codigoInativo"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.areaAtuacao" value="this[0].forcaTrabalhoDelegado.orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoGerente.endereco" value="this[0].forcaTrabalhoGerente.endereco"/>
+                          <arg label="d.forcaTrabalhoGerente.celular" value="this[0].forcaTrabalhoGerente.celular"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoCidade" value="this[0].forcaTrabalhoDelegado.codigoCidade"/>
+                          <arg label="d.forcaTrabalhoDes.passaporte" value="this[0].forcaTrabalhoDes.passaporte"/>
+                          <arg label="d.forcaTrabalhoGerente.motivoStatus" value="this[0].forcaTrabalhoGerente.motivoStatus"/>
+                          <arg label="d.forcaTrabalhoDes.sexo" value="this[0].forcaTrabalhoDes.sexo"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.id" value="this[0].forcaTrabalhoGerente.orgao.id"/>
+                          <arg label="d.forcaTrabalhoDes.dataCessao" value="this[0].forcaTrabalhoDes.dataCessao"/>
+                          <arg label="d.forcaTrabalhoDes.dataCadastro" value="this[0].forcaTrabalhoDes.dataCadastro"/>
+                          <arg label="d.forcaTrabalhoGerente.id" value="this[0].forcaTrabalhoGerente.id"/>
+                          <arg label="d.forcaTrabalhoDelegado.endereco" value="this[0].forcaTrabalhoDelegado.endereco"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.dataInicioValidade" value="this[0].forcaTrabalhoDelegado.orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoDes.motivoStatus" value="this[0].forcaTrabalhoDes.motivoStatus"/>
+                          <arg label="d.forcaTrabalhoDes.uf" value="this[0].forcaTrabalhoDes.uf"/>
+                          <arg label="d.forcaTrabalhoDes.celular" value="this[0].forcaTrabalhoDes.celular"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoReligiao" value="this[0].forcaTrabalhoGerente.codigoReligiao"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoEstadoCivil" value="this[0].forcaTrabalhoGerente.codigoEstadoCivil"/>
+                          <arg label="d.orgao.orgaoSuperior" value="this[0].orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoGerente.emailParticular1" value="this[0].forcaTrabalhoGerente.emailParticular1"/>
+                          <arg label="d.forcaTrabalhoDes.centroCusto" value="this[0].forcaTrabalhoDes.centroCusto"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoRaca" value="this[0].forcaTrabalhoDelegado.codigoRaca"/>
+                          <arg label="d.orgao.nome" value="this[0].orgao.nome"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoSubgrupoEmpregado" value="this[0].forcaTrabalhoGerente.codigoSubgrupoEmpregado"/>
+                          <arg label="d.forcaTrabalhoDelegado.enderecoBairro" value="this[0].forcaTrabalhoDelegado.enderecoBairro"/>
+                          <arg label="d.forcaTrabalhoDes.reqCed" value="this[0].forcaTrabalhoDes.reqCed"/>
+                          <arg label="d.forcaTrabalhoGerente.uf" value="this[0].forcaTrabalhoGerente.uf"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.descricao" value="this[0].forcaTrabalhoGerente.orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoDes.codigoFuncao" value="this[0].forcaTrabalhoDes.codigoFuncao"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.orgaoSuperior" value="this[0].forcaTrabalhoDelegado.orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoGerente.terraMar" value="this[0].forcaTrabalhoGerente.terraMar"/>
+                          <arg label="d.forcaTrabalhoGerente.dataNascimento" value="this[0].forcaTrabalhoGerente.dataNascimento"/>
+                          <arg label="d.tipoDelegacao" value="this[0].tipoDelegacao"/>
+                          <arg label="d.forcaTrabalhoDes.siglaEmpresaOrigem" value="this[0].forcaTrabalhoDes.siglaEmpresaOrigem"/>
+                          <arg label="d.forcaTrabalhoGerente.enderecoBairro" value="this[0].forcaTrabalhoGerente.enderecoBairro"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoFuncao" value="this[0].forcaTrabalhoDelegado.codigoFuncao"/>
+                          <arg label="d.forcaTrabalhoDelegado.numeroRamal" value="this[0].forcaTrabalhoDelegado.numeroRamal"/>
+                          <arg label="d.forcaTrabalhoDelegado.cep" value="this[0].forcaTrabalhoDelegado.cep"/>
+                          <arg label="d.forcaTrabalhoDes.tipoSanguineo" value="this[0].forcaTrabalhoDes.tipoSanguineo"/>
+                          <arg label="d" value="this[0]"/>
+                          <arg label="d.forcaTrabalhoDes.codigoEstadoCivil" value="this[0].forcaTrabalhoDes.codigoEstadoCivil"/>
+                          <arg label="d.forcaTrabalhoDelegado.reqCed" value="this[0].forcaTrabalhoDelegado.reqCed"/>
+                          <arg label="d.forcaTrabalhoGerente.dataCadastro" value="this[0].forcaTrabalhoGerente.dataCadastro"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataAdmissao" value="this[0].forcaTrabalhoDelegado.dataAdmissao"/>
+                          <arg label="d.forcaTrabalhoGerente.nome" value="this[0].forcaTrabalhoGerente.nome"/>
+                          <arg label="d.forcaTrabalhoGerente.enderecoComplemento" value="this[0].forcaTrabalhoGerente.enderecoComplemento"/>
+                          <arg label="d.forcaTrabalhoDelegado.nome" value="this[0].forcaTrabalhoDelegado.nome"/>
+                          <arg label="d.forcaTrabalhoDelegado.situacao" value="this[0].forcaTrabalhoDelegado.situacao"/>
+                          <arg label="d.forcaTrabalhoDes.codigoGrupoEmpregado" value="this[0].forcaTrabalhoDes.codigoGrupoEmpregado"/>
+                          <arg label="d.forcaTrabalhoGerente.numeroRamal" value="this[0].forcaTrabalhoGerente.numeroRamal"/>
+                          <arg label="d.forcaTrabalhoDes.emailParticular1" value="this[0].forcaTrabalhoDes.emailParticular1"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.dataFimValidade" value="this[0].forcaTrabalhoGerente.orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoDelegado.emailParticular2" value="this[0].forcaTrabalhoDelegado.emailParticular2"/>
+                          <arg label="d.forcaTrabalhoGerente" value="this[0].forcaTrabalhoGerente"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoGrupoEmpregado" value="this[0].forcaTrabalhoDelegado.codigoGrupoEmpregado"/>
+                          <arg label="d.orgao.id" value="this[0].orgao.id"/>
+                          <arg label="d.forcaTrabalhoDes.codigoImovel" value="this[0].forcaTrabalhoDes.codigoImovel"/>
+                          <arg label="d.forcaTrabalhoDes.motivoReqCed" value="this[0].forcaTrabalhoDes.motivoReqCed"/>
+                          <arg label="d.orgao.dataFimValidade" value="this[0].orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoDelegado.motivoInativo" value="this[0].forcaTrabalhoDelegado.motivoInativo"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.orgaoSuperior" value="this[0].forcaTrabalhoDes.orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoDes.situacao" value="this[0].forcaTrabalhoDes.situacao"/>
+                          <arg label="d.forcaTrabalhoDes.dataNascimento" value="this[0].forcaTrabalhoDes.dataNascimento"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoLogin" value="this[0].forcaTrabalhoGerente.codigoLogin"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoPais" value="this[0].forcaTrabalhoDelegado.codigoPais"/>
+                          <arg label="d.forcaTrabalhoDes.numeroExterno" value="this[0].forcaTrabalhoDes.numeroExterno"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.nome" value="this[0].forcaTrabalhoDelegado.orgao.nome"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.areaAtuacao" value="this[0].forcaTrabalhoDes.orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoRaca" value="this[0].forcaTrabalhoGerente.codigoRaca"/>
+                          <arg label="d.forcaTrabalhoGerente.dataAdmissao" value="this[0].forcaTrabalhoGerente.dataAdmissao"/>
+                          <arg label="d.forcaTrabalhoDelegado.passaporte" value="this[0].forcaTrabalhoDelegado.passaporte"/>
+                          <arg label="d.forcaTrabalhoGerente.matricula" value="this[0].forcaTrabalhoGerente.matricula"/>
+                          <arg label="d.forcaTrabalhoDes.codigoCargo" value="this[0].forcaTrabalhoDes.codigoCargo"/>
+                          <arg label="d.forcaTrabalhoGerente.motivoReqCed" value="this[0].forcaTrabalhoGerente.motivoReqCed"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.codigoForcaTrabalho" value="this[0].forcaTrabalhoDelegado.orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoDes.codigoReligiao" value="this[0].forcaTrabalhoDes.codigoReligiao"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao" value="this[0].forcaTrabalhoGerente.orgao"/>
+                          <arg label="d.forcaTrabalhoDes.orgao" value="this[0].forcaTrabalhoDes.orgao"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoCargo" value="this[0].forcaTrabalhoDelegado.codigoCargo"/>
+                          <arg label="d.forcaTrabalhoDelegado.email" value="this[0].forcaTrabalhoDelegado.email"/>
+                          <arg label="d.forcaTrabalhoDelegado.cpf" value="this[0].forcaTrabalhoDelegado.cpf"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.descricao" value="this[0].forcaTrabalhoDelegado.orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoAplicacaoCargo" value="this[0].forcaTrabalhoDelegado.codigoAplicacaoCargo"/>
+                          <arg label="d.forcaTrabalhoGerente.siglaEmpresaOrigem" value="this[0].forcaTrabalhoGerente.siglaEmpresaOrigem"/>
+                          <arg label="d.forcaTrabalhoDes.id" value="this[0].forcaTrabalhoDes.id"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataCessao" value="this[0].forcaTrabalhoDelegado.dataCessao"/>
+                          <arg label="d.forcaTrabalhoGerente.emailParticular2" value="this[0].forcaTrabalhoGerente.emailParticular2"/>
+                          <arg label="d.orgao" value="this[0].orgao"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataCadastro" value="this[0].forcaTrabalhoDelegado.dataCadastro"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.dataFimValidade" value="this[0].forcaTrabalhoDelegado.orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.id" value="this[0].forcaTrabalhoDes.orgao.id"/>
+                          <arg label="d.forcaTrabalhoDes.emailParticular2" value="this[0].forcaTrabalhoDes.emailParticular2"/>
+                          <arg label="d.forcaTrabalhoDes.codigoRaca" value="this[0].forcaTrabalhoDes.codigoRaca"/>
+                          <arg label="d.dataCriacao" value="this[0].dataCriacao"/>
+                          <arg label="d.forcaTrabalhoDelegado.celular" value="this[0].forcaTrabalhoDelegado.celular"/>
+                          <arg label="d.forcaTrabalhoDelegado.siglaEmpresaOrigem" value="this[0].forcaTrabalhoDelegado.siglaEmpresaOrigem"/>
+                          <arg label="d.dataInativo" value="this[0].dataInativo"/>
+                          <arg label="d.forcaTrabalhoGerente.nomeForcaTrabalhoGuerra" value="this[0].forcaTrabalhoGerente.nomeForcaTrabalhoGuerra"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.dataInicioValidade" value="this[0].forcaTrabalhoGerente.orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoGerente.telefone" value="this[0].forcaTrabalhoGerente.telefone"/>
+                          <arg label="d.forcaTrabalhoDes" value="this[0].forcaTrabalhoDes"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.dataInicioValidade" value="this[0].forcaTrabalhoDes.orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoDelegado.nomeForcaTrabalhoGuerra" value="this[0].forcaTrabalhoDelegado.nomeForcaTrabalhoGuerra"/>
+                          <arg label="d.forcaTrabalhoGerente.motivoInativo" value="this[0].forcaTrabalhoGerente.motivoInativo"/>
+                          <arg label="d.forcaTrabalhoDes.codigoCidade" value="this[0].forcaTrabalhoDes.codigoCidade"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.dataFimValidade" value="this[0].forcaTrabalhoDes.orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoGerente.cep" value="this[0].forcaTrabalhoGerente.cep"/>
+                          <arg label="d.forcaTrabalhoDelegado.motivoReqCed" value="this[0].forcaTrabalhoDelegado.motivoReqCed"/>
+                          <arg label="d.forcaTrabalhoGerente.situacao" value="this[0].forcaTrabalhoGerente.situacao"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataNascimento" value="this[0].forcaTrabalhoDelegado.dataNascimento"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoSubgrupoEmpregado" value="this[0].forcaTrabalhoDelegado.codigoSubgrupoEmpregado"/>
+                          <arg label="d.orgao.areaAtuacao" value="this[0].orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoGerente.centroCusto" value="this[0].forcaTrabalhoGerente.centroCusto"/>
+                          <arg label="d.forcaTrabalhoDes.email" value="this[0].forcaTrabalhoDes.email"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoPais" value="this[0].forcaTrabalhoGerente.codigoPais"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoInativo" value="this[0].forcaTrabalhoDelegado.codigoInativo"/>
+                          <arg label="d.forcaTrabalhoDes.dataAdmissao" value="this[0].forcaTrabalhoDes.dataAdmissao"/>
+                          <arg label="d.id" value="this[0].id"/>
+                          <arg label="d.forcaTrabalhoDes.codigoPais" value="this[0].forcaTrabalhoDes.codigoPais"/>
+                          <arg label="d.forcaTrabalhoDelegado.emailParticular1" value="this[0].forcaTrabalhoDelegado.emailParticular1"/>
+                          <arg label="d.status" value="this[0].status"/>
+                          <arg label="d.forcaTrabalhoGerente.reqCed" value="this[0].forcaTrabalhoGerente.reqCed"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoImovel" value="this[0].forcaTrabalhoDelegado.codigoImovel"/>
+                          <arg label="d.forcaTrabalhoDelegado.id" value="this[0].forcaTrabalhoDelegado.id"/>
+                          <arg label="d.forcaTrabalhoDes.motivoInativo" value="this[0].forcaTrabalhoDes.motivoInativo"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoEscolaridade" value="this[0].forcaTrabalhoDelegado.codigoEscolaridade"/>
+                          <arg label="d.forcaTrabalhoDelegado.telefone" value="this[0].forcaTrabalhoDelegado.telefone"/>
+                          <arg label="d.forcaTrabalhoDes.nome" value="this[0].forcaTrabalhoDes.nome"/>
+                          <arg label="d.forcaTrabalhoDes.terraMar" value="this[0].forcaTrabalhoDes.terraMar"/>
+                          <arg label="d.forcaTrabalhoDes.matricula" value="this[0].forcaTrabalhoDes.matricula"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoEscolaridade" value="this[0].forcaTrabalhoGerente.codigoEscolaridade"/>
+                          <arg label="d.forcaTrabalhoDelegado.terraMar" value="this[0].forcaTrabalhoDelegado.terraMar"/>
+                          <arg label="d.forcaTrabalhoDes.cpf" value="this[0].forcaTrabalhoDes.cpf"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoAplicacaoCargo" value="this[0].forcaTrabalhoGerente.codigoAplicacaoCargo"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoCargo" value="this[0].forcaTrabalhoGerente.codigoCargo"/>
+                          <arg label="d.forcaTrabalhoDelegado.motivoStatus" value="this[0].forcaTrabalhoDelegado.motivoStatus"/>
+                          <arg label="d.forcaTrabalhoDes.codigoEscolaridade" value="this[0].forcaTrabalhoDes.codigoEscolaridade"/>
+                          <arg label="d.forcaTrabalhoGerente.passaporte" value="this[0].forcaTrabalhoGerente.passaporte"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoCidade" value="this[0].forcaTrabalhoGerente.codigoCidade"/>
+                          <arg label="d.forcaTrabalhoDes.codigoSubgrupoEmpregado" value="this[0].forcaTrabalhoDes.codigoSubgrupoEmpregado"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.codigoForcaTrabalho" value="this[0].forcaTrabalhoGerente.orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoGerente.numeroExterno" value="this[0].forcaTrabalhoGerente.numeroExterno"/>
+                          <arg label="d.forcaTrabalhoDelegado.enderecoComplemento" value="this[0].forcaTrabalhoDelegado.enderecoComplemento"/>
+                          <arg label="d.forcaTrabalhoDes.codigoLogin" value="this[0].forcaTrabalhoDes.codigoLogin"/>
+                          <arg label="d.orgao.descricao" value="this[0].orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoGerente.tipoSanguineo" value="this[0].forcaTrabalhoGerente.tipoSanguineo"/>
+                          <arg label="d.forcaTrabalhoGerente.dataCessao" value="this[0].forcaTrabalhoGerente.dataCessao"/>
+                          <arg label="d.forcaTrabalhoDes.endereco" value="this[0].forcaTrabalhoDes.endereco"/>
+                          <arg label="d.forcaTrabalhoGerente.cpf" value="this[0].forcaTrabalhoGerente.cpf"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.descricao" value="this[0].forcaTrabalhoDes.orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoDes.numeroRamal" value="this[0].forcaTrabalhoDes.numeroRamal"/>
+                          <arg label="d.forcaTrabalhoGerente.sexo" value="this[0].forcaTrabalhoGerente.sexo"/>
+                          <arg label="d.forcaTrabalhoGerente.email" value="this[0].forcaTrabalhoGerente.email"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.id" value="this[0].forcaTrabalhoDelegado.orgao.id"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.orgaoSuperior" value="this[0].forcaTrabalhoGerente.orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoDelegado.uf" value="this[0].forcaTrabalhoDelegado.uf"/>
+                          <arg label="d.forcaTrabalhoDes.nomeForcaTrabalhoGuerra" value="this[0].forcaTrabalhoDes.nomeForcaTrabalhoGuerra"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao" value="this[0].forcaTrabalhoDelegado.orgao"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoInativo" value="this[0].forcaTrabalhoGerente.codigoInativo"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.areaAtuacao" value="this[0].forcaTrabalhoGerente.orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoReligiao" value="this[0].forcaTrabalhoDelegado.codigoReligiao"/>
+                          <arg label="d.forcaTrabalhoDes.telefone" value="this[0].forcaTrabalhoDes.telefone"/>
+                        </mutation>
+                        <field name="SELECT">this[0].forcaTrabalhoDelegado.codigoLogin</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD7">
+                  <block colour="#5ba593" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="0t.3VY3p~N+F+76dZOp3" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT"> </field>
+                  </block>
+                </value>
+                <value name="ADD8">
+                  <block colour="#aa2f00" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id=",=[_-^#cI,T[o?0_b57R" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                    <mutation name="{{cronapi.database.Operations.getField}}">
+                      <arg name="Fonte de dados"/>
+                      <arg name="Nome do campo"/>
+                    </mutation>
+                    <value name="PARAM0">
+                      <block colour="#0088ee" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="Ka2Myn[,BmPJyOCpa*OE" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">delegacao&lt;SPFT.entity.Delegacao&gt;</field>
+                      </block>
+                    </value>
+                    <value name="PARAM1">
+                      <block colour="#db802b" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="CV@d0Mv]y~cg%L*7jaL;" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
+                        <mutation name="">
+                          <arg label="d.forcaTrabalhoDelegado.centroCusto" value="this[0].forcaTrabalhoDelegado.centroCusto"/>
+                          <arg label="d.forcaTrabalhoDes.enderecoComplemento" value="this[0].forcaTrabalhoDes.enderecoComplemento"/>
+                          <arg label="d.forcaTrabalhoDelegado.numeroExterno" value="this[0].forcaTrabalhoDelegado.numeroExterno"/>
+                          <arg label="d.forcaTrabalhoDes.enderecoBairro" value="this[0].forcaTrabalhoDes.enderecoBairro"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.nome" value="this[0].forcaTrabalhoGerente.orgao.nome"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoLogin" value="this[0].forcaTrabalhoDelegado.codigoLogin"/>
+                          <arg label="d.forcaTrabalhoDelegado.sexo" value="this[0].forcaTrabalhoDelegado.sexo"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.codigoForcaTrabalho" value="this[0].forcaTrabalhoDes.orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoDelegado.matricula" value="this[0].forcaTrabalhoDelegado.matricula"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.nome" value="this[0].forcaTrabalhoDes.orgao.nome"/>
+                          <arg label="d.orgao.dataInicioValidade" value="this[0].orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoGrupoEmpregado" value="this[0].forcaTrabalhoGerente.codigoGrupoEmpregado"/>
+                          <arg label="d.orgao.codigoForcaTrabalho" value="this[0].orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoImovel" value="this[0].forcaTrabalhoGerente.codigoImovel"/>
+                          <arg label="d.forcaTrabalhoDelegado.tipoSanguineo" value="this[0].forcaTrabalhoDelegado.tipoSanguineo"/>
+                          <arg label="d.forcaTrabalhoDelegado" value="this[0].forcaTrabalhoDelegado"/>
+                          <arg label="d.forcaTrabalhoDes.cep" value="this[0].forcaTrabalhoDes.cep"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoEstadoCivil" value="this[0].forcaTrabalhoDelegado.codigoEstadoCivil"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoFuncao" value="this[0].forcaTrabalhoGerente.codigoFuncao"/>
+                          <arg label="d.forcaTrabalhoDes.codigoAplicacaoCargo" value="this[0].forcaTrabalhoDes.codigoAplicacaoCargo"/>
+                          <arg label="d.forcaTrabalhoDes.codigoInativo" value="this[0].forcaTrabalhoDes.codigoInativo"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.areaAtuacao" value="this[0].forcaTrabalhoDelegado.orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoGerente.endereco" value="this[0].forcaTrabalhoGerente.endereco"/>
+                          <arg label="d.forcaTrabalhoGerente.celular" value="this[0].forcaTrabalhoGerente.celular"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoCidade" value="this[0].forcaTrabalhoDelegado.codigoCidade"/>
+                          <arg label="d.forcaTrabalhoDes.passaporte" value="this[0].forcaTrabalhoDes.passaporte"/>
+                          <arg label="d.forcaTrabalhoGerente.motivoStatus" value="this[0].forcaTrabalhoGerente.motivoStatus"/>
+                          <arg label="d.forcaTrabalhoDes.sexo" value="this[0].forcaTrabalhoDes.sexo"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.id" value="this[0].forcaTrabalhoGerente.orgao.id"/>
+                          <arg label="d.forcaTrabalhoDes.dataCessao" value="this[0].forcaTrabalhoDes.dataCessao"/>
+                          <arg label="d.forcaTrabalhoDes.dataCadastro" value="this[0].forcaTrabalhoDes.dataCadastro"/>
+                          <arg label="d.forcaTrabalhoGerente.id" value="this[0].forcaTrabalhoGerente.id"/>
+                          <arg label="d.forcaTrabalhoDelegado.endereco" value="this[0].forcaTrabalhoDelegado.endereco"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.dataInicioValidade" value="this[0].forcaTrabalhoDelegado.orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoDes.motivoStatus" value="this[0].forcaTrabalhoDes.motivoStatus"/>
+                          <arg label="d.forcaTrabalhoDes.uf" value="this[0].forcaTrabalhoDes.uf"/>
+                          <arg label="d.forcaTrabalhoDes.celular" value="this[0].forcaTrabalhoDes.celular"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoReligiao" value="this[0].forcaTrabalhoGerente.codigoReligiao"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoEstadoCivil" value="this[0].forcaTrabalhoGerente.codigoEstadoCivil"/>
+                          <arg label="d.orgao.orgaoSuperior" value="this[0].orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoGerente.emailParticular1" value="this[0].forcaTrabalhoGerente.emailParticular1"/>
+                          <arg label="d.forcaTrabalhoDes.centroCusto" value="this[0].forcaTrabalhoDes.centroCusto"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoRaca" value="this[0].forcaTrabalhoDelegado.codigoRaca"/>
+                          <arg label="d.orgao.nome" value="this[0].orgao.nome"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoSubgrupoEmpregado" value="this[0].forcaTrabalhoGerente.codigoSubgrupoEmpregado"/>
+                          <arg label="d.forcaTrabalhoDelegado.enderecoBairro" value="this[0].forcaTrabalhoDelegado.enderecoBairro"/>
+                          <arg label="d.forcaTrabalhoDes.reqCed" value="this[0].forcaTrabalhoDes.reqCed"/>
+                          <arg label="d.forcaTrabalhoGerente.uf" value="this[0].forcaTrabalhoGerente.uf"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.descricao" value="this[0].forcaTrabalhoGerente.orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoDes.codigoFuncao" value="this[0].forcaTrabalhoDes.codigoFuncao"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.orgaoSuperior" value="this[0].forcaTrabalhoDelegado.orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoGerente.terraMar" value="this[0].forcaTrabalhoGerente.terraMar"/>
+                          <arg label="d.forcaTrabalhoGerente.dataNascimento" value="this[0].forcaTrabalhoGerente.dataNascimento"/>
+                          <arg label="d.tipoDelegacao" value="this[0].tipoDelegacao"/>
+                          <arg label="d.forcaTrabalhoDes.siglaEmpresaOrigem" value="this[0].forcaTrabalhoDes.siglaEmpresaOrigem"/>
+                          <arg label="d.forcaTrabalhoGerente.enderecoBairro" value="this[0].forcaTrabalhoGerente.enderecoBairro"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoFuncao" value="this[0].forcaTrabalhoDelegado.codigoFuncao"/>
+                          <arg label="d.forcaTrabalhoDelegado.numeroRamal" value="this[0].forcaTrabalhoDelegado.numeroRamal"/>
+                          <arg label="d.forcaTrabalhoDelegado.cep" value="this[0].forcaTrabalhoDelegado.cep"/>
+                          <arg label="d.forcaTrabalhoDes.tipoSanguineo" value="this[0].forcaTrabalhoDes.tipoSanguineo"/>
+                          <arg label="d" value="this[0]"/>
+                          <arg label="d.forcaTrabalhoDes.codigoEstadoCivil" value="this[0].forcaTrabalhoDes.codigoEstadoCivil"/>
+                          <arg label="d.forcaTrabalhoDelegado.reqCed" value="this[0].forcaTrabalhoDelegado.reqCed"/>
+                          <arg label="d.forcaTrabalhoGerente.dataCadastro" value="this[0].forcaTrabalhoGerente.dataCadastro"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataAdmissao" value="this[0].forcaTrabalhoDelegado.dataAdmissao"/>
+                          <arg label="d.forcaTrabalhoGerente.nome" value="this[0].forcaTrabalhoGerente.nome"/>
+                          <arg label="d.forcaTrabalhoGerente.enderecoComplemento" value="this[0].forcaTrabalhoGerente.enderecoComplemento"/>
+                          <arg label="d.forcaTrabalhoDelegado.nome" value="this[0].forcaTrabalhoDelegado.nome"/>
+                          <arg label="d.forcaTrabalhoDelegado.situacao" value="this[0].forcaTrabalhoDelegado.situacao"/>
+                          <arg label="d.forcaTrabalhoDes.codigoGrupoEmpregado" value="this[0].forcaTrabalhoDes.codigoGrupoEmpregado"/>
+                          <arg label="d.forcaTrabalhoGerente.numeroRamal" value="this[0].forcaTrabalhoGerente.numeroRamal"/>
+                          <arg label="d.forcaTrabalhoDes.emailParticular1" value="this[0].forcaTrabalhoDes.emailParticular1"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.dataFimValidade" value="this[0].forcaTrabalhoGerente.orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoDelegado.emailParticular2" value="this[0].forcaTrabalhoDelegado.emailParticular2"/>
+                          <arg label="d.forcaTrabalhoGerente" value="this[0].forcaTrabalhoGerente"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoGrupoEmpregado" value="this[0].forcaTrabalhoDelegado.codigoGrupoEmpregado"/>
+                          <arg label="d.orgao.id" value="this[0].orgao.id"/>
+                          <arg label="d.forcaTrabalhoDes.codigoImovel" value="this[0].forcaTrabalhoDes.codigoImovel"/>
+                          <arg label="d.forcaTrabalhoDes.motivoReqCed" value="this[0].forcaTrabalhoDes.motivoReqCed"/>
+                          <arg label="d.orgao.dataFimValidade" value="this[0].orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoDelegado.motivoInativo" value="this[0].forcaTrabalhoDelegado.motivoInativo"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.orgaoSuperior" value="this[0].forcaTrabalhoDes.orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoDes.situacao" value="this[0].forcaTrabalhoDes.situacao"/>
+                          <arg label="d.forcaTrabalhoDes.dataNascimento" value="this[0].forcaTrabalhoDes.dataNascimento"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoLogin" value="this[0].forcaTrabalhoGerente.codigoLogin"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoPais" value="this[0].forcaTrabalhoDelegado.codigoPais"/>
+                          <arg label="d.forcaTrabalhoDes.numeroExterno" value="this[0].forcaTrabalhoDes.numeroExterno"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.nome" value="this[0].forcaTrabalhoDelegado.orgao.nome"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.areaAtuacao" value="this[0].forcaTrabalhoDes.orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoRaca" value="this[0].forcaTrabalhoGerente.codigoRaca"/>
+                          <arg label="d.forcaTrabalhoGerente.dataAdmissao" value="this[0].forcaTrabalhoGerente.dataAdmissao"/>
+                          <arg label="d.forcaTrabalhoDelegado.passaporte" value="this[0].forcaTrabalhoDelegado.passaporte"/>
+                          <arg label="d.forcaTrabalhoGerente.matricula" value="this[0].forcaTrabalhoGerente.matricula"/>
+                          <arg label="d.forcaTrabalhoDes.codigoCargo" value="this[0].forcaTrabalhoDes.codigoCargo"/>
+                          <arg label="d.forcaTrabalhoGerente.motivoReqCed" value="this[0].forcaTrabalhoGerente.motivoReqCed"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.codigoForcaTrabalho" value="this[0].forcaTrabalhoDelegado.orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoDes.codigoReligiao" value="this[0].forcaTrabalhoDes.codigoReligiao"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao" value="this[0].forcaTrabalhoGerente.orgao"/>
+                          <arg label="d.forcaTrabalhoDes.orgao" value="this[0].forcaTrabalhoDes.orgao"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoCargo" value="this[0].forcaTrabalhoDelegado.codigoCargo"/>
+                          <arg label="d.forcaTrabalhoDelegado.email" value="this[0].forcaTrabalhoDelegado.email"/>
+                          <arg label="d.forcaTrabalhoDelegado.cpf" value="this[0].forcaTrabalhoDelegado.cpf"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.descricao" value="this[0].forcaTrabalhoDelegado.orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoAplicacaoCargo" value="this[0].forcaTrabalhoDelegado.codigoAplicacaoCargo"/>
+                          <arg label="d.forcaTrabalhoGerente.siglaEmpresaOrigem" value="this[0].forcaTrabalhoGerente.siglaEmpresaOrigem"/>
+                          <arg label="d.forcaTrabalhoDes.id" value="this[0].forcaTrabalhoDes.id"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataCessao" value="this[0].forcaTrabalhoDelegado.dataCessao"/>
+                          <arg label="d.forcaTrabalhoGerente.emailParticular2" value="this[0].forcaTrabalhoGerente.emailParticular2"/>
+                          <arg label="d.orgao" value="this[0].orgao"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataCadastro" value="this[0].forcaTrabalhoDelegado.dataCadastro"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.dataFimValidade" value="this[0].forcaTrabalhoDelegado.orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.id" value="this[0].forcaTrabalhoDes.orgao.id"/>
+                          <arg label="d.forcaTrabalhoDes.emailParticular2" value="this[0].forcaTrabalhoDes.emailParticular2"/>
+                          <arg label="d.forcaTrabalhoDes.codigoRaca" value="this[0].forcaTrabalhoDes.codigoRaca"/>
+                          <arg label="d.dataCriacao" value="this[0].dataCriacao"/>
+                          <arg label="d.forcaTrabalhoDelegado.celular" value="this[0].forcaTrabalhoDelegado.celular"/>
+                          <arg label="d.forcaTrabalhoDelegado.siglaEmpresaOrigem" value="this[0].forcaTrabalhoDelegado.siglaEmpresaOrigem"/>
+                          <arg label="d.dataInativo" value="this[0].dataInativo"/>
+                          <arg label="d.forcaTrabalhoGerente.nomeForcaTrabalhoGuerra" value="this[0].forcaTrabalhoGerente.nomeForcaTrabalhoGuerra"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.dataInicioValidade" value="this[0].forcaTrabalhoGerente.orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoGerente.telefone" value="this[0].forcaTrabalhoGerente.telefone"/>
+                          <arg label="d.forcaTrabalhoDes" value="this[0].forcaTrabalhoDes"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.dataInicioValidade" value="this[0].forcaTrabalhoDes.orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoDelegado.nomeForcaTrabalhoGuerra" value="this[0].forcaTrabalhoDelegado.nomeForcaTrabalhoGuerra"/>
+                          <arg label="d.forcaTrabalhoGerente.motivoInativo" value="this[0].forcaTrabalhoGerente.motivoInativo"/>
+                          <arg label="d.forcaTrabalhoDes.codigoCidade" value="this[0].forcaTrabalhoDes.codigoCidade"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.dataFimValidade" value="this[0].forcaTrabalhoDes.orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoGerente.cep" value="this[0].forcaTrabalhoGerente.cep"/>
+                          <arg label="d.forcaTrabalhoDelegado.motivoReqCed" value="this[0].forcaTrabalhoDelegado.motivoReqCed"/>
+                          <arg label="d.forcaTrabalhoGerente.situacao" value="this[0].forcaTrabalhoGerente.situacao"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataNascimento" value="this[0].forcaTrabalhoDelegado.dataNascimento"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoSubgrupoEmpregado" value="this[0].forcaTrabalhoDelegado.codigoSubgrupoEmpregado"/>
+                          <arg label="d.orgao.areaAtuacao" value="this[0].orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoGerente.centroCusto" value="this[0].forcaTrabalhoGerente.centroCusto"/>
+                          <arg label="d.forcaTrabalhoDes.email" value="this[0].forcaTrabalhoDes.email"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoPais" value="this[0].forcaTrabalhoGerente.codigoPais"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoInativo" value="this[0].forcaTrabalhoDelegado.codigoInativo"/>
+                          <arg label="d.forcaTrabalhoDes.dataAdmissao" value="this[0].forcaTrabalhoDes.dataAdmissao"/>
+                          <arg label="d.id" value="this[0].id"/>
+                          <arg label="d.forcaTrabalhoDes.codigoPais" value="this[0].forcaTrabalhoDes.codigoPais"/>
+                          <arg label="d.forcaTrabalhoDelegado.emailParticular1" value="this[0].forcaTrabalhoDelegado.emailParticular1"/>
+                          <arg label="d.status" value="this[0].status"/>
+                          <arg label="d.forcaTrabalhoGerente.reqCed" value="this[0].forcaTrabalhoGerente.reqCed"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoImovel" value="this[0].forcaTrabalhoDelegado.codigoImovel"/>
+                          <arg label="d.forcaTrabalhoDelegado.id" value="this[0].forcaTrabalhoDelegado.id"/>
+                          <arg label="d.forcaTrabalhoDes.motivoInativo" value="this[0].forcaTrabalhoDes.motivoInativo"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoEscolaridade" value="this[0].forcaTrabalhoDelegado.codigoEscolaridade"/>
+                          <arg label="d.forcaTrabalhoDelegado.telefone" value="this[0].forcaTrabalhoDelegado.telefone"/>
+                          <arg label="d.forcaTrabalhoDes.nome" value="this[0].forcaTrabalhoDes.nome"/>
+                          <arg label="d.forcaTrabalhoDes.terraMar" value="this[0].forcaTrabalhoDes.terraMar"/>
+                          <arg label="d.forcaTrabalhoDes.matricula" value="this[0].forcaTrabalhoDes.matricula"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoEscolaridade" value="this[0].forcaTrabalhoGerente.codigoEscolaridade"/>
+                          <arg label="d.forcaTrabalhoDelegado.terraMar" value="this[0].forcaTrabalhoDelegado.terraMar"/>
+                          <arg label="d.forcaTrabalhoDes.cpf" value="this[0].forcaTrabalhoDes.cpf"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoAplicacaoCargo" value="this[0].forcaTrabalhoGerente.codigoAplicacaoCargo"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoCargo" value="this[0].forcaTrabalhoGerente.codigoCargo"/>
+                          <arg label="d.forcaTrabalhoDelegado.motivoStatus" value="this[0].forcaTrabalhoDelegado.motivoStatus"/>
+                          <arg label="d.forcaTrabalhoDes.codigoEscolaridade" value="this[0].forcaTrabalhoDes.codigoEscolaridade"/>
+                          <arg label="d.forcaTrabalhoGerente.passaporte" value="this[0].forcaTrabalhoGerente.passaporte"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoCidade" value="this[0].forcaTrabalhoGerente.codigoCidade"/>
+                          <arg label="d.forcaTrabalhoDes.codigoSubgrupoEmpregado" value="this[0].forcaTrabalhoDes.codigoSubgrupoEmpregado"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.codigoForcaTrabalho" value="this[0].forcaTrabalhoGerente.orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoGerente.numeroExterno" value="this[0].forcaTrabalhoGerente.numeroExterno"/>
+                          <arg label="d.forcaTrabalhoDelegado.enderecoComplemento" value="this[0].forcaTrabalhoDelegado.enderecoComplemento"/>
+                          <arg label="d.forcaTrabalhoDes.codigoLogin" value="this[0].forcaTrabalhoDes.codigoLogin"/>
+                          <arg label="d.orgao.descricao" value="this[0].orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoGerente.tipoSanguineo" value="this[0].forcaTrabalhoGerente.tipoSanguineo"/>
+                          <arg label="d.forcaTrabalhoGerente.dataCessao" value="this[0].forcaTrabalhoGerente.dataCessao"/>
+                          <arg label="d.forcaTrabalhoDes.endereco" value="this[0].forcaTrabalhoDes.endereco"/>
+                          <arg label="d.forcaTrabalhoGerente.cpf" value="this[0].forcaTrabalhoGerente.cpf"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.descricao" value="this[0].forcaTrabalhoDes.orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoDes.numeroRamal" value="this[0].forcaTrabalhoDes.numeroRamal"/>
+                          <arg label="d.forcaTrabalhoGerente.sexo" value="this[0].forcaTrabalhoGerente.sexo"/>
+                          <arg label="d.forcaTrabalhoGerente.email" value="this[0].forcaTrabalhoGerente.email"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.id" value="this[0].forcaTrabalhoDelegado.orgao.id"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.orgaoSuperior" value="this[0].forcaTrabalhoGerente.orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoDelegado.uf" value="this[0].forcaTrabalhoDelegado.uf"/>
+                          <arg label="d.forcaTrabalhoDes.nomeForcaTrabalhoGuerra" value="this[0].forcaTrabalhoDes.nomeForcaTrabalhoGuerra"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao" value="this[0].forcaTrabalhoDelegado.orgao"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoInativo" value="this[0].forcaTrabalhoGerente.codigoInativo"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.areaAtuacao" value="this[0].forcaTrabalhoGerente.orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoReligiao" value="this[0].forcaTrabalhoDelegado.codigoReligiao"/>
+                          <arg label="d.forcaTrabalhoDes.telefone" value="this[0].forcaTrabalhoDes.telefone"/>
+                        </mutation>
+                        <field name="SELECT">this[0].forcaTrabalhoDelegado.nome</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="ADD9">
+                  <block colour="#5ba593" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="fy/?M#Fb[6Pj[?feVTE0" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT"> </field>
+                  </block>
+                </value>
+                <value name="ADD10">
+                  <block colour="#aa2f00" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="+[)x@/Yv9W!]8DD(4l%;" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                    <mutation name="{{cronapi.database.Operations.getField}}">
+                      <arg name="Fonte de dados"/>
+                      <arg name="Nome do campo"/>
+                    </mutation>
+                    <value name="PARAM0">
+                      <block colour="#0088ee" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="b_}gwaOHXM1?~,SmQ.P." origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">delegacao&lt;SPFT.entity.Delegacao&gt;</field>
+                      </block>
+                    </value>
+                    <value name="PARAM1">
+                      <block colour="#db802b" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="lhC$e%aOTQ!t{,:Ma7Mb" origintype="procedures_get_field_datasource" output="true" type="procedures_get_field_datasource">
+                        <mutation name="">
+                          <arg label="d.forcaTrabalhoDelegado.centroCusto" value="this[0].forcaTrabalhoDelegado.centroCusto"/>
+                          <arg label="d.forcaTrabalhoDes.enderecoComplemento" value="this[0].forcaTrabalhoDes.enderecoComplemento"/>
+                          <arg label="d.forcaTrabalhoDelegado.numeroExterno" value="this[0].forcaTrabalhoDelegado.numeroExterno"/>
+                          <arg label="d.forcaTrabalhoDes.enderecoBairro" value="this[0].forcaTrabalhoDes.enderecoBairro"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.nome" value="this[0].forcaTrabalhoGerente.orgao.nome"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoLogin" value="this[0].forcaTrabalhoDelegado.codigoLogin"/>
+                          <arg label="d.forcaTrabalhoDelegado.sexo" value="this[0].forcaTrabalhoDelegado.sexo"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.codigoForcaTrabalho" value="this[0].forcaTrabalhoDes.orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoDelegado.matricula" value="this[0].forcaTrabalhoDelegado.matricula"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.nome" value="this[0].forcaTrabalhoDes.orgao.nome"/>
+                          <arg label="d.orgao.dataInicioValidade" value="this[0].orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoGrupoEmpregado" value="this[0].forcaTrabalhoGerente.codigoGrupoEmpregado"/>
+                          <arg label="d.orgao.codigoForcaTrabalho" value="this[0].orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoImovel" value="this[0].forcaTrabalhoGerente.codigoImovel"/>
+                          <arg label="d.forcaTrabalhoDelegado.tipoSanguineo" value="this[0].forcaTrabalhoDelegado.tipoSanguineo"/>
+                          <arg label="d.forcaTrabalhoDelegado" value="this[0].forcaTrabalhoDelegado"/>
+                          <arg label="d.forcaTrabalhoDes.cep" value="this[0].forcaTrabalhoDes.cep"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoEstadoCivil" value="this[0].forcaTrabalhoDelegado.codigoEstadoCivil"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoFuncao" value="this[0].forcaTrabalhoGerente.codigoFuncao"/>
+                          <arg label="d.forcaTrabalhoDes.codigoAplicacaoCargo" value="this[0].forcaTrabalhoDes.codigoAplicacaoCargo"/>
+                          <arg label="d.forcaTrabalhoDes.codigoInativo" value="this[0].forcaTrabalhoDes.codigoInativo"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.areaAtuacao" value="this[0].forcaTrabalhoDelegado.orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoGerente.endereco" value="this[0].forcaTrabalhoGerente.endereco"/>
+                          <arg label="d.forcaTrabalhoGerente.celular" value="this[0].forcaTrabalhoGerente.celular"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoCidade" value="this[0].forcaTrabalhoDelegado.codigoCidade"/>
+                          <arg label="d.forcaTrabalhoDes.passaporte" value="this[0].forcaTrabalhoDes.passaporte"/>
+                          <arg label="d.forcaTrabalhoGerente.motivoStatus" value="this[0].forcaTrabalhoGerente.motivoStatus"/>
+                          <arg label="d.forcaTrabalhoDes.sexo" value="this[0].forcaTrabalhoDes.sexo"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.id" value="this[0].forcaTrabalhoGerente.orgao.id"/>
+                          <arg label="d.forcaTrabalhoDes.dataCessao" value="this[0].forcaTrabalhoDes.dataCessao"/>
+                          <arg label="d.forcaTrabalhoDes.dataCadastro" value="this[0].forcaTrabalhoDes.dataCadastro"/>
+                          <arg label="d.forcaTrabalhoGerente.id" value="this[0].forcaTrabalhoGerente.id"/>
+                          <arg label="d.forcaTrabalhoDelegado.endereco" value="this[0].forcaTrabalhoDelegado.endereco"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.dataInicioValidade" value="this[0].forcaTrabalhoDelegado.orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoDes.motivoStatus" value="this[0].forcaTrabalhoDes.motivoStatus"/>
+                          <arg label="d.forcaTrabalhoDes.uf" value="this[0].forcaTrabalhoDes.uf"/>
+                          <arg label="d.forcaTrabalhoDes.celular" value="this[0].forcaTrabalhoDes.celular"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoReligiao" value="this[0].forcaTrabalhoGerente.codigoReligiao"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoEstadoCivil" value="this[0].forcaTrabalhoGerente.codigoEstadoCivil"/>
+                          <arg label="d.orgao.orgaoSuperior" value="this[0].orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoGerente.emailParticular1" value="this[0].forcaTrabalhoGerente.emailParticular1"/>
+                          <arg label="d.forcaTrabalhoDes.centroCusto" value="this[0].forcaTrabalhoDes.centroCusto"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoRaca" value="this[0].forcaTrabalhoDelegado.codigoRaca"/>
+                          <arg label="d.orgao.nome" value="this[0].orgao.nome"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoSubgrupoEmpregado" value="this[0].forcaTrabalhoGerente.codigoSubgrupoEmpregado"/>
+                          <arg label="d.forcaTrabalhoDelegado.enderecoBairro" value="this[0].forcaTrabalhoDelegado.enderecoBairro"/>
+                          <arg label="d.forcaTrabalhoDes.reqCed" value="this[0].forcaTrabalhoDes.reqCed"/>
+                          <arg label="d.forcaTrabalhoGerente.uf" value="this[0].forcaTrabalhoGerente.uf"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.descricao" value="this[0].forcaTrabalhoGerente.orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoDes.codigoFuncao" value="this[0].forcaTrabalhoDes.codigoFuncao"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.orgaoSuperior" value="this[0].forcaTrabalhoDelegado.orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoGerente.terraMar" value="this[0].forcaTrabalhoGerente.terraMar"/>
+                          <arg label="d.forcaTrabalhoGerente.dataNascimento" value="this[0].forcaTrabalhoGerente.dataNascimento"/>
+                          <arg label="d.tipoDelegacao" value="this[0].tipoDelegacao"/>
+                          <arg label="d.forcaTrabalhoDes.siglaEmpresaOrigem" value="this[0].forcaTrabalhoDes.siglaEmpresaOrigem"/>
+                          <arg label="d.forcaTrabalhoGerente.enderecoBairro" value="this[0].forcaTrabalhoGerente.enderecoBairro"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoFuncao" value="this[0].forcaTrabalhoDelegado.codigoFuncao"/>
+                          <arg label="d.forcaTrabalhoDelegado.numeroRamal" value="this[0].forcaTrabalhoDelegado.numeroRamal"/>
+                          <arg label="d.forcaTrabalhoDelegado.cep" value="this[0].forcaTrabalhoDelegado.cep"/>
+                          <arg label="d.forcaTrabalhoDes.tipoSanguineo" value="this[0].forcaTrabalhoDes.tipoSanguineo"/>
+                          <arg label="d" value="this[0]"/>
+                          <arg label="d.forcaTrabalhoDes.codigoEstadoCivil" value="this[0].forcaTrabalhoDes.codigoEstadoCivil"/>
+                          <arg label="d.forcaTrabalhoDelegado.reqCed" value="this[0].forcaTrabalhoDelegado.reqCed"/>
+                          <arg label="d.forcaTrabalhoGerente.dataCadastro" value="this[0].forcaTrabalhoGerente.dataCadastro"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataAdmissao" value="this[0].forcaTrabalhoDelegado.dataAdmissao"/>
+                          <arg label="d.forcaTrabalhoGerente.nome" value="this[0].forcaTrabalhoGerente.nome"/>
+                          <arg label="d.forcaTrabalhoGerente.enderecoComplemento" value="this[0].forcaTrabalhoGerente.enderecoComplemento"/>
+                          <arg label="d.forcaTrabalhoDelegado.nome" value="this[0].forcaTrabalhoDelegado.nome"/>
+                          <arg label="d.forcaTrabalhoDelegado.situacao" value="this[0].forcaTrabalhoDelegado.situacao"/>
+                          <arg label="d.forcaTrabalhoDes.codigoGrupoEmpregado" value="this[0].forcaTrabalhoDes.codigoGrupoEmpregado"/>
+                          <arg label="d.forcaTrabalhoGerente.numeroRamal" value="this[0].forcaTrabalhoGerente.numeroRamal"/>
+                          <arg label="d.forcaTrabalhoDes.emailParticular1" value="this[0].forcaTrabalhoDes.emailParticular1"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.dataFimValidade" value="this[0].forcaTrabalhoGerente.orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoDelegado.emailParticular2" value="this[0].forcaTrabalhoDelegado.emailParticular2"/>
+                          <arg label="d.forcaTrabalhoGerente" value="this[0].forcaTrabalhoGerente"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoGrupoEmpregado" value="this[0].forcaTrabalhoDelegado.codigoGrupoEmpregado"/>
+                          <arg label="d.orgao.id" value="this[0].orgao.id"/>
+                          <arg label="d.forcaTrabalhoDes.codigoImovel" value="this[0].forcaTrabalhoDes.codigoImovel"/>
+                          <arg label="d.forcaTrabalhoDes.motivoReqCed" value="this[0].forcaTrabalhoDes.motivoReqCed"/>
+                          <arg label="d.orgao.dataFimValidade" value="this[0].orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoDelegado.motivoInativo" value="this[0].forcaTrabalhoDelegado.motivoInativo"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.orgaoSuperior" value="this[0].forcaTrabalhoDes.orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoDes.situacao" value="this[0].forcaTrabalhoDes.situacao"/>
+                          <arg label="d.forcaTrabalhoDes.dataNascimento" value="this[0].forcaTrabalhoDes.dataNascimento"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoLogin" value="this[0].forcaTrabalhoGerente.codigoLogin"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoPais" value="this[0].forcaTrabalhoDelegado.codigoPais"/>
+                          <arg label="d.forcaTrabalhoDes.numeroExterno" value="this[0].forcaTrabalhoDes.numeroExterno"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.nome" value="this[0].forcaTrabalhoDelegado.orgao.nome"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.areaAtuacao" value="this[0].forcaTrabalhoDes.orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoRaca" value="this[0].forcaTrabalhoGerente.codigoRaca"/>
+                          <arg label="d.forcaTrabalhoGerente.dataAdmissao" value="this[0].forcaTrabalhoGerente.dataAdmissao"/>
+                          <arg label="d.forcaTrabalhoDelegado.passaporte" value="this[0].forcaTrabalhoDelegado.passaporte"/>
+                          <arg label="d.forcaTrabalhoGerente.matricula" value="this[0].forcaTrabalhoGerente.matricula"/>
+                          <arg label="d.forcaTrabalhoDes.codigoCargo" value="this[0].forcaTrabalhoDes.codigoCargo"/>
+                          <arg label="d.forcaTrabalhoGerente.motivoReqCed" value="this[0].forcaTrabalhoGerente.motivoReqCed"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.codigoForcaTrabalho" value="this[0].forcaTrabalhoDelegado.orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoDes.codigoReligiao" value="this[0].forcaTrabalhoDes.codigoReligiao"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao" value="this[0].forcaTrabalhoGerente.orgao"/>
+                          <arg label="d.forcaTrabalhoDes.orgao" value="this[0].forcaTrabalhoDes.orgao"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoCargo" value="this[0].forcaTrabalhoDelegado.codigoCargo"/>
+                          <arg label="d.forcaTrabalhoDelegado.email" value="this[0].forcaTrabalhoDelegado.email"/>
+                          <arg label="d.forcaTrabalhoDelegado.cpf" value="this[0].forcaTrabalhoDelegado.cpf"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.descricao" value="this[0].forcaTrabalhoDelegado.orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoAplicacaoCargo" value="this[0].forcaTrabalhoDelegado.codigoAplicacaoCargo"/>
+                          <arg label="d.forcaTrabalhoGerente.siglaEmpresaOrigem" value="this[0].forcaTrabalhoGerente.siglaEmpresaOrigem"/>
+                          <arg label="d.forcaTrabalhoDes.id" value="this[0].forcaTrabalhoDes.id"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataCessao" value="this[0].forcaTrabalhoDelegado.dataCessao"/>
+                          <arg label="d.forcaTrabalhoGerente.emailParticular2" value="this[0].forcaTrabalhoGerente.emailParticular2"/>
+                          <arg label="d.orgao" value="this[0].orgao"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataCadastro" value="this[0].forcaTrabalhoDelegado.dataCadastro"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.dataFimValidade" value="this[0].forcaTrabalhoDelegado.orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.id" value="this[0].forcaTrabalhoDes.orgao.id"/>
+                          <arg label="d.forcaTrabalhoDes.emailParticular2" value="this[0].forcaTrabalhoDes.emailParticular2"/>
+                          <arg label="d.forcaTrabalhoDes.codigoRaca" value="this[0].forcaTrabalhoDes.codigoRaca"/>
+                          <arg label="d.dataCriacao" value="this[0].dataCriacao"/>
+                          <arg label="d.forcaTrabalhoDelegado.celular" value="this[0].forcaTrabalhoDelegado.celular"/>
+                          <arg label="d.forcaTrabalhoDelegado.siglaEmpresaOrigem" value="this[0].forcaTrabalhoDelegado.siglaEmpresaOrigem"/>
+                          <arg label="d.dataInativo" value="this[0].dataInativo"/>
+                          <arg label="d.forcaTrabalhoGerente.nomeForcaTrabalhoGuerra" value="this[0].forcaTrabalhoGerente.nomeForcaTrabalhoGuerra"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.dataInicioValidade" value="this[0].forcaTrabalhoGerente.orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoGerente.telefone" value="this[0].forcaTrabalhoGerente.telefone"/>
+                          <arg label="d.forcaTrabalhoDes" value="this[0].forcaTrabalhoDes"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.dataInicioValidade" value="this[0].forcaTrabalhoDes.orgao.dataInicioValidade"/>
+                          <arg label="d.forcaTrabalhoDelegado.nomeForcaTrabalhoGuerra" value="this[0].forcaTrabalhoDelegado.nomeForcaTrabalhoGuerra"/>
+                          <arg label="d.forcaTrabalhoGerente.motivoInativo" value="this[0].forcaTrabalhoGerente.motivoInativo"/>
+                          <arg label="d.forcaTrabalhoDes.codigoCidade" value="this[0].forcaTrabalhoDes.codigoCidade"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.dataFimValidade" value="this[0].forcaTrabalhoDes.orgao.dataFimValidade"/>
+                          <arg label="d.forcaTrabalhoGerente.cep" value="this[0].forcaTrabalhoGerente.cep"/>
+                          <arg label="d.forcaTrabalhoDelegado.motivoReqCed" value="this[0].forcaTrabalhoDelegado.motivoReqCed"/>
+                          <arg label="d.forcaTrabalhoGerente.situacao" value="this[0].forcaTrabalhoGerente.situacao"/>
+                          <arg label="d.forcaTrabalhoDelegado.dataNascimento" value="this[0].forcaTrabalhoDelegado.dataNascimento"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoSubgrupoEmpregado" value="this[0].forcaTrabalhoDelegado.codigoSubgrupoEmpregado"/>
+                          <arg label="d.orgao.areaAtuacao" value="this[0].orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoGerente.centroCusto" value="this[0].forcaTrabalhoGerente.centroCusto"/>
+                          <arg label="d.forcaTrabalhoDes.email" value="this[0].forcaTrabalhoDes.email"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoPais" value="this[0].forcaTrabalhoGerente.codigoPais"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoInativo" value="this[0].forcaTrabalhoDelegado.codigoInativo"/>
+                          <arg label="d.forcaTrabalhoDes.dataAdmissao" value="this[0].forcaTrabalhoDes.dataAdmissao"/>
+                          <arg label="d.id" value="this[0].id"/>
+                          <arg label="d.forcaTrabalhoDes.codigoPais" value="this[0].forcaTrabalhoDes.codigoPais"/>
+                          <arg label="d.forcaTrabalhoDelegado.emailParticular1" value="this[0].forcaTrabalhoDelegado.emailParticular1"/>
+                          <arg label="d.status" value="this[0].status"/>
+                          <arg label="d.forcaTrabalhoGerente.reqCed" value="this[0].forcaTrabalhoGerente.reqCed"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoImovel" value="this[0].forcaTrabalhoDelegado.codigoImovel"/>
+                          <arg label="d.forcaTrabalhoDelegado.id" value="this[0].forcaTrabalhoDelegado.id"/>
+                          <arg label="d.forcaTrabalhoDes.motivoInativo" value="this[0].forcaTrabalhoDes.motivoInativo"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoEscolaridade" value="this[0].forcaTrabalhoDelegado.codigoEscolaridade"/>
+                          <arg label="d.forcaTrabalhoDelegado.telefone" value="this[0].forcaTrabalhoDelegado.telefone"/>
+                          <arg label="d.forcaTrabalhoDes.nome" value="this[0].forcaTrabalhoDes.nome"/>
+                          <arg label="d.forcaTrabalhoDes.terraMar" value="this[0].forcaTrabalhoDes.terraMar"/>
+                          <arg label="d.forcaTrabalhoDes.matricula" value="this[0].forcaTrabalhoDes.matricula"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoEscolaridade" value="this[0].forcaTrabalhoGerente.codigoEscolaridade"/>
+                          <arg label="d.forcaTrabalhoDelegado.terraMar" value="this[0].forcaTrabalhoDelegado.terraMar"/>
+                          <arg label="d.forcaTrabalhoDes.cpf" value="this[0].forcaTrabalhoDes.cpf"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoAplicacaoCargo" value="this[0].forcaTrabalhoGerente.codigoAplicacaoCargo"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoCargo" value="this[0].forcaTrabalhoGerente.codigoCargo"/>
+                          <arg label="d.forcaTrabalhoDelegado.motivoStatus" value="this[0].forcaTrabalhoDelegado.motivoStatus"/>
+                          <arg label="d.forcaTrabalhoDes.codigoEscolaridade" value="this[0].forcaTrabalhoDes.codigoEscolaridade"/>
+                          <arg label="d.forcaTrabalhoGerente.passaporte" value="this[0].forcaTrabalhoGerente.passaporte"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoCidade" value="this[0].forcaTrabalhoGerente.codigoCidade"/>
+                          <arg label="d.forcaTrabalhoDes.codigoSubgrupoEmpregado" value="this[0].forcaTrabalhoDes.codigoSubgrupoEmpregado"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.codigoForcaTrabalho" value="this[0].forcaTrabalhoGerente.orgao.codigoForcaTrabalho"/>
+                          <arg label="d.forcaTrabalhoGerente.numeroExterno" value="this[0].forcaTrabalhoGerente.numeroExterno"/>
+                          <arg label="d.forcaTrabalhoDelegado.enderecoComplemento" value="this[0].forcaTrabalhoDelegado.enderecoComplemento"/>
+                          <arg label="d.forcaTrabalhoDes.codigoLogin" value="this[0].forcaTrabalhoDes.codigoLogin"/>
+                          <arg label="d.orgao.descricao" value="this[0].orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoGerente.tipoSanguineo" value="this[0].forcaTrabalhoGerente.tipoSanguineo"/>
+                          <arg label="d.forcaTrabalhoGerente.dataCessao" value="this[0].forcaTrabalhoGerente.dataCessao"/>
+                          <arg label="d.forcaTrabalhoDes.endereco" value="this[0].forcaTrabalhoDes.endereco"/>
+                          <arg label="d.forcaTrabalhoGerente.cpf" value="this[0].forcaTrabalhoGerente.cpf"/>
+                          <arg label="d.forcaTrabalhoDes.orgao.descricao" value="this[0].forcaTrabalhoDes.orgao.descricao"/>
+                          <arg label="d.forcaTrabalhoDes.numeroRamal" value="this[0].forcaTrabalhoDes.numeroRamal"/>
+                          <arg label="d.forcaTrabalhoGerente.sexo" value="this[0].forcaTrabalhoGerente.sexo"/>
+                          <arg label="d.forcaTrabalhoGerente.email" value="this[0].forcaTrabalhoGerente.email"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao.id" value="this[0].forcaTrabalhoDelegado.orgao.id"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.orgaoSuperior" value="this[0].forcaTrabalhoGerente.orgao.orgaoSuperior"/>
+                          <arg label="d.forcaTrabalhoDelegado.uf" value="this[0].forcaTrabalhoDelegado.uf"/>
+                          <arg label="d.forcaTrabalhoDes.nomeForcaTrabalhoGuerra" value="this[0].forcaTrabalhoDes.nomeForcaTrabalhoGuerra"/>
+                          <arg label="d.forcaTrabalhoDelegado.orgao" value="this[0].forcaTrabalhoDelegado.orgao"/>
+                          <arg label="d.forcaTrabalhoGerente.codigoInativo" value="this[0].forcaTrabalhoGerente.codigoInativo"/>
+                          <arg label="d.forcaTrabalhoGerente.orgao.areaAtuacao" value="this[0].forcaTrabalhoGerente.orgao.areaAtuacao"/>
+                          <arg label="d.forcaTrabalhoDelegado.codigoReligiao" value="this[0].forcaTrabalhoDelegado.codigoReligiao"/>
+                          <arg label="d.forcaTrabalhoDes.telefone" value="this[0].forcaTrabalhoDes.telefone"/>
+                        </mutation>
+                        <field name="SELECT">this[0].orgao.nome</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block colour="#aa2f00" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="eu-{rJ$n#;p*]:JT6YXM" multilayer="false" namespace="cronapi.database.Operations.insert" origintype="procedures_sql_insert_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_insert_callnoreturn">
+                <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22insert%22,%22rulesEntity%22:%5B%7B%22entity%22:%22Historico%22,%22namespace%22:%22app.entity.Historico%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22Historico%22,%22entityFullName%22:%22app.entity.Historico%22,%22type%22:%22O%22,%22params%22:%22%5B%20%5C%22Historico%5C%22%20%5D%22%7D" name="{{cronapi.database.Operations.insert}}">
+                  <arg name="Historico"/>
+                </mutation>
+                <value name="ARG0">
+                  <block colour="#aa2f00" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="c7trc{D:Zb}xTng4$IDR" multilayer="false" namespace="cronapi.database.Operations.newEntity" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20nova%20Entidade%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20nova%20Entidade%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
+                    <mutation data="%7B%22entity%22:%22app.entity.Historico%22,%22entityFullName%22:%22app.entity.Historico%22,%22params%22:%22%5B%5C%22NOTSELECTED%5C%22,%5C%22tabela%5C%22,%5C%22idTabela%5C%22,%5C%22descricao%5C%22,%5C%22dataIn%5C%22,%5C%22forcaTrabalhoChaveAcao%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22NOTSELECTED%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22%5D%22,%22type%22:%22F%22%7D" name="{{cronapi.database.Operations.newEntity}}">
+                      <arg name="NOTSELECTED"/>
+                      <arg name="tabela"/>
+                      <arg name="idTabela"/>
+                      <arg name="descricao"/>
+                      <arg name="dataIn"/>
+                      <arg name="forcaTrabalhoChaveAcao"/>
+                    </mutation>
+                    <value name="ARG1">
+                      <block colour="#5ba593" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="c:dQ#jda$nofB^333]{O" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">DELEGACAO</field>
+                      </block>
+                    </value>
+                    <value name="ARG2">
+                      <block colour="#0088ee" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="F/INj%4soY^cIyuXZt-f" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">delegacaoId</field>
+                      </block>
+                    </value>
+                    <value name="ARG3">
+                      <block colour="#0088ee" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="a:K*-NC1_]q.6A7A))ro" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">conteudo</field>
+                      </block>
+                    </value>
+                    <value name="ARG4">
+                      <block colour="#7d9137" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="P+SN5u;L#J[sSWOcv:gN" multilayer="false" namespace="cronapi.dateTime.Operations.getNow" origintype="procedures_callreturn" output="true" returntype="ObjectType.DATETIME" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                        <mutation name="{{cronapi.dateTime.Operations.getNow}}" return-raw-type="cronapi.Var"/>
+                      </block>
+                    </value>
+                    <value name="ARG5">
+                      <block colour="#487f7f" dependencyby="Hp:O5UbtX;!u08sSXQ/p" id="h3k2%hM)EH@8ukO%pA#w" multilayer="false" namespace="cronapi.util.Operations.getCurrentUserName" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20login%20do%20usu%C3%A1rio%20logado%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20o%20login%20do%20usu%C3%A1rio%20logado.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.Operations.getCurrentUserName%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.Operations.getCurrentUserName%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                        <mutation name="{{cronapi.util.Operations.getCurrentUserName}}" return-raw-type="cronapi.Var"/>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block colour="#fca03b" id="|jfc+t:;]vtct[ao+zI%" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1432" y="968">
+    <mutation>
+      <arg name="descricao"/>
+      <arg name="solicitacaoFerias&amp;lt;SPFT.entity.SolicitacaoFerias&amp;gt;"/>
+    </mutation>
+    <field name="NAME">AdicionarHistoricoSolicitacao</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="pIsB7*,|cUl+W.-ksG%1" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">usuario</field>
+        <value name="VALUE">
+          <block colour="#aa2f00" dependencyby="|jfc+t:;]vtct[ao+zI%" id="4Bto18D/UD(78e*ZK(Nn" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22ForcaTrabalho%22,%22namespace%22:%22SPFT.entity.ForcaTrabalho%22,%22alias%22:%22f%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22f%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22f.codigoLogin%22,%22field%22:%22f.codigoLogin%22,%22type%22:%22string%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:codigoLogin%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22ForcaTrabalho%22,%22entityFullName%22:%22SPFT.entity.ForcaTrabalho%22,%22filter%22:%22select%20f%20from%20ForcaTrabalho%20f%20where%20f.codigoLogin%20=%20:codigoLogin%22,%22params%22:%22%5B%5C%22codigoLogin%5C%22%5D%22,%22wizardType%22:%22SELECT%22%7D" name="{{cronapi.database.Operations.query}}">
+              <arg name="codigoLogin"/>
+            </mutation>
+            <value name="ARG0">
+              <block colour="#487f7f" dependencyby="|jfc+t:;]vtct[ao+zI%" id="+a8#)8HK5mb{+O/D:WRS" multilayer="false" namespace="cronapi.util.Operations.getCurrentUserName" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20login%20do%20usu%C3%A1rio%20logado%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20o%20login%20do%20usu%C3%A1rio%20logado.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.Operations.getCurrentUserName%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.Operations.getCurrentUserName%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.util.Operations.getCurrentUserName}}" return-raw-type="cronapi.Var"/>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block colour="#5ba58c" dependencyby="|jfc+t:;]vtct[ao+zI%" id="AvRD+1W0*7ZTV:qVfEtk" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+            <value name="TEXT">
+              <shadow colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="v9O%uH%:M(u=bDD$qzM^" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">abc</field>
+              </shadow>
+              <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="Ta5Vd=5rkqg0B-q6LH:Z" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">usuario</field>
+              </block>
+            </value>
+            <next>
+              <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="b/bDeyd/ZCO=LgfYJc}o" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">usuarioFerias</field>
+                <value name="VALUE">
+                  <block colour="#aa2f00" dependencyby="|jfc+t:;]vtct[ao+zI%" id="lZ`d68)dA}0SLHxS^*}u" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+                    <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22SolicitacaoFerias%22,%22namespace%22:%22SPFT.entity.SolicitacaoFerias%22,%22alias%22:%22s%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22s.periodoConcessao.forcaTrabalho%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%7B%22id%22:%22s.id%22,%22field%22:%22s.id%22,%22type%22:%22integer%22,%22input%22:%22text%22,%22operator%22:%22equal%22,%22value%22:%22:id%22,%22valueIsField%22:false%7D%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22SolicitacaoFerias%22,%22entityFullName%22:%22SPFT.entity.SolicitacaoFerias%22,%22filter%22:%22select%20s.periodoConcessao.forcaTrabalho%20from%20SolicitacaoFerias%20s%20where%20s.id%20=%20:id%22,%22params%22:%22%5B%5C%22id%5C%22%5D%22%7D" name="{{cronapi.database.Operations.query}}">
+                      <arg name="id"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="U%8vkUG)l!`:]3oQ$6AE" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                        <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                          <arg name="Objeto"/>
+                          <arg name="Caminho a percorrer"/>
+                        </mutation>
+                        <value name="PARAM0">
+                          <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="p3m/Or-Tg@){0F!WnvY1" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+                          </block>
+                        </value>
+                        <value name="PARAM1">
+                          <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="xj7*%yD}W9mC!n[a?NNX" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                            <mutation name="" return-raw-type="undefined"/>
+                            <field name="SELECT">id</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#5ba58c" dependencyby="|jfc+t:;]vtct[ao+zI%" id="H$k||b/hO9Q^7r3j|_LA" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                    <value name="TEXT">
+                      <shadow colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="v9O%uH%:M(u=bDD$qzM^" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+                        <field name="TEXT">abc</field>
+                      </shadow>
+                      <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="81U!_Y(O,;Mw$j$df;_B" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                        <field name="VAR">usuarioFerias</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="iQ3{0=1a08@gcN}{r6CN" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                        <field name="VAR">conteudo</field>
+                        <value name="VALUE">
+                          <block colour="#5ba58c" dependencyby="|jfc+t:;]vtct[ao+zI%" id="J2Xy;d=-eK7xqnca)`%R" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                            <mutation items="7"/>
+                            <value name="ADD0">
+                              <block colour="#487f7f" dependencyby="|jfc+t:;]vtct[ao+zI%" id="$:=5hEdlp1B%+lI!.kC/" multilayer="false" namespace="cronapi.util.Operations.getCurrentUserName" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20login%20do%20usu%C3%A1rio%20logado%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20o%20login%20do%20usu%C3%A1rio%20logado.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.Operations.getCurrentUserName%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.Operations.getCurrentUserName%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                <mutation name="{{cronapi.util.Operations.getCurrentUserName}}" return-raw-type="cronapi.Var"/>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="vE!Lx^_=oIPgmKa^{CVv" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT"> </field>
+                              </block>
+                            </value>
+                            <value name="ADD2">
+                              <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="(~Cq-tsJ3FY~2PD36wLF" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">descricao</field>
+                              </block>
+                            </value>
+                            <value name="ADD3">
+                              <block colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="`uG0t`0-P_AK#za/4Dnd" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT"> </field>
+                              </block>
+                            </value>
+                            <value name="ADD4">
+                              <block colour="#aa2f00" dependencyby="|jfc+t:;]vtct[ao+zI%" id="l|IIIgqF9!yp_]+m{EMN" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                <mutation name="{{cronapi.database.Operations.getField}}">
+                                  <arg name="Fonte de dados"/>
+                                  <arg name="Nome do campo"/>
+                                </mutation>
+                                <value name="PARAM0">
+                                  <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="rOb?pJBZt05;tdAktfRY" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field name="VAR">usuarioFerias</field>
+                                  </block>
+                                </value>
+                                <value name="PARAM1">
+                                  <block colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="%oyVe]p3za`dUw|[S~n^" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field name="TEXT">matricula</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ADD5">
+                              <block colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="604(TJE,nKNfSKl/818+" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field name="TEXT"> </field>
+                              </block>
+                            </value>
+                            <value name="ADD6">
+                              <block colour="#aa2f00" dependencyby="|jfc+t:;]vtct[ao+zI%" id="U;1u9}4`5ne|+A|gz_pi" multilayer="false" namespace="cronapi.database.Operations.getField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20registro%20do%20cursor%20atual%20da%20fonte%20de%20dados%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nome%20do%20campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.getField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                <mutation name="{{cronapi.database.Operations.getField}}">
+                                  <arg name="Fonte de dados"/>
+                                  <arg name="Nome do campo"/>
+                                </mutation>
+                                <value name="PARAM0">
+                                  <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="5IzMj572EoY@Ia0*oW_-" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field name="VAR">usuarioFerias</field>
+                                  </block>
+                                </value>
+                                <value name="PARAM1">
+                                  <block colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="y]k~W;q/=}8U`DUVfWI/" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field name="TEXT">nome</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block colour="#5ba58c" dependencyby="|jfc+t:;]vtct[ao+zI%" id="7jO1UpLbwpR;AOK,W2Wk" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                            <value name="TEXT">
+                              <shadow colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="v9O%uH%:M(u=bDD$qzM^" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+                                <field name="TEXT">abc</field>
+                              </shadow>
+                              <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id=";c14(E-ypiCWSa8p5yPy" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field name="VAR">conteudo</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block colour="#5b80a5" dependencyby="|jfc+t:;]vtct[ao+zI%" id="sGu?v5$9cGE]N{IR05rj" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                                <value name="IF0">
+                                  <block colour="#5b80a5" dependencyby="|jfc+t:;]vtct[ao+zI%" id="_xsSvENRIZ7gpf,HJ[AJ" origintype="logic_negate" output="true" tooltip="Retorna verdadeiro se a entrada for falsa.  Retorna falsa se a entrada for verdadeira." type="logic_negate">
+                                    <value name="BOOL">
+                                      <block colour="#5b80a5" dependencyby="|jfc+t:;]vtct[ao+zI%" id="/=WVqFjH*w_fcu{8%1j5" inline="true" multilayer="false" namespace="cronapi.logic.Operations.isNullOrEmpty" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3E%C3%A9%20nulo%20ou%20vazio?%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20a%20var%C3%ADavel%20%C3%A9%20nula%20ou%20vazia%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Par%C3%A2metro%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNullOrEmpty%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNullOrEmpty%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                        <mutation name="{{cronapi.logic.Operations.isNullOrEmpty}}" return-raw-type="cronapi.Var">
+                                          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Parâmetro"/>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="I9ZUPa:u]-C|,$KjtSAF" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                            <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                                              <arg name="Objeto"/>
+                                              <arg name="Caminho a percorrer"/>
+                                            </mutation>
+                                            <value name="PARAM0">
+                                              <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="xsjTPvOdPD)bQhGsRj-E" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+                                              </block>
+                                            </value>
+                                            <value name="PARAM1">
+                                              <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="8hw%=tPv+T1g|C@`]T(S" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                                <mutation name="" return-raw-type="undefined"/>
+                                                <field name="SELECT">dataPeriodo1Inicio</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="YA:*P`m0OINeD}Vpw0-." origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                    <field name="VAR">conteudo</field>
+                                    <value name="VALUE">
+                                      <block colour="#5ba58c" dependencyby="|jfc+t:;]vtct[ao+zI%" id="IGGlkraR$OJ,M|OH8`U!" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                                        <mutation items="5"/>
+                                        <value name="ADD0">
+                                          <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="QhBg^-KxPJ)UWFaXSooW" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                            <field name="VAR">conteudo</field>
+                                          </block>
+                                        </value>
+                                        <value name="ADD1">
+                                          <block colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="ZB3a*oP=lI@?jf3uYiq/" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                            <field name="TEXT"> Período 1: </field>
+                                          </block>
+                                        </value>
+                                        <value name="ADD2">
+                                          <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="O~VIzH`F0MLT{,OSU@|j" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                            <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                                              <arg name="Objeto"/>
+                                              <arg name="Caminho a percorrer"/>
+                                            </mutation>
+                                            <value name="PARAM0">
+                                              <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="(Q!EBk,oEK0G2#f$TiC." origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+                                              </block>
+                                            </value>
+                                            <value name="PARAM1">
+                                              <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="F#H6sMcxo_X.kL%ZYp:]" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                                <mutation name="" return-raw-type="undefined"/>
+                                                <field name="SELECT">dataPeriodo1Inicio</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="ADD3">
+                                          <block colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="DuR@Lbh[KJzM_+}t3C(2" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                            <field name="TEXT"> à </field>
+                                          </block>
+                                        </value>
+                                        <value name="ADD4">
+                                          <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="7vhUZ[N_@C/]Au={wFNM" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                            <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                                              <arg name="Objeto"/>
+                                              <arg name="Caminho a percorrer"/>
+                                            </mutation>
+                                            <value name="PARAM0">
+                                              <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="iJ{D*q``|P;Wf]@s4C{|" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+                                              </block>
+                                            </value>
+                                            <value name="PARAM1">
+                                              <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="CtTH!j*WqCSHve@~YHT8" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                                <mutation name="" return-raw-type="undefined"/>
+                                                <field name="SELECT">dataPeriodo1Fim</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block colour="#5b80a5" dependencyby="|jfc+t:;]vtct[ao+zI%" id=")P:m_e0(edTXd;S=D`ip" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                                    <value name="IF0">
+                                      <block colour="#5b80a5" dependencyby="|jfc+t:;]vtct[ao+zI%" id="s-/{{[{WmGpS5,TO?ZcT" origintype="logic_negate" output="true" tooltip="Retorna verdadeiro se a entrada for falsa.  Retorna falsa se a entrada for verdadeira." type="logic_negate">
+                                        <value name="BOOL">
+                                          <block colour="#5b80a5" dependencyby="|jfc+t:;]vtct[ao+zI%" id="O1k(cD3,,Ojl1D?f+n:g" inline="true" multilayer="false" namespace="cronapi.logic.Operations.isNullOrEmpty" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3E%C3%A9%20nulo%20ou%20vazio?%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20a%20var%C3%ADavel%20%C3%A9%20nula%20ou%20vazia%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Par%C3%A2metro%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNullOrEmpty%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNullOrEmpty%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                            <mutation name="{{cronapi.logic.Operations.isNullOrEmpty}}" return-raw-type="cronapi.Var">
+                                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Parâmetro"/>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="T8aY[Kek@R*_A2%J]Zv+" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                                <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                                                  <arg name="Objeto"/>
+                                                  <arg name="Caminho a percorrer"/>
+                                                </mutation>
+                                                <value name="PARAM0">
+                                                  <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="UTCy(v.um=]Pr,QuPFe{" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+                                                  </block>
+                                                </value>
+                                                <value name="PARAM1">
+                                                  <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="Sg/;ye?GsUPucH4Ix(2t" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                                    <mutation name="" return-raw-type="undefined"/>
+                                                    <field name="SELECT">dataPeriodo2Inicio</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="=OyTZqfvQHm^Q0#-;AN," origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                        <field name="VAR">conteudo</field>
+                                        <value name="VALUE">
+                                          <block colour="#5ba58c" dependencyby="|jfc+t:;]vtct[ao+zI%" id="5^CV,UUU5p9L|0AkC7Rj" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                                            <mutation items="5"/>
+                                            <value name="ADD0">
+                                              <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="08i%!@04f,p6,on^qx-)" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">conteudo</field>
+                                              </block>
+                                            </value>
+                                            <value name="ADD1">
+                                              <block colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="leQt7ZU^*@:{unQjjRa)" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                <field name="TEXT"> Período 2: </field>
+                                              </block>
+                                            </value>
+                                            <value name="ADD2">
+                                              <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="rL,PTFrz}6!Xg+sf^4Ar" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                                <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                                                  <arg name="Objeto"/>
+                                                  <arg name="Caminho a percorrer"/>
+                                                </mutation>
+                                                <value name="PARAM0">
+                                                  <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="FmHT}=]0mRx^}`ij@12." origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+                                                  </block>
+                                                </value>
+                                                <value name="PARAM1">
+                                                  <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="1%||4L@E@J[V9:RYK}b]" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                                    <mutation name="" return-raw-type="undefined"/>
+                                                    <field name="SELECT">dataPeriodo2Inicio</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="ADD3">
+                                              <block colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="CMZ+md^^72ZA%Lm_RwNe" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                <field name="TEXT"> à </field>
+                                              </block>
+                                            </value>
+                                            <value name="ADD4">
+                                              <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="5.U6t?vhBnEA%44uSRV/" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                                <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                                                  <arg name="Objeto"/>
+                                                  <arg name="Caminho a percorrer"/>
+                                                </mutation>
+                                                <value name="PARAM0">
+                                                  <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="MY{X8vgS!;Z_!r,g{m}b" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+                                                  </block>
+                                                </value>
+                                                <value name="PARAM1">
+                                                  <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="$-2$8jDt`KkR|I20yTbX" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                                    <mutation name="" return-raw-type="undefined"/>
+                                                    <field name="SELECT">dataPeriodo2Fim</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block colour="#5b80a5" dependencyby="|jfc+t:;]vtct[ao+zI%" id="M%Pu@tQdaOx}[}VlCHK]" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                                        <value name="IF0">
+                                          <block colour="#5b80a5" dependencyby="|jfc+t:;]vtct[ao+zI%" id="mL}[oBkf5K6vZ.N$C+rP" origintype="logic_negate" output="true" tooltip="Retorna verdadeiro se a entrada for falsa.  Retorna falsa se a entrada for verdadeira." type="logic_negate">
+                                            <value name="BOOL">
+                                              <block colour="#5b80a5" dependencyby="|jfc+t:;]vtct[ao+zI%" id="1h=J.MZl@Ik?QY$7j2?F" inline="true" multilayer="false" namespace="cronapi.logic.Operations.isNullOrEmpty" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3E%C3%A9%20nulo%20ou%20vazio?%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20a%20var%C3%ADavel%20%C3%A9%20nula%20ou%20vazia%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Par%C3%A2metro%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNullOrEmpty%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.logic.Operations.isNullOrEmpty%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                                <mutation name="{{cronapi.logic.Operations.isNullOrEmpty}}" return-raw-type="cronapi.Var">
+                                                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="Parâmetro"/>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="Iz`kH;vQ17ft)6qCzcPr" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                                    <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                                                      <arg name="Objeto"/>
+                                                      <arg name="Caminho a percorrer"/>
+                                                    </mutation>
+                                                    <value name="PARAM0">
+                                                      <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="rORy.16Nx`*qw/m7Va33" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PARAM1">
+                                                      <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="wC`E{p6uhv67nJt}TAsc" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                                        <mutation name="" return-raw-type="undefined"/>
+                                                        <field name="SELECT">dataPeriodo3Inicio</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="^8a$+*}a%Z~n^0~0^]}A" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                            <field name="VAR">conteudo</field>
+                                            <value name="VALUE">
+                                              <block colour="#5ba58c" dependencyby="|jfc+t:;]vtct[ao+zI%" id="Bio1Ufw_PHqRF+r8clWr" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                                                <mutation items="5"/>
+                                                <value name="ADD0">
+                                                  <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="#.OH~7|0leq,dI+!H2KE" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">conteudo</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ADD1">
+                                                  <block colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="TX}Eo@^@3GNBxbCq/YD|" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                    <field name="TEXT"> Período 3: </field>
+                                                  </block>
+                                                </value>
+                                                <value name="ADD2">
+                                                  <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="(`Xw@L/BVL;,rupzJaqG" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                                    <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                                                      <arg name="Objeto"/>
+                                                      <arg name="Caminho a percorrer"/>
+                                                    </mutation>
+                                                    <value name="PARAM0">
+                                                      <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id=".NC,QCByx@?L/OnZ2nET" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PARAM1">
+                                                      <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="O,3*EFyB*u#xJR;o~t7D" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                                        <mutation name="" return-raw-type="undefined"/>
+                                                        <field name="SELECT">dataPeriodo3Inicio</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="ADD3">
+                                                  <block colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="yNM}Af~h{|t$(}hS,^h)" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                    <field name="TEXT"> à </field>
+                                                  </block>
+                                                </value>
+                                                <value name="ADD4">
+                                                  <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id=";,=I?2}1#X1ei*-|Zxpl" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                                    <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                                                      <arg name="Objeto"/>
+                                                      <arg name="Caminho a percorrer"/>
+                                                    </mutation>
+                                                    <value name="PARAM0">
+                                                      <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="/Gm)}LTv0SMk*/wkhPLf" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PARAM1">
+                                                      <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="7Zog(_$Ro_Xf+Y-4C*ez" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                                        <mutation name="" return-raw-type="undefined"/>
+                                                        <field name="SELECT">dataPeriodo3Fim</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id=",2^[#!(pa#NkNDJ/},mg" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                            <field name="VAR">item</field>
+                                            <value name="VALUE">
+                                              <block colour="#aa2f00" dependencyby="|jfc+t:;]vtct[ao+zI%" id="pNdb^L=}8cJ~oi{2GG(V" multilayer="false" namespace="cronapi.database.Operations.newEntity" origintype="procedures_createnewobject_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20nova%20Entidade%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20nova%20Entidade%20%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.newEntity%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_createnewobject_callreturn">
+                                                <mutation data="%7B%22entity%22:%22app.entity.Historico%22,%22entityFullName%22:%22app.entity.Historico%22,%22params%22:%22%5B%5C%22NOTSELECTED%5C%22,%5C%22tabela%5C%22,%5C%22idTabela%5C%22,%5C%22descricao%5C%22,%5C%22dataIn%5C%22,%5C%22forcaTrabalhoChaveAcao%5C%22%5D%22,%22paramTypes%22:%22%5B%5C%22NOTSELECTED%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22,%5C%22undefined%5C%22%5D%22,%22type%22:%22F%22%7D" name="{{cronapi.database.Operations.newEntity}}">
+                                                  <arg name="NOTSELECTED"/>
+                                                  <arg name="tabela"/>
+                                                  <arg name="idTabela"/>
+                                                  <arg name="descricao"/>
+                                                  <arg name="dataIn"/>
+                                                  <arg name="forcaTrabalhoChaveAcao"/>
+                                                </mutation>
+                                                <value name="ARG1">
+                                                  <block colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="^=~ibRQ(u6tVhoEDIk4H" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                    <field name="TEXT">SOLICITACAO_FERIAS</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG2">
+                                                  <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="Snw*:/G(BI]|-~Axd@a)" multilayer="false" namespace="cronapi.object.Operations.getObjectField" origintype="procedures_get_field" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20campo%20do%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20campo%20do%20Objeto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Caminho%20a%20percorrer%20:%20Texto%3C/span%3E%3Cdiv%3E%20Exemplo:%20estado%5B3%5D.uf%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.object.Operations.getObjectField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_get_field">
+                                                    <mutation name="{{cronapi.object.Operations.getObjectField}}">
+                                                      <arg name="Objeto"/>
+                                                      <arg name="Caminho a percorrer"/>
+                                                    </mutation>
+                                                    <value name="PARAM0">
+                                                      <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="eWSyJpO7Tnat?M/JH$/*" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">solicitacaoFerias&lt;SPFT.entity.SolicitacaoFerias&gt;</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="PARAM1">
+                                                      <block colour="#c88330" dependencyby="|jfc+t:;]vtct[ao+zI%" id="G-/jk^FHeE=1XCi2G{6_" origintype="procedures_get_field_object" output="true" type="procedures_get_field_object">
+                                                        <mutation name="" return-raw-type="undefined"/>
+                                                        <field name="SELECT">id</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG3">
+                                                  <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="JQ[?6]Ume{;M~@nHL0V?" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">conteudo</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG4">
+                                                  <block colour="#7d9137" dependencyby="|jfc+t:;]vtct[ao+zI%" id="os,xoZ0(24Oy/Gz11s]Y" multilayer="false" namespace="cronapi.dateTime.Operations.getNow" origintype="procedures_callreturn" output="true" returntype="ObjectType.DATETIME" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20data%20e%20hora%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Data%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.dateTime.Operations.getNow%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                                    <mutation name="{{cronapi.dateTime.Operations.getNow}}" return-raw-type="cronapi.Var"/>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG5">
+                                                  <block colour="#487f7f" dependencyby="|jfc+t:;]vtct[ao+zI%" id="3M1(IBj`/8SEO2%.FuT2" multilayer="false" namespace="cronapi.util.Operations.getCurrentUserName" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20login%20do%20usu%C3%A1rio%20logado%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20o%20login%20do%20usu%C3%A1rio%20logado.%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.Operations.getCurrentUserName%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.Operations.getCurrentUserName%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                                    <mutation name="{{cronapi.util.Operations.getCurrentUserName}}" return-raw-type="cronapi.Var"/>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block colour="#aa2f00" dependencyby="|jfc+t:;]vtct[ao+zI%" id="-HIej)J_OAv!R@GgbhXy" multilayer="false" namespace="cronapi.database.Operations.insert" origintype="procedures_sql_insert_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.insert%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_insert_callnoreturn">
+                                                <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22insert%22,%22rulesEntity%22:%5B%7B%22entity%22:%22Historico%22,%22namespace%22:%22app.entity.Historico%22,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22Historico%22,%22entityFullName%22:%22app.entity.Historico%22,%22type%22:%22O%22,%22params%22:%22%5B%20%5C%22Historico%5C%22%20%5D%22%7D" name="{{cronapi.database.Operations.insert}}">
+                                                  <arg name="Historico"/>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="E6e@*u|Rh?rpUs+HkG*q" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">item</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block colour="#5ba58c" dependencyby="|jfc+t:;]vtct[ao+zI%" id="E%KkyuT7`8+7G`u7e4]9" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                                                    <value name="TEXT">
+                                                      <shadow colour="#5ba593" dependencyby="|jfc+t:;]vtct[ao+zI%" id="v9O%uH%:M(u=bDD$qzM^" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+                                                        <field name="TEXT">abc</field>
+                                                      </shadow>
+                                                      <block colour="#0088ee" dependencyby="|jfc+t:;]vtct[ao+zI%" id="Y:k{QSa)m/;{MSQ9oO?d" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">conteudo</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block colour="#fca03b" id="tdo6l:S]I4R6j^U!C#l{" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1381" y="1163">
+    <mutation>
+      <arg name="id"/>
     </mutation>
     <field name="NAME">CriarId</field>
     <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
     <statement name="STACK">
       <block colour="#0088ee" dependencyby="tdo6l:S]I4R6j^U!C#l{" id="8pgkm+zrX~sJttQAl(|B" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
-        <field name="VAR">Id</field>
+        <field name="VAR">id</field>
         <value name="VALUE">
           <block colour="#5b6da5" dependencyby="tdo6l:S]I4R6j^U!C#l{" id="lw=HYJmyMWP9iFmEDa-0" origintype="math_arithmetic" output="true" tooltip="function () { [native code] }" type="math_arithmetic">
             <mutation items="2"/>
@@ -129,7 +1589,7 @@
                     </mutation>
                     <value name="ARG0">
                       <block colour="#0088ee" dependencyby="tdo6l:S]I4R6j^U!C#l{" id="qHH2pmQxYmc8}NMtZ!)K" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                        <field name="VAR">Id</field>
+                        <field name="VAR">id</field>
                       </block>
                     </value>
                   </block>
@@ -141,7 +1601,7 @@
                 </value>
                 <value name="ELSE">
                   <block colour="#0088ee" dependencyby="tdo6l:S]I4R6j^U!C#l{" id="2xJrK@8bXBxsej?.bcIV" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-                    <field name="VAR">Id</field>
+                    <field name="VAR">id</field>
                   </block>
                 </value>
               </block>
@@ -157,7 +1617,7 @@
     </statement>
     <value name="RETURN">
       <block colour="#0088ee" dependencyby="tdo6l:S]I4R6j^U!C#l{" id="p3O)C,F+9yV{ZGuaO6VB" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
-        <field name="VAR">Id</field>
+        <field name="VAR">id</field>
       </block>
     </value>
   </block>
