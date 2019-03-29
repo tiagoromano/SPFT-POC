@@ -13,7 +13,7 @@
         </label>
         <label class="item item-input component-holder" data-component="crn-input-icon" id="crn-input-icon37951">
           <i class="icon placeholder-icon ion ion-asterisk"></i>
-          <input autocomplete="new-password" type="password" placeholder="{{'Login.view.Password' | translate}}" ng-model="vars.password">
+          <input autocomplete="new-password" type="password" placeholder="{{'Login.view.Password' | translate}}" ng-model="vars.password" aria-autocomplete="list">
         </label>
         <label class="item">
           <button class="button component-holder button-full button-positive" type="button" ng-click="cronapi.client('js.blockly.auth.Login.login').run(vars.username, vars.password, null)" data-component="crn-button" id="crn-button-445347" xattr-fullsize="button-full" xattr-theme="button-positive" ng-disabled="form.$invalid || vm.dataLoading">
@@ -27,6 +27,6 @@
           </div>
         </label>
       </div>
-    </form>
+    </form><a href="/oauth/authorize" class="text-center" target="_self" style="display:block;color:#fff;" xattr-fullsize="display:block;" data-replace="true" data-component="crn-anchor" id="crn-anchor-927355">OpenID Connect</a>
   </ion-content>
 </ion-view>

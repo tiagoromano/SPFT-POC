@@ -46,3 +46,29 @@ div.k-grid-header, .k-grid-header .k-header{
 .k-pager-wrap .k-state-selected:hover{
      background-color: #004c26 !important;
 }
+
+.k-button.k-primary, .k-slider .k-draghandle, .k-switch-on .k-switch-handle{
+    background-color: #008542 !important; 
+}
+
+.k-button:hover{
+    background: #f3f3f3;
+}
+
+.k-button[type="reset"]{
+    color: #333;
+}
+
+.k-command-cell a.k-button:hover, .k-grid tbody .k-button:hover{
+    background: #004c26 !important;
+}
+
+.k-grid-tool .k-button{
+    color: #008542;
+}
+
+.k-grid-toolbar .k-button, .k-grid-tool .k-button:hover{
+    background: #004c26 !important;
+    color: white !important;
+}
+
