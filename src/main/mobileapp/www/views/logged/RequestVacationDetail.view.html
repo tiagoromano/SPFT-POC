@@ -1,13 +1,103 @@
-<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="[{'key':'login','value':''},{'key':'arquiicaoDataInicial','value':''},{'key':'arquisicaoDataFinal','value':''}]"><ion-view class="pane">
-  <ion-header-bar align-title="center" class="bar bar-positive" xattr-theme="bar-positive" data-component="crn-ion-header-bar">
-    <div class="buttons buttons-left header-item">
-      <button class="button button-clear" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion ion-android-arrow-back"></i> </button>
-    </div>
-    <h1 class="title">Marcar Férias</h1>
-    <div class="buttons buttons-right header-item">
-      
-    </div>
-  </ion-header-bar>
-  <ion-content data-component="crn-ion-content" class="scroll-content has-header">
-  <div class="card component-holder" data-component="crn-card" id="crn-card-287689"><p xattr-position="text-center" class="text-center component-holder" data-component="crn-paragraph" id="crn-paragraph-906417">"O empregado que optar por receber o adiantamento do 13º nas férias, não receberá o valor em fevereiro, conforme acordo coletivo, e o pagamento se deve apenas para o 1º período de férias do ano."</p></div><div style="height: 20px;" data-component="crn-spacer" class="component-holder" id="crn-spacer-440294">&nbsp;</div><div class="list radio-group component-holder" ng-model="vars.dividirFerias" data-component="crn-radio" id="crn-radio-743106"><div class="item item-divider ng-binding">Dividir Férias?</div><div data-component="crn-radioOption"><label class="item item-radio" crn-value="" value="no"><input type="radio" name="group"><div class="radio-content"><div class="item-content">Não</div><i class="radio-icon ion-checkmark"></i></div></label></div><div data-component="crn-radioOption"><label class="item item-radio" crn-value="" value="2per"><input type="radio" name="group"><div class="radio-content"><div class="item-content">2 períodos</div><i class="radio-icon ion-checkmark"></i></div></label></div><div data-component="crn-radioOption"><label class="item item-radio" crn-value="" value="3per"><input type="radio" name="group"><div class="radio-content"><div class="item-content">3 períodos</div><i class="radio-icon ion-checkmark"></i></div></label></div></div></ion-content>
-</ion-view></div>
+<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="[{'key':'login','value':''},{'key':'arquiicaoDataInicial','value':''},{'key':'arquisicaoDataFinal','value':''}]"> 
+  <ion-view class="pane"> 
+    <ion-header-bar align-title="center" class="bar bar-positive" xattr-theme="bar-positive" data-component="crn-ion-header-bar"> 
+      <div class="buttons buttons-left header-item"> 
+        <button class="button button-clear" data-component="crn-button" xattr-type="button-clear" ng-click="cronapi.screen.changeView('#/app/logged/RequestVacation', [])"> <i class="icon ion ion-android-arrow-back"></i> </button> 
+      </div> 
+      <h1 class="title">Marcar Férias</h1> 
+      <div class="buttons buttons-right header-item"> 
+      </div> 
+    </ion-header-bar> 
+    <ion-content data-component="crn-ion-content" class="scroll-content has-header"> 
+      <div class="card component-holder col-xs-12" data-component="crn-card" id="crn-card-287689"> 
+        <p xattr-position="text-center" class="text-center component-holder" data-component="crn-paragraph" id="crn-paragraph-906417">"O empregado que optar por receber o adiantamento do 13º nas férias, não receberá o valor em fevereiro, conforme acordo coletivo, e o pagamento se deve apenas para o 1º período de férias do ano."</p> 
+      </div> 
+      <div style="height: 20px;" data-component="crn-spacer" class="component-holder col-xs-12" id="crn-spacer-440294">
+         &nbsp; 
+      </div> 
+      <div class="list radio-group component-holder  col-xs-12" ng-model="vars.dividirFerias" data-component="crn-radio" id="crn-radio-743106" ng-change="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.SetarParametrosIniciais').run(vars.dividirFerias, vars.abonoPecuniario, vars.primParcDecimTerc)"> 
+        <div class="item item-divider ng-binding">
+           Dividir Férias? 
+        </div> 
+        <div data-component="crn-radioOption"> 
+          <label class="item item-radio" crn-value="no" value="no"><input type="radio" name="group"> 
+            <div class="radio-content"> 
+              <div class="item-content">
+                 Não 
+              </div> 
+              <i class="radio-icon ion-checkmark"></i> 
+            </div></label> 
+        </div> 
+        <div data-component="crn-radioOption"> 
+          <label class="item item-radio" crn-value="2per" value="2per"><input type="radio" name="group"> 
+            <div class="radio-content"> 
+              <div class="item-content">
+                 2 períodos 
+              </div> 
+              <i class="radio-icon ion-checkmark"></i> 
+            </div></label> 
+        </div> 
+        <div data-component="crn-radioOption"> 
+          <label class="item item-radio" crn-value="3per" value="3per"><input type="radio" name="group"> 
+            <div class="radio-content"> 
+              <div class="item-content">
+                 3 períodos 
+              </div> 
+              <i class="radio-icon ion-checkmark"></i> 
+            </div></label> 
+        </div> 
+      </div>
+      <div class="card component-holder col-xs-12" data-component="crn-card" id="trPeriodo1" cronapp-security="visible : None">
+        <p xattr-position="text-center" class="text-center component-holder col-xs-12" data-component="crn-paragraph" id="crn-paragraph-839498">1º Período</p>
+        <label class="item item-input component-holder col-xs-12" data-component="crn-input-inline" id="crn-input-inline-314059"><span class="input-label">Inicio</span> <input type="date" ng-model="vars.tr1DataInicio" placeholder="Inicio"></label><div class="list component-holder  col-xs-12" data-component="crn-range" id="crn-range26561"><div class="item range range-positive"><span>Qnt. de dias</span> <input type="range" name="volume" min="1" max="30" value="33" ng-model="vars.tr1QtdDias" ng-change="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.AdicionaDias').run('vars.tr1DataInicio', 'vars.tr1QtdDias', 'vars.tr1DataFinal')"> {{vars.tr1QtdDias}} </div> </div>
+        
+        <p xattr-position="text-left" class="component-holder col-xs-12 text-left" data-component="crn-paragraph" id="crn-paragraph-159620" ng-model="vars.tr1DataFinal">Término: {{ vars.tr1DataFinal}}</p>
+      </div>
+      <div class="card component-holder col-xs-12" data-component="crn-card" id="trPeriodo2" cronapp-security="visible : None">
+        <p xattr-position="text-center" class="text-center component-holder col-xs-12" data-component="crn-paragraph" id="crn-paragraph-839498">2º Período</p>
+        <label class="item item-input component-holder col-xs-12" data-component="crn-input-inline" id="crn-input-inline-314059"><span class="input-label">Inicio</span> <input type="date" ng-model="vars.tr2DataInicio" placeholder="Inicio"></label><div class="list component-holder  col-xs-12" data-component="crn-range" id="crn-range26561"><div class="item range range-positive"><span>Qnt. de dias</span> <input type="range" name="volume" min="1" max="30" value="33" ng-model="vars.tr2QtdDias" ng-change="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.AdicionaDias').run('vars.tr2DataInicio', 'vars.tr2QtdDias', 'vars.tr2DataFinal')"> {{vars.tr2QtdDias}} </div></div>
+        
+        <p xattr-position="text-left" class="component-holder col-xs-12 text-left" data-component="crn-paragraph" id="crn-paragraph-159620" ng-model="vars.tr2DataFinal">Término: {{ vars.tr2DataFinal }}</p>
+      </div>
+      <div class="card component-holder col-xs-12" data-component="crn-card" id="trPeriodo3" cronapp-security="visible : None">
+        <p xattr-position="text-center" class="text-center component-holder col-xs-12" data-component="crn-paragraph" id="crn-paragraph-839498">3º Período</p>
+        <label class="item item-input component-holder col-xs-12" data-component="crn-input-inline" id="crn-input-inline-314059"><span class="input-label">Inicio</span> <input type="date" ng-model="vars.tr3DataInicio" placeholder="Inicio"></label>
+        <div class="list component-holder  col-xs-12" data-component="crn-range" id="crn-range-311554"><div class="item range range-positive"><span>Qnt. de dias</span> <input type="range" name="volume" min="1" max="30" value="33" ng-model="vars.tr3QtdDias" ng-change="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.AdicionaDias').run('vars.tr3DataInicio', 'vars.tr3QtdDias', 'vars.tr3DataFinal')"> {{vars.tr3QtdDias}} </div></div>
+        <p xattr-position="text-left" class="component-holder col-xs-12 text-left" data-component="crn-paragraph" id="crn-paragraph-159620" ng-model="vars.tr3DataFinal">Término: {{ vars.tr3DataFinal}}</p>
+      </div>
+      <div style="height: 30px;" data-component="crn-spacer" class="component-holder col-xs-12" id="crn-spacer-376157">
+        &nbsp;
+      </div>
+      <div class="component-holder ng-binding ng-scope col-xs-12" data-component="crn-toggle" id="crn-toggle-690737">
+        <label class="item item-toggle"><span style="font-size:90%;">Abono Pecuniário (Converter 1/3 abono)?</span>
+          <div class="toggle toggle-balanced" xattr-theme="toggle-balanced">
+            <input type="checkbox" ng-model="vars.abonoPecuniario">
+            <div class="track">
+              <div class="handle"></div>
+            </div>
+          </div></label>
+      </div>
+      <div style="height: 20px;" data-component="crn-spacer" class="component-holder col-xs-12" id="crn-spacer-746293">
+        &nbsp;
+      </div>
+      <div class="component-holder ng-binding ng-scope  col-xs-12" data-component="crn-toggle" id="crn-toggle95361">
+        <label class="item item-toggle"><span style="font-size:90%;">1ª parcela do 13º*</span>
+          <div class="toggle toggle-balanced" xattr-theme="toggle-balanced">
+            <input type="checkbox" ng-model="vars.primParcDecimTerc">
+            <div class="track">
+              <div class="handle"></div>
+            </div>
+          </div></label>
+      </div>
+      <p xattr-position="text-center" class="text-center component-holder col-xs-12" data-component="crn-paragraph" id="crn-paragraph-703227">*1ª parcela do 13º junto com as férias (para férias entre os dias 01/01 e 15/02)?</p>
+      <div style="height: 20px;" data-component="crn-spacer" class="component-holder col-xs-12" id="crn-spacer-1022764">
+        &nbsp;
+      </div>
+      <textarea id="crn-textarea-269391" ng-model="vars.textarea5384" maxlength="300" style="resize:none;" resize="none" class="col item item-input component-holder col-xs-12" rows="5" placeholder="Justificativa para aprovação do gerente" data-component="crn-textarea"></textarea>
+      <div style="height: 20px;" data-component="crn-spacer" class="component-holder col-xs-12" id="crn-spacer-614532">
+        &nbsp;
+      </div>
+      <button class="button button-block component-holder col-xs-12 button-balanced" type="submit" xattr-fullsize="button-block" xattr-theme="button-balanced" ng-click="cronapi.client('js.blockly.requestVacation.TelaRequestVacationDetail.CriarSolicitacao').run()" data-component="crn-button" id="crn-button-296189"><i class="ion ion-android-done stable" xattr-icon-theme="stable"></i> <span>Solicitar Férias</span></button> 
+    </ion-content> 
+  </ion-view> 
+</div>

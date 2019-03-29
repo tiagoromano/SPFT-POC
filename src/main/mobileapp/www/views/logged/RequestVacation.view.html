@@ -1,7 +1,7 @@
 <style title="local">
 
 </style> 
-<div id="starter" ng-init="cronapi.server('blockly.TelaRequestVacation.AoEntrar').run(params.login)" ng-destroy="" data-component="crn-start" screen-params=""> 
+<div id="starter" ng-init="cronapi.server('blockly.TelaRequestVacation.AoEntrar').run(params.login)" ng-destroy="" data-component="crn-start" screen-params="[{'key':'login','value':''}]"> 
   <ion-view class="pane"> 
     <ion-header-bar align-title="center" class="bar bar-positive" xattr-theme="bar-positive" data-component="crn-ion-header-bar"> 
       <div class="buttons buttons-left header-item"> 
@@ -26,7 +26,7 @@
       </div> 
       <div class="item component-holder" crn-datasource="obterPeriodoConcessivo" ng-repeat="rowData in datasource.data" id="crn-list-avatar-78503" data-component="crn-list-avatar">
     <div data-component="crn-list-item-avatar" id="crn-list-item-avatar-6899">
-    <a class="item item-avatar-left" xattr-position="item-avatar-left" ng-click="cronapi.server('blockly.TelaRequestVacation.SelecionarPeriodoConcessivoMobile').run(null, null)">
+    <a class="item item-avatar-left" xattr-position="item-avatar-left" ng-click="cronapi.server('blockly.TelaRequestVacation.SelecionarPeriodoConcessivoMobile').run(null, rowData)">
         
         <div class="item-content text-left" xattr-text-position="text-left">
         <h2 class="dark" xattr-theme="dark">{{rowData.dataPeriodo1Inicio| mask: 'date'}} à {{rowData.dataPeriodo1Fim| mask: 'date'}}</h2>
