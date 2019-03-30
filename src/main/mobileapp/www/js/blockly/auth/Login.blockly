@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JS" ruleDescription="Login" ruleName="Login" ruleSynchronous="false" ruleTimeout="" ruleType="I">
-  <metadata scale="1" scrollx="426.6" scrolly="-687.8999999999991" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <metadata scale="1" scrollx="610.4" scrolly="-33" target="xrGBvdE%V,C]BP6k1#|o"/>
+  <block colour="#fca03b" id="xrGBvdE%V,C]BP6k1#|o" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-472" y="113">
+    <field name="NAME">LoginOpenId</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block colour="#5ba55b" dependencyby="xrGBvdE%V,C]BP6k1#|o" id="qBi?T01@DRHn;yn~Zk)9" multilayer="false" namespace="cronapi.social.openidLogin" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ELogin%20With%20OpenId%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20uma%20s%C3%A9rie%20de%20dados%20para%20gr%C3%A1fico%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20socialNetwork%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.social.openidLogin%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.social.openidLogin%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.social.openidLogin}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="socialNetwork"/>
+        </mutation>
+      </block>
+    </statement>
+  </block>
   <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
     <mutation>
       <arg name="login"/>

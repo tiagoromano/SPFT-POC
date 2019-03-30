@@ -3842,6 +3842,32 @@
       }
   }
 
+
+    /**
+   * @type function
+   * @name Login With OpenId
+   * @nameTags login|social|network|facebook|github|google|linkedin
+   * @description {{createSerieDescription}}
+   * @param {ObjectType.STRING} socialNetwork {{socialNetwork}}
+   * @returns {ObjectType.VOID}
+   */
+  this.cronapi.social.openidLogin = function(/** @type {ObjectType.STRING} @description socialNetwork @blockType util_dropdown @keys facebook|github|google|linkedin @values facebook|github|google|linkedin  */ socialNetwork) {
+      var that = this;
+      var u = window.hostApp + "signin/openid/";
+      if(cordova.InAppBrowser){
+          var cref = cordova.InAppBrowser.open(u, '_blank', 'location=no');
+          cref.addEventListener('loadstart', function(event) {
+              if (event.url.indexOf("_ctk") > -1) {
+                  cref.close();
+                  that.cronapi.social.login.bind(that)('#OAUTH#', 'cronapp', that.cronapi.social.gup('_ctk',event.url));
+              }
+          });
+      }else{
+          //TODO LOGIN ON WEB
+      }
+  }
+
+
   /**
    * @type function
    * @name {{getSelectedRowsGrid}}
