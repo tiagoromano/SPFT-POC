@@ -11,3 +11,19 @@ window.blockly.js.blockly.approveVacationRequest.ApproveAdapter.approve = functi
 
   this.cronapi.util.callServerBlocklyNoReturn('blockly.TelaApproveVacationRequest:AprovarSolicitacoes', [item]);
 }
+
+/**
+ * ApproveAdapter
+ */
+window.blockly.js.blockly.approveVacationRequest.ApproveAdapter.historyParamConverter = function(item) {
+
+  this.cronapi.screen.showIonicModal('historico');
+}
+
+/**
+ * ApproveAdapter
+ */
+window.blockly.js.blockly.approveVacationRequest.ApproveAdapter.hidehistoryParamConverter = function(item) {
+
+  this.cronapi.screen.hideIonicModal('historico');
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JS" ruleDescription="ApproveAdapter" ruleName="ApproveAdapter" ruleSynchronous="false" ruleTimeout="" ruleType="I">
-  <metadata scale="1" scrollx="488.4000000000002" scrolly="-50" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <metadata scale="1" scrollx="430.4" scrolly="-122.99999999999989" target="`th9hx{ha3_D*Xljx*%v"/>
   <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
     <mutation>
       <arg name="item"/>
@@ -23,5 +23,46 @@
         </value>
       </block>
     </statement>
+  </block>
+  <block colour="#995ba5" id="/J!8M8@S0I^s8iPMvr^k" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-304" y="181">
+    <mutation>
+      <arg name="item"/>
+    </mutation>
+    <field name="NAME">historyParamConverter</field>
+    <comment h="80" pinned="false" w="160">ApproveAdapter</comment>
+    <statement name="STACK">
+      <block colour="#934848" dependencyby="/J!8M8@S0I^s8iPMvr^k" id="9(T!dldly$G^GV23!gOt" multilayer="true" namespace="cronapi.screen.showIonicModal" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibir%20modal%20mobile%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20um%20modal%20em%20dispositivos%20mobile%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.showIonicModal%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.showIonicModal%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.showIonicModal}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+        </mutation>
+        <value name="ARG0">
+          <block colour="#5ba593" dependencyby="/J!8M8@S0I^s8iPMvr^k" id="g9`DUW1Rb-QW9##vLcA-" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">historico</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block colour="#995ba5" id="`th9hx{ha3_D*Xljx*%v" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-284" y="221">
+    <mutation>
+      <arg name="item"/>
+    </mutation>
+    <field name="NAME">hidehistoryParamConverter</field>
+    <comment h="80" pinned="false" w="160">ApproveAdapter</comment>
+    <statement name="STACK">
+      <block colour="#934848" dependencyby="`th9hx{ha3_D*Xljx*%v" id="vq6d~.8N}aSPK!X{1M_H" multilayer="true" namespace="cronapi.screen.hideIonicModal" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEsconder%20modal%20mobile%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20esconde%20um%20modal%20em%20dispositivos%20mobile%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.hideIonicModal%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.hideIonicModal%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.hideIonicModal}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+        </mutation>
+        <value name="ARG0">
+          <block colour="#5ba593" dependencyby="`th9hx{ha3_D*Xljx*%v" id="lKY*YIVCBBll0Z`QX^d_" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field name="TEXT">historico</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block colour="#934848" dependencyby="/J!8M8@S0I^s8iPMvr^k" id="[dxiFG9%N^4w|GGEK)7i" origintype="ids_from_screen" output="true" type="ids_from_screen" x="218" y="293">
+    <field name="SELECT"/>
   </block>
 </blockly>
