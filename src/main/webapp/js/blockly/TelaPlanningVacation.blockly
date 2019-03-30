@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/webapp/views/logged/planningVacation.view.html" resourceType="JS" ruleDescription="TelaPlanningVacation" ruleName="TelaPlanningVacation" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
-  <metadata scale="1" scrollx="416" scrolly="-402.99999999999994" target="nC?ZWpiJz3lh3:BBrC`T"/>
+  <metadata scale="1" scrollx="247.01319941279723" scrolly="-534.0000000000002" target="**Nb9X*QVSGN/.ll`Ooc"/>
   <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-322" y="278">
     <field name="NAME">obterUsuariosSelecionados</field>
     <comment h="80" pinned="false" w="160">TelaPlanningVacation</comment>
@@ -26,10 +26,6 @@
       </block>
     </value>
   </block>
-  <block colour="#fca03b" id="**Nb9X*QVSGN/.ll`Ooc" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-302" y="351">
-    <field name="NAME">changeUserSelectionHandler</field>
-    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
-  </block>
   <block colour="#fca03b" id="nC?ZWpiJz3lh3:BBrC`T" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-322" y="443">
     <field name="NAME">recarregarGrafico</field>
     <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
@@ -46,49 +42,142 @@
       </block>
     </statement>
   </block>
-  <block colour="#fca03b" id="Gy^z]gNs5(VZMb!gz~PQ" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-262" y="443">
-    <field name="NAME">initCombo</field>
+  <block colour="#fca03b" id="**Nb9X*QVSGN/.ll`Ooc" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-141" y="452">
+    <mutation>
+      <arg name="event"/>
+    </mutation>
+    <field name="NAME">abrirModalHistorico</field>
     <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
-  </block>
-  <block colour="#934848" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="MTdvkYjA4:Am~+|6Mkt3" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.refreshDatasource%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn" x="-262" y="443">
-    <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
-      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
-      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
-    </mutation>
-    <value name="ARG0">
-      <block colour="#934848" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="02i8-2EhH?J1XSJahjO[" origintype="datasource_from_screen" output="true" type="datasource_from_screen">
-        <field name="SELECT">ObterFeriasAprovadas</field>
+    <statement name="STACK">
+      <block colour="#5b80a5" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="?XI]yUj9[9^0%]U;A8Z:" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+        <mutation else="1" elseif="1"/>
+        <value name="IF0">
+          <block colour="#5b80a5" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="y)82k(I$+u2?q)Uli(oF" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block colour="#0088ee" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="T]HH`$zWL%nd:Qn}B=A8" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">event</field>
+              </block>
+            </value>
+            <value name="B">
+              <block colour="#5ba593" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="G*;BJDMw5Vs!K.XK/JRY" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">success</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block colour="#5b80a5" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="5XUve?c5Z9Y/^s4=!/j]" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+            <mutation else="1"/>
+            <value name="IF0">
+              <block colour="#5b80a5" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="naRS4`{Ch~M5#2J;r[*^" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                <field name="OP">NEQ</field>
+                <value name="A">
+                  <block colour="#487f7f" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="-L||363sa[s45|lP4,VG" multilayer="false" namespace="cronapi.util.executeJavascriptReturn" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExecuta%20javascript%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20executa%20o%20javascript%20e%20retorna%20o%20seu%20valor%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Comando%20:%20Texto%3C/span%3E%3Cdiv%3EComando%20a%20ser%20executado%20(exemplo:%20alert('teste');).%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.executeJavascriptReturn%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.executeJavascriptReturn%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                    <mutation name="{{cronapi.util.executeJavascriptReturn}}" return-raw-type="undefined">
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Comando"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <shadow colour="#5ba593" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="Ekslvq7)-PFL-E)m?0Ky" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field name="TEXT">Historico.data.length</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block colour="#5b67a5" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="pYMI.)T+UYi~{qrB$`vf" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block colour="#934848" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="uozW/^UO%CB}Fw88;SIB" multilayer="true" namespace="cronapi.screen.showModal" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibir%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20um%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.showModal%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.showModal%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                <mutation name="{{cronapi.screen.showModal}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                </mutation>
+                <value name="ARG0">
+                  <block colour="#934848" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="@B+6bKlTZ^Bf$L%F,*D9" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                    <field name="SELECT">modalHistorico</field>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block colour="#934848" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="_8Y/PB?/a8iY1xHq]h-C" multilayer="true" namespace="cronapi.screen.notify" origintype="notify_type" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tipo%20da%20notifica%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cdiv%3E%20pode%20ser%20success,%20error,%20warning,%20info%20ou%20primary%3C/div%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20ou%20conte%C3%BAdo%20html%20a%20ser%20exibido%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.notify%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.notify%3C/a%3E%3C/div%3E%3C/div%3E" type="notify_type">
+                <mutation name="{{cronapi.screen.notify}}" value="[object Object]"/>
+                <field name="SELECT">info</field>
+                <value name="MESSAGE">
+                  <shadow colour="#5ba593" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="5BiG9$wHvZq/-i%e1GED" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">Não existem registros disponíveis para o registro selecionado.</field>
+                  </shadow>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <value name="IF1">
+          <block colour="#5b80a5" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="Fa!#pvGJP?l/OjP*RoMo" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block colour="#0088ee" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="!hOJz/eax!j[_pX#vzzf" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field name="VAR">event</field>
+              </block>
+            </value>
+            <value name="B">
+              <block colour="#5ba593" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="lvBP3t9lZW$-AI(UE8iW" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">canceled</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block colour="#934848" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="?6+r,-~?[[AOO0:SOG1`" multilayer="true" namespace="cronapi.screen.notify" origintype="notify_type" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tipo%20da%20notifica%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cdiv%3E%20pode%20ser%20success,%20error,%20warning,%20info%20ou%20primary%3C/div%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20ou%20conte%C3%BAdo%20html%20a%20ser%20exibido%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.notify%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.notify%3C/a%3E%3C/div%3E%3C/div%3E" type="notify_type">
+            <mutation name="{{cronapi.screen.notify}}" value="[object Object]"/>
+            <field name="SELECT">info</field>
+            <value name="MESSAGE">
+              <shadow colour="#5ba593" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="(c=.WI@!~g4t~LR,$$_@" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">Não foi possível obter os registros. Por favor tente novamente.</field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block colour="#487f7f" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="o@9ZS2^^Q:%i_Hrj{R]{" multilayer="true" namespace="cronapi.util.executeJavascriptNoReturn" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExecuta%20javascript%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20executa%20javascript%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Comando%20:%20Texto%3C/span%3E%3Cdiv%3EComando%20a%20ser%20executado%20(exemplo:%20alert('teste');).%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.executeJavascriptNoReturn%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.executeJavascriptNoReturn%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+            <mutation name="{{cronapi.util.executeJavascriptNoReturn}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Comando"/>
+            </mutation>
+            <value name="ARG0">
+              <shadow colour="#5ba593" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="FgaC@:0,{nGNxukt@3nz" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">let that = this;
+Historico.fetch({$inlinecount: "allpages", $format: "json", $top: "100"}, {
+success: function() {
+    that.blockly.js.blockly.TelaPlanningVacation.abrirModalHistorico('success')
+},
+canceled: function() {
+    that.blockly.js.blockly.TelaPlanningVacation.abrirModalHistorico('canceled')
+}}, false)</field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
       </block>
-    </value>
-    <value name="ARG1">
-      <block colour="#934848" dependencyby="**Nb9X*QVSGN/.ll`Ooc" id="O2v%KBS!9*dEwRnaiRC_" origintype="util_dropdown" output="true" type="util_dropdown">
-        <mutation>
-          <arg name="true" value="Verdadeiro"/>
-          <arg name="false" value="Falso"/>
+    </statement>
+  </block>
+  <block colour="#fca03b" id="z~3B%]^?zxJB`yc^H:YJ" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-144" y="453">
+    <field name="NAME">fecharModalHistorico</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block colour="#934848" dependencyby="z~3B%]^?zxJB`yc^H:YJ" id=")2fZwjkf}e3^dzH[t~)Q" multilayer="true" namespace="cronapi.screen.hideModal" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEsconder%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20esconde%20um%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.hideModal%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.hideModal%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.hideModal}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
         </mutation>
-        <field name="SELECT">true</field>
+        <value name="ARG0">
+          <block colour="#934848" dependencyby="z~3B%]^?zxJB`yc^H:YJ" id="OXQ)ojut1:9%bX}IVJeS" origintype="ids_from_screen" output="true" type="ids_from_screen">
+            <field name="SELECT">modalHistorico</field>
+          </block>
+        </value>
       </block>
-    </value>
-  </block>
-  <block colour="#487f7f" dependencyby="Gy^z]gNs5(VZMb!gz~PQ" id="JHVVX+=Po;sd;DydN(fq" multilayer="true" namespace="cronapi.util.executeJavascriptNoReturn" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExecuta%20javascript%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20executa%20javascript%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Comando%20:%20Texto%3C/span%3E%3Cdiv%3EComando%20a%20ser%20executado%20(exemplo:%20alert('teste');).%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.executeJavascriptNoReturn%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.executeJavascriptNoReturn%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn" x="-232" y="593">
-    <mutation name="{{cronapi.util.executeJavascriptNoReturn}}" return-raw-type="undefined">
-      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Comando"/>
-    </mutation>
-    <value name="ARG0">
-      <shadow colour="#5ba593" dependencyby="Gy^z]gNs5(VZMb!gz~PQ" id=".2NK`%FPG/O`MP@.$R@J" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
-        <field name="TEXT">//Add listener to multiselectCombo
-
-var intervalID = setInterval(function(){
-    var multiselect = $('#cron-crn-enterprise-combobox-multiple-675758').data('kendoMultiSelect');
-    if(multiselect){
-        multiselect.bind("change", cronapi.client('js.blockly.TelaPlanningVacation.changeUserSelectionHandler').attr().run());
-        
-        clearInterval(refreshIntervalId);
-    }
-    
-});
-</field>
-      </shadow>
-    </value>
+    </statement>
   </block>
 </blockly>
