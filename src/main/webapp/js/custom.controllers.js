@@ -24,5 +24,5 @@ app.controller('OpenIdController', function($controller, $scope, $location) {
     }
   }
   
-  $scope.login("#OAUTH#", "admin", params["_ctk"]);
+  $scope.login("#OAUTH#", "cronapp", params["_ctk"]);
 });
