@@ -3855,7 +3855,7 @@
       var that = this;
       var u = window.hostApp + "signin/openid/";
       if(cordova.InAppBrowser){
-          var cref = cordova.InAppBrowser.open(u, '_blank', 'location=no');
+          var cref = cordova.InAppBrowser.open(u, '_system', 'location=no');
           cref.addEventListener('loadstart', function(event) {
               if (event.url.indexOf("_ctk") > -1) {
                   cref.close();
