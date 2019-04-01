@@ -81,14 +81,16 @@ public static Var AprovarSolicitacaoFerias(@PathVariable("selectedRows") Var sel
 
    private Var item = Var.VAR_NULL;
    private Var solicitacaoFerias = Var.VAR_NULL;
+   private Var forcaTrabalho = Var.VAR_NULL;
    private Var historicoRet = Var.VAR_NULL;
    private Var totalSolicitacao = Var.VAR_NULL;
+   private Var totalAprovadas = Var.VAR_NULL;
    private Var i = Var.VAR_NULL;
    private Var historicoAcaoSolicitacao = Var.VAR_NULL;
+   private Var exportado = Var.VAR_NULL;
+   private Var excp = Var.VAR_NULL;
    private Var i_start = Var.VAR_NULL;
    private Var i_inc = Var.VAR_NULL;
-   private Var totalAprovadas = Var.VAR_NULL;
-   private Var exportado = Var.VAR_NULL;
 
    public Var call() throws Exception {
     totalSolicitacao = cronapi.list.Operations.size(selectedRows);
@@ -111,6 +113,14 @@ public static Var AprovarSolicitacaoFerias(@PathVariable("selectedRows") Var sel
             exportado = blockly.SAP.ExportarSolicitacao(solicitacaoFerias);
             totalAprovadas = cronapi.math.Operations.sum(totalAprovadas,Var.valueOf(1));
             historicoRet = blockly.Util.AdicionarHistoricoSolicitacao(Var.valueOf("aprovou"), solicitacaoFerias);
+            forcaTrabalho = cronapi.database.Operations.query(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf("select s.periodoConcessao.forcaTrabalho from SolicitacaoFerias s where s.id = :id"),Var.valueOf("id",cronapi.object.Operations.getObjectField(item, Var.valueOf("solicitacaoId"))));
+            try {
+                 blockly.Util.EnviarEmail(cronapi.object.Operations.getObjectField(forcaTrabalho, Var.valueOf("email")), Var.valueOf("Solicitação de férias aprovada"), Var.valueOf(Var.valueOf("Olá ").toString() + cronapi.object.Operations.getObjectField(forcaTrabalho, Var.valueOf("nome")).toString() + Var.valueOf(", sua solicitação de férias foi aprovada.").toString()));
+             } catch (Exception excp_exception) {
+                  excp = Var.valueOf(excp_exception);
+                 System.out.println(Var.valueOf("Erro ao enviar o email").getObjectAsString());
+             } finally {
+             }
         }
     } // end for
     return totalAprovadas;
@@ -298,13 +308,15 @@ public static Var ReprovarSolicitacaoFerias(@PathVariable("selectedRows") Var se
 
    private Var item = Var.VAR_NULL;
    private Var solicitacaoFerias = Var.VAR_NULL;
+   private Var forcaTrabalho = Var.VAR_NULL;
    private Var historicoRet = Var.VAR_NULL;
    private Var totalSolicitacao = Var.VAR_NULL;
-   private Var totalSolicitacaoReprovada = Var.VAR_NULL;
    private Var i = Var.VAR_NULL;
    private Var historicoAcaoSolicitacao = Var.VAR_NULL;
+   private Var excp = Var.VAR_NULL;
    private Var i_start = Var.VAR_NULL;
    private Var i_inc = Var.VAR_NULL;
+   private Var totalSolicitacaoReprovada = Var.VAR_NULL;
 
    public Var call() throws Exception {
     totalSolicitacao = cronapi.list.Operations.size(selectedRows);
@@ -327,6 +339,14 @@ public static Var ReprovarSolicitacaoFerias(@PathVariable("selectedRows") Var se
             cronapi.database.Operations.insert(Var.valueOf("SPFT.entity.HistoricoAcaoSolicitacao"),historicoAcaoSolicitacao);
             totalSolicitacaoReprovada = cronapi.math.Operations.sum(totalSolicitacaoReprovada,Var.valueOf(1));
             historicoRet = blockly.Util.AdicionarHistoricoSolicitacao(Var.valueOf("reprovou"), solicitacaoFerias);
+            forcaTrabalho = cronapi.database.Operations.query(Var.valueOf("SPFT.entity.SolicitacaoFerias"),Var.valueOf("select s.periodoConcessao.forcaTrabalho from SolicitacaoFerias s where s.id = :id"),Var.valueOf("id",cronapi.object.Operations.getObjectField(solicitacaoFerias, Var.valueOf("id"))));
+            try {
+                 blockly.Util.EnviarEmail(cronapi.object.Operations.getObjectField(forcaTrabalho, Var.valueOf("email")), Var.valueOf("Solicitação de férias reprovada"), Var.valueOf(Var.valueOf("Olá ").toString() + cronapi.object.Operations.getObjectField(forcaTrabalho, Var.valueOf("nome")).toString() + Var.valueOf(", sua solicitação de férias foi reprovada.").toString()));
+             } catch (Exception excp_exception) {
+                  excp = Var.valueOf(excp_exception);
+                 System.out.println(Var.valueOf("Erro ao enviar o email").getObjectAsString());
+             } finally {
+             }
         }
     } // end for
     return totalSolicitacaoReprovada;
