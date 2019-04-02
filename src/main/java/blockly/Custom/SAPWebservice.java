@@ -138,7 +138,7 @@ public class SAPWebservice {
 	private static void BypassSSL() {
         try {
             SSLContext sslContext = SSLContextBuilder.create().loadTrustMaterial(TrustAllStrategy.INSTANCE).build();
-			HttpsURLConnection.setDefaultSSLSocketFactory(sslContext.getSocketFactory());;
+			HttpsURLConnection.setDefaultSSLSocketFactory(sslContext.getSocketFactory());
         } catch (Exception e) {
             e.printStackTrace();
         }
