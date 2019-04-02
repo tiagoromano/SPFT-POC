@@ -23,7 +23,7 @@ public static Var EnviarEmail(Var para, Var assunto, Var corpo) throws Exception
  return new Callable<Var>() {
 
    public Var call() throws Exception {
-    cronapi.email.Operations.sendEmail(Var.valueOf("testeemailcronos@gmail.com"), para, Var.VAR_NULL, Var.VAR_NULL, assunto, corpo, Var.VAR_NULL, Var.VAR_NULL, Var.valueOf("smtp.gmail.com"), Var.valueOf("587"), Var.valueOf("testeemailcronos@gmail.com"), Var.valueOf("testeemailcronos%%"), Var.valueOf("TLS"));
+    cronapi.email.Operations.sendEmail(Var.valueOf("testeemailcronos@gmail.com"), para, Var.VAR_NULL, Var.VAR_NULL, assunto, corpo, Var.VAR_NULL, Var.VAR_NULL, Var.valueOf("smtp.petrobras.com.br"), Var.valueOf("25"), Var.VAR_NULL, Var.VAR_NULL, Var.valueOf("SSL"));
     return Var.VAR_NULL;
    }
  }.call();
