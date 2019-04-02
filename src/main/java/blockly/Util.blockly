@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><blockly formTarget="" resourceType="JAVA" ruleDescription="Util" ruleName="Util" ruleSynchronous="false" ruleTimeout="" ruleType="I">
-  <metadata scale="1" scrollx="569.560546875" scrolly="-47.599999999999795" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <metadata scale="1" scrollx="569.560546875" scrolly="-309.49999999999983" target="Anb:u5+^,0vLkL9QIqn5"/>
   <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-457" y="143">
     <mutation>
       <arg name="para"/>
@@ -101,7 +101,7 @@
               <arg name="TLS" value="TLS"/>
               <arg name="PLAIN" value="PLAIN"/>
             </mutation>
-            <field name="SELECT">TLS</field>
+            <field name="SELECT">PLAIN</field>
           </block>
         </value>
       </block>
