@@ -80,17 +80,17 @@
             <artifactId>json</artifactId>
             <version>20180813</version>
         </dependency>
-	<dependency>
-	    <groupId>org.springframework.boot</groupId>
-	    <artifactId>spring-boot-starter-test</artifactId>
-	    <scope>test</scope>
-	    <exclusions>
-		<exclusion>
-		    <groupId>com.vaadin.external.google</groupId>
-		    <artifactId>android-json</artifactId>
-		</exclusion>
-	    </exclusions>
-	</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>android-json</artifactId>
+                    <groupId>com.vaadin.external.google</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <dependency>
             <groupId>org.eclipse.persistence</groupId>
             <artifactId>org.eclipse.persistence.jpa</artifactId>
@@ -111,12 +111,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <scope>compile</scope>
-	    <exclusions>
-		<exclusion>
-		    <groupId>org.json</groupId>
-		    <artifactId>json</artifactId>
-		</exclusion>
-	    </exclusions>
+            <exclusions>
+                <exclusion>
+                    <artifactId>json</artifactId>
+                    <groupId>org.json</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
