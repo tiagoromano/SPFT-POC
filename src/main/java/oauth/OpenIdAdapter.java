@@ -11,6 +11,6 @@ public class OpenIdAdapter {
 	@RequestMapping(value="/signin/openid/", method = RequestMethod.GET)
     @ResponseBody
     public String postFacebook() {
-        return "<body onload='document.openid.submit()'><form action='/oauth/authorize' method='POST' name='openid'><input type='hidden' name='scope' value='email,profile'></form></body>";
+        return "<body onload='document.getElementById(\"openid\").click()'><a href='/oauth/authorize' id='openid' value='email,profile' ></a></body>";
     }
 }
