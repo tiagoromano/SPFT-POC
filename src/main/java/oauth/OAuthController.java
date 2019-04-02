@@ -42,7 +42,6 @@ public class OAuthController {
 	@Autowired(required = false)
 	private AuthenticationController authenticationController;
 
-	@PostMapping("/authorize")
 	@GetMapping("/authorize")
 	public void authorize() throws Exception {
 		Object openid = request.getSession().getAttribute("#OPENID#");
