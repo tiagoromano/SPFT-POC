@@ -41,7 +41,7 @@ public class SAPWebservice {
 		value="/GetPeriodoConcessivo/{Matricula}/{Usuario}",
 		consumes = MediaType.APPLICATION_JSON, 
 		produces = MediaType.APPLICATION_JSON)
-	public static Var GetPeriodoConcessivo(List<String> Matricula, String Usuario) {
+	public static Var GetPeriodoConcessivo(String Matricula, String Usuario) {
 		try {
 			ZSPFBAPISAIDAService service = new ZSPFBAPISAIDAService(new URL(SOLICITAR_FERIAS_URL));
 
@@ -49,13 +49,9 @@ public class SAPWebservice {
 
 			ZctHrBapiPernr pernr = new ZctHrBapiPernr();
 
-			List<String> matriculas = new ArrayList<>(Matricula.size());
+			Matricula = StringUtils.leftPad(Matricula, 8, '0');
 
-			for (String mat : Matricula) {
-				matriculas.add(StringUtils.leftPad(mat, 8, '0'));
-			}
-
-			pernr.getItem().addAll(matriculas);
+			pernr.getItem().add(Matricula);
 
 			SetCredentials(client);
 
@@ -87,6 +83,9 @@ public class SAPWebservice {
 			ZSPFBAPIENTRADA client = service.getPort(ZSPFBAPIENTRADA.class);
 
 			ZetHrBapiEntradaSpf parametros = new ZetHrBapiEntradaSpf();
+
+			Matricula = StringUtils.leftPad(Matricula, 8, '0');
+
 			parametros.setMatricula(Matricula);
 			parametros.setTipoParc(TipoParc);
 			parametros.setAbonoPecuni(AbonoPecuni);
