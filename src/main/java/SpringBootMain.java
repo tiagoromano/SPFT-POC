@@ -20,7 +20,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 	"api.rest.webservices",
 	"reports",
 	"cronapi",
-	"blockly",
+	"blockly", "oauth",
 	"app", "SPFT"
 })
 @EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class })
