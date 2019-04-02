@@ -5,10 +5,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
 import javax.ws.rs.core.MediaType;
 import javax.xml.ws.BindingProvider;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.http.conn.ssl.NoopHostnameVerifier;
+import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
+import org.apache.http.conn.ssl.TrustAllStrategy;
+import org.apache.http.ssl.SSLContextBuilder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -30,6 +36,10 @@ import sap.ZetHrBapiEntradaSpf;
 @CronapiMetaData(type = "SAP")
 @CronappSecurity(post = "Public", get = "Public", execute = "Public", delete = "Public", put = "Public")
 public class SAPWebservice {
+
+	static {
+		BypassSSL();
+	}
 
 	private static final String APROVAR_FERIAS_URL = "https://f02web.petrobras.biz/sap/bc/srt/rfc/sap/zspf_bapi_saida/400/zspf_bapi_saida/zspf_bapi_saida?sap-client=400";
 	private static final String SOLICITAR_FERIAS_URL = "https://f02web.petrobras.biz/sap/bc/srt/rfc/sap/zspf_bapi_entrada/400/zspf_bapi_entrada/zspf_bapi_entrada?sap-client=400";
@@ -123,5 +133,14 @@ public class SAPWebservice {
 		BindingProvider prov = (BindingProvider)client;
 		prov.getRequestContext().put(BindingProvider.USERNAME_PROPERTY, USER_CREDENTIAL);
 		prov.getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, PASSWORD_CREDENTIAL);
+	}
+
+	private static void BypassSSL() {
+        try {
+            SSLContext sslContext = SSLContextBuilder.create().loadTrustMaterial(TrustAllStrategy.INSTANCE).build();
+			HttpsURLConnection.setDefaultSSLSocketFactory(sslContext.getSocketFactory());;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 	}
 }
