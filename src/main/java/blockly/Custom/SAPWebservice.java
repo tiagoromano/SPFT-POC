@@ -52,6 +52,7 @@ public class SAPWebservice {
 		consumes = MediaType.APPLICATION_JSON, 
 		produces = MediaType.APPLICATION_JSON)
 	public static Var GetPeriodoConcessivo(String Matricula, String Usuario) {
+			String toString= "";
 		try {
 			ZSPFBAPISAIDAService service = new ZSPFBAPISAIDAService(new URL(SOLICITAR_FERIAS_URL));
 
@@ -69,7 +70,7 @@ public class SAPWebservice {
 				.zhrplanferiasSaida("9999-12-31", "1800-01-01", pernr, Usuario, null, null)
 				.getItem();
 
-			String toString = Arrays.deepToString(retorno.toArray(new Bapiret2[retorno.size()]));
+			toString = Arrays.deepToString(retorno.toArray(new Bapiret2[retorno.size()]));
 
 			System.out.println(toString);
 		} catch (Exception e) {
@@ -87,6 +88,7 @@ public class SAPWebservice {
 	public static Var AprovarFerias(String Matricula, String TipoParc, String AbonoPecuni, String DtIniPrimParc, 
 		String DtFimPrimParc, String DtIniSecParc, String DtFimSecParc, String DtIniTercParc, String DtFimTercParc, 
 		String Ind13sal, String DtIniPerAquis, String DtFimPerAquis, String Bloqueio) {
+			String toString= "";
 		try {
 			ZSPFBAPIENTRADAService service = new ZSPFBAPIENTRADAService(new URL(APROVAR_FERIAS_URL));
 
@@ -119,7 +121,7 @@ public class SAPWebservice {
 
 			List<Bapiret2> retorno = client.zhrplanferiasEntrada(entradaSpf).getItem();
 
-			String toString = Arrays.deepToString(retorno.toArray(new Bapiret2[retorno.size()]));
+			toString = Arrays.deepToString(retorno.toArray(new Bapiret2[retorno.size()]));
 
 			System.out.println(toString);
 		} catch (Exception e) {
