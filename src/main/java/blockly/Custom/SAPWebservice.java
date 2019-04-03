@@ -41,8 +41,8 @@ public class SAPWebservice {
 		BypassSSL();
 	}
 
-	private static final String APROVAR_FERIAS_URL = "https://f02web.petrobras.biz/sap/bc/srt/rfc/sap/zspf_bapi_saida/400/zspf_bapi_saida/zspf_bapi_saida?sap-client=400";
-	private static final String SOLICITAR_FERIAS_URL = "https://f02web.petrobras.biz/sap/bc/srt/rfc/sap/zspf_bapi_entrada/400/zspf_bapi_entrada/zspf_bapi_entrada?sap-client=400";
+	private static final String APROVAR_FERIAS_URL = "http://f02web.petrobras.biz/sap/bc/srt/rfc/sap/zspf_bapi_saida/400/zspf_bapi_saida/zspf_bapi_saida";
+	private static final String SOLICITAR_FERIAS_URL = "http://f02web.petrobras.biz/sap/bc/srt/rfc/sap/zspf_bapi_entrada/400/zspf_bapi_entrada/zspf_bapi_entrada";
 	private static final String USER_CREDENTIAL = "ZSPF";
 	private static final String PASSWORD_CREDENTIAL = "zspf123";
 
@@ -76,7 +76,7 @@ public class SAPWebservice {
 			e.printStackTrace();
 		}
 
-		return Var.VAR_NULL;
+		return Var.valueOf(toString);
 	}
 
 	@RequestMapping(
@@ -126,7 +126,7 @@ public class SAPWebservice {
 			e.printStackTrace();
 		}
 
-		return Var.VAR_NULL;
+		return Var.valueOf(toString);
 	}
 
 	private static void SetCredentials(Object client) {
