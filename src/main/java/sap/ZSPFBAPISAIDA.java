@@ -1,3 +1,4 @@
+
 package sap;
 
 import javax.jws.WebMethod;
@@ -32,12 +33,12 @@ public interface ZSPFBAPISAIDA {
      * @param p9100
      * @param matriculas
      * @return
-     *     returns io.cronapp.sap.ZBapireturn1
+     *     returns sap.ZBapireturn1
      */
-    @WebMethod(operationName = "ZhrplanferiasSaida", action = "http://www.sap.com/ZhrplanferiasSaida")
+    @WebMethod(operationName = "ZhrplanferiasSaida")
     @WebResult(name = "Return", targetNamespace = "")
-    @RequestWrapper(localName = "ZhrplanferiasSaida", targetNamespace = "urn:sap-com:document:sap:soap:functions:mc-style", className = "io.cronapp.sap.ZhrplanferiasSaida")
-    @ResponseWrapper(localName = "ZhrplanferiasSaidaResponse", targetNamespace = "urn:sap-com:document:sap:soap:functions:mc-style", className = "io.cronapp.sap.ZhrplanferiasSaidaResponse")
+    @RequestWrapper(localName = "ZhrplanferiasSaida", targetNamespace = "urn:sap-com:document:sap:soap:functions:mc-style", className = "sap.ZhrplanferiasSaida")
+    @ResponseWrapper(localName = "ZhrplanferiasSaidaResponse", targetNamespace = "urn:sap-com:document:sap:soap:functions:mc-style", className = "sap.ZhrplanferiasSaidaResponse")
     public ZBapireturn1 zhrplanferiasSaida(
         @WebParam(name = "FimValidade", targetNamespace = "")
         String fimValidade,

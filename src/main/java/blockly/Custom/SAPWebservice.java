@@ -21,9 +21,9 @@ import cronapi.Var;
 import cronapi.rest.security.CronappSecurity;
 import sap.Bapiret2;
 import sap.ZSPFBAPIENTRADA;
-import sap.ZSPFBAPIENTRADAService;
+import sap.ZSPFBAPIENTRADA_Service;
 import sap.ZSPFBAPISAIDA;
-import sap.ZSPFBAPISAIDAService;
+import sap.ZSPFBAPISAIDA_Service;
 import sap.ZctHrBapiEntradaSpf;
 import sap.ZctHrBapiPernr;
 import sap.ZetHrBapiEntradaSpf;
@@ -59,7 +59,7 @@ public class SAPWebservice {
 	public static Var GetPeriodoConcessivo(String Matricula) {
 		String toString = "";
 		try {
-			ZSPFBAPISAIDAService service = new ZSPFBAPISAIDAService(new URL(SOLICITAR_FERIAS_URL));
+			ZSPFBAPISAIDA_Service service = new ZSPFBAPISAIDA_Service(new URL(SOLICITAR_FERIAS_URL));
 
 			ZSPFBAPISAIDA client = service.getPort(ZSPFBAPISAIDA.class);
 
@@ -80,6 +80,7 @@ public class SAPWebservice {
 			System.out.println(toString);
 		} catch (Exception e) {
 			System.out.println("Erro no método GetPeriodoConcessivo");
+			toString = e.getMessage();
 			e.printStackTrace();
 		}
 
@@ -96,7 +97,7 @@ public class SAPWebservice {
 		String Ind13sal, String DtIniPerAquis, String DtFimPerAquis, String Bloqueio) {
 			String toString= "";
 		try {
-			ZSPFBAPIENTRADAService service = new ZSPFBAPIENTRADAService(new URL(APROVAR_FERIAS_URL));
+			ZSPFBAPIENTRADA_Service service = new ZSPFBAPIENTRADA_Service(new URL(APROVAR_FERIAS_URL));
 
 			ZSPFBAPIENTRADA client = service.getPort(ZSPFBAPIENTRADA.class);
 
@@ -132,6 +133,7 @@ public class SAPWebservice {
 			System.out.println(toString);
 		} catch (Exception e) {
 			System.out.println("Erro no método AprovarFerias");
+			toString = e.getMessage();
 			e.printStackTrace();
 		}
 

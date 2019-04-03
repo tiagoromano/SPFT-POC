@@ -1,3 +1,4 @@
+
 package sap;
 
 import java.net.MalformedURLException;
@@ -16,48 +17,48 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "ZSPF_BAPI_SAIDAService", targetNamespace = "urn:sap-com:document:sap:soap:functions:mc-style", wsdlLocation = "file:/opt/techne/cronoside/Downloads/SAP%20WSDL/wsdl_saida.xml")
-public class ZSPFBAPISAIDAService
+@WebServiceClient(name = "ZSPF_BAPI_SAIDA", targetNamespace = "urn:sap-com:document:sap:soap:functions:mc-style", wsdlLocation = "file:/build/cronapp/wsdl_saida.xml")
+public class ZSPFBAPISAIDA_Service
     extends Service
 {
 
-    private final static URL ZSPFBAPISAIDASERVICE_WSDL_LOCATION;
-    private final static WebServiceException ZSPFBAPISAIDASERVICE_EXCEPTION;
-    private final static QName ZSPFBAPISAIDASERVICE_QNAME = new QName("urn:sap-com:document:sap:soap:functions:mc-style", "ZSPF_BAPI_SAIDAService");
+    private final static URL ZSPFBAPISAIDA_WSDL_LOCATION;
+    private final static WebServiceException ZSPFBAPISAIDA_EXCEPTION;
+    private final static QName ZSPFBAPISAIDA_QNAME = new QName("urn:sap-com:document:sap:soap:functions:mc-style", "ZSPF_BAPI_SAIDA");
 
     static {
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/opt/techne/cronoside/Downloads/SAP%20WSDL/wsdl_saida.xml");
+            url = new URL("file:/build/cronapp/wsdl_saida.xml");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
-        ZSPFBAPISAIDASERVICE_WSDL_LOCATION = url;
-        ZSPFBAPISAIDASERVICE_EXCEPTION = e;
+        ZSPFBAPISAIDA_WSDL_LOCATION = url;
+        ZSPFBAPISAIDA_EXCEPTION = e;
     }
 
-    public ZSPFBAPISAIDAService() {
-        super(__getWsdlLocation(), ZSPFBAPISAIDASERVICE_QNAME);
+    public ZSPFBAPISAIDA_Service() {
+        super(__getWsdlLocation(), ZSPFBAPISAIDA_QNAME);
     }
 
-    public ZSPFBAPISAIDAService(WebServiceFeature... features) {
-        super(__getWsdlLocation(), ZSPFBAPISAIDASERVICE_QNAME, features);
+    public ZSPFBAPISAIDA_Service(WebServiceFeature... features) {
+        super(__getWsdlLocation(), ZSPFBAPISAIDA_QNAME, features);
     }
 
-    public ZSPFBAPISAIDAService(URL wsdlLocation) {
-        super(wsdlLocation, ZSPFBAPISAIDASERVICE_QNAME);
+    public ZSPFBAPISAIDA_Service(URL wsdlLocation) {
+        super(wsdlLocation, ZSPFBAPISAIDA_QNAME);
     }
 
-    public ZSPFBAPISAIDAService(URL wsdlLocation, WebServiceFeature... features) {
-        super(wsdlLocation, ZSPFBAPISAIDASERVICE_QNAME, features);
+    public ZSPFBAPISAIDA_Service(URL wsdlLocation, WebServiceFeature... features) {
+        super(wsdlLocation, ZSPFBAPISAIDA_QNAME, features);
     }
 
-    public ZSPFBAPISAIDAService(URL wsdlLocation, QName serviceName) {
+    public ZSPFBAPISAIDA_Service(URL wsdlLocation, QName serviceName) {
         super(wsdlLocation, serviceName);
     }
 
-    public ZSPFBAPISAIDAService(URL wsdlLocation, QName serviceName, WebServiceFeature... features) {
+    public ZSPFBAPISAIDA_Service(URL wsdlLocation, QName serviceName, WebServiceFeature... features) {
         super(wsdlLocation, serviceName, features);
     }
 
@@ -84,10 +85,10 @@ public class ZSPFBAPISAIDAService
     }
 
     private static URL __getWsdlLocation() {
-        if (ZSPFBAPISAIDASERVICE_EXCEPTION!= null) {
-            throw ZSPFBAPISAIDASERVICE_EXCEPTION;
+        if (ZSPFBAPISAIDA_EXCEPTION!= null) {
+            throw ZSPFBAPISAIDA_EXCEPTION;
         }
-        return ZSPFBAPISAIDASERVICE_WSDL_LOCATION;
+        return ZSPFBAPISAIDA_WSDL_LOCATION;
     }
 
 }

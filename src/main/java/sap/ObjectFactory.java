@@ -1,3 +1,4 @@
+
 package sap;
 
 import javax.xml.bind.annotation.XmlRegistry;
@@ -6,7 +7,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the io.cronapp.sap package. 
+ * generated in the sap package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -22,34 +23,50 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: io.cronapp.sap
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: sap
      * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link ZhrplanferiasEntrada }
+     * Create an instance of {@link ZhrplanferiasSaida }
      * 
      */
-    public ZhrplanferiasEntrada createZhrplanferiasEntrada() {
-        return new ZhrplanferiasEntrada();
+    public ZhrplanferiasSaida createZhrplanferiasSaida() {
+        return new ZhrplanferiasSaida();
     }
 
     /**
-     * Create an instance of {@link ZctHrBapiEntradaSpf }
+     * Create an instance of {@link ZctHrBapiPernr }
      * 
      */
-    public ZctHrBapiEntradaSpf createZctHrBapiEntradaSpf() {
-        return new ZctHrBapiEntradaSpf();
+    public ZctHrBapiPernr createZctHrBapiPernr() {
+        return new ZctHrBapiPernr();
     }
 
     /**
-     * Create an instance of {@link ZhrplanferiasEntradaResponse }
+     * Create an instance of {@link ZhrplanferiasSaidaResponse }
      * 
      */
-    public ZhrplanferiasEntradaResponse createZhrplanferiasEntradaResponse() {
-        return new ZhrplanferiasEntradaResponse();
+    public ZhrplanferiasSaidaResponse createZhrplanferiasSaidaResponse() {
+        return new ZhrplanferiasSaidaResponse();
+    }
+
+    /**
+     * Create an instance of {@link ZctHrBapiP2006 }
+     * 
+     */
+    public ZctHrBapiP2006 createZctHrBapiP2006() {
+        return new ZctHrBapiP2006();
+    }
+
+    /**
+     * Create an instance of {@link ZctHrBapiP9100 }
+     * 
+     */
+    public ZctHrBapiP9100 createZctHrBapiP9100() {
+        return new ZctHrBapiP9100();
     }
 
     /**
@@ -61,11 +78,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ZetHrBapiEntradaSpf }
+     * Create an instance of {@link P2006 }
      * 
      */
-    public ZetHrBapiEntradaSpf createZetHrBapiEntradaSpf() {
-        return new ZetHrBapiEntradaSpf();
+    public P2006 createP2006() {
+        return new P2006();
+    }
+
+    /**
+     * Create an instance of {@link P9100 }
+     * 
+     */
+    public P9100 createP9100() {
+        return new P9100();
     }
 
     /**
