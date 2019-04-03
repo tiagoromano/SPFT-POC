@@ -1,7 +1,6 @@
 package blockly.Custom;
 
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,8 +10,6 @@ import javax.ws.rs.core.MediaType;
 import javax.xml.ws.BindingProvider;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.http.conn.ssl.NoopHostnameVerifier;
-import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.conn.ssl.TrustAllStrategy;
 import org.apache.http.ssl.SSLContextBuilder;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,6 +36,14 @@ public class SAPWebservice {
 
 	static {
 		BypassSSL();
+		
+		java.net.Authenticator.setDefault(new java.net.Authenticator() {
+			@Override
+			protected java.net.PasswordAuthentication getPasswordAuthentication() {
+				System.out.println("Executando getPasswordAuthentication");
+				return new java.net.PasswordAuthentication(USER_CREDENTIAL, PASSWORD_CREDENTIAL.toCharArray());
+			}
+		});
 	}
 
 	private static final String APROVAR_FERIAS_URL = "http://f02web.petrobras.biz/sap/bc/srt/rfc/sap/zspf_bapi_saida/400/zspf_bapi_saida/zspf_bapi_saida";
@@ -48,11 +53,11 @@ public class SAPWebservice {
 
 	@RequestMapping(
 		method = RequestMethod.GET, 
-		value="/GetPeriodoConcessivo/{Matricula}/{Usuario}",
+		value="/GetPeriodoConcessivo/{Matricula}",
 		consumes = MediaType.APPLICATION_JSON, 
 		produces = MediaType.APPLICATION_JSON)
-	public static Var GetPeriodoConcessivo(String Matricula, String Usuario) {
-			String toString= "";
+	public static Var GetPeriodoConcessivo(String Matricula) {
+		String toString = "";
 		try {
 			ZSPFBAPISAIDAService service = new ZSPFBAPISAIDAService(new URL(SOLICITAR_FERIAS_URL));
 
@@ -67,13 +72,14 @@ public class SAPWebservice {
 			SetCredentials(client);
 
 			List<Bapiret2> retorno = client
-				.zhrplanferiasSaida("9999-12-31", "1800-01-01", pernr, Usuario, null, null)
+				.zhrplanferiasSaida("9999-12-31", "1800-01-01", pernr, USER_CREDENTIAL, null, null)
 				.getItem();
 
 			toString = Arrays.deepToString(retorno.toArray(new Bapiret2[retorno.size()]));
 
 			System.out.println(toString);
 		} catch (Exception e) {
+			System.out.println("Erro no método GetPeriodoConcessivo");
 			e.printStackTrace();
 		}
 
@@ -125,6 +131,7 @@ public class SAPWebservice {
 
 			System.out.println(toString);
 		} catch (Exception e) {
+			System.out.println("Erro no método AprovarFerias");
 			e.printStackTrace();
 		}
 
@@ -132,9 +139,16 @@ public class SAPWebservice {
 	}
 
 	private static void SetCredentials(Object client) {
-		BindingProvider prov = (BindingProvider)client;
-		prov.getRequestContext().put(BindingProvider.USERNAME_PROPERTY, USER_CREDENTIAL);
-		prov.getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, PASSWORD_CREDENTIAL);
+		try {
+			BindingProvider prov = (BindingProvider)client;
+			System.out.println("Setando credenciais no BindingProvider");
+			prov.getRequestContext().put(BindingProvider.USERNAME_PROPERTY, USER_CREDENTIAL);
+			prov.getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, PASSWORD_CREDENTIAL);
+			System.out.println("Credenciais setadas com sucesso no BindingProvider");
+		} catch (Exception e) {
+			System.out.println("Erro no método SetCredentials");
+			e.printStackTrace();
+		}
 	}
 
 	private static void BypassSSL() {
@@ -142,6 +156,7 @@ public class SAPWebservice {
             SSLContext sslContext = SSLContextBuilder.create().loadTrustMaterial(TrustAllStrategy.INSTANCE).build();
 			HttpsURLConnection.setDefaultSSLSocketFactory(sslContext.getSocketFactory());
         } catch (Exception e) {
+			System.out.println("Erro no método BypassSSL");
             e.printStackTrace();
         }
 	}
